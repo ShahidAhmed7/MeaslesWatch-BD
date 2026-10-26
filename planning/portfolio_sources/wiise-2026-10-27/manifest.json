@@ -1,0 +1,29 @@
+{
+  "WUENIC_revision_year": 2025,
+  "artifact_sha256": {
+    "reconciliation.json": "33c1c7569f529a436079ec29363fd5420798e147cd95b2ffe8e83f59e8458e7d",
+    "response-1.json": "df180ba8f8fdfd0f30bd873dc1f813976485bb71b39b564ccceaf07f43a7fbcf",
+    "response-2.json": "a21b63b46f21a9a9490b6dc6be0a97b36175614688b43ca8c4d5867800f3f92d",
+    "selected_records.json": "9417e48988c25f159eda3656756b6ac3345783265b8d6b6565aa3d5ba59d5a78"
+  },
+  "comparisons": 20,
+  "frozen_data_replaced": false,
+  "requests": [
+    {
+      "file": "response-1.json",
+      "sha256": "df180ba8f8fdfd0f30bd873dc1f813976485bb71b39b564ccceaf07f43a7fbcf",
+      "url": "https://xmart-api-public.who.int/WIISE/AD_COVERAGES?%24filter=COUNTRY+eq+%27BGD%27+and+%28YEAR+eq+2024+or+YEAR+eq+2025%29+and+%28VACCINECODE+eq+%27MCV1%27+or+VACCINECODE+eq+%27MCV2%27%29+and+COVERAGE_CATEGORY+eq+%27ADMIN%27+and+TIMELYDOSES+eq+%27ON_TIME%27+and+AGEGROUP+eq+%27NOT_COLLECTED%27&%24select=COUNTRY%2CYEAR%2CVACCINECODE%2CCOVERAGE_CATEGORY%2CTIMELYDOSES%2CAGEGROUP%2CPERCENTAGE%2CREVISION_YEAR%2CTARGETNUMBER%2CDOSES%2CTARGETDEFINITION_CMT&%24count=true"
+    },
+    {
+      "file": "response-2.json",
+      "sha256": "a21b63b46f21a9a9490b6dc6be0a97b36175614688b43ca8c4d5867800f3f92d",
+      "url": "https://xmart-api-public.who.int/WIISE/AD_COVERAGES?%24filter=COUNTRY+eq+%27BGD%27+and+%28YEAR+eq+2024+or+YEAR+eq+2025%29+and+%28VACCINECODE+eq+%27MCV1%27+or+VACCINECODE+eq+%27MCV2%27%29+and+%28COVERAGE_CATEGORY+eq+%27OFFICIAL%27+or+COVERAGE_CATEGORY+eq+%27WUENIC%27%29&%24select=COUNTRY%2CYEAR%2CVACCINECODE%2CCOVERAGE_CATEGORY%2CTIMELYDOSES%2CAGEGROUP%2CPERCENTAGE%2CREVISION_YEAR%2CTARGETNUMBER%2CDOSES%2CTARGETDEFINITION_CMT&%24count=true"
+    }
+  ],
+  "retrieved_at_utc": "2026-10-26T20:14:43.035501+00:00",
+  "scope": "Coverage records only; monthly surveillance retains attributed frozen August extract",
+  "script_sha256": "5591e38b35c4b1e552c91ced30e1e7752d2d117aae3682e46e2f6e986914c92c",
+  "selected_records": 12,
+  "selection": "ADMIN: ON_TIME + NOT_COLLECTED; OFFICIAL; WUENIC 2025 revision",
+  "status": "reconciled"
+}

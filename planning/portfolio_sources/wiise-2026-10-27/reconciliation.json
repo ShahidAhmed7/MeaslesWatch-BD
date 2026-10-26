@@ -1,0 +1,222 @@
+[
+  {
+    "absolute_tolerance": 0.005,
+    "agrees": true,
+    "antigen": "MCV1",
+    "current_value": 123.509507898,
+    "field": "reported_pct",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:25",
+    "frozen_value": 123.51,
+    "source": "admin",
+    "year": 2024
+  },
+  {
+    "absolute_tolerance": 0,
+    "agrees": true,
+    "antigen": "MCV1",
+    "current_value": 4065933.0,
+    "field": "admin_doses",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:25",
+    "frozen_value": 4065933,
+    "source": "admin",
+    "year": 2024
+  },
+  {
+    "absolute_tolerance": 0,
+    "agrees": true,
+    "antigen": "MCV1",
+    "current_value": 3292000.0,
+    "field": "admin_target",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:25",
+    "frozen_value": 3292000,
+    "source": "admin",
+    "year": 2024
+  },
+  {
+    "absolute_tolerance": 0.005,
+    "agrees": true,
+    "antigen": "MCV1",
+    "current_value": 86.1,
+    "field": "reported_pct",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:25",
+    "frozen_value": 86.1,
+    "source": "official",
+    "year": 2024
+  },
+  {
+    "absolute_tolerance": 0.005,
+    "agrees": true,
+    "antigen": "MCV1",
+    "current_value": 96.0,
+    "field": "reported_pct",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:25",
+    "frozen_value": 96,
+    "source": "wuenic",
+    "year": 2024
+  },
+  {
+    "absolute_tolerance": 0.005,
+    "agrees": true,
+    "antigen": "MCV2",
+    "current_value": 121.375516403,
+    "field": "reported_pct",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:26",
+    "frozen_value": 121.376,
+    "source": "admin",
+    "year": 2024
+  },
+  {
+    "absolute_tolerance": 0,
+    "agrees": true,
+    "antigen": "MCV2",
+    "current_value": 3995682.0,
+    "field": "admin_doses",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:26",
+    "frozen_value": 3995682,
+    "source": "admin",
+    "year": 2024
+  },
+  {
+    "absolute_tolerance": 0,
+    "agrees": true,
+    "antigen": "MCV2",
+    "current_value": 3292000.0,
+    "field": "admin_target",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:26",
+    "frozen_value": 3292000,
+    "source": "admin",
+    "year": 2024
+  },
+  {
+    "absolute_tolerance": 0.005,
+    "agrees": true,
+    "antigen": "MCV2",
+    "current_value": 80.7,
+    "field": "reported_pct",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:26",
+    "frozen_value": 80.7,
+    "source": "official",
+    "year": 2024
+  },
+  {
+    "absolute_tolerance": 0.005,
+    "agrees": true,
+    "antigen": "MCV2",
+    "current_value": 93.0,
+    "field": "reported_pct",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:26",
+    "frozen_value": 93,
+    "source": "wuenic",
+    "year": 2024
+  },
+  {
+    "absolute_tolerance": 0.005,
+    "agrees": true,
+    "antigen": "MCV1",
+    "current_value": 92.658022251,
+    "field": "reported_pct",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:27",
+    "frozen_value": 92.658,
+    "source": "admin",
+    "year": 2025
+  },
+  {
+    "absolute_tolerance": 0,
+    "agrees": true,
+    "antigen": "MCV1",
+    "current_value": 3791393.0,
+    "field": "admin_doses",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:27",
+    "frozen_value": 3791393,
+    "source": "admin",
+    "year": 2025
+  },
+  {
+    "absolute_tolerance": 0,
+    "agrees": true,
+    "antigen": "MCV1",
+    "current_value": 4091813.0,
+    "field": "admin_target",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:27",
+    "frozen_value": 4091813,
+    "source": "admin",
+    "year": 2025
+  },
+  {
+    "absolute_tolerance": 0.005,
+    "agrees": true,
+    "antigen": "MCV1",
+    "current_value": 86.1,
+    "field": "reported_pct",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:27",
+    "frozen_value": 86.1,
+    "source": "official",
+    "year": 2025
+  },
+  {
+    "absolute_tolerance": 0.005,
+    "agrees": true,
+    "antigen": "MCV1",
+    "current_value": 90.0,
+    "field": "reported_pct",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:27",
+    "frozen_value": 90,
+    "source": "wuenic",
+    "year": 2025
+  },
+  {
+    "absolute_tolerance": 0.005,
+    "agrees": true,
+    "antigen": "MCV2",
+    "current_value": 90.695151514,
+    "field": "reported_pct",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:28",
+    "frozen_value": 90.695,
+    "source": "admin",
+    "year": 2025
+  },
+  {
+    "absolute_tolerance": 0,
+    "agrees": true,
+    "antigen": "MCV2",
+    "current_value": 3711076.0,
+    "field": "admin_doses",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:28",
+    "frozen_value": 3711076,
+    "source": "admin",
+    "year": 2025
+  },
+  {
+    "absolute_tolerance": 0,
+    "agrees": true,
+    "antigen": "MCV2",
+    "current_value": 4091813.0,
+    "field": "admin_target",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:28",
+    "frozen_value": 4091813,
+    "source": "admin",
+    "year": 2025
+  },
+  {
+    "absolute_tolerance": 0.005,
+    "agrees": true,
+    "antigen": "MCV2",
+    "current_value": 80.7,
+    "field": "reported_pct",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:28",
+    "frozen_value": 80.7,
+    "source": "official",
+    "year": 2025
+  },
+  {
+    "absolute_tolerance": 0.005,
+    "agrees": true,
+    "antigen": "MCV2",
+    "current_value": 86.0,
+    "field": "reported_pct",
+    "frozen_source_row": "bgd_mcv_coverage_series.csv:28",
+    "frozen_value": 86,
+    "source": "wuenic",
+    "year": 2025
+  }
+]

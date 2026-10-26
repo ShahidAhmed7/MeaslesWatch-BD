@@ -1,0 +1,92 @@
+[
+  {
+    "current_count": 1947,
+    "historical_median": 55.0,
+    "historical_years": 14,
+    "measure": "measles_lab_confirmed",
+    "period_end": "2026-03",
+    "period_start": "2026-01",
+    "population": "all_ages",
+    "previous_maximum": 1219,
+    "previous_maximum_years": [
+      2020
+    ],
+    "ratio_status": "defined",
+    "ratio_to_previous_maximum": 1.5972108285479902
+  },
+  {
+    "current_count": 7056,
+    "historical_median": 76.5,
+    "historical_years": 14,
+    "measure": "measles_lab_confirmed",
+    "period_end": "2026-04",
+    "period_start": "2026-01",
+    "population": "all_ages",
+    "previous_maximum": 1482,
+    "previous_maximum_years": [
+      2017
+    ],
+    "ratio_status": "defined",
+    "ratio_to_previous_maximum": 4.761133603238866
+  },
+  {
+    "current_count": 11905,
+    "historical_median": 102.0,
+    "historical_years": 14,
+    "measure": "measles_lab_confirmed",
+    "period_end": "2026-05",
+    "period_start": "2026-01",
+    "population": "all_ages",
+    "previous_maximum": 1817,
+    "previous_maximum_years": [
+      2017
+    ],
+    "ratio_status": "defined",
+    "ratio_to_previous_maximum": 6.5520088057237205
+  },
+  {
+    "current_count": 5924,
+    "historical_median": 136.5,
+    "historical_years": 14,
+    "measure": "measles_total_classified",
+    "period_end": "2026-03",
+    "period_start": "2026-01",
+    "population": "all_ages",
+    "previous_maximum": 2162,
+    "previous_maximum_years": [
+      2020
+    ],
+    "ratio_status": "defined",
+    "ratio_to_previous_maximum": 2.7400555041628123
+  },
+  {
+    "current_count": 29613,
+    "historical_median": 169.5,
+    "historical_years": 14,
+    "measure": "measles_total_classified",
+    "period_end": "2026-04",
+    "period_start": "2026-01",
+    "population": "all_ages",
+    "previous_maximum": 2294,
+    "previous_maximum_years": [
+      2017
+    ],
+    "ratio_status": "defined",
+    "ratio_to_previous_maximum": 12.908892763731473
+  },
+  {
+    "current_count": 50040,
+    "historical_median": 216.0,
+    "historical_years": 14,
+    "measure": "measles_total_classified",
+    "period_end": "2026-05",
+    "period_start": "2026-01",
+    "population": "all_ages",
+    "previous_maximum": 2885,
+    "previous_maximum_years": [
+      2017
+    ],
+    "ratio_status": "defined",
+    "ratio_to_previous_maximum": 17.344887348353552
+  }
+]

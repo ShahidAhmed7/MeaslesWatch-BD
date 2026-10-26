@@ -1,0 +1,17 @@
+version = "portfolio-v1"
+analysis_type = "exploratory_descriptive_reanalysis_after_data_inspection"
+country = "Bangladesh"
+snapshot_month = "2026-08"
+canonical = "data/processed/phase1-r2"
+history_start = 2012
+history_end = 2025
+case_year = 2026
+primary_end_month = 5
+sensitivity_end_months = [3, 4]
+coverage_start_year = 2024
+coverage_end_year = 2025
+outcome = "measles_lab_confirmed"
+alternative_outcome = "measles_total_classified"
+population = "all_ages"
+source_check = "planning/portfolio_sources/wiise-2026-10-27"
+extra_inference_authorized_by_this_redesign = false

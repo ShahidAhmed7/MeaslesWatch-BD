@@ -1,0 +1,14 @@
+{
+  "tag": "research-v1-2026-10-27",
+  "base_commit": "f213e1e92ab633ca945a3d30f393f22c42e9299f",
+  "preserved_sha256": {
+    "data/processed/phase1-r2/source_manifest.json": "efa0e34c66960ed264b12b516ee287267035dbf3fd871e54d978c46b1bb2b9e8",
+    "results/statistics-001/run_manifest.json": "a63c414c4f7efaabce5efc608e5843c166ddee7ff499e61793138e446069686d",
+    "results/research-001/run_manifest.json": "b673e6bc96bdc20d5844482a51b939b96539b4daa7fdd19685c8abf7bb93ddc5",
+    "benchmark/frozen/external-v1/freeze_manifest.json": "d7912ffb2062e3a278e2d5ddbb95a249ee8e20859fd9b5835a95ea5b6d8279db",
+    "results/benchmark-score-001/scorecard.json": "1a926e83ae9d4eefca94ebb88c1bc87714bf74f7ed65c796cbbe5e2618f1da93",
+    "reports/research_report.md": "2cc2ffc59178857f8bb9787c358d1f3a13945c2f3926a36a192f46ca7df90349"
+  },
+  "user_dashboard_runs": "Unrelated results/brief-* retained; not modified by redesign",
+  "authorized_scope": "User approved portfolio redesign implementation on 27 October 2026"
+}

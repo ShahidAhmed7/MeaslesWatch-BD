@@ -1,0 +1,176 @@
+[
+  {
+    "classified_total": 39,
+    "complete": true,
+    "count": 0,
+    "expected_months": 5,
+    "lag_sensitive": false,
+    "measure": "measles_clinical",
+    "missing_months": [],
+    "observed_sum": 0,
+    "period_end": "2025-05",
+    "period_start": "2025-01",
+    "population": "all_ages",
+    "provisional": false,
+    "reporting_months": 5,
+    "share_percent": 0.0,
+    "share_status": "defined",
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:158",
+      "monthly_measles_bgd_neighbours.csv:159",
+      "monthly_measles_bgd_neighbours.csv:160",
+      "monthly_measles_bgd_neighbours.csv:161",
+      "monthly_measles_bgd_neighbours.csv:162"
+    ],
+    "source_sha256": [
+      "5158f387016038264e502a301221c8410b7ed35c3073e330b7f3e3bdf248fb5f"
+    ],
+    "suspected_excluded": true,
+    "unit": "reported_cases"
+  },
+  {
+    "classified_total": 39,
+    "complete": true,
+    "count": 0,
+    "expected_months": 5,
+    "lag_sensitive": false,
+    "measure": "measles_epi_linked",
+    "missing_months": [],
+    "observed_sum": 0,
+    "period_end": "2025-05",
+    "period_start": "2025-01",
+    "population": "all_ages",
+    "provisional": false,
+    "reporting_months": 5,
+    "share_percent": 0.0,
+    "share_status": "defined",
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:158",
+      "monthly_measles_bgd_neighbours.csv:159",
+      "monthly_measles_bgd_neighbours.csv:160",
+      "monthly_measles_bgd_neighbours.csv:161",
+      "monthly_measles_bgd_neighbours.csv:162"
+    ],
+    "source_sha256": [
+      "5158f387016038264e502a301221c8410b7ed35c3073e330b7f3e3bdf248fb5f"
+    ],
+    "suspected_excluded": true,
+    "unit": "reported_cases"
+  },
+  {
+    "classified_total": 39,
+    "complete": true,
+    "count": 39,
+    "expected_months": 5,
+    "lag_sensitive": false,
+    "measure": "measles_lab_confirmed",
+    "missing_months": [],
+    "observed_sum": 39,
+    "period_end": "2025-05",
+    "period_start": "2025-01",
+    "population": "all_ages",
+    "provisional": false,
+    "reporting_months": 5,
+    "share_percent": 100.0,
+    "share_status": "defined",
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:158",
+      "monthly_measles_bgd_neighbours.csv:159",
+      "monthly_measles_bgd_neighbours.csv:160",
+      "monthly_measles_bgd_neighbours.csv:161",
+      "monthly_measles_bgd_neighbours.csv:162"
+    ],
+    "source_sha256": [
+      "5158f387016038264e502a301221c8410b7ed35c3073e330b7f3e3bdf248fb5f"
+    ],
+    "suspected_excluded": true,
+    "unit": "reported_cases"
+  },
+  {
+    "classified_total": 50040,
+    "complete": true,
+    "count": 7073,
+    "expected_months": 5,
+    "lag_sensitive": false,
+    "measure": "measles_clinical",
+    "missing_months": [],
+    "observed_sum": 7073,
+    "period_end": "2026-05",
+    "period_start": "2026-01",
+    "population": "all_ages",
+    "provisional": true,
+    "reporting_months": 5,
+    "share_percent": 14.134692246203038,
+    "share_status": "defined",
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:170",
+      "monthly_measles_bgd_neighbours.csv:171",
+      "monthly_measles_bgd_neighbours.csv:172",
+      "monthly_measles_bgd_neighbours.csv:173",
+      "monthly_measles_bgd_neighbours.csv:174"
+    ],
+    "source_sha256": [
+      "5158f387016038264e502a301221c8410b7ed35c3073e330b7f3e3bdf248fb5f"
+    ],
+    "suspected_excluded": true,
+    "unit": "reported_cases"
+  },
+  {
+    "classified_total": 50040,
+    "complete": true,
+    "count": 31062,
+    "expected_months": 5,
+    "lag_sensitive": false,
+    "measure": "measles_epi_linked",
+    "missing_months": [],
+    "observed_sum": 31062,
+    "period_end": "2026-05",
+    "period_start": "2026-01",
+    "population": "all_ages",
+    "provisional": true,
+    "reporting_months": 5,
+    "share_percent": 62.07434052757794,
+    "share_status": "defined",
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:170",
+      "monthly_measles_bgd_neighbours.csv:171",
+      "monthly_measles_bgd_neighbours.csv:172",
+      "monthly_measles_bgd_neighbours.csv:173",
+      "monthly_measles_bgd_neighbours.csv:174"
+    ],
+    "source_sha256": [
+      "5158f387016038264e502a301221c8410b7ed35c3073e330b7f3e3bdf248fb5f"
+    ],
+    "suspected_excluded": true,
+    "unit": "reported_cases"
+  },
+  {
+    "classified_total": 50040,
+    "complete": true,
+    "count": 11905,
+    "expected_months": 5,
+    "lag_sensitive": false,
+    "measure": "measles_lab_confirmed",
+    "missing_months": [],
+    "observed_sum": 11905,
+    "period_end": "2026-05",
+    "period_start": "2026-01",
+    "population": "all_ages",
+    "provisional": true,
+    "reporting_months": 5,
+    "share_percent": 23.790967226219024,
+    "share_status": "defined",
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:170",
+      "monthly_measles_bgd_neighbours.csv:171",
+      "monthly_measles_bgd_neighbours.csv:172",
+      "monthly_measles_bgd_neighbours.csv:173",
+      "monthly_measles_bgd_neighbours.csv:174"
+    ],
+    "source_sha256": [
+      "5158f387016038264e502a301221c8410b7ed35c3073e330b7f3e3bdf248fb5f"
+    ],
+    "suspected_excluded": true,
+    "unit": "reported_cases"
+  }
+]
