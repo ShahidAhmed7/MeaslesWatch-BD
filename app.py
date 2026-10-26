@@ -68,6 +68,15 @@ def yoy(data, start, end):
     return pd.DataFrame(records)
 
 
+def reporting_calendar(selected, start, end):
+    """Explicit null calendar rows prevent a line bridging unreported months."""
+    calendar = pd.DataFrame({"month": pd.date_range(start, end, freq="MS").strftime("%Y-%m")})
+    result = calendar.merge(selected, on="month", how="left", validate="one_to_one", indicator=True)
+    result["calendar_gap"] = result.pop("_merge") == "left_only"
+    result["date"] = pd.to_datetime(result.month)
+    return result
+
+
 def overview(data, selection):
     country, start, end, measure = selection
     group = data[(data.country == country) & (data.measure == measure)].sort_values("month")
@@ -82,14 +91,15 @@ def overview(data, selection):
     columns[3].metric("Quarantined cells in selection", int(selected.invalid.sum()))
     if not complete:
         st.warning("The selected window has unavailable/quarantined reports. The displayed sum is partial; missing values remain missing.")
-    selected["date"] = pd.to_datetime(selected.month)
+    selected = reporting_calendar(selected, start, end)
     fig = px.line(selected, x="date", y="count", markers=False, title=f"{country}: {LABELS[measure]}",
                   labels={"date": "Observation month", "count": "Reported cases"}, color_discrete_sequence=["#176B87"])
     if end >= "2026-01":
         fig.add_vrect(x0="2026-01-01", x1="2026-08-01", fillcolor="#f0ac4e", opacity=.12, line_width=0,
                       annotation_text="Provisional 2026", annotation_position="top left")
     chart(fig, "filtered-reporting")
-    export_table(selected.drop(columns="date"), "filtered-surveillance", {"country": country, "start": start, "end": end, "measure": measure})
+    export_table(selected.drop(columns="date"), "filtered-surveillance", {"country": country, "start": start, "end": end, "measure": measure,
+        "missing_month_display": "Explicit calendar_gap rows with null counts; no imputation"})
     st.subheader("Comparable reporting periods")
     comparisons = yoy(group, start, end)
     st.dataframe(comparisons, hide_index=True, width="stretch")
