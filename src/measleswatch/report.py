@@ -188,7 +188,9 @@ All failures count; first-pass and post-schema-repair outputs are separately sav
 The displayed values are post-repair. Citation precision is registered-slot passage
 overlap, not universal semantic entailment. Whole-item paired bootstrap comparisons:
 {comparisons}. Intervals describe this selected question bank, not a general model
-ranking. Rule-based causal flags have limited coverage of subtle free prose.
+ranking. Items share four source documents; item resampling does not estimate
+between-publication generalization uncertainty. Rule-based causal flags have limited
+coverage of subtle free prose.
 
 Across the saved development/test B drafts, the independent scorer identified
 {verifier['independently_scored_B_claims_in_error']} erroneous emitted registered claims;

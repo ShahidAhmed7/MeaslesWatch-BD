@@ -138,6 +138,8 @@ limitations. Numerical accuracy is reported separately. First-pass and post-sche
 repair scores retain all failures. One syntax-only repair is allowed; incomplete
 thinking/truncation does not receive a new factual answer. Paired uncertainty resamples
 whole questions; 30 selected questions do not support a general model ranking.
+Questions share four documents, so item-bootstrap intervals do not capture
+between-publication generalization uncertainty.
 Citation scoring checks registered passage overlap, not unlimited semantic truth.
 See [development amendment](planning/DEVELOPMENT_AMENDMENT.md) for retained earlier
 development prompts and the prospective pre-test scope correction.
