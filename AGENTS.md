@@ -1,5 +1,9 @@
 # MeaslesWatch working conventions
 
+- The sole project contributor identity is the user's `ahmedshahid2929@gmail.com`.
+  Use it for Git author and committer email. Do not add automated co-author trailers
+  or assistant contributor credits. Preserve required third-party source/license attribution.
+
 - Python package uses a `src/` layout, `uv.lock`, and Python 3.11–3.13. The verified local environment uses Python 3.13.
 - Install the locked environment with `uv sync --locked --python 3.13`.
 - Offline verification: `.venv/bin/pytest -q`. The suite covers ingestion, descriptive arithmetic, Modal interfaces, and budget guards without remote inference.
