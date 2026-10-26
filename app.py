@@ -38,6 +38,14 @@ def brief_outcome(output):
     return "partial" if any(r.get("missing_slots") for r in checked) else "complete"
 
 
+def brief_label(path):
+    record = json.loads(path.read_text())
+    selection = record.get("selection", {})
+    state = "checked claims" if record.get("verified", {}).get("claims") else "no checked claims"
+    return (f"{selection.get('country', 'Unknown country')} · {selection.get('start', '?')} to {selection.get('end', '?')} · "
+            f"{LABELS.get(selection.get('measure'), 'Unspecified category')} · {state} · {path.parent.parent.name}")
+
+
 def export_table(data, name, metadata=None):
     csv = data.copy()
     for column in csv.columns:
@@ -255,7 +263,7 @@ def analyst(selection):
     if not paths:
         st.info("No saved research brief yet. The interface does not generate one automatically.")
         return
-    chosen = st.selectbox("Saved research brief", paths, format_func=lambda p: f"{p.parent.parent.name} / {p.name}")
+    chosen = st.selectbox("Saved research brief", paths, format_func=brief_label)
     record = json.loads(chosen.read_text())
     verified = record.get("verified", {})
     st.caption("Verification means support by frozen evidence and bounded computations, not clinical validation.")
