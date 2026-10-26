@@ -86,6 +86,10 @@ claim from source evidence, reject an unknown claim, or preserve ambiguity. It d
 not turn a failed/empty generation into a perfect answer. Unchecked narrative remains
 a draft; verified prose is rendered from checked claims and approved templates.
 
+Grounding and verification reuse the same public-source adapters. Re-querying avoids
+trusting the model's echoed values, but shared parsing/scope bugs can survive B and C.
+The separate frozen gold/oracle tests that boundary; it is not a runtime evidence source.
+
 This is a small **hybrid RAG system with deterministic verification**. No vector
 database, embedding service or paid per-token API is required. Verification is bounded
 to the registered source schemas; it is not a universal medical fact checker.

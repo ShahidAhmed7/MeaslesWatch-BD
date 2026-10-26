@@ -161,6 +161,8 @@ then re-queries evidence and validates numerical value, unit, case definition, g
 population, period and source locator. Verified six-section prose uses checked claims
 and limitation templates; arbitrary draft prose is not certified. Empty generations
 remain failures. Two saved Bangladesh briefs provide separate end-to-end examples.
+Grounding and verification share public-source adapters, so common parsing/scope
+errors can survive both. The separate gold/oracle is the independent evaluation boundary.
 
 The independent external-v1 benchmark contains 30 test and six development questions
 from CDC, ECDC and UKHSA publications, excluding the Bangladesh dataset and DON598.
