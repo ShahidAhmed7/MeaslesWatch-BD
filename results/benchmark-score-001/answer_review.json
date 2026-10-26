@@ -1,0 +1,96 @@
+{
+  "status": "completed_qualitative_inspection",
+  "review_type": "AI-conducted qualitative case inspection; not blinded external human adjudication",
+  "selection": "Prospectively declared purposive subset in planning/ANSWER_REVIEW_PROTOCOL.md; not a random sample or accuracy estimate",
+  "frozen_scoring_changed": false,
+  "reviewed_materials": [
+    "Frozen questions and independent gold",
+    "Original frozen source passages and referenced table rows",
+    "Saved A/B/C structured claims, status, scope and citations",
+    "Unverified draft summary prose and limitations",
+    "Unchanged post-schema-repair programmatic verdicts"
+  ],
+  "programmatic_verdicts": "results/benchmark-score-001/case_results.json; original strict verdicts are preserved",
+  "items": [
+    {
+      "item_id": "EXT-01",
+      "report_note": "All conditions give 800 total and 557 laboratory cases, but C retains all_ages on interpretation slots and a nonregistered period citation. A's prose also mistakes 251 sequenced specimens for epidemiologically linked cases.",
+      "notes": [
+        "The source paragraph distinguishes laboratory confirmation from specimens available for sequencing; A's extra statement about 251 epidemiologically linked cases is unsupported and is outside the registered numeric slots.",
+        "B and C preserve the correct partial-year distinction, but the shared adapter assigns all_ages where gold requires not_applicable and cites the total-count row rather than the registered date passage. Frozen strict item credit is denied."
+      ]
+    },
+    {
+      "item_id": "EXT-06",
+      "report_note": "All conditions calculate 162/210 = 77.14%, retaining 30 unknown-status cases. C repairs citations but substitutes all_ages for three non-Texas count scopes; A adds a mistaken source-conflict explanation.",
+      "notes": [
+        "The paragraph explicitly supplies 210 non-Texas cases, including 162 unvaccinated and 30 unknown. All answers preserve the correct denominator.",
+        "A's unstructured limitation incorrectly adds 771 nationwide unvaccinated/unknown cases to 590 Texas cases; these overlap and are not a real source contradiction.",
+        "C's shared adapter changes population on three counts to all_ages, whereas gold requires non_texas_reported_cases. Its acceptance/correction decisions do not establish independently supported scope."
+      ]
+    },
+    {
+      "item_id": "EXT-09",
+      "report_note": "All conditions identify at least three epidemiologically linked cases and reject three unrelated cases. B/C retain all_ages on logical interpretation fields; A's summary is an unfilled generic phrase.",
+      "notes": [
+        "The source definition at line 125 supports the count and linkage distinction.",
+        "A's structured answers have useful values, but its summary literally says concise interpretation.",
+        "B/C values and locator are useful while logical-field population metadata remains inconsistent with not_applicable gold."
+      ]
+    },
+    {
+      "item_id": "EXT-10",
+      "report_note": "B/C correctly decline vaccine-effect identification, but retain incorrect interpretation populations and nonregistered citations. A emits string yes/no values; B's prose misleadingly says Texas data are excluded.",
+      "notes": [
+        "The source provides counts among cases, not vaccinated/unvaccinated at-risk population denominators.",
+        "A's prose recognizes nonidentification but its typed values no and yes do not satisfy the boolean/category contract.",
+        "B's claim that Texas data are excluded overgeneralizes a restriction on vaccination-status disaggregation; C replaces draft prose with bounded slot summaries.",
+        "C does not correct shared all_ages populations or the nonregistered paragraph citation, so strict credit remains denied."
+      ]
+    },
+    {
+      "item_id": "EXT-15",
+      "report_note": "All conditions distinguish NRC from zero. A's human-readable marker meaning fails the literal category contract; B/C retain all_ages rather than not_applicable on interpretation fields.",
+      "notes": [
+        "Belgium's table row ends NRC; the source legend says no rate was calculated.",
+        "A's No rate calculated is semantically useful but differs from the frozen no_rate_calculated string, and Belgium geography differs from the report-scope EU/EEA contract.",
+        "This is partly contract sensitivity rather than a false epidemiologic conclusion. B/C give canonical values but share incorrect population metadata."
+      ]
+    },
+    {
+      "item_id": "EXT-18",
+      "report_note": "All conditions separate observation year 2024 from retrieval date 2025-03-20. B/C retain a citation mismatch for the year and all_ages on the retrieval-date interpretation slot.",
+      "notes": [
+        "The original methods sentence at line 77 explicitly distinguishes both dates.",
+        "A additionally supplies different geography/period metadata for the retrieval-date slot.",
+        "B/C preserve correct values, but exact citation/population checks still fail. Correct date strings alone are insufficient for the registered evidence contract."
+      ]
+    },
+    {
+      "item_id": "EXT-26",
+      "report_note": "All conditions give 654, 68.27% calculated and 68% reported. C improves count evidence but cites only one age component and an alternative total row; strict registered-locator grading still fails.",
+      "notes": [
+        "The table gives 117 + 308 + 229 = 654 and total 958; the narrative reports rounded 68%.",
+        "B's narrative citation supports 654 but does not show all three arithmetic operands. C changes this to the 5–10 row, still omitting the under-one and 1–4 row locators.",
+        "C's percentage also cites line 87, a genuine 958 total row not in that gold slot's registered passage set; frozen citation grading rejects it. This illustrates both incomplete operand provenance and sensitivity to a valid alternative locator.",
+        "No gold, adapter, or scoring rule was relaxed after inspection."
+      ]
+    },
+    {
+      "item_id": "EXT-30",
+      "report_note": "A/B identify conflicting dates and equal totals but omit the required single-window boolean. C preserves ambiguity and does not invent that missing claim, yet drops the specific provisional/conflict prose and retains date-field population errors.",
+      "notes": [
+        "The narrative uses 2026-10-12 while the table caption uses 2026-09-14; both show 1,030 cases. Equal totals do not reconcile the windows.",
+        "A/B's free prose correctly cautions against merging dates, but neither emits single_window_verified=false. Frozen rubric detection relies on that typed field for two limitations, so useful prose still loses strict credit.",
+        "C changes interpretation period_end to null but retains all_ages rather than not_applicable. It lists the absent boolean as missing instead of filling it from its own facts.",
+        "The C slot summary and generic limitations omit the original specific provisional/conflicting-window explanation; this is a meaningful limitation of template rendering as well as strict rubric sensitivity."
+      ]
+    }
+  ],
+  "additional_format_failure": {
+    "item_id": "EXT-11",
+    "condition": "A",
+    "finding": "Initial and one schema-only repair both return malformed JSON with an unclosed claims array. The output is retained as a failure; it is not replaced by another factual sample."
+  },
+  "interpretation": "Correct numbers can coexist with incorrect scope, omitted fields, unsupported prose, or insufficient locators. Some strict failures reflect literal category or registered-locator sensitivity. Shared source adapters mean C cannot independently guarantee its own scope labels."
+}

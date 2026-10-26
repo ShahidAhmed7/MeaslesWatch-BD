@@ -1,0 +1,306 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 80,
+            "line_start": 80,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "laboratory_confirmed_measles_cases",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "age_under_5",
+        "slot": "under_five_cases",
+        "unit": "cases",
+        "value": 425
+      },
+      {
+        "citations": [
+          {
+            "line_end": 87,
+            "line_start": 87,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "laboratory_confirmed_measles_cases",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "all_cases",
+        "unit": "cases",
+        "value": 958
+      },
+      {
+        "citations": [
+          {
+            "line_end": 80,
+            "line_start": 80,
+            "source_id": "ukhsa-england-2025"
+          },
+          {
+            "line_end": 87,
+            "line_start": 87,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "under_five_percent",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "under_five_percent",
+        "unit": "percent",
+        "value": 44.36
+      }
+    ],
+    "item_id": "EXT-25",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "under_five_cases: 425 cases; all_cases: 958 cases; under_five_percent: 44.36 percent",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 80,
+              "line_start": 80,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 81,
+              "line_start": 81,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "laboratory_confirmed_measles_cases",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "age_under_5",
+          "slot": "under_five_cases",
+          "unit": "cases",
+          "value": 425
+        },
+        "slot": "under_five_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 87,
+              "line_start": 87,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "laboratory_confirmed_measles_cases",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "all_cases",
+          "unit": "cases",
+          "value": 958
+        },
+        "slot": "all_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 80,
+              "line_start": 80,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 87,
+              "line_start": 87,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "under_five_percent",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "under_five_percent",
+          "unit": "percent",
+          "value": 44.36
+        },
+        "slot": "under_five_percent"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-25_B_2026.json",
+  "item_id": "EXT-25",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 80,
+            "line_start": 80,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "laboratory_confirmed_measles_cases",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "age_under_5",
+        "slot": "under_five_cases",
+        "unit": "cases",
+        "value": 425
+      },
+      {
+        "citations": [
+          {
+            "line_end": 87,
+            "line_start": 87,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "laboratory_confirmed_measles_cases",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "all_cases",
+        "unit": "cases",
+        "value": 958
+      },
+      {
+        "citations": [
+          {
+            "line_end": 80,
+            "line_start": 80,
+            "source_id": "ukhsa-england-2025"
+          },
+          {
+            "line_end": 87,
+            "line_start": 87,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "under_five_percent",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "under_five_percent",
+        "unit": "percent",
+        "value": 44.36
+      }
+    ],
+    "item_id": "EXT-25",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "under_five_cases: 425 cases; all_cases: 958 cases; under_five_percent: 44.36 percent",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 80,
+              "line_start": 80,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 81,
+              "line_start": 81,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "laboratory_confirmed_measles_cases",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "age_under_5",
+          "slot": "under_five_cases",
+          "unit": "cases",
+          "value": 425
+        },
+        "slot": "under_five_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 87,
+              "line_start": 87,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "laboratory_confirmed_measles_cases",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "all_cases",
+          "unit": "cases",
+          "value": 958
+        },
+        "slot": "all_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 80,
+              "line_start": 80,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 87,
+              "line_start": 87,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "under_five_percent",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "under_five_percent",
+          "unit": "percent",
+          "value": 44.36
+        },
+        "slot": "under_five_percent"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

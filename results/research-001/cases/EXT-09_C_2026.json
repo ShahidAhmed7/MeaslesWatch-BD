@@ -1,0 +1,276 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 125,
+            "line_start": 125,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "outbreak_definition_minimum_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "minimum_linked_cases",
+        "unit": "cases",
+        "value": 3
+      },
+      {
+        "citations": [
+          {
+            "line_end": 125,
+            "line_start": 125,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "source_interpretation",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "epidemiologic_link_required",
+        "unit": "none",
+        "value": true
+      },
+      {
+        "citations": [
+          {
+            "line_end": 125,
+            "line_start": 125,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "source_interpretation",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "unrelated_cases_sufficient",
+        "unit": "none",
+        "value": false
+      }
+    ],
+    "item_id": "EXT-09",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "minimum_linked_cases: 3 cases; epidemiologic_link_required: True none; unrelated_cases_sufficient: False none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 125,
+              "line_start": 125,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "outbreak_definition_minimum_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "minimum_linked_cases",
+          "unit": "cases",
+          "value": 3
+        },
+        "slot": "minimum_linked_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 125,
+              "line_start": 125,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "source_interpretation",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "epidemiologic_link_required",
+          "unit": "none",
+          "value": true
+        },
+        "slot": "epidemiologic_link_required"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 125,
+              "line_start": 125,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "source_interpretation",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "unrelated_cases_sufficient",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "unrelated_cases_sufficient"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-09_B_2026.json",
+  "item_id": "EXT-09",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 125,
+            "line_start": 125,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "outbreak_definition_minimum_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "minimum_linked_cases",
+        "unit": "cases",
+        "value": 3
+      },
+      {
+        "citations": [
+          {
+            "line_end": 125,
+            "line_start": 125,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "source_interpretation",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "epidemiologic_link_required",
+        "unit": "none",
+        "value": true
+      },
+      {
+        "citations": [
+          {
+            "line_end": 125,
+            "line_start": 125,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "source_interpretation",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "unrelated_cases_sufficient",
+        "unit": "none",
+        "value": false
+      }
+    ],
+    "item_id": "EXT-09",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "minimum_linked_cases: 3 cases; epidemiologic_link_required: True none; unrelated_cases_sufficient: False none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 125,
+              "line_start": 125,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "outbreak_definition_minimum_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "minimum_linked_cases",
+          "unit": "cases",
+          "value": 3
+        },
+        "slot": "minimum_linked_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 125,
+              "line_start": 125,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "source_interpretation",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "epidemiologic_link_required",
+          "unit": "none",
+          "value": true
+        },
+        "slot": "epidemiologic_link_required"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 125,
+              "line_start": 125,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "source_interpretation",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "unrelated_cases_sufficient",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "unrelated_cases_sufficient"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

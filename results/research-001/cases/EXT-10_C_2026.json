@@ -1,0 +1,198 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 259,
+            "line_start": 259,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "source_interpretation",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "effectiveness_identified",
+        "unit": "none",
+        "value": false
+      },
+      {
+        "citations": [
+          {
+            "line_end": 259,
+            "line_start": 259,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "source_interpretation",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "missing_comparison",
+        "unit": "none",
+        "value": "vaccinated_and_unvaccinated_population_at_risk"
+      }
+    ],
+    "item_id": "EXT-10",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "insufficient_data",
+    "original_summary_causal_assertions": [],
+    "status": "insufficient_data",
+    "summary": "effectiveness_identified: False none; missing_comparison: vaccinated_and_unvaccinated_population_at_risk none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 259,
+              "line_start": 259,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "source_interpretation",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "effectiveness_identified",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "effectiveness_identified"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 259,
+              "line_start": 259,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "source_interpretation",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "missing_comparison",
+          "unit": "none",
+          "value": "vaccinated_and_unvaccinated_population_at_risk"
+        },
+        "slot": "missing_comparison"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-10_B_2026.json",
+  "item_id": "EXT-10",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 259,
+            "line_start": 259,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "source_interpretation",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "effectiveness_identified",
+        "unit": "none",
+        "value": false
+      },
+      {
+        "citations": [
+          {
+            "line_end": 259,
+            "line_start": 259,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "source_interpretation",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "missing_comparison",
+        "unit": "none",
+        "value": "vaccinated_and_unvaccinated_population_at_risk"
+      }
+    ],
+    "item_id": "EXT-10",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "insufficient_data",
+    "original_summary_causal_assertions": [],
+    "status": "insufficient_data",
+    "summary": "effectiveness_identified: False none; missing_comparison: vaccinated_and_unvaccinated_population_at_risk none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 259,
+              "line_start": 259,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "source_interpretation",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "effectiveness_identified",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "effectiveness_identified"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 259,
+              "line_start": 259,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "source_interpretation",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "missing_comparison",
+          "unit": "none",
+          "value": "vaccinated_and_unvaccinated_population_at_risk"
+        },
+        "slot": "missing_comparison"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

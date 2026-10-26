@@ -1,0 +1,466 @@
+{
+  "interpretation": "Secondary infrastructure recovery; original failure-inclusive analysis retained",
+  "original_manifest_sha256": "45bc7967c175ebad578b936ab1c5e503cea8099b0626e45438d88f3c44e20128",
+  "questions_prompts_and_seeds_identical": true,
+  "recovered_manifest_sha256": "b673e6bc96bdc20d5844482a51b939b96539b4daa7fdd19685c8abf7bb93ddc5",
+  "recovered_no_response_jobs": [
+    {
+      "file": "EXT-06_A_2026.json",
+      "original_error": "RemoteError",
+      "original_sha256": "aba4727964245410c5e57b89e954b0fac1a9a0fc6a94cf700eec8525a7dc7b9a",
+      "recovered_sha256": "ddbf785cfe7102b46aa004f61a2328d23c705287c29d675ea608dbdc0640cb44",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-06_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "27854fe65ef2566d5f26052811c76a6285ef54ad44ec5b15f2774dae65670053",
+      "recovered_sha256": "e26535eb9b4fc811233543c23f859d07e2204bd82ae5940eb3660e74a8673354",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-07_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "4b66ce80e49dacbaa90e11dbdc1f7f0bb0e1e2de4706c5361bfcade31b1e8b09",
+      "recovered_sha256": "0146e92b1f4cd26d525de61a2cf7195cf305956c344abe6e79e2561044ac1c59",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-07_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "4265bc5a000f7744a8c43f215ef5ba22864b1be12da09c71263a901943b88c35",
+      "recovered_sha256": "df491aad617422a13efa7af35a1107fb04ab88076f75dd438db6209fe98d489f",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-08_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "b6f2b30e1209b3c809993bfde9d1dafba9e92663f88f4a690939613c61022172",
+      "recovered_sha256": "4a168197b7e62b3408186f0b92d15d8e7bb0104ac00ad7efa36c0656a9498955",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-08_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "b530c0d627bf64bdef179614bb3d13e8e4f72a21d23e943a18d6bac8e3a92d1c",
+      "recovered_sha256": "0638cc9e09acf0f454082ad9b00d2623223fa9a57777a92b4845c056974ada95",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-09_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "5accb7f9d7260244f13124d4771a299234fc95c03786972799b2133f9cfe310f",
+      "recovered_sha256": "91b2e57caf28738178a439f8ccad47ccdd122bf02666b2ff25d2ae9ae49c4f36",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-09_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "791af7d6a66fd69d0913071915c77c7b1a2731e41cff6192d13e660b7441e1ba",
+      "recovered_sha256": "76c8285dea396a221b6d93d4efcfde3b6336ad47d8e2bbe05161acc40eb3f086",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-10_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "1cc691e7e97e0982f92af0d9216012b335c375d59e3ed8849a7fd9a1a7c6bf92",
+      "recovered_sha256": "7601bf963ad140a5ad14e341b73df1dcc15cf6e1b8226dc999a218f101b10c70",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-10_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "94669a21c1983bc5ca3782c71a60c22a2ce950a717df8c3fc9e049d095df4a59",
+      "recovered_sha256": "c2c2e649b99f02638080d8d4d452361185c13f957234e4e6aa91acbb28c345eb",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-11_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "1df18f33b989151b26eb98affd7f1d41ed56065c6b096552e15517e589161f65",
+      "recovered_sha256": "75a678d33b041d61db0363ab321eb129cfc4ef1dd78acb5d9d433940a2c71314",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-11_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "beeea423135ccd0ab7124bfb4de14fdb25a5689931bf958c370cdb9f5197b6e6",
+      "recovered_sha256": "2b93c1d9c2a42faa88c632a5f5c087b8709b4d1a1ad286e08379d38884a7a719",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-12_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "e8f80298a30c107b4cf6efc9fb74ea15c709b2c1a7ed6a49f1e1129d91529405",
+      "recovered_sha256": "151cce387e9e3f50e60f615411765b1c13aeeb96268801429c4598f8c4e8313d",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-12_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "f0b2ab69f4ebbb63a5974dc7350e09b3dd0f9b2b26f2bc3194f8cffec5203076",
+      "recovered_sha256": "f9596555786d84cdbd622e54212c0cfa6a374d8f9b95bb73bbac7e8530a103da",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-13_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "12c1f7a88049a545e9c8bdf52ad92f69a59d21427e35fc273e750d183cb60cbf",
+      "recovered_sha256": "43354f8fc570f08ebbb9b0f3556953b95dc382a3bd3a7de0d0dae1e3cdb36ea9",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-13_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "fa67ec5f91ea10c5b48a057a4a1e8248bb9742f9f0ce2a8bcb9e618b61bcf498",
+      "recovered_sha256": "67ac2823e1f18a6d3324c22b1a12a867d98f59b547d65b5308106b377421dea2",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-14_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "759a3a5fb04e8b371e64c4b98af8b3b2a448a5c3b4d310fee273278fb2fa24c1",
+      "recovered_sha256": "4aed20966cf06684b3d082aa1cd557ea8dfb099a72b6dc404dbce32cc89fd7bb",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-14_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "75d5167c36564f228403c331c230cef86adb94563c14609d34587c0fa3df4886",
+      "recovered_sha256": "ed43b981294c1d2c7478fdf7dc2e465242f188ea4c6c2f5f510b345dd3863d53",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-15_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "99216c8fc0cb495e96aab7ddbb2ce8ba25cc2994e6d409cb648e26c34c7ae32e",
+      "recovered_sha256": "f01f871dadde61a4fdd50682ff4dab2b28e7abf19ba707bac255c5fcbfae35ff",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-15_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "e913f98161d26155f12bc054f979445a79666ea5485c7b0e2848b9ebd6fc7716",
+      "recovered_sha256": "5e402f0eef5e3e8ade7a52881666606c44766515b922347ecc8809513ebbfd1f",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-16_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "4c64d8ff6e40056ce7a37a87d1acb1a20ad4b88a392189e5692009b62e5b7d40",
+      "recovered_sha256": "d97a770b6fbffe9a639ab63457897dffd3b354ba6474010ab2b2c5f595c015e5",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-16_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "89b3be966a7b3905608d7c72acddfd62801a6870140bf53047a4786d16a6d5e9",
+      "recovered_sha256": "0a0b5cd0da7ace3191ce19c14ddcbcd455f88640d35bacc64633f4ce1baa793f",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-17_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "e952534ae77f6b337adfc9bd0c6bcca1c253416eba3142a40280246dfe224a3b",
+      "recovered_sha256": "a31358c9042ab957ec52ae084cf53d06a84aa6187feeed97a6fb5589cb18ee8b",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-17_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "c8a99ff09b2ee978b0adaa5b5cbf255ddfa704503e474a4e7f5ef474b8c521e8",
+      "recovered_sha256": "77175de13518c860eca503f59a2934219453b5a0669286a9ea6569250818bb3b",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-18_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "0268271fcc38985a6f8f9b2c1f74dce459571d8f22692f77caf24bc8bb8c0a27",
+      "recovered_sha256": "1041ab04433ccfd2fba3cb60b5283743c27a214cf8996f05397264ab67877d95",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-18_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "d363e0cfbb90e6654257d5af11b4061ad64f7a9506ce27b16958343339b7e542",
+      "recovered_sha256": "3af9b52d0be28e73bfc03038ed45ae9f32875ff24103c80236fcc8f7f13bf2b0",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-19_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "f04ac3dc3cf6fe403557eb49c805da3a28ea904e993c05db9b2891ef13d91e91",
+      "recovered_sha256": "6e9e7685219dd0b00e1443567e1567198b043fc40cd1eb188f48b1227b4ad294",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-19_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "9a4d28f4fdff186f20e184dd2acb20ab4b44a7714dd7b1d0cadfe2fadc926878",
+      "recovered_sha256": "94ca78ab172c44b3b0aef2af8b51f36f5b407b34262369956781fff4a11cd69d",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-20_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "d44f6d171e74f020aee9c6d62c920ae180b6759e4d2b8a8ccd520f51c6631f87",
+      "recovered_sha256": "51995bb0272c49c69013581966fc9fbc24a4cf3140ef265fe54b41273f8bfa98",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-20_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "76ebd94edb6e96861ddcd4079599ffca51ce8fc1eb2d9ec4f62732ca86b4df38",
+      "recovered_sha256": "3922c4e2713761b14cc6426b07e52c30b441b8a95d070a1d4d5c40b11a2e82a6",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-21_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "54103f869983fc4f0d0fe0aa329fd37d039cf7335f70662ba47b8bba441279cd",
+      "recovered_sha256": "669c865f038a51074a1a1ea7375eae1917720853d39bba9aa97d787357a91cbe",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-21_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "4cd5dbf0baaf9ad93f8a3f21022687148b7af2718f063736b8f1039c4432403a",
+      "recovered_sha256": "981774d97bb1407e54b0c40651c075806a0d1f9d817425ace80341d33aa6a1ab",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-22_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "599a87834744875363bd6a3d8e5f5b8505662d0aacc2dc162a103066ea49875c",
+      "recovered_sha256": "1b71a6c5bb32fbc755d1b1556bb7e96dea84da7b5c5392294dc1ec12dfb81b82",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-22_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "0b475a6f201547343f305a219bc5a80d42cb60ff6dab8ea0678a4b5762d65795",
+      "recovered_sha256": "e5ef529a2b226cd32a5fc9c2571c39ec486550d4289e9500a29645ad0e94b53b",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-23_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "9ca36876a8a4ffd0c8aeb836807ac31f89dc9c2254dac39f7ab3693e03528906",
+      "recovered_sha256": "bafe42dfa7a68b47d1d33bc21155401bf3ef8ebc290e8d5497a923f4e2d4d81b",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-23_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "b15f11956d9e6c0de2f525942174de6e9910e5b140d270b43112681010bb3bde",
+      "recovered_sha256": "e23a1e2f371b29803f0261aad080e000f4137144b455492a4db987c17e81e712",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-24_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "1d8740b2f3a678461fbc8467c5d030d9f113687e70058ba259389d29e4929848",
+      "recovered_sha256": "1048f4ab2b08bc51574c1157056c93a3bc01ef76a233ec56a1be18be51ac0b91",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-24_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "69652de2b40c4c78f687341f091a37848abe3ed3271363552a9d8c41cc28151f",
+      "recovered_sha256": "041eb2f286704bc8633e61618eb3964cc47a2eedc5535dd7439743498c936994",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-25_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "56a90097110fabf74bea88fe75b94bf8b9bd6a03bb648c9a225ceadb02f987b0",
+      "recovered_sha256": "66a2a5610f10e448ee49d1d1b825f7c9c56219b0b0fdb4ed01e721e9aa9624c7",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-25_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "baf0075f93519189592298aa8178060f0e1d2b5fb8d8acfb05f62eedf8ceb62c",
+      "recovered_sha256": "16864c9e8d7de7b45d0eec43d40fde472d6232c3343d63381a040122cbe58590",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-26_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "552718abf247af5901991c2eff90de31b15164d83da4d5436b57b81f1b57670c",
+      "recovered_sha256": "5ed421f2ccc9cffcafe2b926466f771e3c112fe72d85b27fc3c84a70e08c67d0",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-26_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "da6bc74dbfab40a2f385717d7a0bf0beab8eeddcf069b2d312578d50f0f405f3",
+      "recovered_sha256": "d47fb7743e544d0d6b8dca4ca82bb8861a8b3420da9035fe5dba3cf84601f7e7",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-27_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "fc5df25cb69dfcf1779f4c9fee6b9f0eb40965242c4b628cadd63c643b0dbc96",
+      "recovered_sha256": "ae68912979b50bfe2ee515d4ab57e54105bbea6c3659c9dadacf3b2d7e65a2d4",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-27_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "13edaf1591d0c0647ad70a263009bab49c4ef2dbeec43d58e0bce4333fefe9ee",
+      "recovered_sha256": "25472c8459680ffadd7b548861f23a46483dee8085ba7207159ae910602a3789",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-28_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "c968bc382bfae17162541b94c7c627bb2c98e773a370b47574404ae7dfb38185",
+      "recovered_sha256": "997aa819e22e1a34380cc0082470c20b76136c50c27da2395af408c7f8e4efc8",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-28_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "4fc0a9bd538f7194dff0a972144a2b8a2f4e9a6974126fbc33f9022454a833d0",
+      "recovered_sha256": "ad59567efc6305540320bc34bda54f055952177a806e03825892683e2e6aacab",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-29_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "e17bd4adff7945d00e984b81176fe22492c5ed19bbe6537aeedffd0777f9bf5d",
+      "recovered_sha256": "f85b256f30bd14f825ad01857bbd7f50773f3f8c8c3cfbd9870e2d69f3dde880",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-29_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "d5c9700bb7f93ba1ea13e46a09b222e9b4a15e446a0740448b5842345e9e7222",
+      "recovered_sha256": "bec7a82714ba6f54c5c15daf847d344fe2f1e0fd56fce6e19611236c482f89c4",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-30_A_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "dfa5dfeeb547a8f14369df91226f2a987e23c60b3820613a95d6627e0f1acd35",
+      "recovered_sha256": "d3213a1fd422d604f67e331979ec1ef020fed36febc8daf3203fa5e9b745bd4f",
+      "returned_response": true
+    },
+    {
+      "file": "EXT-30_B_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "81a537bddd13b6e591738f67ed1125541e29abfe2ca34d529dbd3564c680c9ff",
+      "recovered_sha256": "0df64003f252cb6b8adb79a8c60ef95f3fa348fcda09384e88457d5443018558",
+      "returned_response": true
+    },
+    {
+      "file": "brief-7bbddecd3b98_brief_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "460eba2b0cab4b2cd8442bb3b18bc35d709f0b902a4358f4b3859e22ccefafa7",
+      "recovered_sha256": "3b488907b26b8b57dc59b5561765ee4789931bc79f58f6ca0b1dcf0a3f86a0bc",
+      "returned_response": true
+    },
+    {
+      "file": "brief-6a1b086b3d3a_brief_2026.json",
+      "original_error": "ConflictError",
+      "original_sha256": "6f0b3593f30f11ffe05c81f216fb43fd13ad6bf8139729e26b0f091dcb70f756",
+      "recovered_sha256": "2f31021dbb812ea90fd9589ded0a70b6adfcc7e684a468ea9b0e913125169aef",
+      "returned_response": true
+    }
+  ],
+  "recovery_job_count": 52,
+  "reservation_reset": false,
+  "retained_draft_count": 22,
+  "retained_model_drafts": [
+    {
+      "file": "DEV-01_A_2026.json",
+      "sha256": "0be00a4d3d840b0cde0c3d7645b53ab7e20417602164e0eb0e80c89272560351"
+    },
+    {
+      "file": "DEV-01_B_2026.json",
+      "sha256": "d6d68c584885e5d0cb11b55b2dbb3e74abb4df7e9a74c83574fbe7f59346a126"
+    },
+    {
+      "file": "DEV-02_A_2026.json",
+      "sha256": "5293152e48be4653380144333b872fb235307b9a93bf6dd41780ade5d950e7f0"
+    },
+    {
+      "file": "DEV-02_B_2026.json",
+      "sha256": "6161024e441df713b8f2de2f236ef62d9384438dbd516ac4025cf9343311d517"
+    },
+    {
+      "file": "DEV-03_A_2026.json",
+      "sha256": "1514b7f8c238d1536a910e76c8f2ba4a81dec9b6d3e3515f5cf85e3688b23f5d"
+    },
+    {
+      "file": "DEV-03_B_2026.json",
+      "sha256": "ffb67bc4cb5a2fede0640d90a6c5cf825cd55dc899e86f8181ddb5ba6c752cdd"
+    },
+    {
+      "file": "DEV-04_A_2026.json",
+      "sha256": "2ae21908f46107d3cc1ce2f2b35302842bbe8e1b97cf8cff4d65b57ad964fe78"
+    },
+    {
+      "file": "DEV-04_B_2026.json",
+      "sha256": "2d3c85573e59147b6713ce4aee1845fbfeee6c5124df308185bf376d26273583"
+    },
+    {
+      "file": "DEV-05_A_2026.json",
+      "sha256": "96b5809ced46a787890e23d5b37ca7e55f7d9c9c48426a9f3bd1d9a44b55952d"
+    },
+    {
+      "file": "DEV-05_B_2026.json",
+      "sha256": "a8f969b541361a171402fae4178bb6bb2712d9bcd39ccf4a09169459df5873b9"
+    },
+    {
+      "file": "DEV-06_A_2026.json",
+      "sha256": "559ce24a6116edbac3fba994db0881d6f431e75a1efe2df60799d7480230c2d0"
+    },
+    {
+      "file": "DEV-06_B_2026.json",
+      "sha256": "0ddbffc821364d0deef1ab1dd65984108c9bb533c3eb5f690d5fff8b8ca2ec61"
+    },
+    {
+      "file": "EXT-01_A_2026.json",
+      "sha256": "5b948d2c972fc02de7fb35ac1120bcccb81519051447db2bb584a8b757055229"
+    },
+    {
+      "file": "EXT-01_B_2026.json",
+      "sha256": "bb65fee58a72c8fe040f1331a26d5429ee64806cb5e0deb535ad79446658992c"
+    },
+    {
+      "file": "EXT-02_A_2026.json",
+      "sha256": "0630d1a0cd857aa0e2bfc8e041b0d3b407b07792d96cc5d1ddabff133d481df1"
+    },
+    {
+      "file": "EXT-02_B_2026.json",
+      "sha256": "aafde3e19e13b564678ce5f7270af1ecb3f9b775ac29f04b0d86a3ce4f13c989"
+    },
+    {
+      "file": "EXT-03_A_2026.json",
+      "sha256": "bfe8decf3a60ed211ae639af72a72c70c5ac1c899b57545d443427bff1e4f150"
+    },
+    {
+      "file": "EXT-03_B_2026.json",
+      "sha256": "5d338171396fb1f5230e141e6f3219882d78f387473df74b6f4e61e93aee8cc5"
+    },
+    {
+      "file": "EXT-04_A_2026.json",
+      "sha256": "9450e86ded4f8ec1bbd35ad34215a1625c75f930dd10676e69b560f9d29eceb2"
+    },
+    {
+      "file": "EXT-04_B_2026.json",
+      "sha256": "a105e293ddea3d0f02c0d48feb248853a3c557acca0723cdb6d653ea70e362a8"
+    },
+    {
+      "file": "EXT-05_A_2026.json",
+      "sha256": "a80722b790646f72a436aa58247c0b33e8a01b5b31e188d89bbed75117c62494"
+    },
+    {
+      "file": "EXT-05_B_2026.json",
+      "sha256": "7cde0b5e2fe61d1b3da538a4785bc09485d42b24590ec3a8caea290ed2df84a1"
+    }
+  ],
+  "status": "passed"
+}

@@ -1,0 +1,366 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 51,
+            "line_start": 51,
+            "source_id": "ukhsa-england-2026"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": null,
+        "period_start": "2026-01-01",
+        "population": "all_ages",
+        "slot": "narrative_end_date",
+        "unit": "iso_date",
+        "value": "2026-10-12"
+      },
+      {
+        "citations": [
+          {
+            "line_end": 97,
+            "line_start": 97,
+            "source_id": "ukhsa-england-2026"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": null,
+        "period_start": "2026-01-01",
+        "population": "all_ages",
+        "slot": "table_caption_end_date",
+        "unit": "iso_date",
+        "value": "2026-09-14"
+      },
+      {
+        "citations": [
+          {
+            "line_end": 51,
+            "line_start": 51,
+            "source_id": "ukhsa-england-2026"
+          }
+        ],
+        "geography": "England",
+        "measure": "laboratory_confirmed_measles_cases",
+        "period_end": "2026-10-12",
+        "period_start": "2026-01-01",
+        "population": "all_ages",
+        "slot": "narrative_cases",
+        "unit": "cases",
+        "value": 1030
+      },
+      {
+        "citations": [
+          {
+            "line_end": 108,
+            "line_start": 108,
+            "source_id": "ukhsa-england-2026"
+          }
+        ],
+        "geography": "England",
+        "measure": "laboratory_confirmed_measles_cases",
+        "period_end": "2026-09-14",
+        "period_start": "2026-01-01",
+        "population": "all_ages",
+        "slot": "table_cases",
+        "unit": "cases",
+        "value": 1030
+      }
+    ],
+    "item_id": "EXT-30",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [
+      "single_window_verified"
+    ],
+    "original_status": "ambiguous_source",
+    "original_summary_causal_assertions": [],
+    "status": "ambiguous_source",
+    "summary": "narrative_end_date: 2026-10-12 iso_date; table_caption_end_date: 2026-09-14 iso_date; narrative_cases: 1030 cases; table_cases: 1030 cases",
+    "verification": [
+      {
+        "decision": "corrected",
+        "errors": [
+          "period_end"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 51,
+              "line_start": 49,
+              "source_id": "ukhsa-england-2026"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2026-10-12",
+          "period_start": "2026-01-01",
+          "population": "all_ages",
+          "slot": "narrative_end_date",
+          "unit": "iso_date",
+          "value": "2026-10-12"
+        },
+        "slot": "narrative_end_date"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "period_end"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 97,
+              "line_start": 97,
+              "source_id": "ukhsa-england-2026"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2026-09-14",
+          "period_start": "2026-01-01",
+          "population": "all_ages",
+          "slot": "table_caption_end_date",
+          "unit": "iso_date",
+          "value": "2026-09-14"
+        },
+        "slot": "table_caption_end_date"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 51,
+              "line_start": 49,
+              "source_id": "ukhsa-england-2026"
+            }
+          ],
+          "geography": "England",
+          "measure": "laboratory_confirmed_measles_cases",
+          "period_end": "2026-10-12",
+          "period_start": "2026-01-01",
+          "population": "all_ages",
+          "slot": "narrative_cases",
+          "unit": "cases",
+          "value": 1030
+        },
+        "slot": "narrative_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 108,
+              "line_start": 108,
+              "source_id": "ukhsa-england-2026"
+            }
+          ],
+          "geography": "England",
+          "measure": "laboratory_confirmed_measles_cases",
+          "period_end": "2026-09-14",
+          "period_start": "2026-01-01",
+          "population": "all_ages",
+          "slot": "table_cases",
+          "unit": "cases",
+          "value": 1030
+        },
+        "slot": "table_cases"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-30_B_2026.json",
+  "item_id": "EXT-30",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 51,
+            "line_start": 51,
+            "source_id": "ukhsa-england-2026"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": null,
+        "period_start": "2026-01-01",
+        "population": "all_ages",
+        "slot": "narrative_end_date",
+        "unit": "iso_date",
+        "value": "2026-10-12"
+      },
+      {
+        "citations": [
+          {
+            "line_end": 97,
+            "line_start": 97,
+            "source_id": "ukhsa-england-2026"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": null,
+        "period_start": "2026-01-01",
+        "population": "all_ages",
+        "slot": "table_caption_end_date",
+        "unit": "iso_date",
+        "value": "2026-09-14"
+      },
+      {
+        "citations": [
+          {
+            "line_end": 51,
+            "line_start": 51,
+            "source_id": "ukhsa-england-2026"
+          }
+        ],
+        "geography": "England",
+        "measure": "laboratory_confirmed_measles_cases",
+        "period_end": "2026-10-12",
+        "period_start": "2026-01-01",
+        "population": "all_ages",
+        "slot": "narrative_cases",
+        "unit": "cases",
+        "value": 1030
+      },
+      {
+        "citations": [
+          {
+            "line_end": 108,
+            "line_start": 108,
+            "source_id": "ukhsa-england-2026"
+          }
+        ],
+        "geography": "England",
+        "measure": "laboratory_confirmed_measles_cases",
+        "period_end": "2026-09-14",
+        "period_start": "2026-01-01",
+        "population": "all_ages",
+        "slot": "table_cases",
+        "unit": "cases",
+        "value": 1030
+      }
+    ],
+    "item_id": "EXT-30",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [
+      "single_window_verified"
+    ],
+    "original_status": "ambiguous_source",
+    "original_summary_causal_assertions": [],
+    "status": "ambiguous_source",
+    "summary": "narrative_end_date: 2026-10-12 iso_date; table_caption_end_date: 2026-09-14 iso_date; narrative_cases: 1030 cases; table_cases: 1030 cases",
+    "verification": [
+      {
+        "decision": "corrected",
+        "errors": [
+          "period_end"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 51,
+              "line_start": 49,
+              "source_id": "ukhsa-england-2026"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2026-10-12",
+          "period_start": "2026-01-01",
+          "population": "all_ages",
+          "slot": "narrative_end_date",
+          "unit": "iso_date",
+          "value": "2026-10-12"
+        },
+        "slot": "narrative_end_date"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "period_end"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 97,
+              "line_start": 97,
+              "source_id": "ukhsa-england-2026"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2026-09-14",
+          "period_start": "2026-01-01",
+          "population": "all_ages",
+          "slot": "table_caption_end_date",
+          "unit": "iso_date",
+          "value": "2026-09-14"
+        },
+        "slot": "table_caption_end_date"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 51,
+              "line_start": 49,
+              "source_id": "ukhsa-england-2026"
+            }
+          ],
+          "geography": "England",
+          "measure": "laboratory_confirmed_measles_cases",
+          "period_end": "2026-10-12",
+          "period_start": "2026-01-01",
+          "population": "all_ages",
+          "slot": "narrative_cases",
+          "unit": "cases",
+          "value": 1030
+        },
+        "slot": "narrative_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 108,
+              "line_start": 108,
+              "source_id": "ukhsa-england-2026"
+            }
+          ],
+          "geography": "England",
+          "measure": "laboratory_confirmed_measles_cases",
+          "period_end": "2026-09-14",
+          "period_start": "2026-01-01",
+          "population": "all_ages",
+          "slot": "table_cases",
+          "unit": "cases",
+          "value": 1030
+        },
+        "slot": "table_cases"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "all_required_passages_item_recall_at_4": 0.16666666666666666,
+    "items": 6,
+    "limitation": "Passage overlap proxy, not semantic entailment; A/B actually received full registered sources",
+    "registered_slot_passage_recall_at_4": 0.5555555555555556,
+    "split": "development"
+  },
+  {
+    "all_required_passages_item_recall_at_4": 0.6,
+    "items": 30,
+    "limitation": "Passage overlap proxy, not semantic entailment; A/B actually received full registered sources",
+    "registered_slot_passage_recall_at_4": 0.7029702970297029,
+    "split": "test"
+  }
+]

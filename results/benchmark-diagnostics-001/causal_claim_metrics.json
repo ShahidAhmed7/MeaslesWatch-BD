@@ -1,0 +1,50 @@
+[
+  {
+    "condition": "A",
+    "emitted_structured_claims": 18,
+    "scope": "Registered causal-identification boolean slots only; subtle prose is not covered. Primary scorecard reports separate sentence-rule flagged items.",
+    "split": "development",
+    "unsupported_affirmative_causal_inference_claims": 0,
+    "unsupported_causal_claim_fraction": 0.0
+  },
+  {
+    "condition": "B",
+    "emitted_structured_claims": 18,
+    "scope": "Registered causal-identification boolean slots only; subtle prose is not covered. Primary scorecard reports separate sentence-rule flagged items.",
+    "split": "development",
+    "unsupported_affirmative_causal_inference_claims": 0,
+    "unsupported_causal_claim_fraction": 0.0
+  },
+  {
+    "condition": "C",
+    "emitted_structured_claims": 18,
+    "scope": "Registered causal-identification boolean slots only; subtle prose is not covered. Primary scorecard reports separate sentence-rule flagged items.",
+    "split": "development",
+    "unsupported_affirmative_causal_inference_claims": 0,
+    "unsupported_causal_claim_fraction": 0.0
+  },
+  {
+    "condition": "A",
+    "emitted_structured_claims": 96,
+    "scope": "Registered causal-identification boolean slots only; subtle prose is not covered. Primary scorecard reports separate sentence-rule flagged items.",
+    "split": "test",
+    "unsupported_affirmative_causal_inference_claims": 0,
+    "unsupported_causal_claim_fraction": 0.0
+  },
+  {
+    "condition": "B",
+    "emitted_structured_claims": 100,
+    "scope": "Registered causal-identification boolean slots only; subtle prose is not covered. Primary scorecard reports separate sentence-rule flagged items.",
+    "split": "test",
+    "unsupported_affirmative_causal_inference_claims": 0,
+    "unsupported_causal_claim_fraction": 0.0
+  },
+  {
+    "condition": "C",
+    "emitted_structured_claims": 100,
+    "scope": "Registered causal-identification boolean slots only; subtle prose is not covered. Primary scorecard reports separate sentence-rule flagged items.",
+    "split": "test",
+    "unsupported_affirmative_causal_inference_claims": 0,
+    "unsupported_causal_claim_fraction": 0.0
+  }
+]

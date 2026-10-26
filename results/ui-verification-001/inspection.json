@@ -1,0 +1,20 @@
+{
+  "status": "completed_browser_inspection",
+  "pages_checked": [
+    "Surveillance Overview",
+    "Anomaly Detection",
+    "LLM Research Analyst",
+    "LLM Evaluation"
+  ],
+  "full_six_page_navigation_test": "planning/audits/2026-10-27/final_tests.txt",
+  "observations": [
+    "Original failure-inclusive and secondary recovered scores are labeled separately",
+    "A/B/C numeric, fully supported slot, and completely correct item scores are visible together",
+    "Saved 2024 and April 2026 Bangladesh briefs show checked claims and six ordered sections",
+    "No generation button was clicked during browser inspection; no new inference was requested",
+    "Scientific report download is present"
+  ],
+  "screenshot_sha256": {
+    "evaluation.png": "72addb6bc0ebe1a537e0d8c338452e0be6a29fd777845464d7f8ef0cc1ad504a"
+  }
+}

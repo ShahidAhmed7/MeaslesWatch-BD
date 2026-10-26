@@ -27,6 +27,11 @@ def build_report(root, output):
     paired = read("results/benchmark-score-001/paired_comparisons.json")
     verifier = read("results/benchmark-score-001/verification_metrics.json")
     retrieval = next(r for r in read("results/benchmark-diagnostics-001/retrieval_summary.json") if r["split"] == "test")
+    review = read("results/benchmark-score-001/answer_review.json")
+    required_review = {"EXT-01", "EXT-06", "EXT-09", "EXT-10", "EXT-15", "EXT-18", "EXT-26", "EXT-30"}
+    if review["status"] != "completed_qualitative_inspection" or {r["item_id"] for r in review["items"]} != required_review:
+        raise ValueError("The declared eight-item qualitative inspection must be completed")
+    review_rows = "\n".join(f"| {r['item_id']} | {r['report_note']} |" for r in review["items"])
     failure_aware = read("results/synthetic-failure-audit-001/failure_aware_metrics.json")
     poisson_nb = next(r for r in failure_aware if r["process"] == "poisson" and r["model"] == "negative_binomial" and r["multiplier"] == 2)
     preds = read("results/statistics-001/predictions.json")
@@ -221,6 +226,21 @@ It modified/rejected {verifier['false_rejections_or_corrections']} of
 ({pct(verifier['false_rejection_rate'])}). These strict denominators include metadata
 and citation errors; they do not measure detection of every unstructured hallucination.
 Case-level verdicts and a separate reviewed subset expose residual errors.
+
+An AI-conducted inspection of eight prospectively selected cases compared original
+passages, gold, A/B/C outputs, scope fields and unverified prose. It is a purposive
+case inspection, not blinded external human adjudication or another accuracy estimate.
+Exact category strings and registered citation overlap can reject semantically useful
+answers; conversely, correct numbers alone do not establish correctly scoped evidence.
+The frozen grading was retained. In particular, shared source-adapter errors can
+survive C, which is why its own acceptance label is not an independent gold verdict.
+
+| Inspected item | Observed behavior and remaining limitation |
+| --- | --- |
+{review_rows}
+
+Full notes and unchanged programmatic verdicts are saved in
+[the case inspection](../results/benchmark-score-001/answer_review.json).
 
 ## Reproducibility, limits and conclusion
 

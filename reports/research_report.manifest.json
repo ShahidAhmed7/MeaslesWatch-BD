@@ -1,0 +1,7 @@
+{
+  "claims_source": "Measured saved artifacts; no report-generation LLM call",
+  "generator_sha256": "e59774b9596f77a474fad477e271061a951aa86232c36839306f584174d9515e",
+  "inference_manifest_sha256": "b673e6bc96bdc20d5844482a51b939b96539b4daa7fdd19685c8abf7bb93ddc5",
+  "report_sha256": "2cc2ffc59178857f8bb9787c358d1f3a13945c2f3926a36a192f46ca7df90349",
+  "score_manifest_sha256": "a605becb49b20c61af41a44a597d8f6bd5829e92485450d02f0608e379fda35d"
+}

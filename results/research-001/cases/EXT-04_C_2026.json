@@ -1,0 +1,384 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 271,
+            "line_start": 271,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_measles_deaths",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "deaths",
+        "unit": "deaths",
+        "value": 3
+      },
+      {
+        "citations": [
+          {
+            "line_end": 271,
+            "line_start": 271,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_measles_deaths_per_reported_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "reported_death_rate",
+        "unit": "per_1000_cases",
+        "value": 3.8
+      },
+      {
+        "citations": [
+          {
+            "line_end": 271,
+            "line_start": 271,
+            "source_id": "cdc-us-2025"
+          },
+          {
+            "line_end": 252,
+            "line_start": 252,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "calculated_death_percent",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "calculated_death_percent",
+        "unit": "percent",
+        "value": 0.38
+      },
+      {
+        "citations": [
+          {
+            "line_end": 271,
+            "line_start": 271,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "source_interpretation",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "draft_unit_correct",
+        "unit": "none",
+        "value": false
+      }
+    ],
+    "item_id": "EXT-04",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "contradicted",
+    "summary": "deaths: 3 deaths; reported_death_rate: 3.8 per_1000_cases; calculated_death_percent: 0.38 percent; draft_unit_correct: False none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 271,
+              "line_start": 271,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_measles_deaths",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "deaths",
+          "unit": "deaths",
+          "value": 3
+        },
+        "slot": "deaths"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 271,
+              "line_start": 271,
+              "source_id": "cdc-us-2025"
+            },
+            {
+              "line_end": 281,
+              "line_start": 281,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_measles_deaths_per_reported_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "reported_death_rate",
+          "unit": "per_1000_cases",
+          "value": 3.8
+        },
+        "slot": "reported_death_rate"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 271,
+              "line_start": 271,
+              "source_id": "cdc-us-2025"
+            },
+            {
+              "line_end": 252,
+              "line_start": 252,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "calculated_death_percent",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "calculated_death_percent",
+          "unit": "percent",
+          "value": 0.38
+        },
+        "slot": "calculated_death_percent"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 271,
+              "line_start": 271,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "source_interpretation",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "draft_unit_correct",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "draft_unit_correct"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-04_B_2026.json",
+  "item_id": "EXT-04",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 271,
+            "line_start": 271,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_measles_deaths",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "deaths",
+        "unit": "deaths",
+        "value": 3
+      },
+      {
+        "citations": [
+          {
+            "line_end": 271,
+            "line_start": 271,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_measles_deaths_per_reported_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "reported_death_rate",
+        "unit": "per_1000_cases",
+        "value": 3.8
+      },
+      {
+        "citations": [
+          {
+            "line_end": 271,
+            "line_start": 271,
+            "source_id": "cdc-us-2025"
+          },
+          {
+            "line_end": 252,
+            "line_start": 252,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "calculated_death_percent",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "calculated_death_percent",
+        "unit": "percent",
+        "value": 0.38
+      },
+      {
+        "citations": [
+          {
+            "line_end": 271,
+            "line_start": 271,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "source_interpretation",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "draft_unit_correct",
+        "unit": "none",
+        "value": false
+      }
+    ],
+    "item_id": "EXT-04",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "contradicted",
+    "summary": "deaths: 3 deaths; reported_death_rate: 3.8 per_1000_cases; calculated_death_percent: 0.38 percent; draft_unit_correct: False none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 271,
+              "line_start": 271,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_measles_deaths",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "deaths",
+          "unit": "deaths",
+          "value": 3
+        },
+        "slot": "deaths"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 271,
+              "line_start": 271,
+              "source_id": "cdc-us-2025"
+            },
+            {
+              "line_end": 281,
+              "line_start": 281,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_measles_deaths_per_reported_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "reported_death_rate",
+          "unit": "per_1000_cases",
+          "value": 3.8
+        },
+        "slot": "reported_death_rate"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 271,
+              "line_start": 271,
+              "source_id": "cdc-us-2025"
+            },
+            {
+              "line_end": 252,
+              "line_start": 252,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "calculated_death_percent",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "calculated_death_percent",
+          "unit": "percent",
+          "value": 0.38
+        },
+        "slot": "calculated_death_percent"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 271,
+              "line_start": 271,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "source_interpretation",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "draft_unit_correct",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "draft_unit_correct"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

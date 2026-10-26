@@ -1,0 +1,374 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 133,
+            "line_start": 133,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "laboratory_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "lab_cases",
+        "unit": "cases",
+        "value": 557
+      },
+      {
+        "citations": [
+          {
+            "line_end": 252,
+            "line_start": 252,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "confirmed_cases",
+        "unit": "cases",
+        "value": 800
+      },
+      {
+        "citations": [
+          {
+            "line_end": 133,
+            "line_start": 133,
+            "source_id": "cdc-us-2025"
+          },
+          {
+            "line_end": 252,
+            "line_start": 252,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "calculated_lab_percent",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "calculated_lab_percent",
+        "unit": "percent",
+        "value": 69.63
+      },
+      {
+        "citations": [
+          {
+            "line_end": 133,
+            "line_start": 133,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_lab_percent",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "reported_lab_percent",
+        "unit": "percent",
+        "value": 70.0
+      }
+    ],
+    "item_id": "EXT-02",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "lab_cases: 557 cases; confirmed_cases: 800 cases; calculated_lab_percent: 69.63 percent; reported_lab_percent: 70.0 percent",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 133,
+              "line_start": 133,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "laboratory_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "lab_cases",
+          "unit": "cases",
+          "value": 557
+        },
+        "slot": "lab_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 252,
+              "line_start": 252,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "confirmed_cases",
+          "unit": "cases",
+          "value": 800
+        },
+        "slot": "confirmed_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 133,
+              "line_start": 133,
+              "source_id": "cdc-us-2025"
+            },
+            {
+              "line_end": 252,
+              "line_start": 252,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "calculated_lab_percent",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "calculated_lab_percent",
+          "unit": "percent",
+          "value": 69.63
+        },
+        "slot": "calculated_lab_percent"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 133,
+              "line_start": 133,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_lab_percent",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "reported_lab_percent",
+          "unit": "percent",
+          "value": 70.0
+        },
+        "slot": "reported_lab_percent"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-02_B_2026.json",
+  "item_id": "EXT-02",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 133,
+            "line_start": 133,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "laboratory_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "lab_cases",
+        "unit": "cases",
+        "value": 557
+      },
+      {
+        "citations": [
+          {
+            "line_end": 252,
+            "line_start": 252,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "confirmed_cases",
+        "unit": "cases",
+        "value": 800
+      },
+      {
+        "citations": [
+          {
+            "line_end": 133,
+            "line_start": 133,
+            "source_id": "cdc-us-2025"
+          },
+          {
+            "line_end": 252,
+            "line_start": 252,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "calculated_lab_percent",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "calculated_lab_percent",
+        "unit": "percent",
+        "value": 69.63
+      },
+      {
+        "citations": [
+          {
+            "line_end": 133,
+            "line_start": 133,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_lab_percent",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "reported_lab_percent",
+        "unit": "percent",
+        "value": 70.0
+      }
+    ],
+    "item_id": "EXT-02",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "lab_cases: 557 cases; confirmed_cases: 800 cases; calculated_lab_percent: 69.63 percent; reported_lab_percent: 70.0 percent",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 133,
+              "line_start": 133,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "laboratory_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "lab_cases",
+          "unit": "cases",
+          "value": 557
+        },
+        "slot": "lab_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 252,
+              "line_start": 252,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "confirmed_cases",
+          "unit": "cases",
+          "value": 800
+        },
+        "slot": "confirmed_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 133,
+              "line_start": 133,
+              "source_id": "cdc-us-2025"
+            },
+            {
+              "line_end": 252,
+              "line_start": 252,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "calculated_lab_percent",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "calculated_lab_percent",
+          "unit": "percent",
+          "value": 69.63
+        },
+        "slot": "calculated_lab_percent"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 133,
+              "line_start": 133,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_lab_percent",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "reported_lab_percent",
+          "unit": "percent",
+          "value": 70.0
+        },
+        "slot": "reported_lab_percent"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

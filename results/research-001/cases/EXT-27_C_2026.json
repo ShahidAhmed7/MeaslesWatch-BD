@@ -1,0 +1,276 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 64,
+            "line_start": 64,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "London",
+        "measure": "laboratory_confirmed_measles_cases",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "london_cases",
+        "unit": "cases",
+        "value": 494
+      },
+      {
+        "citations": [
+          {
+            "line_end": 64,
+            "line_start": 64,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "highest_incidence_identified",
+        "unit": "none",
+        "value": false
+      },
+      {
+        "citations": [
+          {
+            "line_end": 64,
+            "line_start": 64,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "missing_denominator",
+        "unit": "none",
+        "value": "region_specific_population_at_risk"
+      }
+    ],
+    "item_id": "EXT-27",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "contradicted",
+    "original_summary_causal_assertions": [],
+    "status": "insufficient_data",
+    "summary": "london_cases: 494 cases; highest_incidence_identified: False none; missing_denominator: region_specific_population_at_risk none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 64,
+              "line_start": 64,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "London",
+          "measure": "laboratory_confirmed_measles_cases",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "london_cases",
+          "unit": "cases",
+          "value": 494
+        },
+        "slot": "london_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 64,
+              "line_start": 64,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "highest_incidence_identified",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "highest_incidence_identified"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 64,
+              "line_start": 64,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "missing_denominator",
+          "unit": "none",
+          "value": "region_specific_population_at_risk"
+        },
+        "slot": "missing_denominator"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-27_B_2026.json",
+  "item_id": "EXT-27",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 64,
+            "line_start": 64,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "London",
+        "measure": "laboratory_confirmed_measles_cases",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "london_cases",
+        "unit": "cases",
+        "value": 494
+      },
+      {
+        "citations": [
+          {
+            "line_end": 64,
+            "line_start": 64,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "highest_incidence_identified",
+        "unit": "none",
+        "value": false
+      },
+      {
+        "citations": [
+          {
+            "line_end": 64,
+            "line_start": 64,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "missing_denominator",
+        "unit": "none",
+        "value": "region_specific_population_at_risk"
+      }
+    ],
+    "item_id": "EXT-27",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "contradicted",
+    "original_summary_causal_assertions": [],
+    "status": "insufficient_data",
+    "summary": "london_cases: 494 cases; highest_incidence_identified: False none; missing_denominator: region_specific_population_at_risk none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 64,
+              "line_start": 64,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "London",
+          "measure": "laboratory_confirmed_measles_cases",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "london_cases",
+          "unit": "cases",
+          "value": 494
+        },
+        "slot": "london_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 64,
+              "line_start": 64,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "highest_incidence_identified",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "highest_incidence_identified"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 64,
+              "line_start": 64,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "missing_denominator",
+          "unit": "none",
+          "value": "region_specific_population_at_risk"
+        },
+        "slot": "missing_denominator"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

@@ -1,0 +1,386 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 141,
+            "line_start": 141,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "largest_outbreak_cases",
+        "unit": "cases",
+        "value": 654
+      },
+      {
+        "citations": [
+          {
+            "line_end": 252,
+            "line_start": 252,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "national_cases",
+        "unit": "cases",
+        "value": 800
+      },
+      {
+        "citations": [
+          {
+            "line_end": 141,
+            "line_start": 141,
+            "source_id": "cdc-us-2025"
+          },
+          {
+            "line_end": 252,
+            "line_start": 252,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "largest_outbreak_percent",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "largest_outbreak_percent",
+        "unit": "percent",
+        "value": 81.75
+      },
+      {
+        "citations": [
+          {
+            "line_end": 141,
+            "line_start": 141,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "all_outbreak_associated_cases",
+        "unit": "cases",
+        "value": 751
+      }
+    ],
+    "item_id": "EXT-07",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "largest_outbreak_cases: 654 cases; national_cases: 800 cases; largest_outbreak_percent: 81.75 percent; all_outbreak_associated_cases: 751 cases",
+    "verification": [
+      {
+        "decision": "corrected",
+        "errors": [
+          "geography"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 141,
+              "line_start": 141,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "New Mexico, Oklahoma, Texas",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "largest_outbreak_cases",
+          "unit": "cases",
+          "value": 654
+        },
+        "slot": "largest_outbreak_cases"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "citation_does_not_support_required_operand"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 111,
+              "line_start": 111,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "national_cases",
+          "unit": "cases",
+          "value": 800
+        },
+        "slot": "national_cases"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "geography"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 141,
+              "line_start": 141,
+              "source_id": "cdc-us-2025"
+            },
+            {
+              "line_end": 252,
+              "line_start": 252,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "New Mexico, Oklahoma, Texas",
+          "measure": "largest_outbreak_percent",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "largest_outbreak_percent",
+          "unit": "percent",
+          "value": 81.75
+        },
+        "slot": "largest_outbreak_percent"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 141,
+              "line_start": 141,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "all_outbreak_associated_cases",
+          "unit": "cases",
+          "value": 751
+        },
+        "slot": "all_outbreak_associated_cases"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-07_B_2026.json",
+  "item_id": "EXT-07",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 141,
+            "line_start": 141,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "largest_outbreak_cases",
+        "unit": "cases",
+        "value": 654
+      },
+      {
+        "citations": [
+          {
+            "line_end": 252,
+            "line_start": 252,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "national_cases",
+        "unit": "cases",
+        "value": 800
+      },
+      {
+        "citations": [
+          {
+            "line_end": 141,
+            "line_start": 141,
+            "source_id": "cdc-us-2025"
+          },
+          {
+            "line_end": 252,
+            "line_start": 252,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "largest_outbreak_percent",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "largest_outbreak_percent",
+        "unit": "percent",
+        "value": 81.75
+      },
+      {
+        "citations": [
+          {
+            "line_end": 141,
+            "line_start": 141,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "all_outbreak_associated_cases",
+        "unit": "cases",
+        "value": 751
+      }
+    ],
+    "item_id": "EXT-07",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "largest_outbreak_cases: 654 cases; national_cases: 800 cases; largest_outbreak_percent: 81.75 percent; all_outbreak_associated_cases: 751 cases",
+    "verification": [
+      {
+        "decision": "corrected",
+        "errors": [
+          "geography"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 141,
+              "line_start": 141,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "New Mexico, Oklahoma, Texas",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "largest_outbreak_cases",
+          "unit": "cases",
+          "value": 654
+        },
+        "slot": "largest_outbreak_cases"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "citation_does_not_support_required_operand"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 111,
+              "line_start": 111,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "national_cases",
+          "unit": "cases",
+          "value": 800
+        },
+        "slot": "national_cases"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "geography"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 141,
+              "line_start": 141,
+              "source_id": "cdc-us-2025"
+            },
+            {
+              "line_end": 252,
+              "line_start": 252,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "New Mexico, Oklahoma, Texas",
+          "measure": "largest_outbreak_percent",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "largest_outbreak_percent",
+          "unit": "percent",
+          "value": 81.75
+        },
+        "slot": "largest_outbreak_percent"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 141,
+              "line_start": 141,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "all_outbreak_associated_cases",
+          "unit": "cases",
+          "value": 751
+        },
+        "slot": "all_outbreak_associated_cases"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

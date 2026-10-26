@@ -1,0 +1,306 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 51,
+            "line_start": 51,
+            "source_id": "ukhsa-england-2025"
+          },
+          {
+            "line_end": 52,
+            "line_start": 52,
+            "source_id": "ukhsa-england-2025"
+          },
+          {
+            "line_end": 53,
+            "line_start": 53,
+            "source_id": "ukhsa-england-2025"
+          },
+          {
+            "line_end": 54,
+            "line_start": 54,
+            "source_id": "ukhsa-england-2025"
+          },
+          {
+            "line_end": 55,
+            "line_start": 55,
+            "source_id": "ukhsa-england-2025"
+          },
+          {
+            "line_end": 56,
+            "line_start": 56,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "laboratory_confirmed_measles_cases",
+        "period_end": "2025-06-30",
+        "period_start": "2025-04-01",
+        "population": "all_ages",
+        "slot": "quarter_cases",
+        "unit": "cases",
+        "value": 366
+      },
+      {
+        "citations": [
+          {
+            "line_end": 54,
+            "line_start": 54,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": "2025-06-30",
+        "period_start": "2025-04-01",
+        "population": "all_ages",
+        "slot": "full_year",
+        "unit": "none",
+        "value": false
+      }
+    ],
+    "item_id": "EXT-23",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "quarter_cases: 366 cases; full_year: False none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 51,
+              "line_start": 51,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 52,
+              "line_start": 52,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 53,
+              "line_start": 53,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 54,
+              "line_start": 54,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 55,
+              "line_start": 55,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 56,
+              "line_start": 56,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "laboratory_confirmed_measles_cases",
+          "period_end": "2025-06-30",
+          "period_start": "2025-04-01",
+          "population": "all_ages",
+          "slot": "quarter_cases",
+          "unit": "cases",
+          "value": 366
+        },
+        "slot": "quarter_cases"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "period_start",
+          "period_end",
+          "citation_does_not_support_required_operand"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 45,
+              "line_start": 45,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "full_year",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "full_year"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-23_B_2026.json",
+  "item_id": "EXT-23",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 51,
+            "line_start": 51,
+            "source_id": "ukhsa-england-2025"
+          },
+          {
+            "line_end": 52,
+            "line_start": 52,
+            "source_id": "ukhsa-england-2025"
+          },
+          {
+            "line_end": 53,
+            "line_start": 53,
+            "source_id": "ukhsa-england-2025"
+          },
+          {
+            "line_end": 54,
+            "line_start": 54,
+            "source_id": "ukhsa-england-2025"
+          },
+          {
+            "line_end": 55,
+            "line_start": 55,
+            "source_id": "ukhsa-england-2025"
+          },
+          {
+            "line_end": 56,
+            "line_start": 56,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "laboratory_confirmed_measles_cases",
+        "period_end": "2025-06-30",
+        "period_start": "2025-04-01",
+        "population": "all_ages",
+        "slot": "quarter_cases",
+        "unit": "cases",
+        "value": 366
+      },
+      {
+        "citations": [
+          {
+            "line_end": 54,
+            "line_start": 54,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": "2025-06-30",
+        "period_start": "2025-04-01",
+        "population": "all_ages",
+        "slot": "full_year",
+        "unit": "none",
+        "value": false
+      }
+    ],
+    "item_id": "EXT-23",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "quarter_cases: 366 cases; full_year: False none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 51,
+              "line_start": 51,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 52,
+              "line_start": 52,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 53,
+              "line_start": 53,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 54,
+              "line_start": 54,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 55,
+              "line_start": 55,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 56,
+              "line_start": 56,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "laboratory_confirmed_measles_cases",
+          "period_end": "2025-06-30",
+          "period_start": "2025-04-01",
+          "population": "all_ages",
+          "slot": "quarter_cases",
+          "unit": "cases",
+          "value": 366
+        },
+        "slot": "quarter_cases"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "period_start",
+          "period_end",
+          "citation_does_not_support_required_operand"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 45,
+              "line_start": 45,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "full_year",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "full_year"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

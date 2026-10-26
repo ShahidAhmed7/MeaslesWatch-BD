@@ -1,0 +1,336 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 80,
+            "line_start": 80,
+            "source_id": "ukhsa-england-2025"
+          },
+          {
+            "line_end": 51,
+            "line_start": 51,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "age_by_month_identified",
+        "unit": "none",
+        "value": false
+      },
+      {
+        "citations": [
+          {
+            "line_end": 80,
+            "line_start": 80,
+            "source_id": "ukhsa-england-2025"
+          },
+          {
+            "line_end": 51,
+            "line_start": 51,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "allocation_is_observed",
+        "unit": "none",
+        "value": false
+      },
+      {
+        "citations": [
+          {
+            "line_end": 80,
+            "line_start": 80,
+            "source_id": "ukhsa-england-2025"
+          },
+          {
+            "line_end": 51,
+            "line_start": 51,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "missing_cross_tabulation",
+        "unit": "none",
+        "value": "age_by_month_cross_tabulation"
+      }
+    ],
+    "item_id": "EXT-29",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "insufficient_data",
+    "summary": "age_by_month_identified: False none; allocation_is_observed: False none; missing_cross_tabulation: age_by_month_cross_tabulation none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 62,
+              "line_start": 51,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 80,
+              "line_start": 80,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "age_by_month_identified",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "age_by_month_identified"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 62,
+              "line_start": 51,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 80,
+              "line_start": 80,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "allocation_is_observed",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "allocation_is_observed"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 62,
+              "line_start": 51,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 80,
+              "line_start": 80,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "missing_cross_tabulation",
+          "unit": "none",
+          "value": "age_by_month_cross_tabulation"
+        },
+        "slot": "missing_cross_tabulation"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-29_B_2026.json",
+  "item_id": "EXT-29",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 80,
+            "line_start": 80,
+            "source_id": "ukhsa-england-2025"
+          },
+          {
+            "line_end": 51,
+            "line_start": 51,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "age_by_month_identified",
+        "unit": "none",
+        "value": false
+      },
+      {
+        "citations": [
+          {
+            "line_end": 80,
+            "line_start": 80,
+            "source_id": "ukhsa-england-2025"
+          },
+          {
+            "line_end": 51,
+            "line_start": 51,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "allocation_is_observed",
+        "unit": "none",
+        "value": false
+      },
+      {
+        "citations": [
+          {
+            "line_end": 80,
+            "line_start": 80,
+            "source_id": "ukhsa-england-2025"
+          },
+          {
+            "line_end": 51,
+            "line_start": 51,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "missing_cross_tabulation",
+        "unit": "none",
+        "value": "age_by_month_cross_tabulation"
+      }
+    ],
+    "item_id": "EXT-29",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "insufficient_data",
+    "summary": "age_by_month_identified: False none; allocation_is_observed: False none; missing_cross_tabulation: age_by_month_cross_tabulation none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 62,
+              "line_start": 51,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 80,
+              "line_start": 80,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "age_by_month_identified",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "age_by_month_identified"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 62,
+              "line_start": 51,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 80,
+              "line_start": 80,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "allocation_is_observed",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "allocation_is_observed"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 62,
+              "line_start": 51,
+              "source_id": "ukhsa-england-2025"
+            },
+            {
+              "line_end": 80,
+              "line_start": 80,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "missing_cross_tabulation",
+          "unit": "none",
+          "value": "age_by_month_cross_tabulation"
+        },
+        "slot": "missing_cross_tabulation"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

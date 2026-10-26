@@ -1,0 +1,11 @@
+{
+  "LLM_inference_performed": false,
+  "matching_numerical_artifacts": {
+    "case_results.json": true,
+    "paired_comparisons.json": true,
+    "scorecard.json": true,
+    "verification_metrics.json": true
+  },
+  "same_frozen_gold_and_saved_outputs": true,
+  "status": "passed"
+}

@@ -1,0 +1,420 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "reported_measles_cases",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "cases_2024",
+        "unit": "cases",
+        "value": 35212
+      },
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "reported_measles_cases",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "cases_2023",
+        "unit": "cases",
+        "value": 3973
+      },
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          },
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "calculated_ratio",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "calculated_ratio",
+        "unit": "ratio",
+        "value": 8.86
+      },
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          },
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "ten_fold_exact",
+        "unit": "none",
+        "value": false
+      }
+    ],
+    "item_id": "EXT-11",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "cases_2024: 35212 cases; cases_2023: 3973 cases; calculated_ratio: 8.86 ratio; ten_fold_exact: False none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 9,
+              "line_start": 9,
+              "source_id": "ecdc-eueea-2024"
+            },
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "reported_measles_cases",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "cases_2024",
+          "unit": "cases",
+          "value": 35212
+        },
+        "slot": "cases_2024"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "period_start",
+          "period_end"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 9,
+              "line_start": 9,
+              "source_id": "ecdc-eueea-2024"
+            },
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "reported_measles_cases",
+          "period_end": "2023-12-31",
+          "period_start": "2023-01-01",
+          "population": "all_ages",
+          "slot": "cases_2023",
+          "unit": "cases",
+          "value": 3973
+        },
+        "slot": "cases_2023"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            },
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "calculated_ratio",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "calculated_ratio",
+          "unit": "ratio",
+          "value": 8.86
+        },
+        "slot": "calculated_ratio"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 9,
+              "line_start": 9,
+              "source_id": "ecdc-eueea-2024"
+            },
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "ten_fold_exact",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "ten_fold_exact"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-11_B_2026.json",
+  "item_id": "EXT-11",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "reported_measles_cases",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "cases_2024",
+        "unit": "cases",
+        "value": 35212
+      },
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "reported_measles_cases",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "cases_2023",
+        "unit": "cases",
+        "value": 3973
+      },
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          },
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "calculated_ratio",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "calculated_ratio",
+        "unit": "ratio",
+        "value": 8.86
+      },
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          },
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "ten_fold_exact",
+        "unit": "none",
+        "value": false
+      }
+    ],
+    "item_id": "EXT-11",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "cases_2024: 35212 cases; cases_2023: 3973 cases; calculated_ratio: 8.86 ratio; ten_fold_exact: False none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 9,
+              "line_start": 9,
+              "source_id": "ecdc-eueea-2024"
+            },
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "reported_measles_cases",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "cases_2024",
+          "unit": "cases",
+          "value": 35212
+        },
+        "slot": "cases_2024"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "period_start",
+          "period_end"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 9,
+              "line_start": 9,
+              "source_id": "ecdc-eueea-2024"
+            },
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "reported_measles_cases",
+          "period_end": "2023-12-31",
+          "period_start": "2023-01-01",
+          "population": "all_ages",
+          "slot": "cases_2023",
+          "unit": "cases",
+          "value": 3973
+        },
+        "slot": "cases_2023"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            },
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "calculated_ratio",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "calculated_ratio",
+          "unit": "ratio",
+          "value": 8.86
+        },
+        "slot": "calculated_ratio"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 9,
+              "line_start": 9,
+              "source_id": "ecdc-eueea-2024"
+            },
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "ten_fold_exact",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "ten_fold_exact"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

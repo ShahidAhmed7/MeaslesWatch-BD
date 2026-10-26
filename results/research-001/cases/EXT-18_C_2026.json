@@ -1,0 +1,202 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "observation_year",
+        "unit": "none",
+        "value": 2024
+      },
+      {
+        "citations": [
+          {
+            "line_end": 77,
+            "line_start": 77,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "data_retrieval_date",
+        "unit": "iso_date",
+        "value": "2025-03-20"
+      }
+    ],
+    "item_id": "EXT-18",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "observation_year: 2024 none; data_retrieval_date: 2025-03-20 iso_date",
+    "verification": [
+      {
+        "decision": "corrected",
+        "errors": [
+          "citation_does_not_support_required_operand"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 9,
+              "line_start": 9,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "observation_year",
+          "unit": "none",
+          "value": 2024
+        },
+        "slot": "observation_year"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 77,
+              "line_start": 77,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "data_retrieval_date",
+          "unit": "iso_date",
+          "value": "2025-03-20"
+        },
+        "slot": "data_retrieval_date"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-18_B_2026.json",
+  "item_id": "EXT-18",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "observation_year",
+        "unit": "none",
+        "value": 2024
+      },
+      {
+        "citations": [
+          {
+            "line_end": 77,
+            "line_start": 77,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "data_retrieval_date",
+        "unit": "iso_date",
+        "value": "2025-03-20"
+      }
+    ],
+    "item_id": "EXT-18",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "observation_year: 2024 none; data_retrieval_date: 2025-03-20 iso_date",
+    "verification": [
+      {
+        "decision": "corrected",
+        "errors": [
+          "citation_does_not_support_required_operand"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 9,
+              "line_start": 9,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "observation_year",
+          "unit": "none",
+          "value": 2024
+        },
+        "slot": "observation_year"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 77,
+              "line_start": 77,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "data_retrieval_date",
+          "unit": "iso_date",
+          "value": "2025-03-20"
+        },
+        "slot": "data_retrieval_date"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

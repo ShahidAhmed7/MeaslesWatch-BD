@@ -1,0 +1,1226 @@
+[
+  {
+    "all_slots_retrieved": false,
+    "chunks": [
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.17440582982727215,
+        "source_id": "cdc-westtexas-2026"
+      },
+      {
+        "line_end": 155,
+        "line_start": 126,
+        "retrieval_score": 0.17241807679886081,
+        "source_id": "cdc-westtexas-2026"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.13020649904766912,
+        "source_id": "cdc-westtexas-2026"
+      },
+      {
+        "line_end": 280,
+        "line_start": 251,
+        "retrieval_score": 0.11563371084023866,
+        "source_id": "cdc-westtexas-2026"
+      }
+    ],
+    "item_id": "DEV-01",
+    "required_slots": 2,
+    "slots_with_every_registered_operand_passage_overlapped": 1,
+    "split": "development",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": false,
+    "chunks": [
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.1209469364461827,
+        "source_id": "cdc-westtexas-2026"
+      },
+      {
+        "line_end": 230,
+        "line_start": 201,
+        "retrieval_score": 0.09323807918464153,
+        "source_id": "cdc-westtexas-2026"
+      },
+      {
+        "line_end": 155,
+        "line_start": 126,
+        "retrieval_score": 0.0809381105391013,
+        "source_id": "cdc-westtexas-2026"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.0734603359600356,
+        "source_id": "cdc-westtexas-2026"
+      }
+    ],
+    "item_id": "DEV-02",
+    "required_slots": 3,
+    "slots_with_every_registered_operand_passage_overlapped": 1,
+    "split": "development",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": false,
+    "chunks": [
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.13086091399935076,
+        "source_id": "cdc-westtexas-2026"
+      },
+      {
+        "line_end": 155,
+        "line_start": 126,
+        "retrieval_score": 0.12171744716874643,
+        "source_id": "cdc-westtexas-2026"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.0953000515228803,
+        "source_id": "cdc-westtexas-2026"
+      },
+      {
+        "line_end": 55,
+        "line_start": 26,
+        "retrieval_score": 0.07872247952298156,
+        "source_id": "cdc-westtexas-2026"
+      }
+    ],
+    "item_id": "DEV-03",
+    "required_slots": 3,
+    "slots_with_every_registered_operand_passage_overlapped": 1,
+    "split": "development",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": false,
+    "chunks": [
+      {
+        "line_end": 280,
+        "line_start": 251,
+        "retrieval_score": 0.10296273152178227,
+        "source_id": "cdc-westtexas-2026"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.0782677196410685,
+        "source_id": "cdc-westtexas-2026"
+      },
+      {
+        "line_end": 255,
+        "line_start": 226,
+        "retrieval_score": 0.07702003373330549,
+        "source_id": "cdc-westtexas-2026"
+      },
+      {
+        "line_end": 155,
+        "line_start": 126,
+        "retrieval_score": 0.06986925160681354,
+        "source_id": "cdc-westtexas-2026"
+      }
+    ],
+    "item_id": "DEV-04",
+    "required_slots": 4,
+    "slots_with_every_registered_operand_passage_overlapped": 2,
+    "split": "development",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": false,
+    "chunks": [
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.13286997626241695,
+        "source_id": "cdc-westtexas-2026"
+      },
+      {
+        "line_end": 55,
+        "line_start": 26,
+        "retrieval_score": 0.10500033401690949,
+        "source_id": "cdc-westtexas-2026"
+      },
+      {
+        "line_end": 180,
+        "line_start": 151,
+        "retrieval_score": 0.09135547113992866,
+        "source_id": "cdc-westtexas-2026"
+      },
+      {
+        "line_end": 205,
+        "line_start": 176,
+        "retrieval_score": 0.0728245062580802,
+        "source_id": "cdc-westtexas-2026"
+      }
+    ],
+    "item_id": "DEV-05",
+    "required_slots": 3,
+    "slots_with_every_registered_operand_passage_overlapped": 2,
+    "split": "development",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 280,
+        "line_start": 251,
+        "retrieval_score": 0.09911792719578018,
+        "source_id": "cdc-westtexas-2026"
+      },
+      {
+        "line_end": 155,
+        "line_start": 126,
+        "retrieval_score": 0.07318456819908804,
+        "source_id": "cdc-westtexas-2026"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.07093258149616939,
+        "source_id": "cdc-westtexas-2026"
+      },
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.06852911658973776,
+        "source_id": "cdc-westtexas-2026"
+      }
+    ],
+    "item_id": "DEV-06",
+    "required_slots": 3,
+    "slots_with_every_registered_operand_passage_overlapped": 3,
+    "split": "development",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": false,
+    "chunks": [
+      {
+        "line_end": 255,
+        "line_start": 226,
+        "retrieval_score": 0.20491753676808794,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 305,
+        "line_start": 276,
+        "retrieval_score": 0.13539520541884767,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 280,
+        "line_start": 251,
+        "retrieval_score": 0.10240728100487255,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.08826311175810354,
+        "source_id": "cdc-us-2025"
+      }
+    ],
+    "item_id": "EXT-01",
+    "required_slots": 4,
+    "slots_with_every_registered_operand_passage_overlapped": 1,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": false,
+    "chunks": [
+      {
+        "line_end": 255,
+        "line_start": 226,
+        "retrieval_score": 0.1966196303374626,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 305,
+        "line_start": 276,
+        "retrieval_score": 0.15079269396216416,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 280,
+        "line_start": 251,
+        "retrieval_score": 0.10465462363383818,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 30,
+        "line_start": 1,
+        "retrieval_score": 0.07185763021442546,
+        "source_id": "cdc-us-2025"
+      }
+    ],
+    "item_id": "EXT-02",
+    "required_slots": 4,
+    "slots_with_every_registered_operand_passage_overlapped": 1,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": false,
+    "chunks": [
+      {
+        "line_end": 305,
+        "line_start": 276,
+        "retrieval_score": 0.1330824625337881,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 255,
+        "line_start": 226,
+        "retrieval_score": 0.13112748678130445,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 280,
+        "line_start": 251,
+        "retrieval_score": 0.11721850844262138,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 30,
+        "line_start": 1,
+        "retrieval_score": 0.08431863377824354,
+        "source_id": "cdc-us-2025"
+      }
+    ],
+    "item_id": "EXT-03",
+    "required_slots": 4,
+    "slots_with_every_registered_operand_passage_overlapped": 3,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.07071374130504615,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 305,
+        "line_start": 276,
+        "retrieval_score": 0.06397342341123849,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 280,
+        "line_start": 251,
+        "retrieval_score": 0.06299176242182881,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 55,
+        "line_start": 26,
+        "retrieval_score": 0.05212261731068518,
+        "source_id": "cdc-us-2025"
+      }
+    ],
+    "item_id": "EXT-04",
+    "required_slots": 4,
+    "slots_with_every_registered_operand_passage_overlapped": 4,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 280,
+        "line_start": 251,
+        "retrieval_score": 0.1683458308569219,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 255,
+        "line_start": 226,
+        "retrieval_score": 0.16426995840425582,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 305,
+        "line_start": 276,
+        "retrieval_score": 0.158744472345287,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.10015551982423022,
+        "source_id": "cdc-us-2025"
+      }
+    ],
+    "item_id": "EXT-05",
+    "required_slots": 4,
+    "slots_with_every_registered_operand_passage_overlapped": 4,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 280,
+        "line_start": 251,
+        "retrieval_score": 0.12683015436819062,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.0974694909011239,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 155,
+        "line_start": 126,
+        "retrieval_score": 0.08300317317801426,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.07672296850962067,
+        "source_id": "cdc-us-2025"
+      }
+    ],
+    "item_id": "EXT-06",
+    "required_slots": 4,
+    "slots_with_every_registered_operand_passage_overlapped": 4,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": false,
+    "chunks": [
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.1893116660038973,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 155,
+        "line_start": 126,
+        "retrieval_score": 0.1669907570465966,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 55,
+        "line_start": 26,
+        "retrieval_score": 0.15420123439917394,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.14327191609631257,
+        "source_id": "cdc-us-2025"
+      }
+    ],
+    "item_id": "EXT-07",
+    "required_slots": 4,
+    "slots_with_every_registered_operand_passage_overlapped": 2,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": false,
+    "chunks": [
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.11837723455030714,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.11805943747305578,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 255,
+        "line_start": 226,
+        "retrieval_score": 0.1133880684827313,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 155,
+        "line_start": 126,
+        "retrieval_score": 0.11284385385398593,
+        "source_id": "cdc-us-2025"
+      }
+    ],
+    "item_id": "EXT-08",
+    "required_slots": 3,
+    "slots_with_every_registered_operand_passage_overlapped": 1,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 255,
+        "line_start": 226,
+        "retrieval_score": 0.11677161009046266,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.09696688528405416,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.093114607676162,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 205,
+        "line_start": 176,
+        "retrieval_score": 0.07557323427351267,
+        "source_id": "cdc-us-2025"
+      }
+    ],
+    "item_id": "EXT-09",
+    "required_slots": 3,
+    "slots_with_every_registered_operand_passage_overlapped": 3,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": false,
+    "chunks": [
+      {
+        "line_end": 280,
+        "line_start": 251,
+        "retrieval_score": 0.0922178322551844,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.06693114999328569,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.05490966751987994,
+        "source_id": "cdc-us-2025"
+      },
+      {
+        "line_end": 180,
+        "line_start": 151,
+        "retrieval_score": 0.05151503024937971,
+        "source_id": "cdc-us-2025"
+      }
+    ],
+    "item_id": "EXT-10",
+    "required_slots": 2,
+    "slots_with_every_registered_operand_passage_overlapped": 0,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": false,
+    "chunks": [
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.06584058118933243,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 30,
+        "line_start": 1,
+        "retrieval_score": 0.05929531033322595,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 205,
+        "line_start": 176,
+        "retrieval_score": 0.05875530886878977,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.05459086568469058,
+        "source_id": "ecdc-eueea-2024"
+      }
+    ],
+    "item_id": "EXT-11",
+    "required_slots": 4,
+    "slots_with_every_registered_operand_passage_overlapped": 1,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": false,
+    "chunks": [
+      {
+        "line_end": 30,
+        "line_start": 1,
+        "retrieval_score": 0.2619918935434579,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 580,
+        "line_start": 551,
+        "retrieval_score": 0.2377588059029962,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.21877076391186148,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 305,
+        "line_start": 276,
+        "retrieval_score": 0.21758062919887905,
+        "source_id": "ecdc-eueea-2024"
+      }
+    ],
+    "item_id": "EXT-12",
+    "required_slots": 2,
+    "slots_with_every_registered_operand_passage_overlapped": 0,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": false,
+    "chunks": [
+      {
+        "line_end": 30,
+        "line_start": 1,
+        "retrieval_score": 0.18317692334360783,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.15729651159015595,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 305,
+        "line_start": 276,
+        "retrieval_score": 0.12224105751970116,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 580,
+        "line_start": 551,
+        "retrieval_score": 0.11698011079260849,
+        "source_id": "ecdc-eueea-2024"
+      }
+    ],
+    "item_id": "EXT-13",
+    "required_slots": 4,
+    "slots_with_every_registered_operand_passage_overlapped": 1,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 30,
+        "line_start": 1,
+        "retrieval_score": 0.2183334730794062,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 580,
+        "line_start": 551,
+        "retrieval_score": 0.1500312184046966,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 305,
+        "line_start": 276,
+        "retrieval_score": 0.14362468741187864,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.11556586458565261,
+        "source_id": "ecdc-eueea-2024"
+      }
+    ],
+    "item_id": "EXT-14",
+    "required_slots": 2,
+    "slots_with_every_registered_operand_passage_overlapped": 2,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 180,
+        "line_start": 151,
+        "retrieval_score": 0.0999683678207262,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.07047641028907986,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 155,
+        "line_start": 126,
+        "retrieval_score": 0.04292800937461141,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 30,
+        "line_start": 1,
+        "retrieval_score": 0.04153944353569218,
+        "source_id": "ecdc-eueea-2024"
+      }
+    ],
+    "item_id": "EXT-15",
+    "required_slots": 3,
+    "slots_with_every_registered_operand_passage_overlapped": 3,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 330,
+        "line_start": 301,
+        "retrieval_score": 0.16143235327141192,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 355,
+        "line_start": 326,
+        "retrieval_score": 0.10901362813098155,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 380,
+        "line_start": 351,
+        "retrieval_score": 0.09997914863976112,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 30,
+        "line_start": 1,
+        "retrieval_score": 0.09196348945137534,
+        "source_id": "ecdc-eueea-2024"
+      }
+    ],
+    "item_id": "EXT-16",
+    "required_slots": 3,
+    "slots_with_every_registered_operand_passage_overlapped": 3,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 430,
+        "line_start": 401,
+        "retrieval_score": 0.1067208168742091,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 30,
+        "line_start": 1,
+        "retrieval_score": 0.08639381586009011,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 405,
+        "line_start": 376,
+        "retrieval_score": 0.0863879407920832,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 605,
+        "line_start": 576,
+        "retrieval_score": 0.0720165686476958,
+        "source_id": "ecdc-eueea-2024"
+      }
+    ],
+    "item_id": "EXT-17",
+    "required_slots": 4,
+    "slots_with_every_registered_operand_passage_overlapped": 4,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.12023250759677083,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 80,
+        "line_start": 51,
+        "retrieval_score": 0.0805531444770121,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 705,
+        "line_start": 676,
+        "retrieval_score": 0.054909583254580986,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 730,
+        "line_start": 701,
+        "retrieval_score": 0.05489797427219134,
+        "source_id": "ecdc-eueea-2024"
+      }
+    ],
+    "item_id": "EXT-18",
+    "required_slots": 2,
+    "slots_with_every_registered_operand_passage_overlapped": 2,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": false,
+    "chunks": [
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.17045033021635775,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 30,
+        "line_start": 1,
+        "retrieval_score": 0.1406215990659875,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 305,
+        "line_start": 276,
+        "retrieval_score": 0.1186753678671379,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 580,
+        "line_start": 551,
+        "retrieval_score": 0.11431806378994609,
+        "source_id": "ecdc-eueea-2024"
+      }
+    ],
+    "item_id": "EXT-19",
+    "required_slots": 6,
+    "slots_with_every_registered_operand_passage_overlapped": 0,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.08353266181310513,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 30,
+        "line_start": 1,
+        "retrieval_score": 0.07323999395949125,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 580,
+        "line_start": 551,
+        "retrieval_score": 0.06645685797523522,
+        "source_id": "ecdc-eueea-2024"
+      },
+      {
+        "line_end": 230,
+        "line_start": 201,
+        "retrieval_score": 0.06476894709802522,
+        "source_id": "ecdc-eueea-2024"
+      }
+    ],
+    "item_id": "EXT-20",
+    "required_slots": 4,
+    "slots_with_every_registered_operand_passage_overlapped": 4,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 55,
+        "line_start": 26,
+        "retrieval_score": 0.14196650336140249,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 80,
+        "line_start": 51,
+        "retrieval_score": 0.10321636202117263,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.04130132073394124,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.03507973143423312,
+        "source_id": "ukhsa-england-2025"
+      }
+    ],
+    "item_id": "EXT-21",
+    "required_slots": 3,
+    "slots_with_every_registered_operand_passage_overlapped": 3,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 55,
+        "line_start": 26,
+        "retrieval_score": 0.14356369442533512,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 80,
+        "line_start": 51,
+        "retrieval_score": 0.09313332132535078,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.07699587817837061,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.07027523158594805,
+        "source_id": "ukhsa-england-2025"
+      }
+    ],
+    "item_id": "EXT-22",
+    "required_slots": 2,
+    "slots_with_every_registered_operand_passage_overlapped": 2,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 55,
+        "line_start": 26,
+        "retrieval_score": 0.15699898894236972,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 80,
+        "line_start": 51,
+        "retrieval_score": 0.09284184409890153,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.09105519498743113,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.06729602734744326,
+        "source_id": "ukhsa-england-2025"
+      }
+    ],
+    "item_id": "EXT-23",
+    "required_slots": 2,
+    "slots_with_every_registered_operand_passage_overlapped": 2,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 80,
+        "line_start": 51,
+        "retrieval_score": 0.08795639247241865,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 55,
+        "line_start": 26,
+        "retrieval_score": 0.07517743723840839,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 30,
+        "line_start": 1,
+        "retrieval_score": 0.039689536700227096,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.03647855108036438,
+        "source_id": "ukhsa-england-2025"
+      }
+    ],
+    "item_id": "EXT-24",
+    "required_slots": 3,
+    "slots_with_every_registered_operand_passage_overlapped": 3,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 55,
+        "line_start": 26,
+        "retrieval_score": 0.09277299323225105,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 80,
+        "line_start": 51,
+        "retrieval_score": 0.07385594492460867,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 155,
+        "line_start": 126,
+        "retrieval_score": 0.06031386703718513,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.052634598314226,
+        "source_id": "ukhsa-england-2025"
+      }
+    ],
+    "item_id": "EXT-25",
+    "required_slots": 3,
+    "slots_with_every_registered_operand_passage_overlapped": 3,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 55,
+        "line_start": 26,
+        "retrieval_score": 0.0951692144650209,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 80,
+        "line_start": 51,
+        "retrieval_score": 0.05060890195489748,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.03710766593363703,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 158,
+        "line_start": 151,
+        "retrieval_score": 0.03669511656749301,
+        "source_id": "ukhsa-england-2025"
+      }
+    ],
+    "item_id": "EXT-26",
+    "required_slots": 3,
+    "slots_with_every_registered_operand_passage_overlapped": 3,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 55,
+        "line_start": 26,
+        "retrieval_score": 0.12614669528451078,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 80,
+        "line_start": 51,
+        "retrieval_score": 0.08610456473761433,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 130,
+        "line_start": 101,
+        "retrieval_score": 0.08074968497700373,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.07425795883363771,
+        "source_id": "ukhsa-england-2025"
+      }
+    ],
+    "item_id": "EXT-27",
+    "required_slots": 3,
+    "slots_with_every_registered_operand_passage_overlapped": 3,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": false,
+    "chunks": [
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.08726166819134767,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 80,
+        "line_start": 51,
+        "retrieval_score": 0.07320857823597698,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 55,
+        "line_start": 26,
+        "retrieval_score": 0.050674263057137785,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 158,
+        "line_start": 151,
+        "retrieval_score": 0.023780764898565603,
+        "source_id": "ukhsa-england-2025"
+      }
+    ],
+    "item_id": "EXT-28",
+    "required_slots": 4,
+    "slots_with_every_registered_operand_passage_overlapped": 2,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": true,
+    "chunks": [
+      {
+        "line_end": 55,
+        "line_start": 26,
+        "retrieval_score": 0.10065281976429451,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.06735889120049215,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 80,
+        "line_start": 51,
+        "retrieval_score": 0.06533009888055175,
+        "source_id": "ukhsa-england-2025"
+      },
+      {
+        "line_end": 155,
+        "line_start": 126,
+        "retrieval_score": 0.05351628652663666,
+        "source_id": "ukhsa-england-2025"
+      }
+    ],
+    "item_id": "EXT-29",
+    "required_slots": 3,
+    "slots_with_every_registered_operand_passage_overlapped": 3,
+    "split": "test",
+    "top_k": 4
+  },
+  {
+    "all_slots_retrieved": false,
+    "chunks": [
+      {
+        "line_end": 55,
+        "line_start": 26,
+        "retrieval_score": 0.16528143477607113,
+        "source_id": "ukhsa-england-2026"
+      },
+      {
+        "line_end": 80,
+        "line_start": 51,
+        "retrieval_score": 0.1266779225742571,
+        "source_id": "ukhsa-england-2026"
+      },
+      {
+        "line_end": 105,
+        "line_start": 76,
+        "retrieval_score": 0.08076904622336098,
+        "source_id": "ukhsa-england-2026"
+      },
+      {
+        "line_end": 180,
+        "line_start": 151,
+        "retrieval_score": 0.059538388121000534,
+        "source_id": "ukhsa-england-2026"
+      }
+    ],
+    "item_id": "EXT-30",
+    "required_slots": 5,
+    "slots_with_every_registered_operand_passage_overlapped": 4,
+    "split": "test",
+    "top_k": 4
+  }
+]

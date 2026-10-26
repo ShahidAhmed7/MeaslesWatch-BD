@@ -1,0 +1,276 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 322,
+            "line_start": 322,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "reported_measles_cases",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "known_status_cases",
+        "unit": "cases",
+        "value": 31804
+      },
+      {
+        "citations": [
+          {
+            "line_end": 322,
+            "line_start": 322,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "reported_measles_cases",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "unvaccinated_cases",
+        "unit": "cases",
+        "value": 27692
+      },
+      {
+        "citations": [
+          {
+            "line_end": 322,
+            "line_start": 322,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "population_coverage_identified",
+        "unit": "none",
+        "value": false
+      }
+    ],
+    "item_id": "EXT-16",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "known_status_cases: 31804 cases; unvaccinated_cases: 27692 cases; population_coverage_identified: False none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 322,
+              "line_start": 322,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "reported_measles_cases",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "known_status_cases",
+          "unit": "cases",
+          "value": 31804
+        },
+        "slot": "known_status_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 322,
+              "line_start": 322,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "reported_measles_cases",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "unvaccinated_cases",
+          "unit": "cases",
+          "value": 27692
+        },
+        "slot": "unvaccinated_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 322,
+              "line_start": 322,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "population_coverage_identified",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "population_coverage_identified"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-16_B_2026.json",
+  "item_id": "EXT-16",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 322,
+            "line_start": 322,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "reported_measles_cases",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "known_status_cases",
+        "unit": "cases",
+        "value": 31804
+      },
+      {
+        "citations": [
+          {
+            "line_end": 322,
+            "line_start": 322,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "reported_measles_cases",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "unvaccinated_cases",
+        "unit": "cases",
+        "value": 27692
+      },
+      {
+        "citations": [
+          {
+            "line_end": 322,
+            "line_start": 322,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "population_coverage_identified",
+        "unit": "none",
+        "value": false
+      }
+    ],
+    "item_id": "EXT-16",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "known_status_cases: 31804 cases; unvaccinated_cases: 27692 cases; population_coverage_identified: False none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 322,
+              "line_start": 322,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "reported_measles_cases",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "known_status_cases",
+          "unit": "cases",
+          "value": 31804
+        },
+        "slot": "known_status_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 322,
+              "line_start": 322,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "reported_measles_cases",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "unvaccinated_cases",
+          "unit": "cases",
+          "value": 27692
+        },
+        "slot": "unvaccinated_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 322,
+              "line_start": 322,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "population_coverage_identified",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "population_coverage_identified"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

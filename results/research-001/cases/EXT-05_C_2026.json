@@ -1,0 +1,354 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 259,
+            "line_start": 259,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "combined_category_cases",
+        "unit": "cases",
+        "value": 771
+      },
+      {
+        "citations": [
+          {
+            "line_end": 259,
+            "line_start": 259,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "source_interpretation",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "definitely_unvaccinated_percent_identified",
+        "unit": "none",
+        "value": false
+      },
+      {
+        "citations": [
+          {
+            "line_end": 259,
+            "line_start": 259,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "source_interpretation",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "category",
+        "unit": "none",
+        "value": "unvaccinated_or_unknown"
+      },
+      {
+        "citations": [
+          {
+            "line_end": 105,
+            "line_start": 105,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "source_interpretation",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "texas_record_limitation",
+        "unit": "none",
+        "value": "opt_in_registry_cannot_disaggregate"
+      }
+    ],
+    "item_id": "EXT-05",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "combined_category_cases: 771 cases; definitely_unvaccinated_percent_identified: False none; category: unvaccinated_or_unknown none; texas_record_limitation: opt_in_registry_cannot_disaggregate none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 259,
+              "line_start": 259,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "combined_category_cases",
+          "unit": "cases",
+          "value": 771
+        },
+        "slot": "combined_category_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 259,
+              "line_start": 259,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "source_interpretation",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "definitely_unvaccinated_percent_identified",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "definitely_unvaccinated_percent_identified"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 259,
+              "line_start": 259,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "source_interpretation",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "category",
+          "unit": "none",
+          "value": "unvaccinated_or_unknown"
+        },
+        "slot": "category"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 105,
+              "line_start": 105,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "source_interpretation",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "texas_record_limitation",
+          "unit": "none",
+          "value": "opt_in_registry_cannot_disaggregate"
+        },
+        "slot": "texas_record_limitation"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-05_B_2026.json",
+  "item_id": "EXT-05",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 259,
+            "line_start": 259,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "combined_category_cases",
+        "unit": "cases",
+        "value": 771
+      },
+      {
+        "citations": [
+          {
+            "line_end": 259,
+            "line_start": 259,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "source_interpretation",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "definitely_unvaccinated_percent_identified",
+        "unit": "none",
+        "value": false
+      },
+      {
+        "citations": [
+          {
+            "line_end": 259,
+            "line_start": 259,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "source_interpretation",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "category",
+        "unit": "none",
+        "value": "unvaccinated_or_unknown"
+      },
+      {
+        "citations": [
+          {
+            "line_end": 105,
+            "line_start": 105,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "source_interpretation",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "texas_record_limitation",
+        "unit": "none",
+        "value": "opt_in_registry_cannot_disaggregate"
+      }
+    ],
+    "item_id": "EXT-05",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "combined_category_cases: 771 cases; definitely_unvaccinated_percent_identified: False none; category: unvaccinated_or_unknown none; texas_record_limitation: opt_in_registry_cannot_disaggregate none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 259,
+              "line_start": 259,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "combined_category_cases",
+          "unit": "cases",
+          "value": 771
+        },
+        "slot": "combined_category_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 259,
+              "line_start": 259,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "source_interpretation",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "definitely_unvaccinated_percent_identified",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "definitely_unvaccinated_percent_identified"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 259,
+              "line_start": 259,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "source_interpretation",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "category",
+          "unit": "none",
+          "value": "unvaccinated_or_unknown"
+        },
+        "slot": "category"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 105,
+              "line_start": 105,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "source_interpretation",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "texas_record_limitation",
+          "unit": "none",
+          "value": "opt_in_registry_cannot_disaggregate"
+        },
+        "slot": "texas_record_limitation"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

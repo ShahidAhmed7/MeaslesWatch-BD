@@ -1,0 +1,354 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "table_99_exists",
+        "unit": "none",
+        "value": false
+      },
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "actual_geographic_scope",
+        "unit": "none",
+        "value": "EU/EEA"
+      },
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "bangladesh_claim_supported",
+        "unit": "none",
+        "value": false
+      },
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "laboratory_only_claim_supported",
+        "unit": "none",
+        "value": false
+      }
+    ],
+    "item_id": "EXT-20",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "invalid_citation",
+    "summary": "table_99_exists: False none; actual_geographic_scope: EU/EEA none; bangladesh_claim_supported: False none; laboratory_only_claim_supported: False none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "table_99_exists",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "table_99_exists"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "actual_geographic_scope",
+          "unit": "none",
+          "value": "EU/EEA"
+        },
+        "slot": "actual_geographic_scope"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "bangladesh_claim_supported",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "bangladesh_claim_supported"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "laboratory_only_claim_supported",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "laboratory_only_claim_supported"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-20_B_2026.json",
+  "item_id": "EXT-20",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "table_99_exists",
+        "unit": "none",
+        "value": false
+      },
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "actual_geographic_scope",
+        "unit": "none",
+        "value": "EU/EEA"
+      },
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "bangladesh_claim_supported",
+        "unit": "none",
+        "value": false
+      },
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "laboratory_only_claim_supported",
+        "unit": "none",
+        "value": false
+      }
+    ],
+    "item_id": "EXT-20",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "invalid_citation",
+    "summary": "table_99_exists: False none; actual_geographic_scope: EU/EEA none; bangladesh_claim_supported: False none; laboratory_only_claim_supported: False none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "table_99_exists",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "table_99_exists"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "actual_geographic_scope",
+          "unit": "none",
+          "value": "EU/EEA"
+        },
+        "slot": "actual_geographic_scope"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "bangladesh_claim_supported",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "bangladesh_claim_supported"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "laboratory_only_claim_supported",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "laboratory_only_claim_supported"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

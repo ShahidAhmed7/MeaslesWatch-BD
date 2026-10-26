@@ -1,0 +1,10 @@
+{
+  "limitation": "Workspace metering can lag/include unrelated usage; no exact app-attributed charge is asserted",
+  "main_run_client_wall_seconds": 7184.803809250996,
+  "project_authorization_usd": 30,
+  "provider_app_attributed_project_cost_usd": null,
+  "reservation_evidence": "Local cumulative ledger, also retained in inference manifests; reservations are not billed charges",
+  "retained_reservations_usd": 16.0,
+  "working_reservation_limit_usd": 20,
+  "workspace_metered_delta_latest_attempt_usd": "3.25000025"
+}

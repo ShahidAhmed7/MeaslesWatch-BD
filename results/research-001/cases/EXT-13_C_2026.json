@@ -1,0 +1,378 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 157,
+            "line_start": 157,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "country",
+        "unit": "none",
+        "value": "Romania"
+      },
+      {
+        "citations": [
+          {
+            "line_end": 157,
+            "line_start": 157,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "Romania",
+        "measure": "reported_measles_cases",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "country_cases",
+        "unit": "cases",
+        "value": 30692
+      },
+      {
+        "citations": [
+          {
+            "line_end": 157,
+            "line_start": 157,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "Romania",
+        "measure": "notification_rate",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "country_notification_rate",
+        "unit": "per_1000000_population",
+        "value": 1610.7
+      },
+      {
+        "citations": [
+          {
+            "line_end": 157,
+            "line_start": 157,
+            "source_id": "ecdc-eueea-2024"
+          },
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "share_of_eueea_cases",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "share_of_eueea_cases",
+        "unit": "percent",
+        "value": 87.16
+      }
+    ],
+    "item_id": "EXT-13",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "country: Romania none; country_cases: 30692 cases; country_notification_rate: 1610.7 per_1000000_population; share_of_eueea_cases: 87.16 percent",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 157,
+              "line_start": 157,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "country",
+          "unit": "none",
+          "value": "Romania"
+        },
+        "slot": "country"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 157,
+              "line_start": 157,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "Romania",
+          "measure": "reported_measles_cases",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "country_cases",
+          "unit": "cases",
+          "value": 30692
+        },
+        "slot": "country_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 157,
+              "line_start": 157,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "Romania",
+          "measure": "notification_rate",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "country_notification_rate",
+          "unit": "per_1000000_population",
+          "value": 1610.7
+        },
+        "slot": "country_notification_rate"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "value_or_type"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 157,
+              "line_start": 157,
+              "source_id": "ecdc-eueea-2024"
+            },
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "share_of_eueea_cases",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "share_of_eueea_cases",
+          "unit": "percent",
+          "value": 87.23
+        },
+        "slot": "share_of_eueea_cases"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-13_B_2026.json",
+  "item_id": "EXT-13",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 157,
+            "line_start": 157,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "country",
+        "unit": "none",
+        "value": "Romania"
+      },
+      {
+        "citations": [
+          {
+            "line_end": 157,
+            "line_start": 157,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "Romania",
+        "measure": "reported_measles_cases",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "country_cases",
+        "unit": "cases",
+        "value": 30692
+      },
+      {
+        "citations": [
+          {
+            "line_end": 157,
+            "line_start": 157,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "Romania",
+        "measure": "notification_rate",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "country_notification_rate",
+        "unit": "per_1000000_population",
+        "value": 1610.7
+      },
+      {
+        "citations": [
+          {
+            "line_end": 157,
+            "line_start": 157,
+            "source_id": "ecdc-eueea-2024"
+          },
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "share_of_eueea_cases",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "share_of_eueea_cases",
+        "unit": "percent",
+        "value": 87.16
+      }
+    ],
+    "item_id": "EXT-13",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "country: Romania none; country_cases: 30692 cases; country_notification_rate: 1610.7 per_1000000_population; share_of_eueea_cases: 87.16 percent",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 157,
+              "line_start": 157,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "country",
+          "unit": "none",
+          "value": "Romania"
+        },
+        "slot": "country"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 157,
+              "line_start": 157,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "Romania",
+          "measure": "reported_measles_cases",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "country_cases",
+          "unit": "cases",
+          "value": 30692
+        },
+        "slot": "country_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 157,
+              "line_start": 157,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "Romania",
+          "measure": "notification_rate",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "country_notification_rate",
+          "unit": "per_1000000_population",
+          "value": 1610.7
+        },
+        "slot": "country_notification_rate"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "value_or_type"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 157,
+              "line_start": 157,
+              "source_id": "ecdc-eueea-2024"
+            },
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "share_of_eueea_cases",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "share_of_eueea_cases",
+          "unit": "percent",
+          "value": 87.23
+        },
+        "slot": "share_of_eueea_cases"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

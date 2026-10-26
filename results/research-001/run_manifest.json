@@ -1,0 +1,67 @@
+{
+  "app_id": "ap-hRZ7YpLEJVJ15pSzdEnAYO",
+  "budget_reservation": {
+    "actual_generations": 77,
+    "app_id": "ap-hRZ7YpLEJVJ15pSzdEnAYO",
+    "billing_control_evidence": "retained_existing_user_confirmation; fresh authenticated CLI preflight",
+    "client_wall_seconds": 7184.803809250996,
+    "ended_at_utc": "2026-10-26T18:28:03.041932+00:00",
+    "estimate_is_provider_billing_cap": false,
+    "measured_app_cost_usd": null,
+    "recovery_history": [
+      {
+        "at_utc": "2026-10-26T15:49:57.584550+00:00",
+        "counters_and_reservations_reset": false,
+        "prior_app_id": "ap-V9VZzlkynIW9rLoWrwx8PE",
+        "prior_client_wall_seconds": 91.58176191698294,
+        "reason": "Packaging fix: include modal_app.py in remote image; original attempt had zero completed generations"
+      },
+      {
+        "at_utc": "2026-10-26T16:10:26.224214+00:00",
+        "counters_and_reservations_reset": false,
+        "prior_app_id": "ap-UI5eleOG5TqR62j6ZQLVyM",
+        "prior_client_wall_seconds": 1061.482704791997,
+        "reason": "Prospective source-scope metadata correction before final test; completed development prompts retained"
+      },
+      {
+        "at_utc": "2026-10-26T16:58:59.984471+00:00",
+        "counters_and_reservations_reset": false,
+        "prior_app_id": "ap-dsivf0zEBBHBJ36q3GTY8d",
+        "prior_client_wall_seconds": 2061.716507250967,
+        "reason": "Resume unchanged requests within original reservation"
+      }
+    ],
+    "requested_generations": 149,
+    "requested_resource_rate_usd_per_hour": "2.172600",
+    "reserved_container_seconds": 10800,
+    "reserved_usd": "8",
+    "run_id": "research-001",
+    "started_at_utc": "2026-10-26T15:41:17.303319+00:00",
+    "status": "completed_with_failures",
+    "workspace_delta_caveat": "May lag/include unrelated usage; not app-attributed charges",
+    "workspace_metered_delta_usd": "3.25000025"
+  },
+  "completed_jobs": 74,
+  "completion_protocol_sha256": "efeeae57e87ffb7a1e1609478679890dd6311683ca011f95e9d533ec0caba744",
+  "failures": 1,
+  "finished_at_utc": "2026-10-26T18:28:09.061025+00:00",
+  "frozen_benchmark_sha256": "d7912ffb2062e3a278e2d5ddbb95a249ee8e20859fd9b5835a95ea5b6d8279db",
+  "multiplicity": "Approved completion protocol: one complete paired seed first",
+  "primary_condition_rule": "A and B identical raw source coverage; C verifies exact B without regeneration",
+  "private_gold_in_runtime": false,
+  "requests_sha256": "9126ec62b63d3d634002f6bd7411038d9c12ce558de77701b971423cac841f3f",
+  "resumed_under_existing_reservation": true,
+  "run_id": "research-001",
+  "seed": 2026,
+  "source_sha256": {
+    "evidence": "7ef4295e8054b4385d3c02fbe87688d535bb8147be955fcaaca033749fe24690",
+    "modal_service": "213cac94b144dad93cb560c014c1c43f96e38b7ed0b125be451267e4854be08e",
+    "runner": "9d677696c9f741d7b975cf9daac6b26a06855ce3d2ba875d326d7651109eaec4",
+    "runtime": "13eea285f6b30a9e53de2e1abae03493c3affde28301f92fc0d3daf00e57e38e",
+    "scorer_before_generation": "d4edfd11e840acdf92ec459822adea1dcb91f98024c6ee808166da2085be4456",
+    "verifier": "3d482dff2c9f0c6ae020bbb2f6380b08488b72293e5d6ce18c3e1b71a7ce5b49"
+  },
+  "started_at_utc": "2026-10-26T16:58:59.988809+00:00",
+  "status": "completed_with_failures",
+  "study_config_sha256": "a7dfcacdfc1fecca7a84296dfbe66907f90eb1a803e030a52905f2ca0c687cbf"
+}

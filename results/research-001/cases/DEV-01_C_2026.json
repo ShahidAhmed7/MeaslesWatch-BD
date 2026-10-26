@@ -1,0 +1,198 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 115,
+            "line_start": 115,
+            "source_id": "cdc-westtexas-2026"
+          }
+        ],
+        "geography": "West Texas South Plains",
+        "measure": "laboratory_confirmed_measles_cases",
+        "period_end": "2025-03-18",
+        "period_start": "2025-01-20",
+        "population": "all_ages",
+        "slot": "investigation_cases",
+        "unit": "cases",
+        "value": 325
+      },
+      {
+        "citations": [
+          {
+            "line_end": 115,
+            "line_start": 115,
+            "source_id": "cdc-westtexas-2026"
+          }
+        ],
+        "geography": "West Texas South Plains",
+        "measure": "hospitalized_measles_cases",
+        "period_end": "2025-03-18",
+        "period_start": "2025-01-20",
+        "population": "all_ages",
+        "slot": "hospitalized_cases",
+        "unit": "cases",
+        "value": 60
+      }
+    ],
+    "item_id": "DEV-01",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "investigation_cases: 325 cases; hospitalized_cases: 60 cases",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 115,
+              "line_start": 115,
+              "source_id": "cdc-westtexas-2026"
+            }
+          ],
+          "geography": "West Texas South Plains",
+          "measure": "laboratory_confirmed_measles_cases",
+          "period_end": "2025-03-18",
+          "period_start": "2025-01-20",
+          "population": "all_ages",
+          "slot": "investigation_cases",
+          "unit": "cases",
+          "value": 325
+        },
+        "slot": "investigation_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 115,
+              "line_start": 115,
+              "source_id": "cdc-westtexas-2026"
+            }
+          ],
+          "geography": "West Texas South Plains",
+          "measure": "hospitalized_measles_cases",
+          "period_end": "2025-03-18",
+          "period_start": "2025-01-20",
+          "population": "all_ages",
+          "slot": "hospitalized_cases",
+          "unit": "cases",
+          "value": 60
+        },
+        "slot": "hospitalized_cases"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "DEV-01_B_2026.json",
+  "item_id": "DEV-01",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 115,
+            "line_start": 115,
+            "source_id": "cdc-westtexas-2026"
+          }
+        ],
+        "geography": "West Texas South Plains",
+        "measure": "laboratory_confirmed_measles_cases",
+        "period_end": "2025-03-18",
+        "period_start": "2025-01-20",
+        "population": "all_ages",
+        "slot": "investigation_cases",
+        "unit": "cases",
+        "value": 325
+      },
+      {
+        "citations": [
+          {
+            "line_end": 115,
+            "line_start": 115,
+            "source_id": "cdc-westtexas-2026"
+          }
+        ],
+        "geography": "West Texas South Plains",
+        "measure": "hospitalized_measles_cases",
+        "period_end": "2025-03-18",
+        "period_start": "2025-01-20",
+        "population": "all_ages",
+        "slot": "hospitalized_cases",
+        "unit": "cases",
+        "value": 60
+      }
+    ],
+    "item_id": "DEV-01",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "investigation_cases: 325 cases; hospitalized_cases: 60 cases",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 115,
+              "line_start": 115,
+              "source_id": "cdc-westtexas-2026"
+            }
+          ],
+          "geography": "West Texas South Plains",
+          "measure": "laboratory_confirmed_measles_cases",
+          "period_end": "2025-03-18",
+          "period_start": "2025-01-20",
+          "population": "all_ages",
+          "slot": "investigation_cases",
+          "unit": "cases",
+          "value": 325
+        },
+        "slot": "investigation_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 115,
+              "line_start": 115,
+              "source_id": "cdc-westtexas-2026"
+            }
+          ],
+          "geography": "West Texas South Plains",
+          "measure": "hospitalized_measles_cases",
+          "period_end": "2025-03-18",
+          "period_start": "2025-01-20",
+          "population": "all_ages",
+          "slot": "hospitalized_cases",
+          "unit": "cases",
+          "value": 60
+        },
+        "slot": "hospitalized_cases"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

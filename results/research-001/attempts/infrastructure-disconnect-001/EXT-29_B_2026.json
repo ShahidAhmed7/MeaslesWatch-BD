@@ -1,0 +1,14 @@
+{
+  "condition": "B",
+  "error": {
+    "message": "function fu-FrVNo4zfSjBVQC7FwXY1NG is stopped",
+    "type": "ConflictError"
+  },
+  "first_pass": null,
+  "item_id": "EXT-29",
+  "parsed": null,
+  "prompt_reference": "requests.json#69",
+  "roundtrip_seconds": 0.28345304098911583,
+  "seed": 2026,
+  "split": "test"
+}

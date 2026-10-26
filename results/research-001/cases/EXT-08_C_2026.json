@@ -1,0 +1,298 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 252,
+            "line_start": 252,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "imported_cases",
+        "unit": "cases",
+        "value": 48
+      },
+      {
+        "citations": [
+          {
+            "line_end": 268,
+            "line_start": 268,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "imported_us_resident_cases",
+        "unit": "cases",
+        "value": 44
+      },
+      {
+        "citations": [
+          {
+            "line_end": 268,
+            "line_start": 268,
+            "source_id": "cdc-us-2025"
+          },
+          {
+            "line_end": 252,
+            "line_start": 252,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "us_resident_percent_of_imported",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "internationally_imported_cases",
+        "slot": "us_resident_percent_of_imported",
+        "unit": "percent",
+        "value": 91.67
+      }
+    ],
+    "item_id": "EXT-08",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "imported_cases: 48 cases; imported_us_resident_cases: 44 cases; us_resident_percent_of_imported: 91.67 percent",
+    "verification": [
+      {
+        "decision": "corrected",
+        "errors": [
+          "citation_does_not_support_required_operand"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 105,
+              "line_start": 105,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "imported_cases",
+          "unit": "cases",
+          "value": 48
+        },
+        "slot": "imported_cases"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "citation_does_not_support_required_operand"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 105,
+              "line_start": 105,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "imported_us_resident_cases",
+          "unit": "cases",
+          "value": 44
+        },
+        "slot": "imported_us_resident_cases"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "citation_does_not_support_required_operand"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 105,
+              "line_start": 105,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "us_resident_percent_of_imported",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "internationally_imported_cases",
+          "slot": "us_resident_percent_of_imported",
+          "unit": "percent",
+          "value": 91.67
+        },
+        "slot": "us_resident_percent_of_imported"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-08_B_2026.json",
+  "item_id": "EXT-08",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 252,
+            "line_start": 252,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "imported_cases",
+        "unit": "cases",
+        "value": 48
+      },
+      {
+        "citations": [
+          {
+            "line_end": 268,
+            "line_start": 268,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "imported_us_resident_cases",
+        "unit": "cases",
+        "value": 44
+      },
+      {
+        "citations": [
+          {
+            "line_end": 268,
+            "line_start": 268,
+            "source_id": "cdc-us-2025"
+          },
+          {
+            "line_end": 252,
+            "line_start": 252,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "us_resident_percent_of_imported",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "internationally_imported_cases",
+        "slot": "us_resident_percent_of_imported",
+        "unit": "percent",
+        "value": 91.67
+      }
+    ],
+    "item_id": "EXT-08",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "imported_cases: 48 cases; imported_us_resident_cases: 44 cases; us_resident_percent_of_imported: 91.67 percent",
+    "verification": [
+      {
+        "decision": "corrected",
+        "errors": [
+          "citation_does_not_support_required_operand"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 105,
+              "line_start": 105,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "imported_cases",
+          "unit": "cases",
+          "value": 48
+        },
+        "slot": "imported_cases"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "citation_does_not_support_required_operand"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 105,
+              "line_start": 105,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "imported_us_resident_cases",
+          "unit": "cases",
+          "value": 44
+        },
+        "slot": "imported_us_resident_cases"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "citation_does_not_support_required_operand"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 105,
+              "line_start": 105,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "us_resident_percent_of_imported",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "internationally_imported_cases",
+          "slot": "us_resident_percent_of_imported",
+          "unit": "percent",
+          "value": 91.67
+        },
+        "slot": "us_resident_percent_of_imported"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

@@ -1,0 +1,374 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 26,
+            "line_start": 25,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "reported_measles_deaths",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "under_five_deaths",
+        "unit": "deaths",
+        "value": 14
+      },
+      {
+        "citations": [
+          {
+            "line_end": 401,
+            "line_start": 400,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "reported_measles_deaths",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "all_reported_deaths",
+        "unit": "deaths",
+        "value": 23
+      },
+      {
+        "citations": [
+          {
+            "line_end": 26,
+            "line_start": 25,
+            "source_id": "ecdc-eueea-2024"
+          },
+          {
+            "line_end": 401,
+            "line_start": 400,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "under_five_share_of_deaths",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "reported_measles_deaths",
+        "slot": "under_five_share_of_deaths",
+        "unit": "percent",
+        "value": 60.87
+      },
+      {
+        "citations": [
+          {
+            "line_end": 26,
+            "line_start": 25,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "age_specific_case_fatality_identified",
+        "unit": "none",
+        "value": false
+      }
+    ],
+    "item_id": "EXT-17",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "under_five_deaths: 14 deaths; all_reported_deaths: 23 deaths; under_five_share_of_deaths: 60.87 percent; age_specific_case_fatality_identified: False none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 26,
+              "line_start": 25,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "reported_measles_deaths",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "under_five_deaths",
+          "unit": "deaths",
+          "value": 14
+        },
+        "slot": "under_five_deaths"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 401,
+              "line_start": 400,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "reported_measles_deaths",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "all_reported_deaths",
+          "unit": "deaths",
+          "value": 23
+        },
+        "slot": "all_reported_deaths"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 26,
+              "line_start": 25,
+              "source_id": "ecdc-eueea-2024"
+            },
+            {
+              "line_end": 401,
+              "line_start": 400,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "under_five_share_of_deaths",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "reported_measles_deaths",
+          "slot": "under_five_share_of_deaths",
+          "unit": "percent",
+          "value": 60.87
+        },
+        "slot": "under_five_share_of_deaths"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 26,
+              "line_start": 25,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "age_specific_case_fatality_identified",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "age_specific_case_fatality_identified"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-17_B_2026.json",
+  "item_id": "EXT-17",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 26,
+            "line_start": 25,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "reported_measles_deaths",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "under_five_deaths",
+        "unit": "deaths",
+        "value": 14
+      },
+      {
+        "citations": [
+          {
+            "line_end": 401,
+            "line_start": 400,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "reported_measles_deaths",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "all_reported_deaths",
+        "unit": "deaths",
+        "value": 23
+      },
+      {
+        "citations": [
+          {
+            "line_end": 26,
+            "line_start": 25,
+            "source_id": "ecdc-eueea-2024"
+          },
+          {
+            "line_end": 401,
+            "line_start": 400,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "under_five_share_of_deaths",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "reported_measles_deaths",
+        "slot": "under_five_share_of_deaths",
+        "unit": "percent",
+        "value": 60.87
+      },
+      {
+        "citations": [
+          {
+            "line_end": 26,
+            "line_start": 25,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "age_specific_case_fatality_identified",
+        "unit": "none",
+        "value": false
+      }
+    ],
+    "item_id": "EXT-17",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "under_five_deaths: 14 deaths; all_reported_deaths: 23 deaths; under_five_share_of_deaths: 60.87 percent; age_specific_case_fatality_identified: False none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 26,
+              "line_start": 25,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "reported_measles_deaths",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "under_five_deaths",
+          "unit": "deaths",
+          "value": 14
+        },
+        "slot": "under_five_deaths"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 401,
+              "line_start": 400,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "reported_measles_deaths",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "all_reported_deaths",
+          "unit": "deaths",
+          "value": 23
+        },
+        "slot": "all_reported_deaths"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 26,
+              "line_start": 25,
+              "source_id": "ecdc-eueea-2024"
+            },
+            {
+              "line_end": 401,
+              "line_start": 400,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "under_five_share_of_deaths",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "reported_measles_deaths",
+          "slot": "under_five_share_of_deaths",
+          "unit": "percent",
+          "value": 60.87
+        },
+        "slot": "under_five_share_of_deaths"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 26,
+              "line_start": 25,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "age_specific_case_fatality_identified",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "age_specific_case_fatality_identified"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

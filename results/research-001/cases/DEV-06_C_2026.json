@@ -1,0 +1,280 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 263,
+            "line_start": 263,
+            "source_id": "cdc-westtexas-2026"
+          }
+        ],
+        "geography": "West Texas South Plains",
+        "measure": "vitamin_a_use_among_reviewed_hospitalized_cases",
+        "period_end": "2025-03-18",
+        "period_start": "2025-01-20",
+        "population": "reviewed_hospitalized_patients",
+        "slot": "vitamin_a_patients",
+        "unit": "cases",
+        "value": 13
+      },
+      {
+        "citations": [
+          {
+            "line_end": 127,
+            "line_start": 127,
+            "source_id": "cdc-westtexas-2026"
+          }
+        ],
+        "geography": "West Texas South Plains",
+        "measure": "source_interpretation",
+        "period_end": "2025-03-18",
+        "period_start": "2025-01-20",
+        "population": "all_ages",
+        "slot": "causal_treatment_effect_identified",
+        "unit": "none",
+        "value": false
+      },
+      {
+        "citations": [
+          {
+            "line_end": 127,
+            "line_start": 127,
+            "source_id": "cdc-westtexas-2026"
+          }
+        ],
+        "geography": "West Texas South Plains",
+        "measure": "source_interpretation",
+        "period_end": "2025-03-18",
+        "period_start": "2025-01-20",
+        "population": "all_ages",
+        "slot": "missing_design",
+        "unit": "none",
+        "value": "causal_comparison_design"
+      }
+    ],
+    "item_id": "DEV-06",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [
+      "The observed use of vitamin A among hospitalized patients is reported as 13 cases, but the study lacks a causal comparison design to establish treatment benefit"
+    ],
+    "status": "insufficient_data",
+    "summary": "vitamin_a_patients: 13 cases; causal_treatment_effect_identified: False none; missing_design: causal_comparison_design none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 263,
+              "line_start": 263,
+              "source_id": "cdc-westtexas-2026"
+            }
+          ],
+          "geography": "West Texas South Plains",
+          "measure": "vitamin_a_use_among_reviewed_hospitalized_cases",
+          "period_end": "2025-03-18",
+          "period_start": "2025-01-20",
+          "population": "reviewed_hospitalized_patients",
+          "slot": "vitamin_a_patients",
+          "unit": "cases",
+          "value": 13
+        },
+        "slot": "vitamin_a_patients"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 127,
+              "line_start": 127,
+              "source_id": "cdc-westtexas-2026"
+            }
+          ],
+          "geography": "West Texas South Plains",
+          "measure": "source_interpretation",
+          "period_end": "2025-03-18",
+          "period_start": "2025-01-20",
+          "population": "all_ages",
+          "slot": "causal_treatment_effect_identified",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "causal_treatment_effect_identified"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 127,
+              "line_start": 127,
+              "source_id": "cdc-westtexas-2026"
+            }
+          ],
+          "geography": "West Texas South Plains",
+          "measure": "source_interpretation",
+          "period_end": "2025-03-18",
+          "period_start": "2025-01-20",
+          "population": "all_ages",
+          "slot": "missing_design",
+          "unit": "none",
+          "value": "causal_comparison_design"
+        },
+        "slot": "missing_design"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "DEV-06_B_2026.json",
+  "item_id": "DEV-06",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 263,
+            "line_start": 263,
+            "source_id": "cdc-westtexas-2026"
+          }
+        ],
+        "geography": "West Texas South Plains",
+        "measure": "vitamin_a_use_among_reviewed_hospitalized_cases",
+        "period_end": "2025-03-18",
+        "period_start": "2025-01-20",
+        "population": "reviewed_hospitalized_patients",
+        "slot": "vitamin_a_patients",
+        "unit": "cases",
+        "value": 13
+      },
+      {
+        "citations": [
+          {
+            "line_end": 127,
+            "line_start": 127,
+            "source_id": "cdc-westtexas-2026"
+          }
+        ],
+        "geography": "West Texas South Plains",
+        "measure": "source_interpretation",
+        "period_end": "2025-03-18",
+        "period_start": "2025-01-20",
+        "population": "all_ages",
+        "slot": "causal_treatment_effect_identified",
+        "unit": "none",
+        "value": false
+      },
+      {
+        "citations": [
+          {
+            "line_end": 127,
+            "line_start": 127,
+            "source_id": "cdc-westtexas-2026"
+          }
+        ],
+        "geography": "West Texas South Plains",
+        "measure": "source_interpretation",
+        "period_end": "2025-03-18",
+        "period_start": "2025-01-20",
+        "population": "all_ages",
+        "slot": "missing_design",
+        "unit": "none",
+        "value": "causal_comparison_design"
+      }
+    ],
+    "item_id": "DEV-06",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [
+      "The observed use of vitamin A among hospitalized patients is reported as 13 cases, but the study lacks a causal comparison design to establish treatment benefit"
+    ],
+    "status": "insufficient_data",
+    "summary": "vitamin_a_patients: 13 cases; causal_treatment_effect_identified: False none; missing_design: causal_comparison_design none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 263,
+              "line_start": 263,
+              "source_id": "cdc-westtexas-2026"
+            }
+          ],
+          "geography": "West Texas South Plains",
+          "measure": "vitamin_a_use_among_reviewed_hospitalized_cases",
+          "period_end": "2025-03-18",
+          "period_start": "2025-01-20",
+          "population": "reviewed_hospitalized_patients",
+          "slot": "vitamin_a_patients",
+          "unit": "cases",
+          "value": 13
+        },
+        "slot": "vitamin_a_patients"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 127,
+              "line_start": 127,
+              "source_id": "cdc-westtexas-2026"
+            }
+          ],
+          "geography": "West Texas South Plains",
+          "measure": "source_interpretation",
+          "period_end": "2025-03-18",
+          "period_start": "2025-01-20",
+          "population": "all_ages",
+          "slot": "causal_treatment_effect_identified",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "causal_treatment_effect_identified"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 127,
+              "line_start": 127,
+              "source_id": "cdc-westtexas-2026"
+            }
+          ],
+          "geography": "West Texas South Plains",
+          "measure": "source_interpretation",
+          "period_end": "2025-03-18",
+          "period_start": "2025-01-20",
+          "population": "all_ages",
+          "slot": "missing_design",
+          "unit": "none",
+          "value": "causal_comparison_design"
+        },
+        "slot": "missing_design"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

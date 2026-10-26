@@ -12,13 +12,13 @@ the supplied feature specification; recommendations were adapted to the two-day 
 | Leakage-free seasonal/count models | Complete | `statistics-001`: rolling development/test, fixed-origin 2026, training cutoffs, failure states |
 | Uncertainty, diagnostics and sensitivities | Complete with disclosed limitations | Plug-in bounds, paired block bootstrap, residual diagnostics, 36/84-month windows, definition/outlier/dropout checks |
 | Honest anomaly evaluation | Complete | Real alert proportions; known-label synthetic metrics and separate all-eligible failure bounds; no real outbreak accuracy claim |
-| At least four original figures | Complete | Six PNG/SVG figures with plotted CSV/metadata in `figures-001` |
-| Evidence-grounded analyst and verification | Implemented and offline tested; real brief completion pending | `analyst.py`, `retrieval.py`, `verify.py`; typed claim mutations, artifact-integrity and private-file denial tests |
-| Independent 30-question A/B/C benchmark | Recovery running | Frozen external-v1; original failure-inclusive attempt archived/scored; secondary no-response infrastructure recovery under original reservation |
-| Six-page Streamlit dashboard and exports | Complete; final populated-result review pending | `app.py`; navigation and filter tests; live browser review of Overview/Anomalies |
-| Scientific report | Generator implemented; final measured report pending | `report.py`, `scripts/build_report.py`; generator refuses an incomplete run |
-| Reproducible repository | Local Git history and private remote created; final push pending | Locked environment, README, source attribution, MIT code license |
-| Critical tests and clean setup | 89 tests pass in original and clean checkout | `planning/audits/2026-10-26/clean_checkout_final.txt`; later build changes require final recheck |
+| At least four original figures | Complete | Six PNG/SVG figures with plotted CSV/metadata in `figures-001`; `figures-002` adds failure-denominator annotations without changing plotted numbers |
+| Evidence-grounded analyst and verification | Complete; two real Modal briefs checked | `analyst.py`, `retrieval.py`, `verify.py`; typed claim mutations, artifact-integrity and private-file denial tests |
+| Independent 30-question A/B/C benchmark | Complete with disclosed infrastructure-recovery deviation | Frozen external-v1; original failure-inclusive attempt archived/scored; secondary no-response infrastructure recovery under original reservation |
+| Six-page Streamlit dashboard and exports | Complete; populated Analyst/Evaluation pages browser-reviewed | `app.py`; navigation and filter tests; live browser review of Overview/Anomalies |
+| Scientific report | Complete from measured artifacts | `report.py`, `scripts/build_report.py`; generator refuses an incomplete run |
+| Reproducible repository | Private remote created; final clean-checkout and push checks underway | Locked environment, README, source attribution, MIT code license |
+| Critical tests and clean setup | 91 current tests pass; final fresh remote checkout check underway | `planning/audits/2026-10-26/clean_checkout_final.txt`; final clean-checkout recheck pending |
 
 ## Verified statistical evidence
 
@@ -33,12 +33,27 @@ the supplied feature specification; recommendations were adapted to the two-day 
 - Synthetic monthly metrics originally condition on available fits. The separate
   failure audit retains all eligible months; unidentified-prediction bounds are not CIs.
 
-## Remaining execution gates
+## Completed execution evidence
 
-1. Finish the infrastructure-recovered Modal calls, preserve all failures, stop the app.
-2. Score the completed run without changing frozen grading and review a declared subset.
-3. Generate the scientific report from measured outputs and populate final dashboard views.
-4. Verify final release integrity, offline score reproduction, clean checkout and GitHub push.
+- All 74 jobs attempted; one malformed A answer remains a failure after its single
+  schema repair. Modal app stopped with zero tasks; no paid per-token API used.
+- Thirty paired test questions scored in A/B/C, plus six development cases.
+  Recovered numeric correctness: 55/62, 61/62 and 62/62; fully supported slots:
+  7/101, 34/101 and 42/101; strict whole-item correctness: 0/30, 2/30 and 3/30.
+- These are material reliability limits. The test verifier detected 19/66 strict
+  erroneous emitted claims and modified 3/34 supported claims. Shared adapter scope
+  errors and frozen exact-locator/category sensitivity are documented separately.
+- Eight prospectively selected cases inspected; source passages, unverified prose,
+  typed claims and unchanged gold verdicts are recorded in `answer_review.json`.
+- Two real Bangladesh briefs have 12 and eight checked claims, all six sections,
+  and no missing required slots. This does not validate arbitrary analyst outputs.
+- Frozen benchmark hashes, 22 retained original drafts, 52 recovered no-response
+  jobs and all 30 test C replays pass. See `release-audit-001.json` and lineage.
+- Offline re-scoring reproduces all four numerical score artifacts byte-for-byte.
+- The measured report is `reports/research_report.md`; six figures, provenance and
+  both original/recovered scorecards are retained. Report dates use UTC explicitly.
+- Current local tests: 91 passed. Final fresh remote checkout/push is the remaining
+  repository delivery check; no model calls are needed.
 
 ## Deliberate scope limits and deviations
 

@@ -43,8 +43,8 @@ uv run --locked python scripts/build_report.py --output reports/my-report.md
 
 The first command rebuilds canonical tables, descriptions, models, diagnostics,
 sensitivities and six original figures from frozen inputs. It performs no inference.
-The second re-scores saved responses offline using the frozen private gold. The
-third writes the scientific report from actual saved analysis and scored results.
+The next two commands re-score saved responses offline using the frozen private gold.
+The final command writes the scientific report from actual saved analysis and scored results.
 Scoring/report generation requires the completed saved experiment, not live API access.
 
 The reference reproduction is [reproduction-001](results/reproduction-001/reproduction_manifest.json).
@@ -162,6 +162,41 @@ every earlier draft, question, prompt and seed remains intact. This is an explic
 deviation from the original infrastructure-failure rule, documented in
 [infrastructure recovery](planning/INFRASTRUCTURE_RECOVERY.md). Both analyses must be
 reported; the recovered result does not establish production reliability.
+
+## Measured findings
+
+On the 48-month 2022–2025 laboratory-confirmed test, seasonal-naive MAE was **8.42**
+cases versus **10.00** for NB2. The paired difference was 1.58 cases, with a 12-month
+block-bootstrap 95% interval of −0.09 to 2.85. NB2 covered 46/48 observations with
+its 95% plug-in intervals, but substantial residual autocorrelation remained.
+All five January–May 2026 fixed-origin observations exceeded its upper threshold;
+real outbreak detection accuracy cannot be identified from those flags.
+
+The **secondary recovered-completion** benchmark gave the following post-schema-repair
+results. The original disconnected run and its failure-inclusive scores remain separate.
+
+| Condition | Correct numeric slots (of 62) | Fully supported required slots (of 101) | Completely correct questions (of 30) |
+| --- | --- | --- | --- |
+| A: direct source analysis | 55 (88.7%) | 7 (6.9%) | 0 (0.0%) |
+| B: grounded analysis | 61 (98.4%) | 34 (33.7%) | 2 (6.7%) |
+| C: checked B draft | 62 (100.0%) | 42 (41.6%) | 3 (10.0%) |
+
+**These limitations are material.** Correct arithmetic does not establish correct
+scope or sufficient evidence. On test B claims the checker detected 19/66 strict
+errors (28.8%) and modified 3/34 independently supported claims (8.8%). Shared
+adapter metadata mistakes can survive checking; some failures also reflect literal
+category strings or valid alternative citations outside the frozen locator set.
+The eight-case inspection records both kinds, plus errors in unchecked draft prose.
+No grading or evidence adapter was tuned after observing test answers. The C−B
+whole-item accuracy difference was 3.3 percentage points, with an item-bootstrap
+95% interval of −6.7 to 13.3; this does not establish a precise improvement.
+
+See the [scientific report](reports/research_report.md),
+[scorecard](results/benchmark-score-001/scorecard.json),
+[reviewed cases](results/benchmark-score-001/answer_review.json), and
+[test-specific diagnostics](results/benchmark-diagnostics-001/verification_by_split.json).
+Future verifier changes require a new version and fresh independent evaluation;
+the current prototype is an auditable experiment, not a reliable universal analyst.
 
 ## Explicit Modal generation
 

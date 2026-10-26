@@ -1,0 +1,20 @@
+[
+  {
+    "detected": 1,
+    "erroneous_emitted_registered_claims": 18,
+    "error_detection_rate": 0.05555555555555555,
+    "false_rejection_rate": null,
+    "split": "development",
+    "supported_claims_modified_or_rejected": 0,
+    "supported_emitted_registered_claims": 0
+  },
+  {
+    "detected": 19,
+    "erroneous_emitted_registered_claims": 66,
+    "error_detection_rate": 0.2878787878787879,
+    "false_rejection_rate": 0.08823529411764706,
+    "split": "test",
+    "supported_claims_modified_or_rejected": 3,
+    "supported_emitted_registered_claims": 34
+  }
+]

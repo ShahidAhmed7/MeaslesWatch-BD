@@ -1,0 +1,11 @@
+{
+  "corrections": 23,
+  "detected_errors": 20,
+  "error_detection_rate": 0.23809523809523808,
+  "false_rejection_rate": 0.08823529411764706,
+  "false_rejections_or_corrections": 3,
+  "independently_scored_B_claims_in_error": 84,
+  "independently_supported_B_claims": 34,
+  "rejections": 0,
+  "scope": "Uses frozen private scorer after generation; strict metadata/citation errors count as errors"
+}

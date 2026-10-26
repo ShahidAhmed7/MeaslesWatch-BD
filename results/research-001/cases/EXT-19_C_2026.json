@@ -1,0 +1,510 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 132,
+            "line_start": 132,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "Austria",
+        "measure": "reported_measles_cases",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "austria_cases",
+        "unit": "cases",
+        "value": 542
+      },
+      {
+        "citations": [
+          {
+            "line_end": 142,
+            "line_start": 142,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "Germany",
+        "measure": "reported_measles_cases",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "germany_cases",
+        "unit": "cases",
+        "value": 638
+      },
+      {
+        "citations": [
+          {
+            "line_end": 132,
+            "line_start": 132,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "Austria",
+        "measure": "notification_rate",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "austria_rate",
+        "unit": "per_1000000_population",
+        "value": 59.5
+      },
+      {
+        "citations": [
+          {
+            "line_end": 142,
+            "line_start": 142,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "Germany",
+        "measure": "notification_rate",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "germany_rate",
+        "unit": "per_1000000_population",
+        "value": 7.6
+      },
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "higher_count_country",
+        "unit": "none",
+        "value": "Germany"
+      },
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "higher_rate_country",
+        "unit": "none",
+        "value": "Austria"
+      }
+    ],
+    "item_id": "EXT-19",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "austria_cases: 542 cases; germany_cases: 638 cases; austria_rate: 59.5 per_1000000_population; germany_rate: 7.6 per_1000000_population; higher_count_country: Germany none; higher_rate_country: Austria none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 132,
+              "line_start": 132,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "Austria",
+          "measure": "reported_measles_cases",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "austria_cases",
+          "unit": "cases",
+          "value": 542
+        },
+        "slot": "austria_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 142,
+              "line_start": 142,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "Germany",
+          "measure": "reported_measles_cases",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "germany_cases",
+          "unit": "cases",
+          "value": 638
+        },
+        "slot": "germany_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 132,
+              "line_start": 132,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "Austria",
+          "measure": "notification_rate",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "austria_rate",
+          "unit": "per_1000000_population",
+          "value": 59.5
+        },
+        "slot": "austria_rate"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 142,
+              "line_start": 142,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "Germany",
+          "measure": "notification_rate",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "germany_rate",
+          "unit": "per_1000000_population",
+          "value": 7.6
+        },
+        "slot": "germany_rate"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "higher_count_country",
+          "unit": "none",
+          "value": "Germany"
+        },
+        "slot": "higher_count_country"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "higher_rate_country",
+          "unit": "none",
+          "value": "Austria"
+        },
+        "slot": "higher_rate_country"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-19_B_2026.json",
+  "item_id": "EXT-19",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 132,
+            "line_start": 132,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "Austria",
+        "measure": "reported_measles_cases",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "austria_cases",
+        "unit": "cases",
+        "value": 542
+      },
+      {
+        "citations": [
+          {
+            "line_end": 142,
+            "line_start": 142,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "Germany",
+        "measure": "reported_measles_cases",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "germany_cases",
+        "unit": "cases",
+        "value": 638
+      },
+      {
+        "citations": [
+          {
+            "line_end": 132,
+            "line_start": 132,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "Austria",
+        "measure": "notification_rate",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "austria_rate",
+        "unit": "per_1000000_population",
+        "value": 59.5
+      },
+      {
+        "citations": [
+          {
+            "line_end": 142,
+            "line_start": 142,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "Germany",
+        "measure": "notification_rate",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "germany_rate",
+        "unit": "per_1000000_population",
+        "value": 7.6
+      },
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "higher_count_country",
+        "unit": "none",
+        "value": "Germany"
+      },
+      {
+        "citations": [
+          {
+            "line_end": 162,
+            "line_start": 162,
+            "source_id": "ecdc-eueea-2024"
+          }
+        ],
+        "geography": "EU/EEA",
+        "measure": "source_interpretation",
+        "period_end": "2024-12-31",
+        "period_start": "2024-01-01",
+        "population": "all_ages",
+        "slot": "higher_rate_country",
+        "unit": "none",
+        "value": "Austria"
+      }
+    ],
+    "item_id": "EXT-19",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "austria_cases: 542 cases; germany_cases: 638 cases; austria_rate: 59.5 per_1000000_population; germany_rate: 7.6 per_1000000_population; higher_count_country: Germany none; higher_rate_country: Austria none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 132,
+              "line_start": 132,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "Austria",
+          "measure": "reported_measles_cases",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "austria_cases",
+          "unit": "cases",
+          "value": 542
+        },
+        "slot": "austria_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 142,
+              "line_start": 142,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "Germany",
+          "measure": "reported_measles_cases",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "germany_cases",
+          "unit": "cases",
+          "value": 638
+        },
+        "slot": "germany_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 132,
+              "line_start": 132,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "Austria",
+          "measure": "notification_rate",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "austria_rate",
+          "unit": "per_1000000_population",
+          "value": 59.5
+        },
+        "slot": "austria_rate"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 142,
+              "line_start": 142,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "Germany",
+          "measure": "notification_rate",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "germany_rate",
+          "unit": "per_1000000_population",
+          "value": 7.6
+        },
+        "slot": "germany_rate"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "higher_count_country",
+          "unit": "none",
+          "value": "Germany"
+        },
+        "slot": "higher_count_country"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 162,
+              "line_start": 162,
+              "source_id": "ecdc-eueea-2024"
+            }
+          ],
+          "geography": "EU/EEA",
+          "measure": "source_interpretation",
+          "period_end": "2024-12-31",
+          "period_start": "2024-01-01",
+          "population": "all_ages",
+          "slot": "higher_rate_country",
+          "unit": "none",
+          "value": "Austria"
+        },
+        "slot": "higher_rate_country"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

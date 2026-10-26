@@ -68,9 +68,22 @@ def audit(root=ROOT):
     assert reproduction["statistical_artifacts_match_saved_run"] and not reproduction["LLM_inference_performed"]
     checks["fresh_offline_statistical_reproduction"] = True
     score = root / "results/benchmark-score-001"
+    review = json.loads((score / "answer_review.json").read_text())
+    assert review["status"] == "completed_qualitative_inspection"
+    assert {r["item_id"] for r in review["items"]} == {"EXT-01", "EXT-06", "EXT-09", "EXT-10", "EXT-15", "EXT-18", "EXT-26", "EXT-30"}
+    checks["declared_qualitative_case_inspection_completed"] = True
+    lineage = json.loads((root / "results/recovery-lineage-001.json").read_text())
+    assert lineage["status"] == "passed" and lineage["retained_draft_count"] == 22 and lineage["recovery_job_count"] == 52
+    hashes["results/recovery-lineage-001.json"] = sha256(root / "results/recovery-lineage-001.json")
+    checks["original_returned_drafts_retained_without_resampling"] = True
+    replay = json.loads((root / "results/benchmark-diagnostics-001/verifier_cpu_timing.json").read_text())
+    assert len(replay) == 30 and all(r["saved_C_reproduced"] for r in replay)
+    checks["all_thirty_saved_test_verifications_reproduced"] = True
     for path in sorted(score.glob("*.json")):
         hashes[str(path.relative_to(root))] = sha256(path)
     hashes["reports/research_report.md"] = sha256(root / "reports/research_report.md")
+    report_manifest = json.loads((root / "reports/research_report.manifest.json").read_text())
+    assert report_manifest["report_sha256"] == hashes["reports/research_report.md"]
     return {"status": "passed", "checks": checks, "artifact_sha256": hashes,
             "scope": "Offline release integrity; not a clinical validation or provider billing audit"}
 

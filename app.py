@@ -14,6 +14,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
+from measleswatch.analyst import BRIEF_SECTIONS
+
 ROOT = Path(__file__).resolve().parent
 PAGES = ["Surveillance Overview", "Data Quality Audit", "Statistical Analysis", "Anomaly Detection", "LLM Research Analyst", "LLM Evaluation"]
 LABELS = {"measles_lab_confirmed": "Laboratory-confirmed", "measles_total_classified": "Total classified (clinical + epi-linked + lab)",
@@ -267,13 +269,20 @@ def analyst(selection):
     record = json.loads(chosen.read_text())
     verified = record.get("verified", {})
     st.caption("Verification means support by frozen evidence and bounded computations, not clinical validation.")
-    for name, text in verified.get("sections", {}).items():
+    sections = verified.get("sections", {})
+    for name in BRIEF_SECTIONS:
+        if name not in sections:
+            continue
+        text = sections[name]
         st.subheader(name.replace("_", " ").capitalize())
-        st.write(text)
+        if name in ("evidence_references", "limitations_uncertainty"):
+            st.markdown("\n".join(f"- {line}" for line in text.splitlines() if line.strip()))
+        else:
+            st.write(text)
     with st.expander("Draft, claim decisions and retrieved passages"):
         st.json({"selection": record.get("selection"), "draft": record.get("parsed"), "verified": verified}, expanded=False)
     st.download_button("Download brief JSON", json.dumps(record, indent=2), chosen.name, "application/json")
-    markdown = "\n\n".join(f"## {name.replace('_', ' ').title()}\n\n{text}" for name, text in verified.get("sections", {}).items())
+    markdown = "\n\n".join(f"## {name.replace('_', ' ').title()}\n\n{sections[name]}" for name in BRIEF_SECTIONS if name in sections)
     st.download_button("Download brief Markdown", markdown, chosen.stem + ".md", "text/markdown")
 
 
@@ -282,11 +291,18 @@ def llm_evaluation():
     manifest = load("results/research-001/run_manifest.json", {})
     st.write("The independent external benchmark uses 30 frozen test questions and six separate development questions from CDC, ECDC and UKHSA publications. A/B source coverage is identical; C verifies B's exact draft.")
     st.caption("This evaluates source-grounded scientific communication. It is separate from Bangladesh model performance; benchmark gold is scorer-only.")
+    score_columns = ["condition", "items", "numeric_slot_accuracy", "fully_supported_slot_accuracy", "macro_item_accuracy", "citation_precision", "answer_coverage"]
+    labels = {"condition": "Condition", "items": "Questions", "numeric_slot_accuracy": "Numeric accuracy",
+              "fully_supported_slot_accuracy": "Fully supported slots", "macro_item_accuracy": "Completely correct questions",
+              "citation_precision": "Citation precision", "answer_coverage": "Answer coverage"}
+    def score_table(rows):
+        selected = rows[score_columns].rename(columns=labels)
+        st.dataframe(selected.style.format({labels[c]: "{:.1%}" for c in score_columns[2:]}), hide_index=True, width="stretch")
     primary = load("results/benchmark-primary-score-001/scorecard.json")
     if primary:
         st.subheader("Original attempt: infrastructure failures included")
         original = pd.DataFrame(primary)
-        st.dataframe(original[(original.split == "test") & (original.stage == "post_schema_repair")], hide_index=True, width="stretch")
+        score_table(original[(original.split == "test") & (original.stage == "post_schema_repair")])
         st.caption("Client disconnection left five of 30 paired test questions answered. Every unreturned answer counts as a failure in this original-attempt analysis.")
     if not score:
         st.info(f"No completed scorecard yet. Inference run status: {manifest.get('status', 'not started')}; completed generation jobs: {manifest.get('completed_jobs', 0)}.")
@@ -294,18 +310,26 @@ def llm_evaluation():
     st.subheader("Secondary recovered-completion analysis")
     st.caption("Only jobs with no returned model response were recovered, preserving all earlier drafts, seeds and prompts. This is a documented deviation from the original infrastructure-failure rule.")
     scores = pd.DataFrame(score)
-    st.dataframe(scores, hide_index=True, width="stretch")
     display = scores[(scores.split == "test") & (scores.stage == "post_schema_repair")]
-    chart(px.bar(display, x="condition", y="numeric_slot_accuracy", color="condition", range_y=[0, 1],
-                 labels={"numeric_slot_accuracy": "Numeric slot accuracy"}, title="Measured external benchmark numerical accuracy"), "llm-scorecard")
+    score_table(display)
+    st.warning("Correct numbers do not establish fully supported answers. Shared evidence-adapter errors can survive verification; strict grading also depends on exact scope and registered citation passages. Inspect the reviewed cases and both accuracy measures.")
+    plotted = display.melt(id_vars="condition", value_vars=["numeric_slot_accuracy", "fully_supported_slot_accuracy", "macro_item_accuracy"], var_name="Metric", value_name="Fraction correct")
+    plotted["Metric"] = plotted["Metric"].map(labels)
+    chart(px.bar(plotted, x="condition", y="Fraction correct", color="Metric", barmode="group", range_y=[0, 1],
+                 labels={"condition": "Condition"}, title="Numeric correctness and full evidence support"), "llm-scorecard")
     export_table(scores, "llm-scorecard", {"benchmark": "external-v1", "scope": "Selected external publications; not general model ranking"})
     st.subheader("Verification errors and paired comparisons")
-    st.json(load("results/benchmark-score-001/verification_metrics.json"))
-    st.json(load("results/benchmark-score-001/paired_comparisons.json"))
+    split_verification = load("results/benchmark-diagnostics-001/verification_by_split.json", [])
+    if split_verification:
+        st.dataframe(pd.DataFrame(split_verification), hide_index=True, width="stretch")
+        st.caption("Test and mixed-version development are shown separately. An error includes strict metadata/citation failures; this does not measure every error in free prose.")
+    st.dataframe(pd.DataFrame(load("results/benchmark-score-001/paired_comparisons.json", [])), hide_index=True, width="stretch")
     with st.expander("Retrieval, claim-level and runtime diagnostics"):
         diagnostics = {name: load(f"results/benchmark-diagnostics-001/{name}.json") for name in
             ("retrieval_summary", "verification_by_split", "causal_claim_metrics", "operational_metrics", "budget_observation", "verifier_cpu_timing")}
         st.json(diagnostics, expanded=False)
+        st.json(load("results/benchmark-score-001/verification_metrics.json"), expanded=False)
+        st.dataframe(scores, hide_index=True, width="stretch")
         st.caption("Retrieval passage overlap is measured separately; A/B received identical full sources. CPU reverification timings use a warm store and are distinct from Modal generation timing.")
     cases = load("results/benchmark-score-001/case_results.json", [])
     condition = st.selectbox("Condition", ["A", "B", "C"])

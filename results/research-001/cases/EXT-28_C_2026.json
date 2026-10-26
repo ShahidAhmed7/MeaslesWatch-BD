@@ -1,0 +1,354 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 95,
+            "line_start": 95,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "utla",
+        "unit": "none",
+        "value": "Hackney"
+      },
+      {
+        "citations": [
+          {
+            "line_end": 95,
+            "line_start": 95,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "Hackney",
+        "measure": "laboratory_confirmed_measles_cases",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "utla_cases",
+        "unit": "cases",
+        "value": 133
+      },
+      {
+        "citations": [
+          {
+            "line_end": 125,
+            "line_start": 125,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "utla_suppression_threshold",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "suppression_threshold",
+        "unit": "cases",
+        "value": 10
+      },
+      {
+        "citations": [
+          {
+            "line_end": 125,
+            "line_start": 125,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "omitted_rows_are_zero",
+        "unit": "none",
+        "value": false
+      }
+    ],
+    "item_id": "EXT-28",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "utla: Hackney none; utla_cases: 133 cases; suppression_threshold: 10 cases; omitted_rows_are_zero: False none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 95,
+              "line_start": 95,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "utla",
+          "unit": "none",
+          "value": "Hackney"
+        },
+        "slot": "utla"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 95,
+              "line_start": 95,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "Hackney",
+          "measure": "laboratory_confirmed_measles_cases",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "utla_cases",
+          "unit": "cases",
+          "value": 133
+        },
+        "slot": "utla_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 125,
+              "line_start": 125,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "utla_suppression_threshold",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "suppression_threshold",
+          "unit": "cases",
+          "value": 10
+        },
+        "slot": "suppression_threshold"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 125,
+              "line_start": 125,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "omitted_rows_are_zero",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "omitted_rows_are_zero"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-28_B_2026.json",
+  "item_id": "EXT-28",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 95,
+            "line_start": 95,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "utla",
+        "unit": "none",
+        "value": "Hackney"
+      },
+      {
+        "citations": [
+          {
+            "line_end": 95,
+            "line_start": 95,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "Hackney",
+        "measure": "laboratory_confirmed_measles_cases",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "utla_cases",
+        "unit": "cases",
+        "value": 133
+      },
+      {
+        "citations": [
+          {
+            "line_end": 125,
+            "line_start": 125,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "utla_suppression_threshold",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "suppression_threshold",
+        "unit": "cases",
+        "value": 10
+      },
+      {
+        "citations": [
+          {
+            "line_end": 125,
+            "line_start": 125,
+            "source_id": "ukhsa-england-2025"
+          }
+        ],
+        "geography": "England",
+        "measure": "source_interpretation",
+        "period_end": "2025-12-31",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "omitted_rows_are_zero",
+        "unit": "none",
+        "value": false
+      }
+    ],
+    "item_id": "EXT-28",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "utla: Hackney none; utla_cases: 133 cases; suppression_threshold: 10 cases; omitted_rows_are_zero: False none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 95,
+              "line_start": 95,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "utla",
+          "unit": "none",
+          "value": "Hackney"
+        },
+        "slot": "utla"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 95,
+              "line_start": 95,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "Hackney",
+          "measure": "laboratory_confirmed_measles_cases",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "utla_cases",
+          "unit": "cases",
+          "value": 133
+        },
+        "slot": "utla_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 125,
+              "line_start": 125,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "utla_suppression_threshold",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "suppression_threshold",
+          "unit": "cases",
+          "value": 10
+        },
+        "slot": "suppression_threshold"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 125,
+              "line_start": 125,
+              "source_id": "ukhsa-england-2025"
+            }
+          ],
+          "geography": "England",
+          "measure": "source_interpretation",
+          "period_end": "2025-12-31",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "omitted_rows_are_zero",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "omitted_rows_are_zero"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

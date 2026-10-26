@@ -1,0 +1,62 @@
+[
+  {
+    "condition": "A",
+    "failed_items": 0,
+    "items": 6,
+    "limitation": "Returned-call compute timing excludes some cold starts/client/infrastructure time; C adds no model calls",
+    "median_generation_seconds_per_call": 51.72298795999998,
+    "returned_model_calls": 6,
+    "schema_repairs": 0,
+    "split": "development",
+    "total_final_tokens": 3243,
+    "total_generation_seconds": 418.11147520699996,
+    "total_input_tokens": 71038,
+    "total_output_tokens": 8866,
+    "total_reasoning_tokens": 5623
+  },
+  {
+    "condition": "B",
+    "failed_items": 0,
+    "items": 6,
+    "limitation": "Returned-call compute timing excludes some cold starts/client/infrastructure time; C adds no model calls",
+    "median_generation_seconds_per_call": 49.75991098600001,
+    "returned_model_calls": 6,
+    "schema_repairs": 0,
+    "split": "development",
+    "total_final_tokens": 3330,
+    "total_generation_seconds": 302.974461834,
+    "total_input_tokens": 73906,
+    "total_output_tokens": 6340,
+    "total_reasoning_tokens": 3010
+  },
+  {
+    "condition": "A",
+    "failed_items": 1,
+    "items": 30,
+    "limitation": "Returned-call compute timing excludes some cold starts/client/infrastructure time; C adds no model calls",
+    "median_generation_seconds_per_call": 64.40857413399993,
+    "returned_model_calls": 32,
+    "schema_repairs": 2,
+    "split": "test",
+    "total_final_tokens": 18746,
+    "total_generation_seconds": 2924.8909338179997,
+    "total_input_tokens": 401447,
+    "total_output_tokens": 58038,
+    "total_reasoning_tokens": 39292
+  },
+  {
+    "condition": "B",
+    "failed_items": 0,
+    "items": 30,
+    "limitation": "Returned-call compute timing excludes some cold starts/client/infrastructure time; C adds no model calls",
+    "median_generation_seconds_per_call": 63.95088231599999,
+    "returned_model_calls": 30,
+    "schema_repairs": 0,
+    "split": "test",
+    "total_final_tokens": 18947,
+    "total_generation_seconds": 2584.692779439,
+    "total_input_tokens": 384656,
+    "total_output_tokens": 51129,
+    "total_reasoning_tokens": 32182
+  }
+]

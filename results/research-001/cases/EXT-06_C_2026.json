@@ -1,0 +1,390 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 133,
+            "line_start": 133,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "unvaccinated_cases",
+        "unit": "cases",
+        "value": 162
+      },
+      {
+        "citations": [
+          {
+            "line_end": 105,
+            "line_start": 105,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "non_texas_cases",
+        "unit": "cases",
+        "value": 210
+      },
+      {
+        "citations": [
+          {
+            "line_end": 133,
+            "line_start": 133,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "unknown_status_cases",
+        "unit": "cases",
+        "value": 30
+      },
+      {
+        "citations": [
+          {
+            "line_end": 133,
+            "line_start": 133,
+            "source_id": "cdc-us-2025"
+          },
+          {
+            "line_end": 105,
+            "line_start": 105,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "unvaccinated_percent",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "non_texas_reported_cases",
+        "slot": "unvaccinated_percent",
+        "unit": "percent",
+        "value": 77.14
+      }
+    ],
+    "item_id": "EXT-06",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "unvaccinated_cases: 162 cases; non_texas_cases: 210 cases; unknown_status_cases: 30 cases; unvaccinated_percent: 77.14 percent",
+    "verification": [
+      {
+        "decision": "corrected",
+        "errors": [
+          "population",
+          "citation_does_not_support_required_operand"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 105,
+              "line_start": 105,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "non_texas_reported_cases",
+          "slot": "unvaccinated_cases",
+          "unit": "cases",
+          "value": 162
+        },
+        "slot": "unvaccinated_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 105,
+              "line_start": 105,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "non_texas_cases",
+          "unit": "cases",
+          "value": 210
+        },
+        "slot": "non_texas_cases"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "population",
+          "citation_does_not_support_required_operand"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 105,
+              "line_start": 105,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "non_texas_reported_cases",
+          "slot": "unknown_status_cases",
+          "unit": "cases",
+          "value": 30
+        },
+        "slot": "unknown_status_cases"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "citation_does_not_support_required_operand"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 105,
+              "line_start": 105,
+              "source_id": "cdc-us-2025"
+            },
+            {
+              "line_end": 105,
+              "line_start": 105,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "unvaccinated_percent",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "non_texas_reported_cases",
+          "slot": "unvaccinated_percent",
+          "unit": "percent",
+          "value": 77.14
+        },
+        "slot": "unvaccinated_percent"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-06_B_2026.json",
+  "item_id": "EXT-06",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 133,
+            "line_start": 133,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "unvaccinated_cases",
+        "unit": "cases",
+        "value": 162
+      },
+      {
+        "citations": [
+          {
+            "line_end": 105,
+            "line_start": 105,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "non_texas_cases",
+        "unit": "cases",
+        "value": 210
+      },
+      {
+        "citations": [
+          {
+            "line_end": 133,
+            "line_start": 133,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "unknown_status_cases",
+        "unit": "cases",
+        "value": 30
+      },
+      {
+        "citations": [
+          {
+            "line_end": 133,
+            "line_start": 133,
+            "source_id": "cdc-us-2025"
+          },
+          {
+            "line_end": 105,
+            "line_start": 105,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "unvaccinated_percent",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "non_texas_reported_cases",
+        "slot": "unvaccinated_percent",
+        "unit": "percent",
+        "value": 77.14
+      }
+    ],
+    "item_id": "EXT-06",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "unvaccinated_cases: 162 cases; non_texas_cases: 210 cases; unknown_status_cases: 30 cases; unvaccinated_percent: 77.14 percent",
+    "verification": [
+      {
+        "decision": "corrected",
+        "errors": [
+          "population",
+          "citation_does_not_support_required_operand"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 105,
+              "line_start": 105,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "non_texas_reported_cases",
+          "slot": "unvaccinated_cases",
+          "unit": "cases",
+          "value": 162
+        },
+        "slot": "unvaccinated_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 105,
+              "line_start": 105,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "non_texas_cases",
+          "unit": "cases",
+          "value": 210
+        },
+        "slot": "non_texas_cases"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "population",
+          "citation_does_not_support_required_operand"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 105,
+              "line_start": 105,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "non_texas_reported_cases",
+          "slot": "unknown_status_cases",
+          "unit": "cases",
+          "value": 30
+        },
+        "slot": "unknown_status_cases"
+      },
+      {
+        "decision": "corrected",
+        "errors": [
+          "citation_does_not_support_required_operand"
+        ],
+        "original": {
+          "citations": [
+            {
+              "line_end": 105,
+              "line_start": 105,
+              "source_id": "cdc-us-2025"
+            },
+            {
+              "line_end": 105,
+              "line_start": 105,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "unvaccinated_percent",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "non_texas_reported_cases",
+          "slot": "unvaccinated_percent",
+          "unit": "percent",
+          "value": 77.14
+        },
+        "slot": "unvaccinated_percent"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

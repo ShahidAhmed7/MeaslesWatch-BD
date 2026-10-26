@@ -1,0 +1,15 @@
+{
+  "artifacts": {
+    "budget_observation.json": "607ff22bba0a79836f7b4161c3323a88c6444bb93a5d614758efe17b83d4b219",
+    "causal_claim_metrics.json": "846c41183cd0cc37bdf89cbc6a47dc10d1062409534910f91490857ba14345c3",
+    "operational_metrics.json": "e67c205cd451694198116039cd3bf5a908da7c085497175941144d4d600f0ebf",
+    "retrieval_cases.json": "bb176c65e3377b44b8b09cc80ce1f9af3a6d9668dff1b1308e0633a448499c28",
+    "retrieval_summary.json": "3c43881f5abb2a9abe36a1eecfbfa3f511a7d53f6b26b937e275153211042bc0",
+    "verification_by_split.json": "4afe8d582ccfbfeaaeb9cf70bc189a24e02a0bd72878232f347f66c33a080761",
+    "verifier_cpu_timing.json": "76768434f07af85b772a05d87415f1c1ed2ed673d7077aa797a65842cc81c391"
+  },
+  "primary_scoring_changed": false,
+  "run_manifest_sha256": "b673e6bc96bdc20d5844482a51b939b96539b4daa7fdd19685c8abf7bb93ddc5",
+  "script_sha256": "3884fd6850ff5e494272d98a4a7dccc4824846b92267247c51b5377af2bb8ef8",
+  "status": "completed_diagnostic_supplement"
+}
