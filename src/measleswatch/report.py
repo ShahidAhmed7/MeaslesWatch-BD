@@ -21,6 +21,8 @@ def build_report(root, output):
     metrics = read("results/statistics-001/metrics.json")
     main = {r["model"]: r for r in metrics if r["measure"] == "measles_lab_confirmed" and r["split"] == "test"}
     nb, naive = main["negative_binomial"], main["seasonal_naive"]
+    diagnostic = next(r for r in read("results/statistics-001/development_diagnostics.json") if r["measure"] == "measles_lab_confirmed")
+    windows = {r["training_window"]: r for r in metrics if r["measure"] == "measles_lab_confirmed" and r["split"] == "test_window_sensitivity"}
     boot = read("results/statistics-001/paired_bootstrap.json")["measles_lab_confirmed"]
     paired = read("results/benchmark-score-001/paired_comparisons.json")
     verifier = read("results/benchmark-score-001/verification_metrics.json")
@@ -39,7 +41,7 @@ def build_report(root, output):
     comparisons = "; ".join(f"{r['difference']}: {r['estimate']*100:.1f} percentage points (item-bootstrap 95% interval {r['item_bootstrap_95'][0]*100:.1f}, {r['item_bootstrap_95'][1]*100:.1f})" for r in paired)
     text = f'''# MeaslesWatch BD: retrospective surveillance and verified scientific communication
 
-**Study snapshot:** August 2026; analysis completed 26 October 2026. Research prototype,
+**Study snapshot:** August 2026; analysis completed 26 October 2026 (UTC). Research prototype,
 not a clinical or operational warning system. This report describes measured results
 from frozen public observations and saved Modal outputs.
 
@@ -118,11 +120,20 @@ skill. NB2's interval coverage was {pct(nb['interval_coverage'])}, with mean wid
 The Poisson-reference seasonal detector substantially under-covered, exposing its
 equidispersion assumptions rather than validating its bands.
 
+In the pre-test 2017–2021 training window, NB2 dispersion was
+{diagnostic['NB2']['alpha']:.2f}; Pearson dispersion was
+{diagnostic['NB2']['pearson_dispersion']:.2f}, versus
+{diagnostic['Poisson']['pearson_dispersion']:.2f} under Poisson. Substantial residual
+autocorrelation remained. NB2 absorbs excess count variation but does not establish
+an adequate temporal model; empirical interval coverage alone is insufficient.
+
 All {sum(r['anomaly'] is True for r in case)} of {len(case)} fixed-origin January–May 2026
 laboratory observations exceeded the NB2 upper threshold. This is a retrospective
 statistical result; it is not independently labeled outbreak sensitivity or warning
 lead time. Changing windows and classifications changes expectations, so the
 prespecified primary model is retained rather than selected on test performance.
+The 36-month sensitivity failed on {windows[36]['failed_months']}/48 test months;
+the 84-month window had MAE {windows[84]['MAE']:.2f}, emphasizing dependence on history.
 Synthetic failures remain visible: low-dispersion Poisson simulations can fail NB2
 fitting, reducing scored monthly denominators, while missed-event counts include
 undetected/failed events. The original monthly summaries condition on available

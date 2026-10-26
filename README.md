@@ -54,6 +54,11 @@ manifests and rendered-image metadata are not expected to have identical bytes.
 Other operating systems/BLAS libraries may introduce floating-point differences;
 the checked-in JSON artifacts remain the recorded results.
 
+Some initial run manifests retain earlier implementation hashes from before wrapper
+parameterization. The current locked code reproduces their numerical artifact hashes;
+new reproduction manifests record the current implementation. Historical provenance
+files are retained rather than rewritten to claim an identical original source version.
+
 ## What the analyst does
 
 There is **no training or fine-tuning**. The analyst uses a pinned, pretrained
