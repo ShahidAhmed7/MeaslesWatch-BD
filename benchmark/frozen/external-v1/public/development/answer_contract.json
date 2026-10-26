@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "response_fields": [
+    "item_id",
+    "status",
+    "claims",
+    "limitations",
+    "summary"
+  ],
+  "claim_fields": [
+    "slot",
+    "value",
+    "unit",
+    "measure",
+    "geography",
+    "population",
+    "period_start",
+    "period_end",
+    "citations"
+  ],
+  "citation_fields": [
+    "source_id",
+    "line_start",
+    "line_end"
+  ],
+  "status_vocabulary": [
+    "supported",
+    "contradicted",
+    "ambiguous_source",
+    "insufficient_data",
+    "invalid_citation"
+  ],
+  "status_semantics": "For extraction/computation, supported means the requested result is supported, even if a requested boolean is false. For explicit seeded claims, contradicted requires a source contradiction, insufficient_data means the source cannot establish the claim, and invalid_citation means its offered locator is invalid. Source-window conflicts are ambiguous_source, not silently reconciled.",
+  "unit_vocabulary": [
+    "cases",
+    "deaths",
+    "percent",
+    "ratio",
+    "per_100000_population",
+    "per_1000000_population",
+    "per_1000_cases",
+    "none",
+    "iso_date"
+  ],
+  "date_format": "Dates use ISO YYYY-MM-DD; month lists use ISO YYYY-MM; years are integers.",
+  "value_types": "JSON number, boolean, string, null, or an array of ISO months for a tied-month set; never treat bool as an integer count.",
+  "measure_convention": "Use reported_measles_cases, reported_confirmed_measles_cases, laboratory_confirmed_measles_cases, hospitalized_measles_cases or reported_measles_deaths for primary counts as appropriate. Use notification_rate for per-population rates, reported_measles_deaths_per_reported_cases for the reported mortality rate, and the slot ID for percentage/ratio measures. Boolean/categorical source interpretation uses source_interpretation. Other operation-specific count measures may use their explicit semantic code.",
+  "population_convention": "all_ages, age_under_1, age_under_5, age_10_and_under, non_texas_reported_cases, internationally_imported_cases, known_vaccination_status_cases, reported_measles_deaths, all_hospitalized_cases, reviewed_hospitalized_patients, or not_applicable, according to the claim's actual denominator or target group.",
+  "interpretation_codes": [
+    "unvaccinated_or_unknown",
+    "opt_in_registry_cannot_disaggregate",
+    "vaccinated_and_unvaccinated_population_at_risk",
+    "age_under_1",
+    "no_rate_calculated",
+    "region_specific_population_at_risk",
+    "age_by_month_cross_tabulation",
+    "opt_in_registry_unverified_history",
+    "causal_comparison_design"
+  ],
+  "interpretation_code_scope": "Generic scientific labels, not per-item expected values. Ordinary source labels such as country names remain strings.",
+  "summary_policy": "Free summary text is not automatically verified; the future C condition must render only checked claims and approved limitations."
+}

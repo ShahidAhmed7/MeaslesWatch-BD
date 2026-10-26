@@ -1,0 +1,72 @@
+{
+  "retrieved_with": "stdlib urllib, plain TLS, no auth/cookies",
+  "entries": [
+    {
+      "source_id": "cdc-us-2025",
+      "url": "https://www.cdc.gov/mmwr/volumes/74/wr/pdfs/mm7414a1-H.pdf",
+      "file": "cdc-us-2025.pdf",
+      "expected": "pdf",
+      "http_status": 403,
+      "content_type": "text/html",
+      "error": "http_error_body_saved",
+      "bytes": 429,
+      "sha256": "d648c258941847a645425a09684e8fc118f6509a57e328953b792b711fa6c105",
+      "retrieved_at_utc": "2026-10-26T10:16:57.250882+00:00",
+      "content_ok": false
+    },
+    {
+      "source_id": "cdc-westtexas-2026",
+      "url": "https://www.cdc.gov/mmwr/volumes/75/wr/pdfs/mm7520a1-H.pdf",
+      "file": "cdc-westtexas-2026.pdf",
+      "expected": "pdf",
+      "http_status": 403,
+      "content_type": "text/html",
+      "error": "http_error_body_saved",
+      "bytes": 429,
+      "sha256": "222a6dd428a74d65afdaecb3dc1af9dd0988acb137054e21131a94d816bb7bee",
+      "retrieved_at_utc": "2026-10-26T10:16:57.554592+00:00",
+      "content_ok": false
+    },
+    {
+      "source_id": "ecdc-eueea-2024",
+      "url": "https://www.ecdc.europa.eu/sites/default/files/documents/MEAS-AER-2024-Report.pdf",
+      "file": "ecdc-eueea-2024.pdf",
+      "expected": "pdf",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "bytes": 1210026,
+      "sha256": "73352f2007d824204bf883fc0b576e9e839616f11ff81eab491b96eeda9721b3",
+      "retrieved_at_utc": "2026-10-26T10:17:01.473334+00:00",
+      "content_ok": true
+    },
+    {
+      "source_id": "ukhsa-england-2025",
+      "url": "https://www.gov.uk/government/publications/measles-epidemiology-2023-to-2026/confirmed-cases-of-measles-in-england-by-month-age-region-and-upper-tier-local-authority-2025",
+      "file": "ukhsa-england-2025.html",
+      "expected": "html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 94940,
+      "sha256": "ce3f79ec0bb3d6fb4c1b5a0af1c461f99817748296b668c127d6461ed65cb8fe",
+      "retrieved_at_utc": "2026-10-26T10:17:04.390795+00:00",
+      "content_ok": true
+    },
+    {
+      "source_id": "ukhsa-england-2026",
+      "url": "https://www.gov.uk/government/publications/measles-epidemiology-2023-to-2026/confirmed-cases-of-measles-in-england-by-month-age-region-and-upper-tier-local-authority-2026",
+      "file": "ukhsa-england-2026.html",
+      "expected": "html",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 107007,
+      "sha256": "2e9c821b35b64383e100955f3629df5cab437acf943324de13b2d64d747b4bf5",
+      "retrieved_at_utc": "2026-10-26T10:17:05.699668+00:00",
+      "content_ok": true
+    }
+  ],
+  "status": "failed",
+  "failures": [
+    "cdc-us-2025",
+    "cdc-westtexas-2026"
+  ]
+}

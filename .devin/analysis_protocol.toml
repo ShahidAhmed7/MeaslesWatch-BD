@@ -1,0 +1,129 @@
+protocol_version = "1.0.0"
+status = "prespecified_before_statistical_model_runs"
+study_config = ".devin/study.toml"
+data_run = "data/processed/phase1-r2"
+snapshot_month = "2026-08"
+geography = "Bangladesh"
+population = "all_ages"
+primary_target = "measles_lab_confirmed"
+sensitivity_target = "measles_total_classified"
+unit = "reported_cases"
+historical_vintages_available = false
+causal_inference = false
+prospective_validation_claim = false
+vaccination_case_association_testing = false
+
+[windows]
+initial_history_start = "2012-01"
+initial_history_end = "2016-12"
+development_start = "2017-01"
+development_end = "2021-12"
+test_start = "2022-01"
+test_end = "2025-12"
+case_study_start = "2026-01"
+case_study_end = "2026-05"
+case_study_fit_cutoff = "2025-12"
+lag_sensitive_descriptive_start = "2026-06"
+lag_sensitive_descriptive_end = "2026-07"
+
+[data_policy]
+missing_case_imputation = "forbidden"
+case_smoothing_before_modeling = "forbidden"
+negative_primary_counts = "fatal"
+duplicate_months = "fatal"
+missing_primary_month = "fatal"
+coverage_monthly_expansion = "forbidden"
+coverage_clipping = "forbidden"
+all_2026_months_provisional = true
+historical_reporting_vintage_leakage = "not_testable_without_historical_releases"
+suspected_cases_added_to_classified_total = false
+author_susceptibility_used_as_observed_outcome = false
+
+[descriptive]
+complete_years_start = 2012
+complete_years_end = 2025
+case_study_ytd_end_month = 5
+latest_snapshot_ytd_end_month = 7
+partial_year_labels_required = true
+classification_denominator = "clinical_plus_epi_linked_plus_laboratory_confirmed"
+coverage_change_unit = "percentage_points"
+coverage_relative_change_unit = "relative_percent"
+coverage_confidence_intervals = "not_available_no_sampling_variance_supplied"
+decomposition_start_year = 2024
+decomposition_end_year = 2025
+decomposition_coverage = "recomputed_admin_doses_divided_by_admin_target"
+decomposition_interpretation = "arithmetic_identity_not_causal_attribution"
+
+[seasonal_naive]
+lag_months = 12
+case_study_rule = "use_same_calendar_month_2025_without_observing_2026"
+probabilistic_metrics = "not_defined_for_point_only_comparator"
+
+[negative_binomial]
+family = "NB2"
+link = "log"
+training_calendar_months = 60
+features = ["intercept", "linear_time_years", "annual_sine", "annual_cosine"]
+time_origin = "first_month_of_each_training_window"
+time_scale = "calendar_month_offset_divided_by_12"
+seasonal_phase = "2*pi*(calendar_month-1)/12"
+dispersion_estimation = "joint_maximum_likelihood_on_training_only"
+optimizer = "bfgs"
+max_iterations = 200
+poisson_limit_alpha_max = 0.00000001
+poisson_limit_rule = "only_if_converged_training_estimate_alpha_is_nonnegative_and_le_1e_minus_8"
+all_zero_training_rule = "explicit_degenerate_poisson_mean_zero_recorded_as_special_case"
+fit_failure_rule = "unavailable_prediction_record_warning_and_failure_count_no_silent_substitution"
+future_observations_in_fit = "forbidden"
+test_rule = "one_step_rolling_origin_using_strictly_earlier_observations"
+case_study_rule = "one_fixed_fit_through_2025_12_forecast_all_five_months_without_refitting"
+predictive_interval_quantiles = [0.025, 0.975]
+predictive_interval_scope = "plug_in_conditional_count_variation_not_full_parameter_or_reporting_uncertainty"
+anomaly_quantile = 0.99
+anomaly_rule = "observed_strictly_greater_than_training_only_predictive_quantile"
+tail_probability = "P_training_model_Y_ge_observed"
+
+[metrics]
+point = ["MAE", "RMSE", "MASE"]
+probabilistic = ["negative_log_predictive_probability", "interval_coverage", "interval_width"]
+mase_scale = "mean_absolute_seasonal_difference_within_each_origin_training_window_lag_12"
+mase_zero_scale_rule = "unavailable_not_zero"
+report_windows_separately = true
+eligible_scored_failed_counts_required = true
+mape = "forbidden_observed_zeros"
+real_data_detection_precision_recall = "unavailable_no_independent_monthly_labels"
+
+[paired_error_bootstrap]
+enabled = true
+scope = "paired_saved_test_month_absolute_error_difference_only"
+block_length_months = 12
+resamples = 1000
+seed = 2026
+sampling = "circular_moving_blocks_until_48_months_then_truncate"
+interval_quantiles = [0.025, 0.975]
+limitation = "48_test_months_provide_limited_precision"
+
+[synthetic]
+status = "specification_only_not_run"
+processes = ["poisson", "negative_binomial_nb2"]
+training_months = 60
+evaluation_months = 12
+replicates_per_process_strength = 10
+pulse_mean_multipliers = [2.0, 4.0]
+pulse_months = 3
+paths_total = 40
+master_seed = 2026
+mean_definition = "20*exp(0.35*sin(2*pi*t/12)+0.20*cos(2*pi*t/12)+0.005*t), t=0..71"
+negative_binomial_alpha = 0.3
+seed_policy = "SeedSequence([2026,process_index,strength_index,replicate_index]); spawn_clean_onset_injection_streams"
+onset_policy = "uniform_integer_0_through_9_in_evaluation_window_from_onset_stream"
+injection_policy = "paired_clean_counts_plus_independent_poisson_counts_mean_(multiplier_minus_1)*baseline_mean_in_three_pulse_months"
+fit_policy = "fixed_60_month_fit_shared_by_clean_and_injected_evaluation_paths"
+false_alert_proportion = "alerts_on_clean_paths_divided_by_all_clean_evaluation_months"
+event_recall = "fraction_of_injected_paths_with_at_least_one_alert_in_three_labeled_pulse_months"
+precision = "alerts_in_labeled_pulse_months_divided_by_all_alerts_on_injected_paths"
+monthly_recall = "alerts_in_labeled_pulse_months_divided_by_all_labeled_pulse_months"
+f1 = "harmonic_mean_of_monthly_precision_and_monthly_recall"
+delay = "months_from_onset_to_first_alert_within_pulse; null_if_event_missed; report_miss_count"
+zero_denominator_rule = "unavailable_with_explicit_denominator"
+interpretation = "synthetic_stress_test_not_validation_of_surveillance_effectiveness"

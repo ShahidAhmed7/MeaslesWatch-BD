@@ -1,0 +1,9 @@
+scenario,n_susceptible,pct_susceptible,delta_from_baseline_n
+"Baseline (WUENIC, VE 0.85/0.95, reach 0.90, maternal 0.50)",2529036,7.08,0
+VE reduced 1 point (0.84/0.94),2717492,7.6,188456
+Campaign reach 0.80,2664685,7.46,135649
+Campaign reach 0.95,2461212,6.89,-67824
+Maternal protection 0.33 (~10 month waning),2763829,7.73,234793
+Denominator: UN WPP live births,2601614,7.14,72578
+Coverage source: government official,3207056,8.97,678020
+Coverage source: administrative (capped),1674061,4.68,-854975

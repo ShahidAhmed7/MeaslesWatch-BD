@@ -1,0 +1,17 @@
+# Source/benchmark bytes are scientifically frozen. Never normalize line endings.
+planning/source_snapshots/** -text whitespace=-blank-at-eol,-blank-at-eof
+planning/specifications/** -text whitespace=-blank-at-eol,-blank-at-eof
+benchmark/frozen/** -text whitespace=-blank-at-eol,-blank-at-eof
+benchmark/private/** -text whitespace=-blank-at-eol,-blank-at-eof
+data/processed/** -text
+results/** -text
+
+# Original project code remains readable across platforms.
+*.py text eol=lf
+*.toml text eol=lf
+uv.lock text eol=lf
+
+# More specific frozen Python/TOML copies must also retain original bytes.
+planning/source_snapshots/** -text
+benchmark/frozen/** -text
+benchmark/private/** -text

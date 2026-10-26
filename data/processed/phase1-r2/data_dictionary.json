@@ -1,0 +1,125 @@
+{
+  "campaign_context": {
+    "fields": {
+      "activity_type": "Original source label",
+      "admin_coverage_pct": "Reported administrative coverage percentage, if supplied",
+      "age_group": "Original targeted age group",
+      "campaign_id": "Stable source row reference",
+      "country": "Country name",
+      "doses": "Reported administered doses, if supplied",
+      "end": "Same precision-preserving convention as start",
+      "end_precision": "day, month or missing",
+      "extent": "Original geographic scope label",
+      "intervention": "Original vaccine/intervention label",
+      "missing_reasons": "Per-numeric-field missingness map",
+      "note": "Unmodified narrative note; retained separately from status",
+      "original_end": "Original date text",
+      "original_start": "Original date text",
+      "raw_fields": "Shared original CSV fields",
+      "source_row": "Shared source row reference",
+      "source_sha256": "Shared source file digest",
+      "start": "YYYY-MM-DD for day precision, YYYY-MM for month precision, blank if absent",
+      "start_precision": "day, month or missing",
+      "status": "Original PLANNED or CONDUCTED; notes do not overwrite status",
+      "target": "Reported target population",
+      "year_or_jrf": "Original year/JRF label, not assumed to be an event date"
+    },
+    "key": [
+      "campaign_id"
+    ]
+  },
+  "coverage_annual": {
+    "fields": {
+      "admin_doses": "Reported administrative doses, admin rows only",
+      "admin_target": "Reported administrative target; fractional population estimates allowed",
+      "antigen": "MCV1 or MCV2",
+      "country": "Country name",
+      "coverage_source": "admin, official or wuenic; never combined into one estimate",
+      "denom_births": "Separate reported births population estimate",
+      "denom_lt1yr": "Separate reported independent under-one population estimate",
+      "denominator_type": "Reported administrative target, or unavailable source-specific denominator",
+      "missing_reason": "Missingness reason, empty string for observed values",
+      "numeric_missing_reasons": "Shared per-field missingness map",
+      "original_value": "Unmodified percentage string",
+      "raw_fields": "Shared original CSV fields",
+      "recomputed_admin_pct": "100 * admin_doses / admin_target; separate from reported_pct",
+      "recomputed_pct_on_lt1yr": "100 * admin_doses / denom_lt1yr, independently recomputed",
+      "reported_admin_pct_on_lt1yr": "Author-supplied independent-denominator percentage, not recomputed",
+      "reported_minus_recomputed_pp": "Reported minus recomputed administrative percentage in pp",
+      "reported_pct": "Source-reported percentage, administrative >100 retained",
+      "source_row": "Shared source row reference",
+      "source_sha256": "Shared source file digest",
+      "unit": "percent, not percentage-point change or relative percent change",
+      "year": "Calendar year, not a monthly observation"
+    },
+    "key": [
+      "country",
+      "year",
+      "antigen",
+      "coverage_source"
+    ]
+  },
+  "outbreak_evidence": {
+    "fields": {
+      "age_group": "Claim-specific age group; unspecified where source does not define one",
+      "claim_id": "Stable section-specific claim identifier",
+      "conflict_group": "Links conflicting statements or cross-source discrepancies without resolving them",
+      "denominator": "Source denominator description/uncertainty; no inferred cohort equivalence",
+      "denominator_count": "Null where the source supplies no claim-specific count denominator",
+      "document_sha256": "Complete frozen Markdown document digest",
+      "event_end": "Explicit period end, or blank where not specified",
+      "event_start": "Explicit period start, or blank where not specified",
+      "event_window_status": "explicit, or outbreak context without a stated exact time window",
+      "matched_text": "Whitespace-normalized matched phrase, not an independent verification",
+      "publication_date": "WHO publication date, distinct from event window and snapshot month",
+      "retrieved_date": "Original snapshot retrieval day; exact timestamp unavailable",
+      "section": "Original section heading",
+      "source_line": "One-based document line",
+      "source_quote": "Complete original source line, including original whitespace",
+      "source_reported_value": "Extracted source statement, not reconciled across contradictions",
+      "status": "Attributed, not independently verified; unresolved conflict flag where applicable",
+      "unit": "Explicit cases, percent, source-labeled percent or day-of-month unit",
+      "url": "Original source URL"
+    },
+    "key": [
+      "document_sha256",
+      "section",
+      "claim_id"
+    ],
+    "scope": "Attributed WHO document statements, not monthly age-specific outcome data"
+  },
+  "schema_version": "1.0.0",
+  "shared": {
+    "count_unit": "Reported cases, not population incidence or infections",
+    "missing_numeric_values": "JSON null, never a substituted zero; original values retained",
+    "numeric_missing_reasons": "Per-field missingness; blank=observed, not_supplied=empty source, not_reported/not_applicable/unknown=documented WHO sentinels",
+    "raw_fields": "Unmodified CSV field strings, where retained as a nested object",
+    "source_row": "filename:CSV record ordinal including header, first observation=2",
+    "source_sha256": "SHA-256 of the complete immutable source file, not a row digest"
+  },
+  "surveillance_monthly": {
+    "fields": {
+      "classification": "Suspected, clinical, epidemiologically linked, laboratory confirmed, or sum of the three final classifications",
+      "count": "Nonnegative integer all-age reported count; observed zero is retained",
+      "country": "Country name",
+      "iso3": "Three-letter country code",
+      "lag_sensitive": "True for June\u2013July 2026; exclusion from primary case-study scoring",
+      "measure": "Explicit named measles count",
+      "missing_reason": "Missingness reason, empty string for observed values",
+      "month": "Calendar month YYYY-MM",
+      "original_value": "Unmodified source numeric string",
+      "population": "all_ages; no age disaggregation or all-age population denominator supplied",
+      "provisional": "True for every month in 2026",
+      "snapshot_month": "Source reporting snapshot, not the observation month",
+      "source_row": "Shared source row reference",
+      "source_sha256": "Shared source file digest",
+      "unit": "cases"
+    },
+    "key": [
+      "country",
+      "month",
+      "measure"
+    ],
+    "scope": "Bangladesh only; neighbouring-country records retained unchanged in raw snapshot"
+  }
+}

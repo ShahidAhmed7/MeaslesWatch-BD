@@ -1,0 +1,71 @@
+schema_version = "1.0.0"
+source_root = "planning/source_snapshots"
+snapshot_month = "2026-08"
+country = "Bangladesh"
+iso3 = "BGD"
+primary_measure = "measles_lab_confirmed"
+sensitivity_measure = "measles_total_classified"
+surveillance_start = "2012-01"
+surveillance_end = "2026-07"
+provisional_start = "2026-01"
+lag_sensitive_start = "2026-06"
+coverage_discrepancy_pp = 0.05
+
+[source]
+record_id = "22167512"
+version = "1.1.0"
+doi = "10.5281/zenodo.22167512"
+license = "CC-BY-4.0"
+attribution = "Sikder, Pranta (2026). Immunisation coverage and surveillance indicators preceding the 2026 measles outbreak in Bangladesh: data and code. Version 1.1.0."
+record_metadata_sha256 = "a58a84ebdfd180f81c5bfcc992bebab690f1f92de19939a37f8053cdedf28c2f"
+inspection_manifest_sha256 = "bfab9df00b92935de5c537c55eed235309fe731d13d0ddb3e76d66e206810a3f"
+
+[document]
+filename = "who_DON598_2026-04-23.md"
+sha256 = "652e18ed465af5f3463d9916eea4d465da5316abdb75d97395b09e837b52d0a9"
+url = "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON598"
+publication_date = "2026-04-23"
+retrieved_date = "2026-10-26"
+retrieval_precision = "date_only_original_timestamp_not_recorded"
+license = "WHO source terms; no blanket CC-BY license inferred"
+attribution = "World Health Organization (23 April 2026). Disease Outbreak News: Measles in Bangladesh."
+
+[sentinels]
+"-9999" = "not_reported"
+"-4444" = "not_applicable"
+"-2222" = "unknown"
+
+[modal]
+profile = "kazigalib143"
+app_name = "measleswatch-pilot"
+model_id = "Qwen/Qwen3-4B"
+model_revision = "1cfa9a7208912126459214e8b04321603b3df60c"
+gpu = "L40S"
+cpu = 2.0
+memory_mib = 16384
+max_containers = 1
+min_containers = 0
+scaledown_window_seconds = 60
+timeout_seconds = 7200
+context_window_tokens = 131072
+max_input_tokens = 98304
+max_new_tokens = 32768
+rope_scaling_type = "yarn"
+rope_scaling_factor = 4.0
+seed = 2026
+enable_thinking = true
+temperature = 0.6
+top_p = 0.95
+top_k = 20
+min_p = 0.0
+pilot_estimate_limit_usd = 6.0
+working_limit_usd = 20.0
+absolute_authorization_usd = 30.0
+max_gpu_container_hours = 6.0
+hard_generation_limit = 400
+budget_verification_required = true
+
+[pilot]
+system_message = "Return only the JSON object requested by the user. Do not add Markdown, commentary, or extra keys."
+user_message = 'Return {"status":"ok"}.'
+expected_status = "ok"

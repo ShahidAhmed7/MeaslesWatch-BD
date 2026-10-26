@@ -1,0 +1,116 @@
+{
+  "audit_kind": "repository_and_specification_gap_audit_not_new_scientific_or_llm_evaluation",
+  "audited_at_utc": "2026-10-26T14:42:47.544623+00:00",
+  "audited_at_dhaka": "2026-10-26T20:42:47.544623+06:00",
+  "project_root": "/Users/shahidahmed/Documents/MeaslesWatch",
+  "specification": {
+    "source": "/Users/shahidahmed/Downloads/MeaslesWatch_BD_Project_Features.md",
+    "retained_copy": "planning/specifications/MeaslesWatch_BD_Project_Features.md",
+    "sha256": "63b82d0707c1453eb3b0a740f18f93511ea354a295c8f9ff24985ab9ce068a4f"
+  },
+  "git": {
+    "metadata_present": false,
+    "status_command": "fatal: not a git repository",
+    "project_readme_present": false
+  },
+  "offline_tests": {
+    "command": ".venv/bin/pytest -q",
+    "observed_result": "62 passed in 0.34s",
+    "passed": 62,
+    "failed": 0,
+    "scope": "Existing ingestion, descriptive arithmetic, Modal interfaces/budget bounds, generation controls and benchmark freeze; no GPU calls"
+  },
+  "canonical_data": {
+    "run": "data/processed/phase1-r2",
+    "valid": true,
+    "failures": 0,
+    "passed_check_records": 11823,
+    "warning_records": 47,
+    "warning_type_counts": {
+      "readme_doi_discrepancy": 1,
+      "excluded_author_outputs": 1,
+      "regional_negative_quarantined": 1,
+      "provisional_surveillance": 1,
+      "coverage_discrepancy": 3,
+      "admin_above_100": 24,
+      "coverage_missing": 8,
+      "campaign_imprecise_date": 5,
+      "planned_with_later_note": 1,
+      "source_conflicts": 1,
+      "document_retrieval_precision": 1
+    },
+    "row_counts": {
+      "campaign_context": 14,
+      "coverage_annual": 81,
+      "outbreak_evidence": 12,
+      "surveillance_monthly": 875
+    },
+    "saved_table_hashes_match": true,
+    "recreated_in_temporary_directory_during_audit": true,
+    "all_recreated_canonical_table_hashes_match": true
+  },
+  "descriptive": {
+    "run": "results/description-001",
+    "artifact_count": 8,
+    "saved_hashes_match": true,
+    "temporary_reproduction_all_eight_artifact_hashes_match": true,
+    "independent_raw_csv_annual_laboratory_totals_checked": 14,
+    "independent_annual_checks_all_passed": true,
+    "saved_implementation_sha256": "263c76da7c3d078bab2c8698965c5c5bd5f05aa56ab906cfe28b56f6cce67107",
+    "current_implementation_sha256": "5bc72284582761c63cae9429b327b4e3e23a0170dc2d6d665d52fe92a96a6e44",
+    "source_hash_differs_but_numerical_artifacts_reproduce": true
+  },
+  "external_benchmark": {
+    "version": "external-v1",
+    "test_items": 30,
+    "development_items": 6,
+    "frozen_artifacts": 20,
+    "frozen_hashes_verified": true,
+    "original_source_reviewed_test_items": 15,
+    "original_source_review_all_saved_checks_pass": true,
+    "model_benchmark_executed": false,
+    "runtime_verifier_implemented": false,
+    "scoring_harness_implemented": false
+  },
+  "modal": {
+    "audit_made_read_only_app_and_billing_queries_only": true,
+    "new_inference_or_spend_initiated": false,
+    "app_list_observed": [],
+    "workspace_metered_cost_observed_usd": "2.30414953",
+    "workspace_cost_is_not_project_attributed_spend_or_remaining_credit": true,
+    "ledger_reserved_usd": "8.0",
+    "ledger_reserved_container_seconds": 9720,
+    "ledger_reserved_generations": 2,
+    "ledger_reservations_are_not_final_billed_charges": true,
+    "provider_controls_in_pilot_manifests": "User-confirmed; not independently dashboard-inspected",
+    "successful_saved_pilots": [
+      "modal-pilot-001",
+      "modal-thinking-pilot-001"
+    ],
+    "thinking_pilot_input_tokens": 41,
+    "thinking_pilot_output_tokens": 150,
+    "thinking_pilot_is_not_long_context_capacity_or_benchmark_validation": true
+  },
+  "not_present_or_not_run": [
+    "fitted_statistical_baselines",
+    "chronological_backtest_results",
+    "model_diagnostics",
+    "training_window_sensitivity",
+    "anomaly_results",
+    "research_figures",
+    "research_brief_generation",
+    "production_evidence_registry",
+    "runtime_claim_verifier",
+    "benchmark_scoring_harness",
+    "A_B_C_benchmark_outputs",
+    "six_page_Streamlit_app",
+    "project_README",
+    "scientific_report",
+    "Git_metadata_and_remote"
+  ],
+  "audit_constraints": [
+    "No implementation code, frozen sources, canonical runs, benchmark files or study settings changed",
+    "Temporary reproduction outputs were removed",
+    "Status and completion plan are the only authored project deliverables in this audit"
+  ]
+}

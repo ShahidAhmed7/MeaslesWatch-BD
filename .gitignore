@@ -1,0 +1,66 @@
+# Virtual environments
+.venv/
+venv/
+
+# Python caches and test/lint state
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Packaging build artifacts
+build/
+dist/
+*.egg-info/
+
+# Secrets and credentials (never commit)
+.env
+.env.*
+!.env.example
+.modal.toml
+*token*
+*credential*
+*.pem
+*.key
+secrets/
+.devin/*.local.*
+
+# Model weights and inference artifacts
+*.bin
+*.safetensors
+*.gguf
+*.ckpt
+*.pt
+*.pth
+*.onnx
+weights/
+model_cache/
+.cache/huggingface/
+
+# Large runtime artifacts and databases
+*.parquet
+*.feather
+*.arrow
+*.duckdb
+*.sqlite
+*.sqlite3
+*.h5
+*.hdf5
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# OS and editor noise
+.DS_Store
+.idea/
+.vscode/
+
+# Local accounting/operational state; release summaries retain reservation evidence
+.devin/modal_ledger.json
+.devin/modal_run.lock
+.devin/logs/
+.devin/live_requests/

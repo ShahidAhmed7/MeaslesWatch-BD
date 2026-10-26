@@ -1,0 +1,3919 @@
+{
+  "schema_version": "1.0.0",
+  "status": "frozen_question_gold_specification",
+  "items": {
+    "EXT-01": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "United States",
+        "period_start": "2025-01-01",
+        "period_end": "2025-04-17"
+      },
+      "slots": {
+        "total_cases": {
+          "value": "800",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "reported_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 252,
+              "line_end": 252,
+              "quote": "| **Total measles cases** | **800 (100)** | **48 (6)** | **752 (94)** |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Total measles cases",
+            "column_zero_based": 1,
+            "table": null,
+            "raw_cell": "800 (100)"
+          }
+        },
+        "lab_confirmed_cases": {
+          "value": "557",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "laboratory_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 133,
+              "line_end": 133,
+              "quote": "Most cases (557; 70%) were laboratory-confirmed"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "Most cases \\((\\d+); (\\d+)%\\) were laboratory-confirmed",
+            "group": 1
+          }
+        },
+        "full_year": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 19,
+              "line_end": 19,
+              "quote": "January 1\u2013April 17, 2025"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "January 1\u2013April 17, 2025"
+          }
+        },
+        "all_confirmed_are_lab_confirmed": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 133,
+              "line_end": 133,
+              "quote": "Most cases (557; 70%)"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "Most cases (557; 70%)"
+          }
+        }
+      },
+      "required_limitations": [
+        "preliminary_partial_year",
+        "confirmed_includes_epidemiologic_links"
+      ]
+    },
+    "EXT-02": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "United States",
+        "period_start": "2025-01-01",
+        "period_end": "2025-04-17"
+      },
+      "slots": {
+        "lab_cases": {
+          "value": "557",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "laboratory_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 133,
+              "line_end": 133,
+              "quote": "Most cases (557; 70%) were laboratory-confirmed"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "Most cases \\((\\d+); (\\d+)%\\) were laboratory-confirmed",
+            "group": 1
+          }
+        },
+        "confirmed_cases": {
+          "value": "800",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "reported_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 252,
+              "line_end": 252,
+              "quote": "| **Total measles cases** | **800 (100)** | **48 (6)** | **752 (94)** |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Total measles cases",
+            "column_zero_based": 1,
+            "table": null,
+            "raw_cell": "800 (100)"
+          }
+        },
+        "calculated_lab_percent": {
+          "value": "69.63",
+          "type": "number",
+          "unit": "percent",
+          "population": "all_ages",
+          "measure": "calculated_lab_percent",
+          "scope_overrides": {},
+          "absolute_tolerance": "0.005",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 133,
+              "line_end": 133,
+              "quote": "Most cases (557; 70%) were laboratory-confirmed"
+            },
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 252,
+              "line_end": 252,
+              "quote": "| **Total measles cases** | **800 (100)** | **48 (6)** | **752 (94)** |"
+            }
+          ],
+          "independent_operation": {
+            "type": "percent",
+            "arguments": [
+              "557",
+              "800"
+            ],
+            "rounding_places": 2,
+            "rounding": "ROUND_HALF_UP"
+          }
+        },
+        "reported_lab_percent": {
+          "value": "70",
+          "type": "integer",
+          "unit": "percent",
+          "population": "all_ages",
+          "measure": "reported_lab_percent",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 133,
+              "line_end": 133,
+              "quote": "Most cases (557; 70%) were laboratory-confirmed"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "Most cases \\((\\d+); (\\d+)%\\) were laboratory-confirmed",
+            "group": 2
+          }
+        }
+      },
+      "required_limitations": []
+    },
+    "EXT-03": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "United States",
+        "period_start": "2025-01-01",
+        "period_end": "2025-04-17"
+      },
+      "slots": {
+        "hospitalized_cases": {
+          "value": "85",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "hospitalized_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 270,
+              "line_end": 270,
+              "quote": "| Hospitalized | **85 (11)** | 15 (31) | 70 (9) |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Hospitalized",
+            "column_zero_based": 1,
+            "table": null,
+            "raw_cell": "85 (11)"
+          }
+        },
+        "reported_cases": {
+          "value": "800",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "reported_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 252,
+              "line_end": 252,
+              "quote": "| **Total measles cases** | **800 (100)** | **48 (6)** | **752 (94)** |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Total measles cases",
+            "column_zero_based": 1,
+            "table": null,
+            "raw_cell": "800 (100)"
+          }
+        },
+        "hospitalized_percent": {
+          "value": "10.63",
+          "type": "number",
+          "unit": "percent",
+          "population": "all_ages",
+          "measure": "hospitalized_percent",
+          "scope_overrides": {},
+          "absolute_tolerance": "0.005",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 270,
+              "line_end": 270,
+              "quote": "| Hospitalized | **85 (11)** | 15 (31) | 70 (9) |"
+            },
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 252,
+              "line_end": 252,
+              "quote": "| **Total measles cases** | **800 (100)** | **48 (6)** | **752 (94)** |"
+            }
+          ],
+          "independent_operation": {
+            "type": "percent",
+            "arguments": [
+              "85",
+              "800"
+            ],
+            "rounding_places": 2,
+            "rounding": "ROUND_HALF_UP"
+          }
+        },
+        "population_risk_identified": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 41,
+              "line_end": 41,
+              "quote": "patients were hospitalized"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "patients were hospitalized"
+          }
+        }
+      },
+      "required_limitations": [
+        "case_share_not_population_risk",
+        "preliminary_partial_year"
+      ]
+    },
+    "EXT-04": {
+      "expected_status": "contradicted",
+      "default_scope": {
+        "geography": "United States",
+        "period_start": "2025-01-01",
+        "period_end": "2025-04-17"
+      },
+      "slots": {
+        "deaths": {
+          "value": "3",
+          "type": "integer",
+          "unit": "deaths",
+          "population": "all_ages",
+          "measure": "reported_measles_deaths",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 271,
+              "line_end": 271,
+              "quote": "| Died\u2020 | **3 (3.8)** | 0 (\u2014) | 3 (4.0) |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Died\u2020",
+            "column_zero_based": 1,
+            "table": null,
+            "raw_cell": "3 (3.8)"
+          }
+        },
+        "reported_death_rate": {
+          "value": "3.8",
+          "type": "number",
+          "unit": "per_1000_cases",
+          "population": "all_ages",
+          "measure": "reported_measles_deaths_per_reported_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 271,
+              "line_end": 271,
+              "quote": "| Died\u2020 | **3 (3.8)"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "\\| Died\\u2020 \\| \\*\\*\\d+ \\(([\\d.]+)\\)",
+            "group": 1
+          }
+        },
+        "calculated_death_percent": {
+          "value": "0.38",
+          "type": "number",
+          "unit": "percent",
+          "population": "all_ages",
+          "measure": "calculated_death_percent",
+          "scope_overrides": {},
+          "absolute_tolerance": "0.005",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 271,
+              "line_end": 271,
+              "quote": "| Died\u2020 | **3 (3.8)** | 0 (\u2014) | 3 (4.0) |"
+            },
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 252,
+              "line_end": 252,
+              "quote": "| **Total measles cases** | **800 (100)** | **48 (6)** | **752 (94)** |"
+            }
+          ],
+          "independent_operation": {
+            "type": "percent",
+            "arguments": [
+              "3",
+              "800"
+            ],
+            "rounding_places": 2,
+            "rounding": "ROUND_HALF_UP"
+          }
+        },
+        "draft_unit_correct": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 281,
+              "line_end": 281,
+              "quote": "Deaths per 1,000 persons with measles."
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "Deaths per 1,000 persons with measles."
+          }
+        }
+      },
+      "required_limitations": [
+        "reported_rate_is_per_1000_cases"
+      ]
+    },
+    "EXT-05": {
+      "expected_status": "insufficient_data",
+      "default_scope": {
+        "geography": "United States",
+        "period_start": "2025-01-01",
+        "period_end": "2025-04-17"
+      },
+      "slots": {
+        "combined_category_cases": {
+          "value": "771",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "reported_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 259,
+              "line_end": 259,
+              "quote": "| Unvaccinated or unknown | **771 (96)** | 43 (90) | 728 (97) |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Unvaccinated or unknown",
+            "column_zero_based": 1,
+            "table": null,
+            "raw_cell": "771 (96)"
+          }
+        },
+        "definitely_unvaccinated_percent_identified": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 259,
+              "line_end": 259,
+              "quote": "Unvaccinated or unknown"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "Unvaccinated or unknown"
+          }
+        },
+        "category": {
+          "value": "unvaccinated_or_unknown",
+          "type": "category",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 259,
+              "line_end": 259,
+              "quote": "Unvaccinated or unknown"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "Unvaccinated or unknown"
+          }
+        },
+        "texas_record_limitation": {
+          "value": "opt_in_registry_cannot_disaggregate",
+          "type": "category",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 105,
+              "line_end": 105,
+              "quote": "requires explicit consent by law"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "requires explicit consent by law"
+          }
+        }
+      },
+      "required_limitations": [
+        "unknown_status_is_not_known_unvaccinated"
+      ]
+    },
+    "EXT-06": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "United States",
+        "period_start": "2025-01-01",
+        "period_end": "2025-04-17"
+      },
+      "slots": {
+        "unvaccinated_cases": {
+          "value": "162",
+          "type": "integer",
+          "unit": "cases",
+          "population": "non_texas_reported_cases",
+          "measure": "reported_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 133,
+              "line_end": 133,
+              "quote": "Among 210 measles patients (excluding 590 cases reported by Texas), 162 (77%) were unvaccinated"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "Among \\d+ measles patients .*?, (\\d+) \\(77%\\) were unvaccinated",
+            "group": 1
+          }
+        },
+        "non_texas_cases": {
+          "value": "210",
+          "type": "integer",
+          "unit": "cases",
+          "population": "non_texas_reported_cases",
+          "measure": "reported_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 252,
+              "line_end": 252,
+              "quote": "| **Total measles cases** | **800 (100)** | **48 (6)** | **752 (94)** |"
+            },
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 105,
+              "line_end": 105,
+              "quote": "excluding 590 cases reported by Texas"
+            },
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 133,
+              "line_end": 133,
+              "quote": "excluding 590 cases reported by Texas"
+            }
+          ],
+          "independent_operation": {
+            "type": "subtract",
+            "arguments": [
+              "800",
+              "590"
+            ],
+            "rounding_places": null,
+            "rounding": "ROUND_HALF_UP"
+          }
+        },
+        "unknown_status_cases": {
+          "value": "30",
+          "type": "integer",
+          "unit": "cases",
+          "population": "non_texas_reported_cases",
+          "measure": "reported_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 133,
+              "line_end": 133,
+              "quote": "vaccination status of 30 (14%) was unknown"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "vaccination status of (\\d+) \\(14%\\) was unknown",
+            "group": 1
+          }
+        },
+        "unvaccinated_percent": {
+          "value": "77.14",
+          "type": "number",
+          "unit": "percent",
+          "population": "non_texas_reported_cases",
+          "measure": "unvaccinated_percent",
+          "scope_overrides": {},
+          "absolute_tolerance": "0.005",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 133,
+              "line_end": 133,
+              "quote": "Among 210 measles patients (excluding 590 cases reported by Texas), 162 (77%) were unvaccinated"
+            },
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 252,
+              "line_end": 252,
+              "quote": "| **Total measles cases** | **800 (100)** | **48 (6)** | **752 (94)** |"
+            },
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 105,
+              "line_end": 105,
+              "quote": "excluding 590 cases reported by Texas"
+            },
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 133,
+              "line_end": 133,
+              "quote": "excluding 590 cases reported by Texas"
+            }
+          ],
+          "independent_operation": {
+            "type": "percent",
+            "arguments": [
+              "162",
+              "210"
+            ],
+            "rounding_places": 2,
+            "rounding": "ROUND_HALF_UP"
+          }
+        }
+      },
+      "required_limitations": [
+        "denominator_includes_unknown_status_cases"
+      ]
+    },
+    "EXT-07": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "United States",
+        "period_start": "2025-01-01",
+        "period_end": "2025-04-17"
+      },
+      "slots": {
+        "largest_outbreak_cases": {
+          "value": "654",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "reported_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 141,
+              "line_end": 141,
+              "quote": "accounted for 654 (82%) cases"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "accounted for (\\d+) \\(82%\\) cases",
+            "group": 1
+          }
+        },
+        "national_cases": {
+          "value": "800",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "reported_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 252,
+              "line_end": 252,
+              "quote": "| **Total measles cases** | **800 (100)** | **48 (6)** | **752 (94)** |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Total measles cases",
+            "column_zero_based": 1,
+            "table": null,
+            "raw_cell": "800 (100)"
+          }
+        },
+        "largest_outbreak_percent": {
+          "value": "81.75",
+          "type": "number",
+          "unit": "percent",
+          "population": "all_ages",
+          "measure": "largest_outbreak_percent",
+          "scope_overrides": {},
+          "absolute_tolerance": "0.005",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 141,
+              "line_end": 141,
+              "quote": "accounted for 654 (82%) cases"
+            },
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 252,
+              "line_end": 252,
+              "quote": "| **Total measles cases** | **800 (100)** | **48 (6)** | **752 (94)** |"
+            }
+          ],
+          "independent_operation": {
+            "type": "percent",
+            "arguments": [
+              "654",
+              "800"
+            ],
+            "rounding_places": 2,
+            "rounding": "ROUND_HALF_UP"
+          }
+        },
+        "all_outbreak_associated_cases": {
+          "value": "751",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "reported_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 141,
+              "line_end": 141,
+              "quote": "; 751 (94%) of all reported confirmed measles cases"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "; (\\d+) \\(94%\\) of all reported confirmed measles cases",
+            "group": 1
+          }
+        }
+      },
+      "required_limitations": []
+    },
+    "EXT-08": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "United States",
+        "period_start": "2025-01-01",
+        "period_end": "2025-04-17"
+      },
+      "slots": {
+        "imported_cases": {
+          "value": "48",
+          "type": "integer",
+          "unit": "cases",
+          "population": "internationally_imported_cases",
+          "measure": "reported_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 252,
+              "line_end": 252,
+              "quote": "| **Total measles cases** | **800 (100)** | **48 (6)** | **752 (94)** |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Total measles cases",
+            "column_zero_based": 2,
+            "table": null,
+            "raw_cell": "48 (6)"
+          }
+        },
+        "imported_us_resident_cases": {
+          "value": "44",
+          "type": "integer",
+          "unit": "cases",
+          "population": "internationally_imported_cases",
+          "measure": "reported_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 268,
+              "line_end": 268,
+              "quote": "| U.S. resident | **790 (99)** | 44 (92) | 746 (99) |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "U.S. resident",
+            "column_zero_based": 2,
+            "table": null,
+            "raw_cell": "44 (92)"
+          }
+        },
+        "us_resident_percent_of_imported": {
+          "value": "91.67",
+          "type": "number",
+          "unit": "percent",
+          "population": "internationally_imported_cases",
+          "measure": "us_resident_percent_of_imported",
+          "scope_overrides": {},
+          "absolute_tolerance": "0.005",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 268,
+              "line_end": 268,
+              "quote": "| U.S. resident | **790 (99)** | 44 (92) | 746 (99) |"
+            },
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 252,
+              "line_end": 252,
+              "quote": "| **Total measles cases** | **800 (100)** | **48 (6)** | **752 (94)** |"
+            }
+          ],
+          "independent_operation": {
+            "type": "percent",
+            "arguments": [
+              "44",
+              "48"
+            ],
+            "rounding_places": 2,
+            "rounding": "ROUND_HALF_UP"
+          }
+        }
+      },
+      "required_limitations": [
+        "denominator_is_imported_cases"
+      ]
+    },
+    "EXT-09": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "United States",
+        "period_start": "2025-01-01",
+        "period_end": "2025-04-17"
+      },
+      "slots": {
+        "minimum_linked_cases": {
+          "value": "3",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "outbreak_definition_minimum_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 125,
+              "line_end": 125,
+              "quote": "three or more epidemiologically linked"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "three or more epidemiologically linked"
+          }
+        },
+        "epidemiologic_link_required": {
+          "value": true,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 125,
+              "line_end": 125,
+              "quote": "three or more epidemiologically linked"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "three or more epidemiologically linked"
+          }
+        },
+        "unrelated_cases_sufficient": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 125,
+              "line_end": 125,
+              "quote": "three or more epidemiologically linked"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "three or more epidemiologically linked"
+          }
+        }
+      },
+      "required_limitations": []
+    },
+    "EXT-10": {
+      "expected_status": "insufficient_data",
+      "default_scope": {
+        "geography": "United States",
+        "period_start": "2025-01-01",
+        "period_end": "2025-04-17"
+      },
+      "slots": {
+        "effectiveness_identified": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 133,
+              "line_end": 133,
+              "quote": "Among all measles patients"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "Among all measles patients"
+          }
+        },
+        "missing_comparison": {
+          "value": "vaccinated_and_unvaccinated_population_at_risk",
+          "type": "category",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-us-2025",
+              "source_sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+              "line_start": 133,
+              "line_end": 133,
+              "quote": "Among all measles patients"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "Among all measles patients"
+          }
+        }
+      },
+      "required_limitations": [
+        "case_only_counts_do_not_identify_causal_effects"
+      ]
+    },
+    "EXT-11": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "EU/EEA",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31"
+      },
+      "slots": {
+        "cases_2024": {
+          "value": "35212",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "reported_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 162,
+              "line_end": 162,
+              "quote": "| EU/EEA (30 countries) | 1960 | 4.6 | 59 | 0.2 | 123 | 0.3 | 3973 | 9.1 | 35212 | 77.4 | 81.7 |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "EU/EEA (30 countries)",
+            "column_zero_based": 9,
+            "table": "Table 1",
+            "raw_cell": "35212"
+          }
+        },
+        "cases_2023": {
+          "value": "3973",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "reported_measles_cases",
+          "scope_overrides": {
+            "period_start": "2023-01-01",
+            "period_end": "2023-12-31"
+          },
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 162,
+              "line_end": 162,
+              "quote": "| EU/EEA (30 countries) | 1960 | 4.6 | 59 | 0.2 | 123 | 0.3 | 3973 | 9.1 | 35212 | 77.4 | 81.7 |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "EU/EEA (30 countries)",
+            "column_zero_based": 7,
+            "table": "Table 1",
+            "raw_cell": "3973"
+          }
+        },
+        "calculated_ratio": {
+          "value": "8.86",
+          "type": "number",
+          "unit": "ratio",
+          "population": "all_ages",
+          "measure": "calculated_ratio",
+          "scope_overrides": {},
+          "absolute_tolerance": "0.005",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 162,
+              "line_end": 162,
+              "quote": "| EU/EEA (30 countries) | 1960 | 4.6 | 59 | 0.2 | 123 | 0.3 | 3973 | 9.1 | 35212 | 77.4 | 81.7 |"
+            },
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 162,
+              "line_end": 162,
+              "quote": "| EU/EEA (30 countries) | 1960 | 4.6 | 59 | 0.2 | 123 | 0.3 | 3973 | 9.1 | 35212 | 77.4 | 81.7 |"
+            }
+          ],
+          "independent_operation": {
+            "type": "ratio",
+            "arguments": [
+              "35212",
+              "3973"
+            ],
+            "rounding_places": 2,
+            "rounding": "ROUND_HALF_UP"
+          }
+        },
+        "ten_fold_exact": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 10,
+              "line_end": 10,
+              "quote": "(ten-fold)"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "(ten-fold)"
+          }
+        }
+      },
+      "required_limitations": [
+        "narrative_ten_fold_is_approximate"
+      ]
+    },
+    "EXT-12": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "EU/EEA",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31"
+      },
+      "slots": {
+        "reported_notification_rate": {
+          "value": "77.4",
+          "type": "number",
+          "unit": "per_1000000_population",
+          "population": "all_ages",
+          "measure": "notification_rate",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 162,
+              "line_end": 162,
+              "quote": "| EU/EEA (30 countries) | 1960 | 4.6 | 59 | 0.2 | 123 | 0.3 | 3973 | 9.1 | 35212 | 77.4 | 81.7 |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "EU/EEA (30 countries)",
+            "column_zero_based": 10,
+            "table": "Table 1",
+            "raw_cell": "77.4"
+          }
+        },
+        "converted_notification_rate": {
+          "value": "7.74",
+          "type": "number",
+          "unit": "per_100000_population",
+          "population": "all_ages",
+          "measure": "notification_rate",
+          "scope_overrides": {},
+          "absolute_tolerance": "0.005",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 162,
+              "line_end": 162,
+              "quote": "| EU/EEA (30 countries) | 1960 | 4.6 | 59 | 0.2 | 123 | 0.3 | 3973 | 9.1 | 35212 | 77.4 | 81.7 |"
+            }
+          ],
+          "independent_operation": {
+            "type": "per_million_to_per_100000",
+            "arguments": [
+              "77.4"
+            ],
+            "rounding_places": 2,
+            "rounding": "ROUND_HALF_UP"
+          }
+        }
+      },
+      "required_limitations": []
+    },
+    "EXT-13": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "EU/EEA",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31"
+      },
+      "slots": {
+        "country": {
+          "value": "Romania",
+          "type": "category",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 17,
+              "line_end": 17,
+              "quote": "Romania reported the highest notification rate"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "Romania reported the highest notification rate"
+          }
+        },
+        "country_cases": {
+          "value": "30692",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "reported_measles_cases",
+          "scope_overrides": {
+            "geography": "Romania"
+          },
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 157,
+              "line_end": 157,
+              "quote": "| Romania | 1004 | 51.9 | 0 | NRC | 10 | 0.5 | 3371 | 176.9 | 30692 | 1610.7 | 1690.0 |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Romania",
+            "column_zero_based": 9,
+            "table": "Table 1",
+            "raw_cell": "30692"
+          }
+        },
+        "country_notification_rate": {
+          "value": "1610.7",
+          "type": "number",
+          "unit": "per_1000000_population",
+          "population": "all_ages",
+          "measure": "notification_rate",
+          "scope_overrides": {
+            "geography": "Romania"
+          },
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 157,
+              "line_end": 157,
+              "quote": "| Romania | 1004 | 51.9 | 0 | NRC | 10 | 0.5 | 3371 | 176.9 | 30692 | 1610.7 | 1690.0 |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Romania",
+            "column_zero_based": 10,
+            "table": "Table 1",
+            "raw_cell": "1610.7"
+          }
+        },
+        "share_of_eueea_cases": {
+          "value": "87.16",
+          "type": "number",
+          "unit": "percent",
+          "population": "all_ages",
+          "measure": "share_of_eueea_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0.005",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 157,
+              "line_end": 157,
+              "quote": "| Romania | 1004 | 51.9 | 0 | NRC | 10 | 0.5 | 3371 | 176.9 | 30692 | 1610.7 | 1690.0 |"
+            },
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 162,
+              "line_end": 162,
+              "quote": "| EU/EEA (30 countries) | 1960 | 4.6 | 59 | 0.2 | 123 | 0.3 | 3973 | 9.1 | 35212 | 77.4 | 81.7 |"
+            }
+          ],
+          "independent_operation": {
+            "type": "percent",
+            "arguments": [
+              "30692",
+              "35212"
+            ],
+            "rounding_places": 2,
+            "rounding": "ROUND_HALF_UP"
+          }
+        }
+      },
+      "required_limitations": []
+    },
+    "EXT-14": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "EU/EEA",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31"
+      },
+      "slots": {
+        "age_group": {
+          "value": "age_under_1",
+          "type": "category",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 21,
+              "line_end": 21,
+              "quote": "infants under one year of age"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "infants under one year of age"
+          }
+        },
+        "age_specific_notification_rate": {
+          "value": "1175.4",
+          "type": "number",
+          "unit": "per_1000000_population",
+          "population": "age_under_1",
+          "measure": "notification_rate",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 21,
+              "line_end": 22,
+              "quote": "infants under one year of age were \nthe most affected group, with a notification rate of 1 175.4 cases"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "infants under one year of age were\\s+the most affected group, with a notification rate of ([\\d ]+\\.\\d) cases",
+            "group": 1
+          }
+        }
+      },
+      "required_limitations": [
+        "age_specific_population_denominator",
+        "key_facts_narrative_precision"
+      ]
+    },
+    "EXT-15": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "EU/EEA",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31"
+      },
+      "slots": {
+        "raw_marker": {
+          "value": "NRC",
+          "type": "category",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 133,
+              "line_end": 133,
+              "quote": "| Belgium | 66 | 5.7 | 7 | 0.6 | 19 | 1.6 | 68 | 5.8 | 527 | 44.9 | NRC |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Belgium",
+            "column_zero_based": 11,
+            "table": "Table 1",
+            "raw_cell": "NRC"
+          }
+        },
+        "marker_meaning": {
+          "value": "no_rate_calculated",
+          "type": "category",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 172,
+              "line_end": 172,
+              "quote": "NRC: No rate calculated."
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "NRC: No rate calculated."
+          }
+        },
+        "measured_zero": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 172,
+              "line_end": 172,
+              "quote": "NRC: No rate calculated."
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "NRC: No rate calculated."
+          }
+        }
+      },
+      "required_limitations": [
+        "no_rate_calculated_is_not_measured_zero"
+      ]
+    },
+    "EXT-16": {
+      "expected_status": "insufficient_data",
+      "default_scope": {
+        "geography": "EU/EEA",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31"
+      },
+      "slots": {
+        "known_status_cases": {
+          "value": "31804",
+          "type": "integer",
+          "unit": "cases",
+          "population": "known_vaccination_status_cases",
+          "measure": "reported_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 322,
+              "line_end": 322,
+              "quote": "available for 31 804 cases (90%)"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "available for ([\\d ]+) cases \\(90%\\)",
+            "group": 1
+          }
+        },
+        "unvaccinated_cases": {
+          "value": "27692",
+          "type": "integer",
+          "unit": "cases",
+          "population": "known_vaccination_status_cases",
+          "measure": "reported_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 322,
+              "line_end": 322,
+              "quote": "Of these cases, 27 692 (87%)"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "Of these cases, ([\\d ]+) \\(87%\\)",
+            "group": 1
+          }
+        },
+        "population_coverage_identified": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 28,
+              "line_end": 28,
+              "quote": "cases with known vaccination status"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "cases with known vaccination status"
+          }
+        }
+      },
+      "required_limitations": [
+        "case_vaccination_status_is_not_population_coverage"
+      ]
+    },
+    "EXT-17": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "EU/EEA",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31"
+      },
+      "slots": {
+        "under_five_deaths": {
+          "value": "14",
+          "type": "integer",
+          "unit": "deaths",
+          "population": "age_under_5",
+          "measure": "reported_measles_deaths",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 407,
+              "line_end": 407,
+              "quote": "five cases were in children <1 year old, nine deaths in children between"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "five cases were in children <1 year old, nine deaths in children between"
+          }
+        },
+        "all_reported_deaths": {
+          "value": "23",
+          "type": "integer",
+          "unit": "deaths",
+          "population": "reported_measles_deaths",
+          "measure": "reported_measles_deaths",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 400,
+              "line_end": 401,
+              "quote": "There were 23 deaths \nattributable to measles"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "There were (\\d+) deaths\\s+attributable to measles",
+            "group": 1
+          }
+        },
+        "under_five_share_of_deaths": {
+          "value": "60.87",
+          "type": "number",
+          "unit": "percent",
+          "population": "reported_measles_deaths",
+          "measure": "under_five_share_of_deaths",
+          "scope_overrides": {},
+          "absolute_tolerance": "0.005",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 407,
+              "line_end": 407,
+              "quote": "five cases were in children <1 year old, nine deaths in children between"
+            },
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 400,
+              "line_end": 401,
+              "quote": "There were 23 deaths \nattributable to measles"
+            }
+          ],
+          "independent_operation": {
+            "type": "percent",
+            "arguments": [
+              "14",
+              "23"
+            ],
+            "rounding_places": 2,
+            "rounding": "ROUND_HALF_UP"
+          }
+        },
+        "age_specific_case_fatality_identified": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 407,
+              "line_end": 407,
+              "quote": "age of the deaths"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "age of the deaths"
+          }
+        }
+      },
+      "required_limitations": [
+        "share_of_deaths_is_not_age_specific_case_fatality"
+      ]
+    },
+    "EXT-18": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "EU/EEA",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31"
+      },
+      "slots": {
+        "observation_year": {
+          "value": "2024",
+          "type": "integer",
+          "unit": "none",
+          "population": "all_ages",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 77,
+              "line_end": 77,
+              "quote": "data for 2024 retrieved"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "data for 2024 retrieved"
+          }
+        },
+        "data_retrieval_date": {
+          "value": "2025-03-20",
+          "type": "category",
+          "unit": "iso_date",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 77,
+              "line_end": 77,
+              "quote": "20 March 2025"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "20 March 2025"
+          }
+        }
+      },
+      "required_limitations": []
+    },
+    "EXT-19": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "EU/EEA",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31"
+      },
+      "slots": {
+        "austria_cases": {
+          "value": "542",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "reported_measles_cases",
+          "scope_overrides": {
+            "geography": "Austria"
+          },
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 132,
+              "line_end": 132,
+              "quote": "| Austria | 25 | 2.8 | 1 | 0.1 | 1 | 0.1 | 186 | 20.4 | 542 | 59.5 | 66.9 |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Austria",
+            "column_zero_based": 9,
+            "table": "Table 1",
+            "raw_cell": "542"
+          }
+        },
+        "germany_cases": {
+          "value": "638",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "reported_measles_cases",
+          "scope_overrides": {
+            "geography": "Germany"
+          },
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 142,
+              "line_end": 142,
+              "quote": "| Germany | 76 | 0.9 | 8 | 0.1 | 15 | 0.2 | 79 | 0.9 | 638 | 7.6 | 8.7 |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Germany",
+            "column_zero_based": 9,
+            "table": "Table 1",
+            "raw_cell": "638"
+          }
+        },
+        "austria_rate": {
+          "value": "59.5",
+          "type": "number",
+          "unit": "per_1000000_population",
+          "population": "all_ages",
+          "measure": "notification_rate",
+          "scope_overrides": {
+            "geography": "Austria"
+          },
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 132,
+              "line_end": 132,
+              "quote": "| Austria | 25 | 2.8 | 1 | 0.1 | 1 | 0.1 | 186 | 20.4 | 542 | 59.5 | 66.9 |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Austria",
+            "column_zero_based": 10,
+            "table": "Table 1",
+            "raw_cell": "59.5"
+          }
+        },
+        "germany_rate": {
+          "value": "7.6",
+          "type": "number",
+          "unit": "per_1000000_population",
+          "population": "all_ages",
+          "measure": "notification_rate",
+          "scope_overrides": {
+            "geography": "Germany"
+          },
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 142,
+              "line_end": 142,
+              "quote": "| Germany | 76 | 0.9 | 8 | 0.1 | 15 | 0.2 | 79 | 0.9 | 638 | 7.6 | 8.7 |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Germany",
+            "column_zero_based": 10,
+            "table": "Table 1",
+            "raw_cell": "7.6"
+          }
+        },
+        "higher_count_country": {
+          "value": "Germany",
+          "type": "category",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 142,
+              "line_end": 142,
+              "quote": "| Germany |"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "| Germany |"
+          }
+        },
+        "higher_rate_country": {
+          "value": "Austria",
+          "type": "category",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 132,
+              "line_end": 132,
+              "quote": "| Austria |"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "| Austria |"
+          }
+        }
+      },
+      "required_limitations": []
+    },
+    "EXT-20": {
+      "expected_status": "invalid_citation",
+      "default_scope": {
+        "geography": "EU/EEA",
+        "period_start": "2024-01-01",
+        "period_end": "2024-12-31"
+      },
+      "slots": {
+        "table_99_exists": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 126,
+              "line_end": 126,
+              "quote": "**Table 1."
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "**Table 1."
+          }
+        },
+        "actual_geographic_scope": {
+          "value": "EU/EEA",
+          "type": "category",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 9,
+              "line_end": 9,
+              "quote": "EU/EEA"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "EU/EEA"
+          }
+        },
+        "bangladesh_claim_supported": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 9,
+              "line_end": 9,
+              "quote": "EU/EEA"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "EU/EEA"
+          }
+        },
+        "laboratory_only_claim_supported": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ecdc-eueea-2024",
+              "source_sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+              "line_start": 9,
+              "line_end": 9,
+              "quote": "measles cases were reported"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "measles cases were reported"
+          }
+        }
+      },
+      "required_limitations": [
+        "invented_locator",
+        "wrong_geography",
+        "unsupported_laboratory_only_classification"
+      ]
+    },
+    "EXT-21": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "England",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31"
+      },
+      "slots": {
+        "monthly_sum": {
+          "value": "958",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "laboratory_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 51,
+              "line_end": 51,
+              "quote": "- January: 88"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 52,
+              "line_end": 52,
+              "quote": "- February: 68"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 53,
+              "line_end": 53,
+              "quote": "- March: 69"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 54,
+              "line_end": 54,
+              "quote": "- April: 110"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 55,
+              "line_end": 55,
+              "quote": "- May: 129"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 56,
+              "line_end": 56,
+              "quote": "- June: 127"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 57,
+              "line_end": 57,
+              "quote": "- July: 118"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 58,
+              "line_end": 58,
+              "quote": "- August: 50"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 59,
+              "line_end": 59,
+              "quote": "- September: 29"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 60,
+              "line_end": 60,
+              "quote": "- October: 42"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 61,
+              "line_end": 61,
+              "quote": "- November: 70"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 62,
+              "line_end": 62,
+              "quote": "- December: 58"
+            }
+          ],
+          "independent_operation": {
+            "type": "sum",
+            "arguments": [
+              "88",
+              "68",
+              "69",
+              "110",
+              "129",
+              "127",
+              "118",
+              "50",
+              "29",
+              "42",
+              "70",
+              "58"
+            ],
+            "rounding_places": null,
+            "rounding": "ROUND_HALF_UP"
+          }
+        },
+        "reported_annual_cases": {
+          "value": "958",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "laboratory_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 47,
+              "line_end": 47,
+              "quote": "there were 958 laboratory-confirmed measles cases reported in England"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "there were ([\\d,]+) laboratory-confirmed measles cases reported in England",
+            "group": 1
+          }
+        },
+        "totals_agree": {
+          "value": true,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 51,
+              "line_end": 51,
+              "quote": "- January: 88"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 52,
+              "line_end": 52,
+              "quote": "- February: 68"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 53,
+              "line_end": 53,
+              "quote": "- March: 69"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 54,
+              "line_end": 54,
+              "quote": "- April: 110"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 55,
+              "line_end": 55,
+              "quote": "- May: 129"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 56,
+              "line_end": 56,
+              "quote": "- June: 127"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 57,
+              "line_end": 57,
+              "quote": "- July: 118"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 58,
+              "line_end": 58,
+              "quote": "- August: 50"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 59,
+              "line_end": 59,
+              "quote": "- September: 29"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 60,
+              "line_end": 60,
+              "quote": "- October: 42"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 61,
+              "line_end": 61,
+              "quote": "- November: 70"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 62,
+              "line_end": 62,
+              "quote": "- December: 58"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 47,
+              "line_end": 47,
+              "quote": "there were 958 laboratory-confirmed measles cases reported in England"
+            }
+          ],
+          "independent_operation": {
+            "type": "independent_sum_equals_reported_total"
+          }
+        }
+      },
+      "required_limitations": []
+    },
+    "EXT-22": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "England",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31"
+      },
+      "slots": {
+        "peak_months": {
+          "value": [
+            "2025-05"
+          ],
+          "type": "set",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 51,
+              "line_end": 51,
+              "quote": "- January: 88"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 52,
+              "line_end": 52,
+              "quote": "- February: 68"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 53,
+              "line_end": 53,
+              "quote": "- March: 69"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 54,
+              "line_end": 54,
+              "quote": "- April: 110"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 55,
+              "line_end": 55,
+              "quote": "- May: 129"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 56,
+              "line_end": 56,
+              "quote": "- June: 127"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 57,
+              "line_end": 57,
+              "quote": "- July: 118"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 58,
+              "line_end": 58,
+              "quote": "- August: 50"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 59,
+              "line_end": 59,
+              "quote": "- September: 29"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 60,
+              "line_end": 60,
+              "quote": "- October: 42"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 61,
+              "line_end": 61,
+              "quote": "- November: 70"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 62,
+              "line_end": 62,
+              "quote": "- December: 58"
+            }
+          ],
+          "independent_operation": {
+            "type": "all_argmax_months"
+          }
+        },
+        "peak_cases": {
+          "value": "129",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "laboratory_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 51,
+              "line_end": 51,
+              "quote": "- January: 88"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 52,
+              "line_end": 52,
+              "quote": "- February: 68"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 53,
+              "line_end": 53,
+              "quote": "- March: 69"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 54,
+              "line_end": 54,
+              "quote": "- April: 110"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 55,
+              "line_end": 55,
+              "quote": "- May: 129"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 56,
+              "line_end": 56,
+              "quote": "- June: 127"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 57,
+              "line_end": 57,
+              "quote": "- July: 118"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 58,
+              "line_end": 58,
+              "quote": "- August: 50"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 59,
+              "line_end": 59,
+              "quote": "- September: 29"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 60,
+              "line_end": 60,
+              "quote": "- October: 42"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 61,
+              "line_end": 61,
+              "quote": "- November: 70"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 62,
+              "line_end": 62,
+              "quote": "- December: 58"
+            }
+          ],
+          "independent_operation": {
+            "type": "maximum_monthly_cases"
+          }
+        }
+      },
+      "required_limitations": []
+    },
+    "EXT-23": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "England",
+        "period_start": "2025-04-01",
+        "period_end": "2025-06-30"
+      },
+      "slots": {
+        "quarter_cases": {
+          "value": "366",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "laboratory_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 54,
+              "line_end": 54,
+              "quote": "- April: 110"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 55,
+              "line_end": 55,
+              "quote": "- May: 129"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 56,
+              "line_end": 56,
+              "quote": "- June: 127"
+            }
+          ],
+          "independent_operation": {
+            "type": "sum",
+            "arguments": [
+              "110",
+              "129",
+              "127"
+            ],
+            "rounding_places": null,
+            "rounding": "ROUND_HALF_UP"
+          }
+        },
+        "full_year": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 54,
+              "line_end": 54,
+              "quote": "- April:"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "- April:"
+          }
+        }
+      },
+      "required_limitations": [
+        "quarter_not_full_year"
+      ]
+    },
+    "EXT-24": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "England",
+        "period_start": "2025-01-01",
+        "period_end": "2025-06-30"
+      },
+      "slots": {
+        "first_quarter_cases": {
+          "value": "225",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "laboratory_confirmed_measles_cases",
+          "scope_overrides": {
+            "period_start": "2025-01-01",
+            "period_end": "2025-03-31"
+          },
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 51,
+              "line_end": 51,
+              "quote": "- January: 88"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 52,
+              "line_end": 52,
+              "quote": "- February: 68"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 53,
+              "line_end": 53,
+              "quote": "- March: 69"
+            }
+          ],
+          "independent_operation": {
+            "type": "sum",
+            "arguments": [
+              "88",
+              "68",
+              "69"
+            ],
+            "rounding_places": null,
+            "rounding": "ROUND_HALF_UP"
+          }
+        },
+        "second_quarter_cases": {
+          "value": "366",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "laboratory_confirmed_measles_cases",
+          "scope_overrides": {
+            "period_start": "2025-04-01",
+            "period_end": "2025-06-30"
+          },
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 54,
+              "line_end": 54,
+              "quote": "- April: 110"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 55,
+              "line_end": 55,
+              "quote": "- May: 129"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 56,
+              "line_end": 56,
+              "quote": "- June: 127"
+            }
+          ],
+          "independent_operation": {
+            "type": "sum",
+            "arguments": [
+              "110",
+              "129",
+              "127"
+            ],
+            "rounding_places": null,
+            "rounding": "ROUND_HALF_UP"
+          }
+        },
+        "relative_percent_change": {
+          "value": "62.67",
+          "type": "number",
+          "unit": "percent",
+          "population": "all_ages",
+          "measure": "relative_percent_change",
+          "scope_overrides": {},
+          "absolute_tolerance": "0.005",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 51,
+              "line_end": 51,
+              "quote": "- January: 88"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 52,
+              "line_end": 52,
+              "quote": "- February: 68"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 53,
+              "line_end": 53,
+              "quote": "- March: 69"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 54,
+              "line_end": 54,
+              "quote": "- April: 110"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 55,
+              "line_end": 55,
+              "quote": "- May: 129"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 56,
+              "line_end": 56,
+              "quote": "- June: 127"
+            }
+          ],
+          "independent_operation": {
+            "type": "relative_percent_change",
+            "arguments": [
+              "225",
+              "366"
+            ],
+            "rounding_places": 2,
+            "rounding": "ROUND_HALF_UP"
+          }
+        }
+      },
+      "required_limitations": [
+        "relative_percent_not_percentage_points"
+      ]
+    },
+    "EXT-25": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "England",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31"
+      },
+      "slots": {
+        "under_five_cases": {
+          "value": "425",
+          "type": "integer",
+          "unit": "cases",
+          "population": "age_under_5",
+          "measure": "laboratory_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 80,
+              "line_end": 80,
+              "quote": "| Under 1 | 6 | 7 | 49 | 1 | 24 | 4 | 10 | 9 | 7 | 117 |"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 81,
+              "line_end": 81,
+              "quote": "| 1 to 4 | 6 | 20 | 167 | 2 | 50 | 5 | 14 | 26 | 18 | 308 |"
+            }
+          ],
+          "independent_operation": {
+            "type": "sum",
+            "arguments": [
+              "117",
+              "308"
+            ],
+            "rounding_places": null,
+            "rounding": "ROUND_HALF_UP"
+          }
+        },
+        "all_cases": {
+          "value": "958",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "laboratory_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 47,
+              "line_end": 47,
+              "quote": "there were 958 laboratory-confirmed measles cases reported in England"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "there were ([\\d,]+) laboratory-confirmed measles cases reported in England",
+            "group": 1
+          }
+        },
+        "under_five_percent": {
+          "value": "44.36",
+          "type": "number",
+          "unit": "percent",
+          "population": "all_ages",
+          "measure": "under_five_percent",
+          "scope_overrides": {},
+          "absolute_tolerance": "0.005",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 80,
+              "line_end": 80,
+              "quote": "| Under 1 | 6 | 7 | 49 | 1 | 24 | 4 | 10 | 9 | 7 | 117 |"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 81,
+              "line_end": 81,
+              "quote": "| 1 to 4 | 6 | 20 | 167 | 2 | 50 | 5 | 14 | 26 | 18 | 308 |"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 47,
+              "line_end": 47,
+              "quote": "there were 958 laboratory-confirmed measles cases reported in England"
+            }
+          ],
+          "independent_operation": {
+            "type": "percent",
+            "arguments": [
+              "425",
+              "958"
+            ],
+            "rounding_places": 2,
+            "rounding": "ROUND_HALF_UP"
+          }
+        }
+      },
+      "required_limitations": []
+    },
+    "EXT-26": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "England",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31"
+      },
+      "slots": {
+        "ten_and_under_cases": {
+          "value": "654",
+          "type": "integer",
+          "unit": "cases",
+          "population": "age_10_and_under",
+          "measure": "laboratory_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 80,
+              "line_end": 80,
+              "quote": "| Under 1 | 6 | 7 | 49 | 1 | 24 | 4 | 10 | 9 | 7 | 117 |"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 81,
+              "line_end": 81,
+              "quote": "| 1 to 4 | 6 | 20 | 167 | 2 | 50 | 5 | 14 | 26 | 18 | 308 |"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 82,
+              "line_end": 82,
+              "quote": "| 5 to 10 | 0 | 23 | 143 | 0 | 25 | 5 | 6 | 9 | 18 | 229 |"
+            }
+          ],
+          "independent_operation": {
+            "type": "sum",
+            "arguments": [
+              "117",
+              "308",
+              "229"
+            ],
+            "rounding_places": null,
+            "rounding": "ROUND_HALF_UP"
+          }
+        },
+        "calculated_percent": {
+          "value": "68.27",
+          "type": "number",
+          "unit": "percent",
+          "population": "all_ages",
+          "measure": "calculated_percent",
+          "scope_overrides": {},
+          "absolute_tolerance": "0.005",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 80,
+              "line_end": 80,
+              "quote": "| Under 1 | 6 | 7 | 49 | 1 | 24 | 4 | 10 | 9 | 7 | 117 |"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 81,
+              "line_end": 81,
+              "quote": "| 1 to 4 | 6 | 20 | 167 | 2 | 50 | 5 | 14 | 26 | 18 | 308 |"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 82,
+              "line_end": 82,
+              "quote": "| 5 to 10 | 0 | 23 | 143 | 0 | 25 | 5 | 6 | 9 | 18 | 229 |"
+            },
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 47,
+              "line_end": 47,
+              "quote": "there were 958 laboratory-confirmed measles cases reported in England"
+            }
+          ],
+          "independent_operation": {
+            "type": "percent",
+            "arguments": [
+              "654",
+              "958"
+            ],
+            "rounding_places": 2,
+            "rounding": "ROUND_HALF_UP"
+          }
+        },
+        "reported_percent": {
+          "value": "68",
+          "type": "integer",
+          "unit": "percent",
+          "population": "all_ages",
+          "measure": "reported_percent",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 64,
+              "line_end": 64,
+              "quote": "654 out of 958, 68%"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "654 out of 958, (\\d+)%",
+            "group": 1
+          }
+        }
+      },
+      "required_limitations": []
+    },
+    "EXT-27": {
+      "expected_status": "insufficient_data",
+      "default_scope": {
+        "geography": "England",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31"
+      },
+      "slots": {
+        "london_cases": {
+          "value": "494",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "laboratory_confirmed_measles_cases",
+          "scope_overrides": {
+            "geography": "London"
+          },
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 87,
+              "line_end": 87,
+              "quote": "| Total | 22 | 76 | 494 | 6 | 132 | 34 | 60 | 76 | 58 | 958 |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Total",
+            "column_zero_based": 3,
+            "table": null,
+            "raw_cell": "494"
+          }
+        },
+        "highest_incidence_identified": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 64,
+              "line_end": 64,
+              "quote": "494 out of 958"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "494 out of 958"
+          }
+        },
+        "missing_denominator": {
+          "value": "region_specific_population_at_risk",
+          "type": "category",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 64,
+              "line_end": 64,
+              "quote": "494 out of 958"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "494 out of 958"
+          }
+        }
+      },
+      "required_limitations": [
+        "share_of_cases_is_not_population_incidence"
+      ]
+    },
+    "EXT-28": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "England",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31"
+      },
+      "slots": {
+        "utla": {
+          "value": "Hackney",
+          "type": "category",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 95,
+              "line_end": 95,
+              "quote": "| Hackney |"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "| Hackney |"
+          }
+        },
+        "utla_cases": {
+          "value": "133",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "laboratory_confirmed_measles_cases",
+          "scope_overrides": {
+            "geography": "Hackney"
+          },
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 95,
+              "line_end": 95,
+              "quote": "| Hackney | London | 133 |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Hackney",
+            "column_zero_based": 2,
+            "table": null,
+            "raw_cell": "133"
+          }
+        },
+        "suppression_threshold": {
+          "value": "10",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "utla_suppression_threshold",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 125,
+              "line_end": 125,
+              "quote": "UTLAs with fewer than 10 cases"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "UTLAs with fewer than (\\d+) cases",
+            "group": 1
+          }
+        },
+        "omitted_rows_are_zero": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 125,
+              "line_end": 125,
+              "quote": "case counts have been suppressed"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "case counts have been suppressed"
+          }
+        }
+      },
+      "required_limitations": [
+        "suppressed_rows_are_not_zero",
+        "utla_table_is_incomplete"
+      ]
+    },
+    "EXT-29": {
+      "expected_status": "insufficient_data",
+      "default_scope": {
+        "geography": "England",
+        "period_start": "2025-01-01",
+        "period_end": "2025-12-31"
+      },
+      "slots": {
+        "age_by_month_identified": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 49,
+              "line_end": 49,
+              "quote": "The number of laboratory-confirmed measles cases by month"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "The number of laboratory-confirmed measles cases by month"
+          }
+        },
+        "allocation_is_observed": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 76,
+              "line_end": 76,
+              "quote": "Table 1. Laboratory-confirmed cases of measles by age group"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "Table 1. Laboratory-confirmed cases of measles by age group"
+          }
+        },
+        "missing_cross_tabulation": {
+          "value": "age_by_month_cross_tabulation",
+          "type": "category",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2025",
+              "source_sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+              "line_start": 76,
+              "line_end": 76,
+              "quote": "Table 1. Laboratory-confirmed cases of measles by age group"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "Table 1. Laboratory-confirmed cases of measles by age group"
+          }
+        }
+      },
+      "required_limitations": [
+        "annual_age_and_monthly_total_are_not_joint_observations"
+      ]
+    },
+    "EXT-30": {
+      "expected_status": "ambiguous_source",
+      "default_scope": {
+        "geography": "England",
+        "period_start": "2026-01-01",
+        "period_end": null
+      },
+      "slots": {
+        "narrative_end_date": {
+          "value": "2026-10-12",
+          "type": "category",
+          "unit": "iso_date",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {
+            "period_end": null
+          },
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2026",
+              "source_sha256": "df10770dab07fa468e546bc2c31253fe27be688df96406f5a197f3333552437d",
+              "line_start": 51,
+              "line_end": 51,
+              "quote": "Between 1 January 2026 and 12 October 2026"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "Between 1 January 2026 and 12 October 2026"
+          }
+        },
+        "table_caption_end_date": {
+          "value": "2026-09-14",
+          "type": "category",
+          "unit": "iso_date",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {
+            "period_end": null
+          },
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2026",
+              "source_sha256": "df10770dab07fa468e546bc2c31253fe27be688df96406f5a197f3333552437d",
+              "line_start": 97,
+              "line_end": 97,
+              "quote": "Table 1. Laboratory-confirmed cases of measles by age group and region in England: 1 January 2026 to 14 September 2026"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "Table 1. Laboratory-confirmed cases of measles by age group and region in England: 1 January 2026 to 14 September 2026"
+          }
+        },
+        "narrative_cases": {
+          "value": "1030",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "laboratory_confirmed_measles_cases",
+          "scope_overrides": {
+            "period_end": "2026-10-12"
+          },
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2026",
+              "source_sha256": "df10770dab07fa468e546bc2c31253fe27be688df96406f5a197f3333552437d",
+              "line_start": 51,
+              "line_end": 51,
+              "quote": "Between 1 January 2026 and 12 October 2026, there have been 1,030"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "Between 1 January 2026 and 12 October 2026, there have been ([\\d,]+)",
+            "group": 1
+          }
+        },
+        "table_cases": {
+          "value": "1030",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "laboratory_confirmed_measles_cases",
+          "scope_overrides": {
+            "period_end": "2026-09-14"
+          },
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2026",
+              "source_sha256": "df10770dab07fa468e546bc2c31253fe27be688df96406f5a197f3333552437d",
+              "line_start": 108,
+              "line_end": 108,
+              "quote": "| Total | 19 | 89 | 520 | 8 | 111 | 36 | 8 | 162 | 77 | 1030 |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Total",
+            "column_zero_based": 10,
+            "table": null,
+            "raw_cell": "1030"
+          }
+        },
+        "single_window_verified": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {
+            "period_end": null
+          },
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "ukhsa-england-2026",
+              "source_sha256": "df10770dab07fa468e546bc2c31253fe27be688df96406f5a197f3333552437d",
+              "line_start": 97,
+              "line_end": 97,
+              "quote": "Table 1. Laboratory-confirmed cases of measles by age group and region in England: 1 January 2026 to 14 September 2026"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "Table 1. Laboratory-confirmed cases of measles by age group and region in England: 1 January 2026 to 14 September 2026"
+          }
+        }
+      },
+      "required_limitations": [
+        "conflicting_source_windows",
+        "provisional_reporting",
+        "do_not_invent_a_reconciled_window_or_verified_correction"
+      ]
+    },
+    "DEV-01": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "West Texas South Plains",
+        "period_start": "2025-01-20",
+        "period_end": "2025-03-18"
+      },
+      "slots": {
+        "investigation_cases": {
+          "value": "325",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "reported_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 83,
+              "line_end": 83,
+              "quote": "a total of 325 confirmed measles cases"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "a total of (\\d+) confirmed measles cases",
+            "group": 1
+          }
+        },
+        "hospitalized_cases": {
+          "value": "60",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_ages",
+          "measure": "hospitalized_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 41,
+              "line_end": 41,
+              "quote": "60 (18.5%) patients were hospitalized"
+            },
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 83,
+              "line_end": 83,
+              "quote": "60 (18.5%) patients were hospitalized"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "(\\d+) \\(18\\.5%\\) patients were hospitalized",
+            "group": 1
+          }
+        }
+      },
+      "required_limitations": [
+        "investigation_window_not_full_outbreak"
+      ]
+    },
+    "DEV-02": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "West Texas South Plains",
+        "period_start": "2025-01-20",
+        "period_end": "2025-03-18"
+      },
+      "slots": {
+        "reviewed_patients": {
+          "value": "54",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_hospitalized_cases",
+          "measure": "reported_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 83,
+              "line_end": 83,
+              "quote": "medical records for 54 hospitalized patients were reviewed"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "medical records for (\\d+) hospitalized patients were reviewed",
+            "group": 1
+          }
+        },
+        "all_hospitalized_patients": {
+          "value": "60",
+          "type": "integer",
+          "unit": "cases",
+          "population": "all_hospitalized_cases",
+          "measure": "reported_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 41,
+              "line_end": 41,
+              "quote": "60 (18.5%) patients were hospitalized"
+            },
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 83,
+              "line_end": 83,
+              "quote": "60 (18.5%) patients were hospitalized"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "(\\d+) \\(18\\.5%\\) patients were hospitalized",
+            "group": 1
+          }
+        },
+        "reviewed_percent": {
+          "value": "90.00",
+          "type": "number",
+          "unit": "percent",
+          "population": "all_hospitalized_cases",
+          "measure": "reviewed_percent",
+          "scope_overrides": {},
+          "absolute_tolerance": "0.005",
+          "evidence": [
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 83,
+              "line_end": 83,
+              "quote": "medical records for 54 hospitalized patients were reviewed"
+            },
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 41,
+              "line_end": 41,
+              "quote": "60 (18.5%) patients were hospitalized"
+            },
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 83,
+              "line_end": 83,
+              "quote": "60 (18.5%) patients were hospitalized"
+            }
+          ],
+          "independent_operation": {
+            "type": "percent",
+            "arguments": [
+              "54",
+              "60"
+            ],
+            "rounding_places": 2,
+            "rounding": "ROUND_HALF_UP"
+          }
+        }
+      },
+      "required_limitations": []
+    },
+    "DEV-03": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "West Texas South Plains",
+        "period_start": "2025-01-20",
+        "period_end": "2025-03-18"
+      },
+      "slots": {
+        "pneumonia_patients": {
+          "value": "39",
+          "type": "integer",
+          "unit": "cases",
+          "population": "reviewed_hospitalized_patients",
+          "measure": "pneumonia_among_reviewed_hospitalized_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 239,
+              "line_end": 239,
+              "quote": "| Pneumonia | 39 (72.2) |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Pneumonia",
+            "column_zero_based": 1,
+            "table": null,
+            "raw_cell": "39 (72.2)"
+          }
+        },
+        "reviewed_patients": {
+          "value": "54",
+          "type": "integer",
+          "unit": "cases",
+          "population": "reviewed_hospitalized_patients",
+          "measure": "reported_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 83,
+              "line_end": 83,
+              "quote": "medical records for 54 hospitalized patients were reviewed"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "medical records for (\\d+) hospitalized patients were reviewed",
+            "group": 1
+          }
+        },
+        "pneumonia_percent": {
+          "value": "72.22",
+          "type": "number",
+          "unit": "percent",
+          "population": "reviewed_hospitalized_patients",
+          "measure": "pneumonia_percent",
+          "scope_overrides": {},
+          "absolute_tolerance": "0.005",
+          "evidence": [
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 239,
+              "line_end": 239,
+              "quote": "| Pneumonia | 39 (72.2) |"
+            },
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 83,
+              "line_end": 83,
+              "quote": "medical records for 54 hospitalized patients were reviewed"
+            }
+          ],
+          "independent_operation": {
+            "type": "percent",
+            "arguments": [
+              "39",
+              "54"
+            ],
+            "rounding_places": 2,
+            "rounding": "ROUND_HALF_UP"
+          }
+        }
+      },
+      "required_limitations": [
+        "reviewed_hospitalized_cohort_not_all_cases"
+      ]
+    },
+    "DEV-04": {
+      "expected_status": "supported",
+      "default_scope": {
+        "geography": "West Texas South Plains",
+        "period_start": "2025-01-20",
+        "period_end": "2025-03-18"
+      },
+      "slots": {
+        "hypoxia_patients": {
+          "value": "37",
+          "type": "integer",
+          "unit": "cases",
+          "population": "reviewed_hospitalized_patients",
+          "measure": "hypoxia_among_reviewed_hospitalized_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 252,
+              "line_end": 252,
+              "quote": "| Hypoxia | 37 (68.5) |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Hypoxia",
+            "column_zero_based": 1,
+            "table": null,
+            "raw_cell": "37 (68.5)"
+          }
+        },
+        "oxygen_patients": {
+          "value": "38",
+          "type": "integer",
+          "unit": "cases",
+          "population": "reviewed_hospitalized_patients",
+          "measure": "supplemental_oxygen_among_reviewed_hospitalized_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 251,
+              "line_end": 251,
+              "quote": "| Receipt of supplemental oxygen | 38 (70.4) |"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_table_cell",
+            "row": "Receipt of supplemental oxygen",
+            "column_zero_based": 1,
+            "table": null,
+            "raw_cell": "38 (70.4)"
+          }
+        },
+        "reviewed_patients": {
+          "value": "54",
+          "type": "integer",
+          "unit": "cases",
+          "population": "reviewed_hospitalized_patients",
+          "measure": "reported_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 83,
+              "line_end": 83,
+              "quote": "medical records for 54 hospitalized patients were reviewed"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "medical records for (\\d+) hospitalized patients were reviewed",
+            "group": 1
+          }
+        },
+        "oxygen_percent": {
+          "value": "70.37",
+          "type": "number",
+          "unit": "percent",
+          "population": "reviewed_hospitalized_patients",
+          "measure": "oxygen_percent",
+          "scope_overrides": {},
+          "absolute_tolerance": "0.005",
+          "evidence": [
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 251,
+              "line_end": 251,
+              "quote": "| Receipt of supplemental oxygen | 38 (70.4) |"
+            },
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 83,
+              "line_end": 83,
+              "quote": "medical records for 54 hospitalized patients were reviewed"
+            }
+          ],
+          "independent_operation": {
+            "type": "percent",
+            "arguments": [
+              "38",
+              "54"
+            ],
+            "rounding_places": 2,
+            "rounding": "ROUND_HALF_UP"
+          }
+        }
+      },
+      "required_limitations": [
+        "hypoxia_and_oxygen_are_distinct_measures"
+      ]
+    },
+    "DEV-05": {
+      "expected_status": "insufficient_data",
+      "default_scope": {
+        "geography": "West Texas South Plains",
+        "period_start": "2025-01-20",
+        "period_end": "2025-03-18"
+      },
+      "slots": {
+        "combined_category_patients": {
+          "value": "54",
+          "type": "integer",
+          "unit": "cases",
+          "population": "reviewed_hospitalized_patients",
+          "measure": "reported_confirmed_measles_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 83,
+              "line_end": 83,
+              "quote": "medical records for 54 hospitalized patients were reviewed"
+            }
+          ],
+          "independent_operation": {
+            "type": "source_regex",
+            "pattern": "medical records for (\\d+) hospitalized patients were reviewed",
+            "group": 1
+          }
+        },
+        "all_definitely_unvaccinated": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 41,
+              "line_end": 41,
+              "quote": "unvaccinated or had unknown vaccination status"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "unvaccinated or had unknown vaccination status"
+          }
+        },
+        "record_limitation": {
+          "value": "opt_in_registry_unverified_history",
+          "type": "category",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 147,
+              "line_end": 147,
+              "quote": "opt-in registry"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "opt-in registry"
+          }
+        }
+      },
+      "required_limitations": [
+        "unknown_status_is_not_known_unvaccinated"
+      ]
+    },
+    "DEV-06": {
+      "expected_status": "insufficient_data",
+      "default_scope": {
+        "geography": "West Texas South Plains",
+        "period_start": "2025-01-20",
+        "period_end": "2025-03-18"
+      },
+      "slots": {
+        "vitamin_a_patients": {
+          "value": "13",
+          "type": "integer",
+          "unit": "cases",
+          "population": "reviewed_hospitalized_patients",
+          "measure": "vitamin_a_use_among_reviewed_hospitalized_cases",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 127,
+              "line_end": 127,
+              "quote": "Thirteen (24.1%) patients"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "Thirteen (24.1%) patients"
+          }
+        },
+        "causal_treatment_effect_identified": {
+          "value": false,
+          "type": "boolean",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 127,
+              "line_end": 127,
+              "quote": "received vitamin A during their hospitalization"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "received vitamin A during their hospitalization"
+          }
+        },
+        "missing_design": {
+          "value": "causal_comparison_design",
+          "type": "category",
+          "unit": "none",
+          "population": "not_applicable",
+          "measure": "source_interpretation",
+          "scope_overrides": {},
+          "absolute_tolerance": "0",
+          "evidence": [
+            {
+              "source_id": "cdc-westtexas-2026",
+              "source_sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+              "line_start": 105,
+              "line_end": 105,
+              "quote": "Descriptive statistics were calculated"
+            }
+          ],
+          "independent_operation": {
+            "type": "manually_reviewed_source_interpretation",
+            "needle": "Descriptive statistics were calculated"
+          }
+        }
+      },
+      "required_limitations": [
+        "treatment_use_is_not_causal_treatment_effect"
+      ]
+    }
+  },
+  "version": "external-v1"
+}

@@ -1,0 +1,70 @@
+schema_version = "1.0.0"
+status = "frozen_question_and_gold_specification"
+amendment_reason = "User required independently researched credible internet sources, not the resources used to construct the Bangladesh research dataset, and approved Qwen thinking mode."
+supersedes = "The package-derived proposed 30 items and non-thinking generation proposal in planning/EXECUTION_PLAN.md; statistical analysis protocol is unchanged."
+scope = "Dataset-specific evidence extraction, arithmetic, attribution, ambiguity and unsupported-inference benchmark using external public-health surveillance publications. Not Bangladesh predictive performance or a general model leaderboard."
+source_manifest = "benchmark/frozen/external-v1/source_manifest.json"
+test_items = "benchmark/frozen/external-v1/public/test/items.json"
+development_items = "benchmark/frozen/external-v1/public/development/items.json"
+private_gold_root = "benchmark/private/external-v1"
+test_item_count = 30
+development_item_count = 6
+independence = "Source publications and observed populations differ from the Bangladesh analysis package. Gold is independently authored from frozen passages, not copied from the production fact registry. No claim of external blinded adjudication or unknown-to-model facts."
+forbidden_evidence_sources = ["Zenodo record 22167512 and its package", "WHO DON598, 23 April 2026"]
+required_issuers = ["CDC MMWR", "ECDC", "UKHSA"]
+source_representation = "Frozen Firecrawl markdown extractions with issuer URLs, retrieval metadata and SHA-256; original PDF/HTML cross-checks are required for high-risk gold entries."
+source_split = "West Texas MMWR is development-only; all other registered publications are test-only. No item is moved between splits after model inspection."
+
+[generation]
+study_config = ".devin/study.toml"
+model_id = "Qwen/Qwen3-4B"
+model_revision = "1cfa9a7208912126459214e8b04321603b3df60c"
+enable_thinking = true
+max_new_tokens = 32768
+context_window_tokens = 131072
+max_input_tokens = 98304
+temperature = 0.6
+top_p = 0.95
+top_k = 20
+min_p = 0.0
+test_seeds = [2026, 2027, 2028]
+development_seeds = [2026]
+primary_model_generations = 180
+development_model_generations = 12
+scored_test_outputs = 270
+maximum_schema_repairs_per_draft = 1
+repair_eligibility = "Nonempty final answer with malformed schema only. Incomplete reasoning, token truncation and infrastructure failures remain failures, not opportunities for a new factual answer."
+reasoning_handling = "Preserve complete raw generated tokens and reasoning separately; score only final answer. No separate smaller reasoning budget; shared max_new_tokens includes reasoning, delimiters, final answer and EOS."
+history_handling = "Do not put private reasoning into repair conversation history; retain it only as an audit artifact."
+oversized_evidence = "Explicitly fail or use a predeclared source-preserving selection before generation. No blind truncation, hidden output-cap reduction, or unequal source coverage between A and B."
+
+[conditions]
+A = "Relevant original source passages/rows with original source locators and public question/schema, without precomputed numeric facts."
+B = "Exactly the same underlying source coverage and question/schema as A, plus deterministic operations, calculated facts and scope metadata."
+C = "The exact B draft, checked using a separate deterministic verifier. No fresh model sample, gold-file access, or arbitrary prose under a verified label."
+
+[scoring]
+status = "Per-item gold values, tolerances, scope constraints and this scoring specification are frozen; scoring-harness implementation remains deferred."
+required_response_fields = ["item_id", "status", "claims", "limitations", "summary"]
+claim_fields = ["slot", "value", "unit", "measure", "geography", "population", "period_start", "period_end", "citations"]
+citation_fields = ["source_id", "line_start", "line_end"]
+statuses = ["supported", "contradicted", "ambiguous_source", "insufficient_data", "invalid_citation"]
+status_semantics = "For extraction/computation, supported means the requested result is supported, even if a requested boolean is false. For explicit seeded claims, contradicted requires a source contradiction, insufficient_data means the source cannot establish the claim, and invalid_citation means its offered locator is invalid. Source-window conflicts are ambiguous_source, not silently reconciled."
+date_format = "Dates use ISO YYYY-MM-DD; month lists use ISO YYYY-MM; years are integers."
+unit_vocabulary = ["cases", "deaths", "percent", "ratio", "per_100000_population", "per_1000000_population", "per_1000_cases", "none", "iso_date"]
+integer_tolerance = "0; bool is not an integer answer"
+percentage_rounding = "Decimal ROUND_HALF_UP to the number of decimals requested by each item"
+two_decimal_absolute_tolerance = "0.005; strict source/denominator/unit/time checks still apply"
+categorical_scoring = "Private per-item canonical slot values and predeclared aliases, never post-hoc keyword relaxation."
+item_success = "Correct required status, every required answer slot, units, population/time scope, citations and required limitations; unsupported additions prevent full item credit."
+first_pass = "All drafts count, including missing, malformed, truncated and failed responses. Report first-pass and post-schema-repair results separately."
+abstention = "Incorrect on answerable items; correct only for specifically unsupported claims. Always report answer coverage beside supported-answer precision."
+comparison = "Paired by item and seed. Bootstrap whole items with repeats clustered inside each item; no claim that repeated seeds are additional independent questions."
+metrics = ["macro_item_accuracy", "numeric_slot_accuracy", "citation_precision", "citation_completeness", "unsupported_claim_rate", "answer_coverage", "verification_rejections", "verification_corrections", "latency", "input_tokens", "reasoning_tokens", "final_tokens", "Modal_usage"]
+
+[question_gold_freeze_gate]
+requirements = ["30 test and 6 development items", "Gold builder and tolerances frozen", "At least 10 high-risk entries checked against originals", "Source hashes and passage locators verified", "Private gold and oracle builder excluded from model/verifier runtime source paths", "No final-test model output inspected before freeze"]
+
+[future_evaluation_gate]
+status = "Not implemented or run; further model inference and statistical baselines are explicitly out of scope for the current user request."
+requirements = ["Scoring harness implements this frozen specification", "Verifier mutation tests for numbers, years, units, classifications, populations and invented locators", "Actual runtime bundle is tested for gold exclusion", "Full-length context capacity tested separately without claiming the short connectivity pilot established it"]

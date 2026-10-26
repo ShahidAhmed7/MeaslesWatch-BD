@@ -1,0 +1,15 @@
+{
+  "purpose": "Independent source-derived answer specification, not model results",
+  "builder_sha256": "d70245f999dac1a789ee19da42a26c2e100f626c08ecd829c5963139a787641f",
+  "gold_sha256": "d3d7f04a66278041eaedfd17781238e742755e60b7b4cb0effb21db379d5efd3",
+  "input_sha256": {
+    "benchmark/sources/manifest.json": "45910fe9254180be429281e4b0e47120f84ff66ed35c6acf57bdf4d5ee5c1021",
+    "benchmark/items.candidate.json": "26bb43a22ac37990455bd34c0d07577ffee09928f907095d111b10fec0739589",
+    "benchmark/development.candidate.json": "ccd09ce7fa2c25f5372366db3d19b41d6463908ce7acc066c4cd17c74e962f5d",
+    ".devin/benchmark_protocol.toml": "edfbf6a5a10ef2174f100fd52b3051d27875a1d9f0743031781e29af41145342"
+  },
+  "test_items": 30,
+  "development_items": 6,
+  "independence": "Standard-library source selectors, Decimal arithmetic, and manually reviewed interpretations; no measleswatch imports or production fact-registry access",
+  "runtime_prohibition": "Do not package this directory or the oracle builder into model/verifier runtime inputs"
+}

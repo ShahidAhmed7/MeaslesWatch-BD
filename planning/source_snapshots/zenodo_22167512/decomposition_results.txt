@@ -1,0 +1,32 @@
+BANGLADESH MCV COVERAGE DECOMPOSITION 2024->2025
+Source: WHO xMart WIISE AD_COVERAGES + AD_DENOMINATORS, retrieved 2026-08-27
+
+### MCV1
+doses    4,065,933 -> 3,791,393  -6.75%
+target   3,292,000 -> 4,091,813  +24.30%
+coverage 123.51% -> 92.66%  -30.85 pp
+identity check: -0.28740 vs -0.28740 -> OK
+share from dose decline       : 24.3%
+share from denominator change : 75.7%
+2025 coverage on 2024 target  : 115.17%
+2025 coverage on LT_1_YEAR    : 114.38%
+final 4 months vs 2024 rate   : -20.3%
+
+### MCV2
+doses    3,995,682 -> 3,711,076  -7.12%
+target   3,292,000 -> 4,091,813  +24.30%
+coverage 121.38% -> 90.70%  -30.68 pp
+identity check: -0.29139 vs -0.29139 -> OK
+share from dose decline       : 25.4%
+share from denominator change : 74.6%
+2025 coverage on 2024 target  : 112.73%
+2025 coverage on LT_1_YEAR    : 111.96%
+final 4 months vs 2024 rate   : -21.4%
+
+### Admin target vs independent under-1 denominator
+2020: admin 3,293,482 | LT_1_YEAR 3,293,482 | ratio 1.0000
+2021: admin 3,319,225 | LT_1_YEAR 3,319,225 | ratio 1.0000
+2022: admin 3,345,170 | LT_1_YEAR 3,345,170 | ratio 1.0000
+2023: admin 3,269,440 | LT_1_YEAR 3,269,440 | ratio 1.0000
+2024: admin 3,292,000 | LT_1_YEAR 3,291,999 | ratio 1.0000
+2025: admin 4,091,813 | LT_1_YEAR 3,314,714 | ratio 1.2344

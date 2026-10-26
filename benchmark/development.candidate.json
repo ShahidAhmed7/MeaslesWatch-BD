@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "status": "development_only_not_part_of_final_30",
+  "source_id": "cdc-westtexas-2026",
+  "items": [
+    {
+      "id": "DEV-01", "source_ids": ["cdc-westtexas-2026"],
+      "question": "For the West Texas report's January 20-March 18, 2025 investigation, give confirmed cases and hospitalized cases. Do not substitute the full-outbreak totals reported for August.",
+      "required_slots": ["investigation_cases", "hospitalized_cases"]
+    },
+    {
+      "id": "DEV-02", "source_ids": ["cdc-westtexas-2026"],
+      "question": "How many hospitalized patients had medical records reviewed in the West Texas investigation, and what percentage of all hospitalized patients does that represent? Calculate to two decimal places.",
+      "required_slots": ["reviewed_patients", "all_hospitalized_patients", "reviewed_percent"]
+    },
+    {
+      "id": "DEV-03", "source_ids": ["cdc-westtexas-2026"],
+      "question": "Calculate the pneumonia percentage among the West Texas hospitalized patients whose records were reviewed, to two decimal places. Give the numerator and denominator and do not generalize to all reported cases.",
+      "required_slots": ["pneumonia_patients", "reviewed_patients", "pneumonia_percent"]
+    },
+    {
+      "id": "DEV-04", "source_ids": ["cdc-westtexas-2026"],
+      "question": "Distinguish hypoxia from supplemental-oxygen use in the West Texas reviewed cohort. Give both counts and calculate the supplemental-oxygen percentage to two decimal places.",
+      "required_slots": ["hypoxia_patients", "oxygen_patients", "reviewed_patients", "oxygen_percent"]
+    },
+    {
+      "id": "DEV-05", "source_ids": ["cdc-westtexas-2026"],
+      "question": "Does 'all 54 were unvaccinated or had unknown vaccination status' establish that every reviewed West Texas patient was definitely unvaccinated? Preserve the source's ascertainment qualification.",
+      "required_slots": ["combined_category_patients", "all_definitely_unvaccinated", "record_limitation"]
+    },
+    {
+      "id": "DEV-06", "source_ids": ["cdc-westtexas-2026"],
+      "question": "Does the observed use of vitamin A among hospitalized West Texas patients identify its causal treatment benefit? Give the treated count but do not turn this descriptive cohort into a clinical treatment-effect estimate.",
+      "required_slots": ["vitamin_a_patients", "causal_treatment_effect_identified", "missing_design"]
+    }
+  ]
+}

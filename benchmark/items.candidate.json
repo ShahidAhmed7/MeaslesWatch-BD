@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0.0",
+  "status": "candidate_pending_independent_gold_and_scoring_freeze",
+  "instructions": "Answer from the named frozen sources, not live web updates or the Bangladesh dataset. Return every named slot with its unit, population, observation period and source-line citations. Distinguish reported rounded values from your calculations. Assess seeded claims rather than assuming they are true.",
+  "items": [
+    {
+      "id": "EXT-01", "source_ids": ["cdc-us-2025"],
+      "question": "According to the CDC US update, how many confirmed measles cases were reported during January 1-April 17, 2025? Is this a full-year count, and does confirmed mean every case was laboratory-confirmed? Give total_cases and lab_confirmed_cases separately.",
+      "required_slots": ["total_cases", "lab_confirmed_cases", "full_year", "all_confirmed_are_lab_confirmed"]
+    },
+    {
+      "id": "EXT-02", "source_ids": ["cdc-us-2025"],
+      "question": "Calculate the percentage of the CDC January 1-April 17, 2025 confirmed cases that were laboratory-confirmed, to two decimal places. Retain the laboratory numerator and all-confirmed denominator; distinguish your result from the report's rounded percentage.",
+      "required_slots": ["lab_cases", "confirmed_cases", "calculated_lab_percent", "reported_lab_percent"]
+    },
+    {
+      "id": "EXT-03", "source_ids": ["cdc-us-2025"],
+      "question": "Using the CDC January 1-April 17, 2025 report, calculate the hospitalized share of reported cases to two decimal places. Does this describe the hospitalization risk of everyone in the US population?",
+      "required_slots": ["hospitalized_cases", "reported_cases", "hospitalized_percent", "population_risk_identified"]
+    },
+    {
+      "id": "EXT-04", "source_ids": ["cdc-us-2025"],
+      "question": "A draft reads the CDC table's 'Died: 3 (3.8)' as a 3.8% case-fatality percentage. Check the table footnote, give the reported rate and its actual unit, and independently calculate the percentage of reported cases who died to two decimal places.",
+      "required_slots": ["deaths", "reported_death_rate", "calculated_death_percent", "draft_unit_correct"]
+    },
+    {
+      "id": "EXT-05", "source_ids": ["cdc-us-2025"],
+      "question": "Does the CDC report establish that 96% of all its January 1-April 17, 2025 cases were definitely unvaccinated? Identify the actual combined category and explain the Texas ascertainment limitation.",
+      "required_slots": ["combined_category_cases", "definitely_unvaccinated_percent_identified", "category", "texas_record_limitation"]
+    },
+    {
+      "id": "EXT-06", "source_ids": ["cdc-us-2025"],
+      "question": "After excluding Texas, how many CDC cases were unvaccinated, how many cases remain overall, and what percentage of that remaining case group was unvaccinated? Calculate to two decimal places; do not silently remove unknown-status cases from the denominator.",
+      "required_slots": ["unvaccinated_cases", "non_texas_cases", "unknown_status_cases", "unvaccinated_percent"]
+    },
+    {
+      "id": "EXT-07", "source_ids": ["cdc-us-2025"],
+      "question": "What share of the CDC January 1-April 17, 2025 national case count was associated with the largest New Mexico/Oklahoma/Texas outbreak? Calculate to two decimal places and distinguish this outbreak from all outbreak-associated cases.",
+      "required_slots": ["largest_outbreak_cases", "national_cases", "largest_outbreak_percent", "all_outbreak_associated_cases"]
+    },
+    {
+      "id": "EXT-08", "source_ids": ["cdc-us-2025"],
+      "question": "Among the internationally imported cases in the CDC January 1-April 17, 2025 report, what percentage occurred among US residents? Give both counts and calculate to two decimal places using imported cases, not all national cases, as denominator.",
+      "required_slots": ["imported_cases", "imported_us_resident_cases", "us_resident_percent_of_imported"]
+    },
+    {
+      "id": "EXT-09", "source_ids": ["cdc-us-2025"],
+      "question": "What minimum case count and epidemiologic-link requirement define a measles outbreak in this CDC analysis? Would three unrelated cases satisfy that definition solely because they occurred close in time?",
+      "required_slots": ["minimum_linked_cases", "epidemiologic_link_required", "unrelated_cases_sufficient"]
+    },
+    {
+      "id": "EXT-10", "source_ids": ["cdc-us-2025"],
+      "question": "Can the CDC report's vaccinated-versus-unvaccinated/unknown counts among reported cases alone identify a vaccine-effectiveness estimate? Evaluate that proposed calculation without denying or asserting vaccine effectiveness from other studies.",
+      "required_slots": ["effectiveness_identified", "missing_comparison"]
+    },
+    {
+      "id": "EXT-11", "source_ids": ["ecdc-eueea-2024"],
+      "question": "Using ECDC Table 1 EU/EEA totals, give the 2024 and 2023 case counts and calculate their ratio to two decimal places. Is the narrative description 'ten-fold' the exact arithmetic ratio?",
+      "required_slots": ["cases_2024", "cases_2023", "calculated_ratio", "ten_fold_exact"]
+    },
+    {
+      "id": "EXT-12", "source_ids": ["ecdc-eueea-2024"],
+      "question": "What overall 2024 EU/EEA notification rate does ECDC report per 1,000,000 population? Convert that same rate to cases per 100,000 population to two decimal places without changing the underlying observation window.",
+      "required_slots": ["reported_notification_rate", "converted_notification_rate"]
+    },
+    {
+      "id": "EXT-13", "source_ids": ["ecdc-eueea-2024"],
+      "question": "Which country had the highest 2024 measles notification rate in ECDC Table 1? Give its reported case count and rate, then calculate its share of EU/EEA cases to two decimal places.",
+      "required_slots": ["country", "country_cases", "country_notification_rate", "share_of_eueea_cases"]
+    },
+    {
+      "id": "EXT-14", "source_ids": ["ecdc-eueea-2024"],
+      "question": "In ECDC's Key facts narrative, which age group had the highest 2024 notification rate and what was that rate? Preserve the narrative precision and age-specific population denominator rather than substituting the all-age rate.",
+      "required_slots": ["age_group", "age_specific_notification_rate"]
+    },
+    {
+      "id": "EXT-15", "source_ids": ["ecdc-eueea-2024"],
+      "question": "What appears in Belgium's 2024 age-standardised-rate cell in ECDC Table 1, what does the marker mean, and is it permissible to treat that cell as a measured zero?",
+      "required_slots": ["raw_marker", "marker_meaning", "measured_zero"]
+    },
+    {
+      "id": "EXT-16", "source_ids": ["ecdc-eueea-2024"],
+      "question": "ECDC reports 87% unvaccinated among a particular group of cases in 2024. Identify that case denominator. Does subtracting 87% from 100% establish that 13% of the general EU/EEA population was vaccinated?",
+      "required_slots": ["known_status_cases", "unvaccinated_cases", "population_coverage_identified"]
+    },
+    {
+      "id": "EXT-17", "source_ids": ["ecdc-eueea-2024"],
+      "question": "Using ECDC's reported deaths by age in 2024, calculate the percentage of reported measles deaths occurring in children under five to two decimal places. Do not label the result as an under-five case-fatality risk.",
+      "required_slots": ["under_five_deaths", "all_reported_deaths", "under_five_share_of_deaths", "age_specific_case_fatality_identified"]
+    },
+    {
+      "id": "EXT-18", "source_ids": ["ecdc-eueea-2024"],
+      "question": "Which observation year and EpiPulse data-retrieval date underpin this ECDC report? Distinguish the observation period from the date the data were retrieved.",
+      "required_slots": ["observation_year", "data_retrieval_date"]
+    },
+    {
+      "id": "EXT-19", "source_ids": ["ecdc-eueea-2024"],
+      "question": "Compare Austria and Germany in ECDC Table 1 for 2024. Which had more reported cases, and which had the higher notification rate? Give both countries' counts and rates; do not rank population-normalized rates using raw counts.",
+      "required_slots": ["austria_cases", "germany_cases", "austria_rate", "germany_rate", "higher_count_country", "higher_rate_country"]
+    },
+    {
+      "id": "EXT-20", "source_ids": ["ecdc-eueea-2024"],
+      "question": "A draft cites 'ecdc-eueea-2024, Table 99' for '35,212 laboratory-confirmed measles cases in Bangladesh in 2024'. Assess the citation, geographic scope, and laboratory-only classification against the actual frozen report. A number appearing somewhere is not sufficient support.",
+      "required_slots": ["table_99_exists", "actual_geographic_scope", "bangladesh_claim_supported", "laboratory_only_claim_supported"]
+    },
+    {
+      "id": "EXT-21", "source_ids": ["ukhsa-england-2025"],
+      "question": "Independently sum the twelve monthly symptom-onset counts in the UKHSA England 2025 report. Give the sum, the separately stated annual total, and whether they agree.",
+      "required_slots": ["monthly_sum", "reported_annual_cases", "totals_agree"]
+    },
+    {
+      "id": "EXT-22", "source_ids": ["ukhsa-england-2025"],
+      "question": "Which month had the highest laboratory-confirmed measles count in the UKHSA England 2025 report? Give all ties if present and the count.",
+      "required_slots": ["peak_months", "peak_cases"]
+    },
+    {
+      "id": "EXT-23", "source_ids": ["ukhsa-england-2025"],
+      "question": "Calculate the laboratory-confirmed measles total for April-June 2025 in England from the UKHSA monthly counts. Label it as a quarter, not a full-year count.",
+      "required_slots": ["quarter_cases", "full_year"]
+    },
+    {
+      "id": "EXT-24", "source_ids": ["ukhsa-england-2025"],
+      "question": "Using UKHSA England 2025 monthly counts, compare January-March with April-June. Give each quarterly total and the relative percentage change from the first quarter to the second, to two decimal places. Do not call this a percentage-point change.",
+      "required_slots": ["first_quarter_cases", "second_quarter_cases", "relative_percent_change"]
+    },
+    {
+      "id": "EXT-25", "source_ids": ["ukhsa-england-2025"],
+      "question": "From the England column of UKHSA Table 1 for 2025, calculate the number of cases in children under five and their percentage of all reported cases, to two decimal places. Do not include five-year-olds.",
+      "required_slots": ["under_five_cases", "all_cases", "under_five_percent"]
+    },
+    {
+      "id": "EXT-26", "source_ids": ["ukhsa-england-2025"],
+      "question": "Sum the UKHSA 2025 England age groups under one, one to four, and five to ten. Calculate the percentage aged ten and under to two decimal places and distinguish it from the rounded narrative percentage.",
+      "required_slots": ["ten_and_under_cases", "calculated_percent", "reported_percent"]
+    },
+    {
+      "id": "EXT-27", "source_ids": ["ukhsa-england-2025"],
+      "question": "Does London's reported 52% share of England's measles cases in the UKHSA 2025 summary prove it had the highest population incidence among regions? Give London's case count and identify what denominator would additionally be needed.",
+      "required_slots": ["london_cases", "highest_incidence_identified", "missing_denominator"]
+    },
+    {
+      "id": "EXT-28", "source_ids": ["ukhsa-england-2025"],
+      "question": "Which UTLA has the largest count in UKHSA's published England 2025 UTLA table, and what is its count? Why cannot the displayed table be treated as an unsuppressed census of every UTLA's cases or missing rows be replaced by zero?",
+      "required_slots": ["utla", "utla_cases", "suppression_threshold", "omitted_rows_are_zero"]
+    },
+    {
+      "id": "EXT-29", "source_ids": ["ukhsa-england-2025"],
+      "question": "Can UKHSA's separate all-age monthly totals and annual age-group table establish the observed number of under-five cases in each month of 2025? Assess whether proportional allocation would be an observation or an unsupported constructed estimate.",
+      "required_slots": ["age_by_month_identified", "allocation_is_observed", "missing_cross_tabulation"]
+    },
+    {
+      "id": "EXT-30", "source_ids": ["ukhsa-england-2026"],
+      "question": "In the frozen UKHSA 2026 page, compare the end date in the situational-update sentence beginning 'Between 1 January 2026' with the end date in the Table 1 caption. Give both dates and the total shown with each. Is it justified to silently assign both to one verified observation window?",
+      "required_slots": ["narrative_end_date", "table_caption_end_date", "narrative_cases", "table_cases", "single_window_verified"]
+    }
+  ]
+}

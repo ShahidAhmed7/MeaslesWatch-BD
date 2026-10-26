@@ -1,0 +1,90 @@
+{
+  "retrieved_at_utc": "2026-10-26T08:06:06.945738+00:00",
+  "purpose": "Read-only planning inspection; downloaded Python source was not executed",
+  "files": [
+    {
+      "filename": "build.py",
+      "bytes": 4028,
+      "md5_verified": true,
+      "sha256": "82df75fed589aa75effb8bcc35c6bef8719873ea33560cb9c0b39a3e8e311e2f",
+      "url": "https://zenodo.org/api/records/22167512/files/build.py/content"
+    },
+    {
+      "filename": "bgd_sia_history.csv",
+      "bytes": 1387,
+      "md5_verified": true,
+      "sha256": "3af6d8506686066a6c0799eb75debf257353e177bf2dfe817e658eb76246aa7a",
+      "url": "https://zenodo.org/api/records/22167512/files/bgd_sia_history.csv/content"
+    },
+    {
+      "filename": "cohort_v2.py",
+      "bytes": 4851,
+      "md5_verified": true,
+      "sha256": "0ad522bcfb2df16dfce653aee3c15a9e3e33a4bb43d4702160ee14e4503f3351",
+      "url": "https://zenodo.org/api/records/22167512/files/cohort_v2.py/content"
+    },
+    {
+      "filename": "bgd_mcv_coverage_series.csv",
+      "bytes": 1545,
+      "md5_verified": true,
+      "sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+      "url": "https://zenodo.org/api/records/22167512/files/bgd_mcv_coverage_series.csv/content"
+    },
+    {
+      "filename": "bgd_cohort_susceptibility.csv",
+      "bytes": 1339,
+      "md5_verified": true,
+      "sha256": "d595d384d8548254402d4e2930723134d7dbf34c24448c21e7972f3d38bf19a3",
+      "url": "https://zenodo.org/api/records/22167512/files/bgd_cohort_susceptibility.csv/content"
+    },
+    {
+      "filename": "figs_v2.py",
+      "bytes": 4742,
+      "md5_verified": true,
+      "sha256": "8c1640275340737e3c9f7c4842ee21c5dbd4e6a4cf7da0fe39c46460f2d86d5b",
+      "url": "https://zenodo.org/api/records/22167512/files/figs_v2.py/content"
+    },
+    {
+      "filename": "decomposition_results.txt",
+      "bytes": 1266,
+      "md5_verified": true,
+      "sha256": "136ca353df5ee37d6c479d50a757d1b68900aec5609882af8aa858a0312594ba",
+      "url": "https://zenodo.org/api/records/22167512/files/decomposition_results.txt/content"
+    },
+    {
+      "filename": "divergence_susceptibility_vs_incidence.csv",
+      "bytes": 399,
+      "md5_verified": true,
+      "sha256": "c29dc41483ad7085f0bbfcce57eb545ac61bdf30b5a45b1401ced999361584fc",
+      "url": "https://zenodo.org/api/records/22167512/files/divergence_susceptibility_vs_incidence.csv/content"
+    },
+    {
+      "filename": "fig4.py",
+      "bytes": 2386,
+      "md5_verified": true,
+      "sha256": "a0f68d179bec8003a2c59990f5650c9ffae8727ffb582863e700129485967569",
+      "url": "https://zenodo.org/api/records/22167512/files/fig4.py/content"
+    },
+    {
+      "filename": "README.md",
+      "bytes": 7985,
+      "md5_verified": true,
+      "sha256": "11fd49cc9bdd36ec0d1e3b8d3ff670ecf50b29a284d6a2c1d0eadcaa58d4c5f7",
+      "url": "https://zenodo.org/api/records/22167512/files/README.md/content"
+    },
+    {
+      "filename": "monthly_measles_bgd_neighbours.csv",
+      "bytes": 90423,
+      "md5_verified": true,
+      "sha256": "5158f387016038264e502a301221c8410b7ed35c3073e330b7f3e3bdf248fb5f",
+      "url": "https://zenodo.org/api/records/22167512/files/monthly_measles_bgd_neighbours.csv/content"
+    },
+    {
+      "filename": "sensitivity_analyses.csv",
+      "bytes": 510,
+      "md5_verified": true,
+      "sha256": "ee7873891c2ab80c1e0016c41a600306aaa67de3f238b1c19b75afc7e741f888",
+      "url": "https://zenodo.org/api/records/22167512/files/sensitivity_analyses.csv/content"
+    }
+  ]
+}

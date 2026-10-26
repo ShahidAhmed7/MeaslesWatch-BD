@@ -1,0 +1,129 @@
+{
+  "sources": [
+    {
+      "source_id": "cdc-us-2025",
+      "publisher": "CDC MMWR",
+      "url": "https://www.cdc.gov/mmwr/volumes/74/wr/mm7414a1.htm",
+      "declared_publication_date": "2025-04-24",
+      "split": "test",
+      "representation": "Firecrawl full-page markdown extraction; not original server bytes",
+      "retrieved_at_utc": "2026-10-26T10:09:50.330681+00:00",
+      "sha256": "81a46f83eadece553963d2477d3625351b08da3410ed58c350ce36b8a9b8f7ee",
+      "bytes": 35721,
+      "path": "benchmark/frozen/external-v1/public/test/sources/cdc-us-2025.md",
+      "retrieval_metadata": {
+        "scrapeId": "01a177ae-a104-770b-9b8c-17c2d81d1aac",
+        "sourceURL": "https://www.cdc.gov/mmwr/volumes/74/wr/mm7414a1.htm",
+        "url": "https://www.cdc.gov/mmwr/volumes/74/wr/mm7414a1.htm",
+        "statusCode": 200,
+        "contentType": "text/html",
+        "article:published_time": "2025-04-24",
+        "publishedTime": "2025-04-24",
+        "title": "Measles Update \u2014 United States, January 1\u2013April 17, 2025  | MMWR"
+      },
+      "credibility": "Official public-health agency surveillance publication; issuer and source passage checked by lead",
+      "license": "Source-specific terms; no blanket CC-BY license inferred"
+    },
+    {
+      "source_id": "ecdc-eueea-2024",
+      "publisher": "ECDC",
+      "url": "https://www.ecdc.europa.eu/sites/default/files/documents/MEAS-AER-2024-Report.pdf",
+      "declared_publication_date": "2025-04-28",
+      "split": "test",
+      "representation": "Firecrawl full-page markdown extraction; not original server bytes",
+      "retrieved_at_utc": "2026-10-26T10:09:50.331322+00:00",
+      "sha256": "6460411e175435fd61867f49b9c3a6d1480b446654b9aebae128d8e633e548e3",
+      "bytes": 45747,
+      "path": "benchmark/frozen/external-v1/public/test/sources/ecdc-eueea-2024.md",
+      "retrieval_metadata": {
+        "scrapeId": "01a177af-6286-72a6-892b-5caef867cdc1",
+        "sourceURL": "https://www.ecdc.europa.eu/sites/default/files/documents/MEAS-AER-2024-Report.pdf",
+        "url": "https://www.ecdc.europa.eu/sites/default/files/documents/MEAS-AER-2024-Report.pdf",
+        "statusCode": 200,
+        "contentType": "application/pdf",
+        "title": "AER_template.docx",
+        "numPages": 13
+      },
+      "credibility": "Official public-health agency surveillance publication; issuer and source passage checked by lead",
+      "license": "Source-specific terms; no blanket CC-BY license inferred"
+    },
+    {
+      "source_id": "ukhsa-england-2025",
+      "publisher": "UKHSA",
+      "url": "https://www.gov.uk/government/publications/measles-epidemiology-2023-to-2026/confirmed-cases-of-measles-in-england-by-month-age-region-and-upper-tier-local-authority-2025",
+      "declared_publication_date": null,
+      "split": "test",
+      "representation": "Firecrawl full-page markdown extraction; not original server bytes",
+      "retrieved_at_utc": "2026-10-26T10:09:50.331789+00:00",
+      "sha256": "f4dc0431a37692f74261ff0a5c5bc1862ffbb7439a7833aad581587873fe0163",
+      "bytes": 7957,
+      "path": "benchmark/frozen/external-v1/public/test/sources/ukhsa-england-2025.md",
+      "retrieval_metadata": {
+        "scrapeId": "01a177ae-b505-7177-92fa-2696712eb1da",
+        "sourceURL": "https://www.gov.uk/government/publications/measles-epidemiology-2023-to-2026/confirmed-cases-of-measles-in-england-by-month-age-region-and-upper-tier-local-authority-2025",
+        "url": "https://www.gov.uk/government/publications/measles-epidemiology-2023-to-2026/confirmed-cases-of-measles-in-england-by-month-age-region-and-upper-tier-local-authority-2025",
+        "statusCode": 200,
+        "contentType": "text/html; charset=utf-8",
+        "govuk:updated-at": "2026-10-19T11:54:51+01:00",
+        "govuk:public-updated-at": "2026-10-15T09:49:00+01:00",
+        "title": "Confirmed cases of measles in England by month, age, region and upper tier local authority: 2025 - GOV.UK"
+      },
+      "credibility": "Official public-health agency surveillance publication; issuer and source passage checked by lead",
+      "license": "UK Open Government Licence v3.0 with stated exceptions"
+    },
+    {
+      "source_id": "ukhsa-england-2026",
+      "publisher": "UKHSA",
+      "url": "https://www.gov.uk/government/publications/measles-epidemiology-2023-to-2026/confirmed-cases-of-measles-in-england-by-month-age-region-and-upper-tier-local-authority-2026",
+      "declared_publication_date": null,
+      "split": "test",
+      "representation": "Firecrawl full-page markdown extraction; not original server bytes",
+      "retrieved_at_utc": "2026-10-26T10:13:33.257174+00:00",
+      "sha256": "df10770dab07fa468e546bc2c31253fe27be688df96406f5a197f3333552437d",
+      "bytes": 10845,
+      "path": "benchmark/frozen/external-v1/public/test/sources/ukhsa-england-2026.md",
+      "retrieval_metadata": {
+        "scrapeId": "01a177b2-4ddf-7089-a749-d26e449b7010",
+        "sourceURL": "https://www.gov.uk/government/publications/measles-epidemiology-2023-to-2026/confirmed-cases-of-measles-in-england-by-month-age-region-and-upper-tier-local-authority-2026",
+        "url": "https://www.gov.uk/government/publications/measles-epidemiology-2023-to-2026/confirmed-cases-of-measles-in-england-by-month-age-region-and-upper-tier-local-authority-2026",
+        "statusCode": 200,
+        "contentType": "text/html; charset=utf-8",
+        "govuk:updated-at": "2026-10-19T11:55:14+01:00",
+        "govuk:public-updated-at": "2026-10-15T09:49:00+01:00",
+        "title": "Confirmed cases of measles in England by month, age, region and upper tier local authority: 2026 - GOV.UK"
+      },
+      "credibility": "Official UKHSA surveillance publication; narrative and table time-window mismatch retained",
+      "license": "UK Open Government Licence v3.0 with stated exceptions"
+    },
+    {
+      "source_id": "cdc-westtexas-2026",
+      "publisher": "CDC MMWR",
+      "url": "https://www.cdc.gov/mmwr/volumes/75/wr/mm7520a1.htm",
+      "declared_publication_date": "2026-05-28",
+      "split": "development",
+      "representation": "Firecrawl full-page markdown extraction; not original server bytes",
+      "retrieved_at_utc": "2026-10-26T10:09:50.332196+00:00",
+      "sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+      "bytes": 32380,
+      "path": "benchmark/frozen/external-v1/public/development/sources/cdc-westtexas-2026.md",
+      "retrieval_metadata": {
+        "scrapeId": "01a177af-9e54-746d-81e4-3a08e59586dd",
+        "sourceURL": "https://www.cdc.gov/mmwr/volumes/75/wr/mm7520a1.htm",
+        "url": "https://www.cdc.gov/mmwr/volumes/75/wr/mm7520a1.htm",
+        "statusCode": 200,
+        "contentType": "text/html",
+        "article:published_time": "2026-05-28",
+        "publishedTime": "2026-05-28",
+        "title": "Characteristics of Patients Hospitalized with Measles During an Outbreak \u2014 West Texas, January\u2013March 2025  | MMWR"
+      },
+      "credibility": "Official public-health agency surveillance publication; issuer and source passage checked by lead",
+      "license": "Source-specific terms; no blanket CC-BY license inferred"
+    }
+  ],
+  "excluded_dataset_sources": [
+    "Zenodo record 22167512",
+    "WHO DON598, 23 April 2026"
+  ],
+  "independence_scope": "Different primary publications/data populations than Bangladesh research dataset; not external blinded adjudication or proof of absence from model pretraining",
+  "status": "frozen"
+}

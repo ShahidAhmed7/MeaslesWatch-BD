@@ -1,0 +1,30 @@
+{
+  "version": "external-v1",
+  "split": "development",
+  "sources": [
+    {
+      "source_id": "cdc-westtexas-2026",
+      "publisher": "CDC MMWR",
+      "url": "https://www.cdc.gov/mmwr/volumes/75/wr/mm7520a1.htm",
+      "declared_publication_date": "2026-05-28",
+      "split": "development",
+      "representation": "Firecrawl full-page markdown extraction; not original server bytes",
+      "retrieved_at_utc": "2026-10-26T10:09:50.332196+00:00",
+      "sha256": "25572c6a810284ddb94f777c5489a753bd127843cd373423f5723ac6917a14c9",
+      "bytes": 32380,
+      "path": "sources/cdc-westtexas-2026.md",
+      "retrieval_metadata": {
+        "scrapeId": "01a177af-9e54-746d-81e4-3a08e59586dd",
+        "sourceURL": "https://www.cdc.gov/mmwr/volumes/75/wr/mm7520a1.htm",
+        "url": "https://www.cdc.gov/mmwr/volumes/75/wr/mm7520a1.htm",
+        "statusCode": 200,
+        "contentType": "text/html",
+        "article:published_time": "2026-05-28",
+        "publishedTime": "2026-05-28",
+        "title": "Characteristics of Patients Hospitalized with Measles During an Outbreak \u2014 West Texas, January\u2013March 2025  | MMWR"
+      },
+      "credibility": "Official public-health agency surveillance publication; issuer and source passage checked by lead",
+      "license": "Source-specific terms; no blanket CC-BY license inferred"
+    }
+  ]
+}
