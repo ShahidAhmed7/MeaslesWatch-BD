@@ -24,6 +24,8 @@ def build_report(root, output):
     boot = read("results/statistics-001/paired_bootstrap.json")["measles_lab_confirmed"]
     paired = read("results/benchmark-score-001/paired_comparisons.json")
     verifier = read("results/benchmark-score-001/verification_metrics.json")
+    failure_aware = read("results/synthetic-failure-audit-001/failure_aware_metrics.json")
+    poisson_nb = next(r for r in failure_aware if r["process"] == "poisson" and r["model"] == "negative_binomial" and r["multiplier"] == 2)
     preds = read("results/statistics-001/predictions.json")
     case = [r for r in preds if r["measure"] == "measles_lab_confirmed" and r["split"] == "case_study" and r["model"] == "negative_binomial"]
     cov = read("data/processed/phase1-r2/coverage_annual.json")
@@ -123,7 +125,14 @@ lead time. Changing windows and classifications changes expectations, so the
 prespecified primary model is retained rather than selected on test performance.
 Synthetic failures remain visible: low-dispersion Poisson simulations can fail NB2
 fitting, reducing scored monthly denominators, while missed-event counts include
-undetected/failed events. Synthetic results do not measure effectiveness in Bangladesh.
+undetected/failed events. The original monthly summaries condition on available
+predictions, differing from the all-eligible denominator in the protocol. A separate
+failure audit retains all 120 clean months and 30 pulse months per configuration.
+For NB2 on the twofold Poisson pulse, {poisson_nb['unavailable_clean_months']} clean
+predictions are unavailable; monthly recall is bounded by
+{pct(poisson_nb['all_eligible_monthly_recall_lower'])}–{pct(poisson_nb['all_eligible_monthly_recall_upper'])}
+when unavailable labels remain unidentified. These are identification bounds, not
+confidence intervals. Synthetic results do not measure effectiveness in Bangladesh.
 
 ![Separate coverage-source series]({figures}/03_coverage.png)
 

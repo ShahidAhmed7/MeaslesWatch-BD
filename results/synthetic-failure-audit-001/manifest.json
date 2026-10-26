@@ -1,0 +1,6 @@
+{
+  "primary_artifacts_overwritten": false,
+  "protocol_difference": "Original synthetic monthly summaries use available predictions as denominators, not all eligible months; this supplement explicitly includes failed fits",
+  "script_sha256": "65eb2a1569d990af36cd98df11ebf2d57389e2c0b389845e4e731afbe65364a1",
+  "source_sha256": "490e141fcc7b3e26a616e12b1be91355ff7c18648277ba0e1bdb07f0ba434ea1"
+}

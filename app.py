@@ -203,6 +203,13 @@ def anomalies(selection):
     synthetic = frame("results/statistics-001/synthetic_metrics.json")
     st.dataframe(synthetic, hide_index=True, width="stretch")
     st.caption("Synthetic false-alert proportions, event recall and delay apply only to the specified simulation. Real monthly outbreak labels are unavailable.")
+    st.caption("The original monthly rates condition on available predictions. Event recall includes failed fits as missed events. All-eligible failure bounds are shown separately below.")
+    failure_aware = frame("results/synthetic-failure-audit-001/failure_aware_metrics.json")
+    if not failure_aware.empty:
+        with st.expander("All-eligible synthetic denominators and bounds"):
+            st.dataframe(failure_aware, hide_index=True, width="stretch")
+            st.caption("Bounds treat unavailable predictions as unidentified. They are not confidence intervals.")
+            export_table(failure_aware, "synthetic-failure-bounds", {"scope": "Synthetic only; all eligible months retained"})
 
 
 def analyst(selection):

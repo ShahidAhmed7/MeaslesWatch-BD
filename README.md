@@ -101,6 +101,12 @@ to the registered source schemas; it is not a universal medical fact checker.
 - Forty synthetic paths provide known-label stress tests. Their alert metrics do
   not validate Bangladesh public-health effectiveness.
 
+The original synthetic monthly summary conditions on available model fits. This
+differs from the all-eligible denominator in the protocol. The separate
+`results/synthetic-failure-audit-001` retains every eligible month and bounds rates
+when predictions are unavailable; event recall already counts failed fits as misses.
+Both summaries are retained and labeled, rather than silently deleting failures.
+
 Annual administrative, official and WUENIC coverage remain separate. Values above
 100% and source disagreement are retained. No sampling variances are available for
 coverage confidence intervals. Age-specific WHO document statements remain separate
