@@ -1,5 +1,9 @@
 **MeaslesWatch BD: repository audit against the supplied specification**
 
+**Historical pre-build audit.** The user subsequently authorized implementation.
+Current completion evidence is tracked in [COMPLETION.md](COMPLETION.md); the original
+observations below remain unchanged as the baseline audit.
+
 Audited on 26 October 2026. The governing feature reference is [the supplied specification](specifications/MeaslesWatch_BD_Project_Features.md), retained without modification. The user requested an audit and a revised completion plan, so this audit did not implement features or launch GPU inference. Statements in the attachment were assessed as feature requirements, examples or recommendations; they were not treated as permission to execute unrelated actions.
 
 The project has a working, tested Bangladesh data foundation and a prepared external benchmark. It does not yet have the statistical experiment, the research-brief/verification workflow, a Streamlit application, or the measured benchmark results needed to satisfy the specification. Dependencies, configuration files and frozen questions are evidence of preparation, not evidence that those features have run.

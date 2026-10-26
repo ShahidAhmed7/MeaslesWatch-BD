@@ -1,5 +1,9 @@
 **MeaslesWatch BD: specification-based completion plan**
 
+**Execution authorized subsequently:** the user's instruction to choose the suitable
+approach and build the project approves implementation of this plan. Current milestone
+evidence is in [COMPLETION.md](COMPLETION.md). No further generic plan approval is needed.
+
 Revised 26 October 2026 after inspecting the current workspace and the supplied [feature specification](specifications/MeaslesWatch_BD_Project_Features.md). This plan supersedes the initial execution plan, which is preserved in [the archive](archive/EXECUTION_PLAN.initial-2026-10-26.md). The [implementation-status audit](IMPLEMENTATION_STATUS.md) records what is actually complete and the evidence used to establish it.
 
 The immediate request is to audit and plan. No new model inference or feature implementation was performed during this review. This is a completion plan from the verified current state, not a proposal to redo the ingestion, descriptions, pilots or question-authoring work.
