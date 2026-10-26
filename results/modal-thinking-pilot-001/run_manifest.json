@@ -1,0 +1,63 @@
+{
+  "app_id": "ap-MRgkfCy1F0eJWNPL7GioAX",
+  "budget_reservation": {
+    "app_id": "ap-MRgkfCy1F0eJWNPL7GioAX",
+    "billing_control_evidence": "user_confirmed_after_request_for_workspace_usage_and_zero_out_of_pocket_limits",
+    "client_wall_seconds": 85.30214149999665,
+    "client_wall_timeout_seconds": 7800,
+    "context_window_tokens": 131072,
+    "ended_at_utc": "2026-10-26T10:09:45.807126+00:00",
+    "estimate_is_provider_billing_cap": false,
+    "function_timeout_seconds": 7200,
+    "image_build_storage_accounting_headroom_usd": "1.25",
+    "max_input_tokens": 98304,
+    "max_new_tokens": 32768,
+    "measured_app_cost_usd": null,
+    "provider_dashboard_independently_inspected": false,
+    "requested_generations": 1,
+    "requested_resource_estimate_usd": "4.743510",
+    "requested_resource_rate_usd_per_hour": "2.172600",
+    "reserved_container_seconds": 7860,
+    "reserved_usd": "6.0",
+    "run_id": "modal-thinking-pilot-001",
+    "started_at_utc": "2026-10-26T10:08:20.505388+00:00",
+    "status": "succeeded",
+    "workspace_delta_caveat": "May lag and include unrelated activity; not an app-attributed charge. Conservative reservation is retained rather than released.",
+    "workspace_metered_delta_usd": "0.00023330"
+  },
+  "environment": "main",
+  "finished_at_utc": "2026-10-26T10:09:45.807126+00:00",
+  "image_packages": [
+    "torch==2.7.1",
+    "transformers==4.53.3",
+    "accelerate==1.8.1",
+    "safetensors==0.5.3"
+  ],
+  "modal_app_sha256": "a99a3a141580c7fd6b161ca50f8a68012ccbea329d79d54a48f9130299dec8fe",
+  "modal_sdk_version": "1.6.2",
+  "model_id": "Qwen/Qwen3-4B",
+  "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "platform": "macOS-26.6-arm64-arm-64bit-Mach-O",
+  "preflight_sha256": {
+    "app-list.stdout": "1b6c90e25e74523bd60dc22de0593177680a13a537162ceefe85a271c8508c57",
+    "billing-rates.stdout": "90e7a8e15d62d7223187e50a7e4f9c1eedd84c8529ceac44a38db352a07e5cd9",
+    "token-info.stdout": "69832329e19a0cd105f91e18295050fda5bbaee572262aa06f1cccbca12ca6d5"
+  },
+  "purpose": "Connectivity and structured-output pilot, not a benchmark item",
+  "python": "3.13.16",
+  "request": [
+    {
+      "content": "Return only the JSON object requested by the user. Do not add Markdown, commentary, or extra keys.",
+      "role": "system"
+    },
+    {
+      "content": "Return {\"status\":\"ok\"}.",
+      "role": "user"
+    }
+  ],
+  "run_id": "modal-thinking-pilot-001",
+  "runner_sha256": "9eaeb12fd147dbf5fdd1c03347c5d8e70465a713ef3b1ed00227ed39b319b076",
+  "status": "succeeded",
+  "study_config_sha256": "a7dfcacdfc1fecca7a84296dfbe66907f90eb1a803e030a52905f2ca0c687cbf",
+  "workspace": "kazigalib143"
+}

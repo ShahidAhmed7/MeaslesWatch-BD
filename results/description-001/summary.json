@@ -1,0 +1,62 @@
+{
+  "coverage_confidence_intervals": "not_available_without_sampling_variances",
+  "highest_complete_year_lab_count": {
+    "measure": "measles_lab_confirmed",
+    "rows": [
+      {
+        "complete_for_requested_window": true,
+        "count": 4446,
+        "lag_sensitive_months": 0,
+        "measure": "measles_lab_confirmed",
+        "months_expected": 12,
+        "months_observed": 12,
+        "observed_partial_sum": 4446,
+        "period_end": "2019-12",
+        "period_label": "complete_calendar_year",
+        "period_start": "2019-01",
+        "population": "all_ages",
+        "provisional_months": 0,
+        "source_rows": [
+          "monthly_measles_bgd_neighbours.csv:86",
+          "monthly_measles_bgd_neighbours.csv:87",
+          "monthly_measles_bgd_neighbours.csv:88",
+          "monthly_measles_bgd_neighbours.csv:89",
+          "monthly_measles_bgd_neighbours.csv:90",
+          "monthly_measles_bgd_neighbours.csv:91",
+          "monthly_measles_bgd_neighbours.csv:92",
+          "monthly_measles_bgd_neighbours.csv:93",
+          "monthly_measles_bgd_neighbours.csv:94",
+          "monthly_measles_bgd_neighbours.csv:95",
+          "monthly_measles_bgd_neighbours.csv:96",
+          "monthly_measles_bgd_neighbours.csv:97"
+        ],
+        "source_sha256": [
+          "5158f387016038264e502a301221c8410b7ed35c3073e330b7f3e3bdf248fb5f"
+        ],
+        "unit": "reported_cases",
+        "year": 2019
+      }
+    ],
+    "selection_window": [
+      2012,
+      2025
+    ],
+    "unit": "reported_cases",
+    "value": 4446,
+    "years": [
+      2019
+    ]
+  },
+  "highest_historical_month_lab_count": {
+    "measure": "measles_lab_confirmed",
+    "months": [
+      "2019-09"
+    ],
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:94"
+    ],
+    "unit": "reported_cases",
+    "value": 677
+  },
+  "scope": "Observed reporting and coverage descriptions; no model performance, causal effect, population incidence or prospective outbreak probability is estimated"
+}

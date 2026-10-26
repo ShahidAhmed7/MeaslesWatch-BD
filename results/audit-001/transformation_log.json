@@ -1,0 +1,10 @@
+[
+  "Preserve all immutable raw bytes and original numeric/date strings",
+  "Primary canonical study remains Bangladesh; regional exploration is supplementary",
+  "Reshape five measles measures to separate country-month-measure records",
+  "Map blank/sentinel values to null with explicit missing reason; never impute zero",
+  "Quarantine negative/non-integral regional measures from aggregates while retaining original strings",
+  "Administrative coverage above 100% and source-specific coverage measurements remain separate",
+  "Retain planned/conducted campaign status, source-specific WHO conflicts and date precision",
+  "All-age counts remain all-age; no age allocation or all-age incidence denominator is constructed"
+]

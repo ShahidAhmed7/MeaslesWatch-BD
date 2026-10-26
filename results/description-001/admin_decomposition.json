@@ -1,0 +1,58 @@
+[
+  {
+    "antigen": "MCV1",
+    "definition": "log((D_new/T_new)/(D_old/T_old)) = log(D_new/D_old) - log(T_new/T_old)",
+    "dose_relative_change_percent": -6.7522017701718156,
+    "dose_share_of_log_change": 0.24324671425599417,
+    "end_year": 2025,
+    "identity_residual": 0.0,
+    "interpretation": "arithmetic_accounting_identity_not_causal_attribution",
+    "log_coverage_change": -0.2874026045248929,
+    "log_dose_change": -0.06990973921929512,
+    "negative_log_target_change": -0.2174928653055978,
+    "new_doses": 3791393,
+    "new_recomputed_pct": 92.65802225077246,
+    "new_target": 4091813,
+    "old_doses": 4065933,
+    "old_recomputed_pct": 123.50950789793438,
+    "old_target": 3292000,
+    "share_status": "defined",
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:25",
+      "bgd_mcv_coverage_series.csv:27"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "start_year": 2024,
+    "status": "defined",
+    "target_relative_change_percent": 24.295656136087484,
+    "target_share_of_log_change": 0.7567532857440059
+  },
+  {
+    "antigen": "MCV2",
+    "definition": "log((D_new/T_new)/(D_old/T_old)) = log(D_new/D_old) - log(T_new/T_old)",
+    "dose_relative_change_percent": -7.122839104813647,
+    "dose_share_of_log_change": 0.25359007858688826,
+    "end_year": 2025,
+    "identity_residual": 0.0,
+    "interpretation": "arithmetic_accounting_identity_not_causal_attribution",
+    "log_coverage_change": -0.29138528182186785,
+    "log_dose_change": -0.07389241651627004,
+    "negative_log_target_change": -0.2174928653055978,
+    "new_doses": 3711076,
+    "new_recomputed_pct": 90.69515151352225,
+    "new_target": 4091813,
+    "old_doses": 3995682,
+    "old_recomputed_pct": 121.37551640340219,
+    "old_target": 3292000,
+    "share_status": "defined",
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:26",
+      "bgd_mcv_coverage_series.csv:28"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "start_year": 2024,
+    "status": "defined",
+    "target_relative_change_percent": 24.295656136087484,
+    "target_share_of_log_change": 0.7464099214131118
+  }
+]

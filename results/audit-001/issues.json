@@ -1,0 +1,143 @@
+[
+  {
+    "affected_references": 24,
+    "distinct_source_rows": 24,
+    "examples": [
+      "bgd_mcv_coverage_series.csv:10",
+      "bgd_mcv_coverage_series.csv:11",
+      "bgd_mcv_coverage_series.csv:12",
+      "bgd_mcv_coverage_series.csv:13",
+      "bgd_mcv_coverage_series.csv:14"
+    ],
+    "explanation": "Reported administrative coverage retained above 100%",
+    "issue_type": "admin_above_100",
+    "severity": "review",
+    "warning_records": 24
+  },
+  {
+    "affected_references": 5,
+    "distinct_source_rows": 5,
+    "examples": [
+      "bgd_sia_history.csv:12",
+      "bgd_sia_history.csv:13",
+      "bgd_sia_history.csv:14",
+      "bgd_sia_history.csv:15",
+      "bgd_sia_history.csv:2"
+    ],
+    "explanation": "Missing or month-level campaign dates retained without invented days",
+    "issue_type": "campaign_imprecise_date",
+    "severity": "review",
+    "warning_records": 5
+  },
+  {
+    "affected_references": 3,
+    "distinct_source_rows": 3,
+    "examples": [
+      "bgd_mcv_coverage_series.csv:11",
+      "bgd_mcv_coverage_series.csv:12",
+      "bgd_mcv_coverage_series.csv:2"
+    ],
+    "explanation": "Reported and recomputed administrative coverage differ by >0.05 pp",
+    "issue_type": "coverage_discrepancy",
+    "severity": "review",
+    "warning_records": 3
+  },
+  {
+    "affected_references": 5,
+    "distinct_source_rows": 5,
+    "examples": [
+      "bgd_mcv_coverage_series.csv:2",
+      "bgd_mcv_coverage_series.csv:21",
+      "bgd_mcv_coverage_series.csv:22",
+      "bgd_mcv_coverage_series.csv:3",
+      "bgd_mcv_coverage_series.csv:4"
+    ],
+    "explanation": "official coverage missing; not imputed",
+    "issue_type": "coverage_missing",
+    "severity": "review",
+    "warning_records": 8
+  },
+  {
+    "affected_references": 0,
+    "distinct_source_rows": 0,
+    "examples": [],
+    "explanation": "Original WHO snapshot retrieval day is documented, but exact timestamp was not recorded; freeze time is not represented as retrieval time",
+    "issue_type": "document_retrieval_precision",
+    "severity": "review",
+    "warning_records": 1
+  },
+  {
+    "affected_references": 0,
+    "distinct_source_rows": 0,
+    "examples": [],
+    "explanation": "Author code is reference text only; susceptibility and sensitivity outputs are not observed outcomes and are not executed or used as primary inputs",
+    "issue_type": "excluded_author_outputs",
+    "severity": "review",
+    "warning_records": 1
+  },
+  {
+    "affected_references": 1,
+    "distinct_source_rows": 1,
+    "examples": [
+      "bgd_sia_history.csv:15"
+    ],
+    "explanation": "Planned record includes later implementation note; status not rewritten",
+    "issue_type": "planned_with_later_note",
+    "severity": "review",
+    "warning_records": 1
+  },
+  {
+    "affected_references": 7,
+    "distinct_source_rows": 7,
+    "examples": [
+      "monthly_measles_bgd_neighbours.csv:170",
+      "monthly_measles_bgd_neighbours.csv:171",
+      "monthly_measles_bgd_neighbours.csv:172",
+      "monthly_measles_bgd_neighbours.csv:173",
+      "monthly_measles_bgd_neighbours.csv:174"
+    ],
+    "explanation": "All 2026 months provisional; June\u2013July lag-sensitive and excluded from primary case-study scoring",
+    "issue_type": "provisional_surveillance",
+    "severity": "review",
+    "warning_records": 1
+  },
+  {
+    "affected_references": 0,
+    "distinct_source_rows": 0,
+    "examples": [],
+    "explanation": "Source README cites a different DOI; use verified version DOI 10.5281/zenodo.22167512",
+    "issue_type": "readme_doi_discrepancy",
+    "severity": "review",
+    "warning_records": 1
+  },
+  {
+    "affected_references": 13,
+    "distinct_source_rows": 10,
+    "examples": [
+      "monthly_measles_bgd_neighbours.csv:207:Measles clinical",
+      "monthly_measles_bgd_neighbours.csv:207:Measles total",
+      "monthly_measles_bgd_neighbours.csv:481:Measles clinical",
+      "monthly_measles_bgd_neighbours.csv:481:Measles total",
+      "monthly_measles_bgd_neighbours.csv:485:Measles clinical"
+    ],
+    "explanation": "Negative neighbouring-country measures remain in raw files only; regional modeling is outside scope",
+    "issue_type": "regional_negative_quarantined",
+    "severity": "review",
+    "warning_records": 1
+  },
+  {
+    "affected_references": 8,
+    "distinct_source_rows": 8,
+    "examples": [
+      "description_lab",
+      "description_under9months",
+      "opening_campaign_start",
+      "opening_lab",
+      "response_targeted_start"
+    ],
+    "explanation": "Preserve section-specific lab totals, incompatible age statements with uncertain denominators, coverage source labels and source-specific campaign dates",
+    "issue_type": "source_conflicts",
+    "severity": "review",
+    "warning_records": 1
+  }
+]

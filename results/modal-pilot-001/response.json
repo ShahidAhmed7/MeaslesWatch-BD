@@ -1,0 +1,23 @@
+{
+  "elapsed_seconds": 1.2845377189999994,
+  "function_elapsed_seconds": 53.886068121,
+  "gpu_name": "NVIDIA L4",
+  "input_tokens": 45,
+  "model_id": "Qwen/Qwen3-4B",
+  "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "output_token_ids": [
+    4913,
+    2829,
+    3252,
+    562,
+    9207,
+    151645
+  ],
+  "output_tokens": 6,
+  "peak_gpu_memory_bytes": 8822848512,
+  "text": "{\"status\":\"ok\"}",
+  "timing_scope": "elapsed_seconds measures synchronized generation only; function_elapsed_seconds includes imports and model loading but excludes image building and container startup",
+  "torch_version": "2.7.1",
+  "transformers_version": "4.53.3",
+  "truncated": false
+}

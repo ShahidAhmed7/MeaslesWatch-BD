@@ -1,0 +1,26 @@
+{
+  "measles_lab_confirmed": {
+    "NB_minus_naive_MAE": 1.5789057407515907,
+    "block_bootstrap_95": [
+      -0.08585348136080093,
+      2.8517005181766533
+    ],
+    "block_months": 12,
+    "limitation": "Only 48 test months; limited precision, not evidence of prospective skill",
+    "paired_months": 48,
+    "resamples": 1000,
+    "status": "defined"
+  },
+  "measles_total_classified": {
+    "NB_minus_naive_MAE": 0.2658835120225828,
+    "block_bootstrap_95": [
+      -2.8811968327521567,
+      4.151239993339817
+    ],
+    "block_months": 12,
+    "limitation": "Only 48 test months; limited precision, not evidence of prospective skill",
+    "paired_months": 48,
+    "resamples": 1000,
+    "status": "defined"
+  }
+}

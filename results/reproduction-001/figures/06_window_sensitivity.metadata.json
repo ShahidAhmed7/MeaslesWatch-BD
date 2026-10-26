@@ -1,0 +1,9 @@
+{
+  "plotted_csv_sha256": "15809c095e0ec0785a483dfd77a0184b857f4a35e37eb9ed26c18fbe2306947c",
+  "population": "all_ages_unless_coverage_target",
+  "scope": "60-month primary; 36/84-month sensitivity; not a test-set model selection exercise",
+  "snapshot": "2026-08",
+  "source_doi": "10.5281/zenodo.22167512",
+  "statistics_run": "/Users/shahidahmed/Documents/MeaslesWatch/results/reproduction-001/statistics",
+  "title": "Training-window sensitivity, fixed test period"
+}

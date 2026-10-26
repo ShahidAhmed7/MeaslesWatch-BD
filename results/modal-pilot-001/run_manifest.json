@@ -1,0 +1,59 @@
+{
+  "app_id": "ap-pBtwav3dpVjH0TUNF4K7Eh",
+  "budget_reservation": {
+    "app_id": "ap-pBtwav3dpVjH0TUNF4K7Eh",
+    "billing_control_evidence": "user_confirmed_after_request_for_workspace_usage_and_zero_out_of_pocket_limits",
+    "client_wall_seconds": 194.78547724999953,
+    "client_wall_timeout_seconds": 1800,
+    "ended_at_utc": "2026-10-26T09:26:26.904929+00:00",
+    "estimate_is_provider_billing_cap": false,
+    "image_build_storage_accounting_headroom_usd": "1.25",
+    "measured_app_cost_usd": null,
+    "provider_dashboard_independently_inspected": false,
+    "requested_generations": 1,
+    "requested_resource_estimate_usd": "0.5283433333333333333333333333",
+    "requested_resource_rate_usd_per_hour": "1.022600",
+    "reserved_container_seconds": 1860,
+    "reserved_usd": "2.0",
+    "run_id": "modal-pilot-001",
+    "started_at_utc": "2026-10-26T09:23:12.120655+00:00",
+    "status": "succeeded",
+    "workspace_delta_caveat": "May lag and include unrelated activity; not an app-attributed charge. Conservative reservation is retained rather than released.",
+    "workspace_metered_delta_usd": "0.02309324"
+  },
+  "environment": "main",
+  "finished_at_utc": "2026-10-26T09:26:26.904929+00:00",
+  "image_packages": [
+    "torch==2.7.1",
+    "transformers==4.53.3",
+    "accelerate==1.8.1",
+    "safetensors==0.5.3"
+  ],
+  "modal_app_sha256": "2c3ee807332f49711dd5c9afd8c05814c6d946d5235fe6579ed1dbd8a1723b5d",
+  "modal_sdk_version": "1.6.2",
+  "model_id": "Qwen/Qwen3-4B",
+  "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "platform": "macOS-26.6-arm64-arm-64bit-Mach-O",
+  "preflight_sha256": {
+    "app-list.stdout": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "billing-rates.stdout": "90e7a8e15d62d7223187e50a7e4f9c1eedd84c8529ceac44a38db352a07e5cd9",
+    "token-info.stdout": "69832329e19a0cd105f91e18295050fda5bbaee572262aa06f1cccbca12ca6d5"
+  },
+  "purpose": "Connectivity and structured-output pilot, not a benchmark item",
+  "python": "3.13.16",
+  "request": [
+    {
+      "content": "Return only the JSON object requested by the user. Do not add Markdown, commentary, or extra keys.",
+      "role": "system"
+    },
+    {
+      "content": "Return {\"status\":\"ok\"}.",
+      "role": "user"
+    }
+  ],
+  "run_id": "modal-pilot-001",
+  "runner_sha256": "483409d972c8b3e49f45a4c785e9688c7cd856febc7da577a757f7cb140c9749",
+  "status": "succeeded",
+  "study_config_sha256": "16708c750b724951f95c965ad204e0d24d9f323fb0d5d65059654c43839a17dd",
+  "workspace": "kazigalib143"
+}

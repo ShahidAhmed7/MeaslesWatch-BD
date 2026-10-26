@@ -1,0 +1,9 @@
+{
+  "plotted_csv_sha256": "d03492608c862eac62431dac6c5d33d0ea8c26f3d6cebefd302799fe7e670751",
+  "population": "all_ages_unless_coverage_target",
+  "scope": "All-age reported laboratory-confirmed counts, not all infections",
+  "snapshot": "2026-08",
+  "source_doi": "10.5281/zenodo.22167512",
+  "statistics_run": "/Users/shahidahmed/Documents/MeaslesWatch/results/reproduction-001/statistics",
+  "title": "Bangladesh measles reporting, 2012\u2013July 2026"
+}

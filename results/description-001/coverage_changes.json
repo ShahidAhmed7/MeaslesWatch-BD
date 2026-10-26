@@ -1,0 +1,1373 @@
+[
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": null,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": null,
+    "previous_year": 2011,
+    "relative_change_percent": null,
+    "relative_change_status": "missing_current_or_previous",
+    "reported_pct": 111,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:2"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2012
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": -2.7210000000000036,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 111,
+    "previous_year": 2012,
+    "relative_change_percent": -2.4513513513513545,
+    "relative_change_status": "defined",
+    "reported_pct": 108.279,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:2",
+      "bgd_mcv_coverage_series.csv:3"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2013
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 0.2710000000000008,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 108.279,
+    "previous_year": 2013,
+    "relative_change_percent": 0.2502793708844751,
+    "relative_change_status": "defined",
+    "reported_pct": 108.55,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:3",
+      "bgd_mcv_coverage_series.csv:5"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2014
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 11.641999999999996,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 108.55,
+    "previous_year": 2014,
+    "relative_change_percent": 10.725011515430674,
+    "relative_change_status": "defined",
+    "reported_pct": 120.192,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:5",
+      "bgd_mcv_coverage_series.csv:7"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2015
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": -2.3549999999999898,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 120.192,
+    "previous_year": 2015,
+    "relative_change_percent": -1.9593650159744325,
+    "relative_change_status": "defined",
+    "reported_pct": 117.837,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:7",
+      "bgd_mcv_coverage_series.csv:9"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2016
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": -1.8370000000000033,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 117.837,
+    "previous_year": 2016,
+    "relative_change_percent": -1.558933102506007,
+    "relative_change_status": "defined",
+    "reported_pct": 116,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:9",
+      "bgd_mcv_coverage_series.csv:11"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2017
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": -0.5919999999999987,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 116,
+    "previous_year": 2017,
+    "relative_change_percent": -0.5103448275862058,
+    "relative_change_status": "defined",
+    "reported_pct": 115.408,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:11",
+      "bgd_mcv_coverage_series.csv:13"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2018
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 1.7920000000000016,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 115.408,
+    "previous_year": 2018,
+    "relative_change_percent": 1.552751975599613,
+    "relative_change_status": "defined",
+    "reported_pct": 117.2,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:13",
+      "bgd_mcv_coverage_series.csv:15"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2019
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": -8.775000000000006,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 117.2,
+    "previous_year": 2019,
+    "relative_change_percent": -7.487201365187718,
+    "relative_change_status": "defined",
+    "reported_pct": 108.425,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:15",
+      "bgd_mcv_coverage_series.csv:17"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2020
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 9.439999999999998,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 108.425,
+    "previous_year": 2020,
+    "relative_change_percent": 8.70647913304127,
+    "relative_change_status": "defined",
+    "reported_pct": 117.865,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:17",
+      "bgd_mcv_coverage_series.csv:19"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2021
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 1.7850000000000108,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 117.865,
+    "previous_year": 2021,
+    "relative_change_percent": 1.5144444915793585,
+    "relative_change_status": "defined",
+    "reported_pct": 119.65,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:19",
+      "bgd_mcv_coverage_series.csv:21"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2022
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 5.6499999999999915,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 119.65,
+    "previous_year": 2022,
+    "relative_change_percent": 4.722106142916833,
+    "relative_change_status": "defined",
+    "reported_pct": 125.3,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:21",
+      "bgd_mcv_coverage_series.csv:23"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2023
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": -1.789999999999992,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 125.3,
+    "previous_year": 2023,
+    "relative_change_percent": -1.4285714285714222,
+    "relative_change_status": "defined",
+    "reported_pct": 123.51,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:23",
+      "bgd_mcv_coverage_series.csv:25"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2024
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": -30.852000000000004,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 123.51,
+    "previous_year": 2024,
+    "relative_change_percent": -24.97935389846976,
+    "relative_change_status": "defined",
+    "reported_pct": 92.658,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:25",
+      "bgd_mcv_coverage_series.csv:27"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2025
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": null,
+    "coverage_source": "official",
+    "missing_reason": "not_supplied",
+    "previous_pct": null,
+    "previous_year": 2011,
+    "relative_change_percent": null,
+    "relative_change_status": "missing_current_or_previous",
+    "reported_pct": null,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:2"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2012
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": null,
+    "coverage_source": "official",
+    "missing_reason": "not_supplied",
+    "previous_pct": null,
+    "previous_year": 2012,
+    "relative_change_percent": null,
+    "relative_change_status": "missing_current_or_previous",
+    "reported_pct": null,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:2",
+      "bgd_mcv_coverage_series.csv:3"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2013
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": null,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": null,
+    "previous_year": 2013,
+    "relative_change_percent": null,
+    "relative_change_status": "missing_current_or_previous",
+    "reported_pct": 90.1,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:3",
+      "bgd_mcv_coverage_series.csv:5"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2014
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 0.0,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": 90.1,
+    "previous_year": 2014,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 90.1,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:5",
+      "bgd_mcv_coverage_series.csv:7"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2015
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 1.6000000000000085,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": 90.1,
+    "previous_year": 2015,
+    "relative_change_percent": 1.775804661487246,
+    "relative_change_status": "defined",
+    "reported_pct": 91.7,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:7",
+      "bgd_mcv_coverage_series.csv:9"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2016
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 0.29999999999999716,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": 91.7,
+    "previous_year": 2016,
+    "relative_change_percent": 0.327153762268263,
+    "relative_change_status": "defined",
+    "reported_pct": 92,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:9",
+      "bgd_mcv_coverage_series.csv:11"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2017
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 0,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": 92,
+    "previous_year": 2017,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 92,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:11",
+      "bgd_mcv_coverage_series.csv:13"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2018
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 0.7999999999999972,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": 92,
+    "previous_year": 2018,
+    "relative_change_percent": 0.8695652173913012,
+    "relative_change_status": "defined",
+    "reported_pct": 92.8,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:13",
+      "bgd_mcv_coverage_series.csv:15"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2019
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 0.0,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": 92.8,
+    "previous_year": 2019,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 92.8,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:15",
+      "bgd_mcv_coverage_series.csv:17"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2020
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 0.0,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": 92.8,
+    "previous_year": 2020,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 92.8,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:17",
+      "bgd_mcv_coverage_series.csv:19"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2021
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": null,
+    "coverage_source": "official",
+    "missing_reason": "not_supplied",
+    "previous_pct": 92.8,
+    "previous_year": 2021,
+    "relative_change_percent": null,
+    "relative_change_status": "missing_current_or_previous",
+    "reported_pct": null,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:19",
+      "bgd_mcv_coverage_series.csv:21"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2022
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": null,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": null,
+    "previous_year": 2022,
+    "relative_change_percent": null,
+    "relative_change_status": "missing_current_or_previous",
+    "reported_pct": 88.6,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:21",
+      "bgd_mcv_coverage_series.csv:23"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2023
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": -2.5,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": 88.6,
+    "previous_year": 2023,
+    "relative_change_percent": -2.8216704288939054,
+    "relative_change_status": "defined",
+    "reported_pct": 86.1,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:23",
+      "bgd_mcv_coverage_series.csv:25"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2024
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 0.0,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": 86.1,
+    "previous_year": 2024,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 86.1,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:25",
+      "bgd_mcv_coverage_series.csv:27"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2025
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": null,
+    "coverage_source": "wuenic",
+    "missing_reason": "not_supplied",
+    "previous_pct": null,
+    "previous_year": 2011,
+    "relative_change_percent": null,
+    "relative_change_status": "missing_current_or_previous",
+    "reported_pct": null,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:2"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2012
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": null,
+    "coverage_source": "wuenic",
+    "missing_reason": "not_supplied",
+    "previous_pct": null,
+    "previous_year": 2012,
+    "relative_change_percent": null,
+    "relative_change_status": "missing_current_or_previous",
+    "reported_pct": null,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:2",
+      "bgd_mcv_coverage_series.csv:3"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2013
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": null,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": null,
+    "previous_year": 2013,
+    "relative_change_percent": null,
+    "relative_change_status": "missing_current_or_previous",
+    "reported_pct": 94,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:3",
+      "bgd_mcv_coverage_series.csv:5"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2014
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 3,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 94,
+    "previous_year": 2014,
+    "relative_change_percent": 3.1914893617021276,
+    "relative_change_status": "defined",
+    "reported_pct": 97,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:5",
+      "bgd_mcv_coverage_series.csv:7"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2015
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 0,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 97,
+    "previous_year": 2015,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 97,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:7",
+      "bgd_mcv_coverage_series.csv:9"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2016
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 0,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 97,
+    "previous_year": 2016,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 97,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:9",
+      "bgd_mcv_coverage_series.csv:11"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2017
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 0,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 97,
+    "previous_year": 2017,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 97,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:11",
+      "bgd_mcv_coverage_series.csv:13"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2018
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 0,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 97,
+    "previous_year": 2018,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 97,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:13",
+      "bgd_mcv_coverage_series.csv:15"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2019
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 0,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 97,
+    "previous_year": 2019,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 97,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:15",
+      "bgd_mcv_coverage_series.csv:17"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2020
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 0,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 97,
+    "previous_year": 2020,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 97,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:17",
+      "bgd_mcv_coverage_series.csv:19"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2021
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": -1,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 97,
+    "previous_year": 2021,
+    "relative_change_percent": -1.0309278350515463,
+    "relative_change_status": "defined",
+    "reported_pct": 96,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:19",
+      "bgd_mcv_coverage_series.csv:21"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2022
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 0,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 96,
+    "previous_year": 2022,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 96,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:21",
+      "bgd_mcv_coverage_series.csv:23"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2023
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": 0,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 96,
+    "previous_year": 2023,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 96,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:23",
+      "bgd_mcv_coverage_series.csv:25"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2024
+  },
+  {
+    "antigen": "MCV1",
+    "change_percentage_points": -6,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 96,
+    "previous_year": 2024,
+    "relative_change_percent": -6.25,
+    "relative_change_status": "defined",
+    "reported_pct": 90,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:25",
+      "bgd_mcv_coverage_series.csv:27"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2025
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": null,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": null,
+    "previous_year": 2012,
+    "relative_change_percent": null,
+    "relative_change_status": "missing_current_or_previous",
+    "reported_pct": 98.665,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:4"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2013
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 5.646000000000001,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 98.665,
+    "previous_year": 2013,
+    "relative_change_percent": 5.722393959357422,
+    "relative_change_status": "defined",
+    "reported_pct": 104.311,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:4",
+      "bgd_mcv_coverage_series.csv:6"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2014
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 10.580999999999989,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 104.311,
+    "previous_year": 2014,
+    "relative_change_percent": 10.143704882514777,
+    "relative_change_status": "defined",
+    "reported_pct": 114.892,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:6",
+      "bgd_mcv_coverage_series.csv:8"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2015
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 0.2580000000000098,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 114.892,
+    "previous_year": 2015,
+    "relative_change_percent": 0.2245587160115672,
+    "relative_change_status": "defined",
+    "reported_pct": 115.15,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:8",
+      "bgd_mcv_coverage_series.csv:10"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2016
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": -1.1500000000000057,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 115.15,
+    "previous_year": 2016,
+    "relative_change_percent": -0.9986973512809428,
+    "relative_change_status": "defined",
+    "reported_pct": 114,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:10",
+      "bgd_mcv_coverage_series.csv:12"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2017
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": -0.8840000000000003,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 114,
+    "previous_year": 2017,
+    "relative_change_percent": -0.7754385964912284,
+    "relative_change_status": "defined",
+    "reported_pct": 113.116,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:12",
+      "bgd_mcv_coverage_series.csv:14"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2018
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 1.6940000000000026,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 113.116,
+    "previous_year": 2018,
+    "relative_change_percent": 1.497577707839742,
+    "relative_change_status": "defined",
+    "reported_pct": 114.81,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:14",
+      "bgd_mcv_coverage_series.csv:16"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2019
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": -7.862000000000009,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 114.81,
+    "previous_year": 2019,
+    "relative_change_percent": -6.847835554394225,
+    "relative_change_status": "defined",
+    "reported_pct": 106.948,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:16",
+      "bgd_mcv_coverage_series.csv:18"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2020
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 8.042000000000002,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 106.948,
+    "previous_year": 2020,
+    "relative_change_percent": 7.519542207427911,
+    "relative_change_status": "defined",
+    "reported_pct": 114.99,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:18",
+      "bgd_mcv_coverage_series.csv:20"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2021
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 1.5,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 114.99,
+    "previous_year": 2021,
+    "relative_change_percent": 1.3044612575006522,
+    "relative_change_status": "defined",
+    "reported_pct": 116.49,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:20",
+      "bgd_mcv_coverage_series.csv:22"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2022
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 6.410000000000011,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 116.49,
+    "previous_year": 2022,
+    "relative_change_percent": 5.502618250493614,
+    "relative_change_status": "defined",
+    "reported_pct": 122.9,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:22",
+      "bgd_mcv_coverage_series.csv:24"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2023
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": -1.524000000000001,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 122.9,
+    "previous_year": 2023,
+    "relative_change_percent": -1.2400325467860056,
+    "relative_change_status": "defined",
+    "reported_pct": 121.376,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:24",
+      "bgd_mcv_coverage_series.csv:26"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2024
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": -30.68100000000001,
+    "coverage_source": "admin",
+    "missing_reason": "",
+    "previous_pct": 121.376,
+    "previous_year": 2024,
+    "relative_change_percent": -25.277649617716857,
+    "relative_change_status": "defined",
+    "reported_pct": 90.695,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:26",
+      "bgd_mcv_coverage_series.csv:28"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2025
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": null,
+    "coverage_source": "official",
+    "missing_reason": "not_supplied",
+    "previous_pct": null,
+    "previous_year": 2012,
+    "relative_change_percent": null,
+    "relative_change_status": "missing_current_or_previous",
+    "reported_pct": null,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:4"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2013
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": null,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": null,
+    "previous_year": 2013,
+    "relative_change_percent": null,
+    "relative_change_status": "missing_current_or_previous",
+    "reported_pct": 70.4,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:4",
+      "bgd_mcv_coverage_series.csv:6"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2014
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 0.0,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": 70.4,
+    "previous_year": 2014,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 70.4,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:6",
+      "bgd_mcv_coverage_series.csv:8"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2015
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 10.099999999999994,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": 70.4,
+    "previous_year": 2015,
+    "relative_change_percent": 14.3465909090909,
+    "relative_change_status": "defined",
+    "reported_pct": 80.5,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:8",
+      "bgd_mcv_coverage_series.csv:10"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2016
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 2.5,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": 80.5,
+    "previous_year": 2016,
+    "relative_change_percent": 3.1055900621118013,
+    "relative_change_status": "defined",
+    "reported_pct": 83,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:10",
+      "bgd_mcv_coverage_series.csv:12"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2017
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 0,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": 83,
+    "previous_year": 2017,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 83,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:12",
+      "bgd_mcv_coverage_series.csv:14"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2018
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 6,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": 83,
+    "previous_year": 2018,
+    "relative_change_percent": 7.228915662650603,
+    "relative_change_status": "defined",
+    "reported_pct": 89,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:14",
+      "bgd_mcv_coverage_series.csv:16"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2019
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 0,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": 89,
+    "previous_year": 2019,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 89,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:16",
+      "bgd_mcv_coverage_series.csv:18"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2020
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 0,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": 89,
+    "previous_year": 2020,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 89,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:18",
+      "bgd_mcv_coverage_series.csv:20"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2021
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": null,
+    "coverage_source": "official",
+    "missing_reason": "not_supplied",
+    "previous_pct": 89,
+    "previous_year": 2021,
+    "relative_change_percent": null,
+    "relative_change_status": "missing_current_or_previous",
+    "reported_pct": null,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:20",
+      "bgd_mcv_coverage_series.csv:22"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2022
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": null,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": null,
+    "previous_year": 2022,
+    "relative_change_percent": null,
+    "relative_change_status": "missing_current_or_previous",
+    "reported_pct": 89.1,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:22",
+      "bgd_mcv_coverage_series.csv:24"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2023
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": -8.399999999999991,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": 89.1,
+    "previous_year": 2023,
+    "relative_change_percent": -9.427609427609418,
+    "relative_change_status": "defined",
+    "reported_pct": 80.7,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:24",
+      "bgd_mcv_coverage_series.csv:26"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2024
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 0.0,
+    "coverage_source": "official",
+    "missing_reason": "",
+    "previous_pct": 80.7,
+    "previous_year": 2024,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 80.7,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:26",
+      "bgd_mcv_coverage_series.csv:28"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2025
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": null,
+    "coverage_source": "wuenic",
+    "missing_reason": "not_supplied",
+    "previous_pct": null,
+    "previous_year": 2012,
+    "relative_change_percent": null,
+    "relative_change_status": "missing_current_or_previous",
+    "reported_pct": null,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:4"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2013
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": null,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": null,
+    "previous_year": 2013,
+    "relative_change_percent": null,
+    "relative_change_status": "missing_current_or_previous",
+    "reported_pct": 89,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:4",
+      "bgd_mcv_coverage_series.csv:6"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2014
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 1,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 89,
+    "previous_year": 2014,
+    "relative_change_percent": 1.1235955056179776,
+    "relative_change_status": "defined",
+    "reported_pct": 90,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:6",
+      "bgd_mcv_coverage_series.csv:8"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2015
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 2,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 90,
+    "previous_year": 2015,
+    "relative_change_percent": 2.2222222222222223,
+    "relative_change_status": "defined",
+    "reported_pct": 92,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:8",
+      "bgd_mcv_coverage_series.csv:10"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2016
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 1,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 92,
+    "previous_year": 2016,
+    "relative_change_percent": 1.0869565217391304,
+    "relative_change_status": "defined",
+    "reported_pct": 93,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:10",
+      "bgd_mcv_coverage_series.csv:12"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2017
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 0,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 93,
+    "previous_year": 2017,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 93,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:12",
+      "bgd_mcv_coverage_series.csv:14"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2018
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 0,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 93,
+    "previous_year": 2018,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 93,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:14",
+      "bgd_mcv_coverage_series.csv:16"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2019
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 0,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 93,
+    "previous_year": 2019,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 93,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:16",
+      "bgd_mcv_coverage_series.csv:18"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2020
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 0,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 93,
+    "previous_year": 2020,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 93,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:18",
+      "bgd_mcv_coverage_series.csv:20"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2021
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 0,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 93,
+    "previous_year": 2021,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 93,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:20",
+      "bgd_mcv_coverage_series.csv:22"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2022
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 0,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 93,
+    "previous_year": 2022,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 93,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:22",
+      "bgd_mcv_coverage_series.csv:24"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2023
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": 0,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 93,
+    "previous_year": 2023,
+    "relative_change_percent": 0.0,
+    "relative_change_status": "defined",
+    "reported_pct": 93,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:24",
+      "bgd_mcv_coverage_series.csv:26"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2024
+  },
+  {
+    "antigen": "MCV2",
+    "change_percentage_points": -7,
+    "coverage_source": "wuenic",
+    "missing_reason": "",
+    "previous_pct": 93,
+    "previous_year": 2024,
+    "relative_change_percent": -7.526881720430108,
+    "relative_change_status": "defined",
+    "reported_pct": 86,
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:26",
+      "bgd_mcv_coverage_series.csv:28"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "year": 2025
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "artifact_sha256": {
+    "admin_decomposition": "53587cea2f48266c34c3b6a1d7a1df2ebb1a9c8d364b3c596ef6dcc80c9ee622",
+    "annual_counts": "0fa621e7b8bd439824ce17d5ddd25a0429075f545f541f81e95ac490e5d94d1e",
+    "classification_composition": "fc749a94757f5ae8c80906f435aedb55064600d2251b2d4fbad6c1243107eaa9",
+    "comparable_ytd": "ca6eb6524264ab671f8f31e98d12cf3b7b416227d6585390c5b71f7c0177d75c",
+    "coverage_changes": "9e2cee43240e9dd20d60474acef7ab9f58534969eef18d97d9ff6aad0e64dac2",
+    "coverage_source_disagreement": "0253c412e60d86c82f59c0fcc256d0c963d44db62271b5a7252f2fd4fbf70cc0",
+    "seasonal_pattern": "e181c312fd96500856a91a3c30332d342818591e730b42ef3d112cc8c4fa156d",
+    "summary": "3163e7e5f6d80a1c27eee2b4e59dcc9276fca25c88b8be26bf2db0155521fcf0"
+  },
+  "canonical_table_sha256": {
+    "campaign_context": "47b60a03f51d8949ea5cace9c34d286f7e265735e397d6318b01b6e19786b60a",
+    "coverage_annual": "edb9ee4cad51b5c617d258bfdac98103fe2c48c2c4e67b3e38d9f31d4b61707c",
+    "outbreak_evidence": "c8f281681af81a6d44a3c4065ce492bf10fbd2f78ae2185ccc939b4809c36b72",
+    "surveillance_monthly": "c5865489a38ca0b4e960b75bfe56c1a0a6953b56c42f5326a6af0f6ba49d2fd3"
+  },
+  "created_at_utc": "2026-10-26T09:25:01.861276+00:00",
+  "implementation_sha256": "263c76da7c3d078bab2c8698965c5c5bd5f05aa56ab906cfe28b56f6cce67107",
+  "input_manifest_sha256": "efa0e34c66960ed264b12b516ee287267035dbf3fd871e54d978c46b1bb2b9e8",
+  "input_run": "/Users/shahidahmed/Documents/MeaslesWatch/data/processed/phase1-r2",
+  "protocol_sha256": "1982df880031093d6822897ddd887509d0435cf1d6d35d7556500264528d837a",
+  "python_version": "3.13.16",
+  "status": "completed_descriptive_analysis_only",
+  "study_config_sha256": "16708c750b724951f95c965ad204e0d24d9f323fb0d5d65059654c43839a17dd"
+}

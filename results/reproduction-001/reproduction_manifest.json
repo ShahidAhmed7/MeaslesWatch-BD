@@ -1,0 +1,41 @@
+{
+  "LLM_inference_performed": false,
+  "canonical_table_sha256": {
+    "campaign_context": "47b60a03f51d8949ea5cace9c34d286f7e265735e397d6318b01b6e19786b60a",
+    "coverage_annual": "edb9ee4cad51b5c617d258bfdac98103fe2c48c2c4e67b3e38d9f31d4b61707c",
+    "outbreak_evidence": "c8f281681af81a6d44a3c4065ce492bf10fbd2f78ae2185ccc939b4809c36b72",
+    "surveillance_monthly": "c5865489a38ca0b4e960b75bfe56c1a0a6953b56c42f5326a6af0f6ba49d2fd3"
+  },
+  "created_at_utc": "2026-10-26T16:02:23.666070+00:00",
+  "descriptive_sha256": {
+    "admin_decomposition": "53587cea2f48266c34c3b6a1d7a1df2ebb1a9c8d364b3c596ef6dcc80c9ee622",
+    "annual_counts": "0fa621e7b8bd439824ce17d5ddd25a0429075f545f541f81e95ac490e5d94d1e",
+    "classification_composition": "fc749a94757f5ae8c80906f435aedb55064600d2251b2d4fbad6c1243107eaa9",
+    "comparable_ytd": "ca6eb6524264ab671f8f31e98d12cf3b7b416227d6585390c5b71f7c0177d75c",
+    "coverage_changes": "9e2cee43240e9dd20d60474acef7ab9f58534969eef18d97d9ff6aad0e64dac2",
+    "coverage_source_disagreement": "0253c412e60d86c82f59c0fcc256d0c963d44db62271b5a7252f2fd4fbf70cc0",
+    "seasonal_pattern": "e181c312fd96500856a91a3c30332d342818591e730b42ef3d112cc8c4fa156d",
+    "summary": "3163e7e5f6d80a1c27eee2b4e59dcc9276fca25c88b8be26bf2db0155521fcf0"
+  },
+  "figures": [
+    "01_reporting",
+    "02_seasonality",
+    "03_coverage",
+    "04_anomalies",
+    "05_diagnostics",
+    "06_window_sensitivity"
+  ],
+  "lockfile_sha256": "6e81d820acf2c9dd6e4ffc0b1a860555e5f100ac7754c0e93f89e5300e348212",
+  "statistical_artifacts_match_saved_run": true,
+  "statistical_sha256": {
+    "development_diagnostics": "15232042d83d693acc0bf06b22012c40ff2a984eea79fe1c6988d88c1d1e497f",
+    "diagnostics": "9427dece4bc3e0ba21c321642d66491bd5a238d76c5a3e81c17ad04311c98f9a",
+    "metrics": "81604a24a01f2f45beadf40aff2a4c2d9d43ad39e50b3db9008cfc41e7f5854f",
+    "paired_bootstrap": "3c2b3d3426d9a0d37bea7f63541846ad0e3b261f92bd7b6d8a5951835b15b997",
+    "predictions": "0c1c4fc172c63e8182f70e521ec4cfa1f06a4078f8115f2d17dfd8328809ad7f",
+    "sensitivity": "eef424d6e172c8e84e45114961fe71b7d16f37d0379bd616095e7ebde4339b28",
+    "synthetic_metrics": "bc02667ada3b094063975d7a219fb7c493b5ac1a5a7047230450dcb5d28a91cf",
+    "synthetic_predictions": "490e141fcc7b3e26a616e12b1be91355ff7c18648277ba0e1bdb07f0ba434ea1"
+  },
+  "status": "completed_offline_reproduction"
+}

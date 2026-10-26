@@ -1,0 +1,1316 @@
+{
+  "created_at_utc": "2026-10-26T10:41:06.723394+00:00",
+  "method": "Exact pinned Qwen tokenizer counts over frozen external-v1 public items and sources, with the approved thinking-enabled chat template. No LLM inference, benchmark score, GPU usage, or private-gold content is produced. B prompts use a clearly labelled placeholder fact bundle only for sizing; a runtime deterministic fact bundle is still unimplemented.",
+  "benchmark_version": "external-v1",
+  "freeze_manifest_sha256": "d7912ffb2062e3a278e2d5ddbb95a249ee8e20859fd9b5835a95ea5b6d8279db",
+  "model_id": "Qwen/Qwen3-4B",
+  "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "tokenizer_class": "Qwen2TokenizerFast",
+  "model_config_sha256": "8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a",
+  "model_config_max_position_embeddings": 40960,
+  "model_card_native_context": 32768,
+  "model_config_rope_scaling": null,
+  "thinking_marker_token_ids": {
+    "<think>": 151667,
+    "</think>": 151668
+  },
+  "tokenization_call": {
+    "add_generation_prompt": true,
+    "enable_thinking": true,
+    "tokenize": true
+  },
+  "approved_limits": {
+    "context_window_tokens": 131072,
+    "max_input_tokens": 98304,
+    "max_new_tokens": 32768,
+    "rope_scaling_type": "yarn",
+    "rope_scaling_factor": 4.0,
+    "enable_thinking": true,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "seed": 2026
+  },
+  "source_document_tokens": {
+    "cdc-us-2025": 9742,
+    "ecdc-eueea-2024": 14999,
+    "ukhsa-england-2025": 2516,
+    "ukhsa-england-2026": 3230,
+    "cdc-westtexas-2026": 9037
+  },
+  "input_scenarios": [
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-01",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 11031,
+      "input_headroom_tokens": 87273,
+      "shared_context_headroom_after_full_output_reservation": 87273,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-01",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 11474,
+      "input_headroom_tokens": 86830,
+      "shared_context_headroom_after_full_output_reservation": 86830,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-02",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 11023,
+      "input_headroom_tokens": 87281,
+      "shared_context_headroom_after_full_output_reservation": 87281,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-02",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 11462,
+      "input_headroom_tokens": 86842,
+      "shared_context_headroom_after_full_output_reservation": 86842,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-03",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 11017,
+      "input_headroom_tokens": 87287,
+      "shared_context_headroom_after_full_output_reservation": 87287,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-03",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 11458,
+      "input_headroom_tokens": 86846,
+      "shared_context_headroom_after_full_output_reservation": 86846,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-04",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 11029,
+      "input_headroom_tokens": 87275,
+      "shared_context_headroom_after_full_output_reservation": 87275,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-04",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 11469,
+      "input_headroom_tokens": 86835,
+      "shared_context_headroom_after_full_output_reservation": 86835,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-05",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 11024,
+      "input_headroom_tokens": 87280,
+      "shared_context_headroom_after_full_output_reservation": 87280,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-05",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 11470,
+      "input_headroom_tokens": 86834,
+      "shared_context_headroom_after_full_output_reservation": 86834,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-06",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 11026,
+      "input_headroom_tokens": 87278,
+      "shared_context_headroom_after_full_output_reservation": 87278,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-06",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 11471,
+      "input_headroom_tokens": 86833,
+      "shared_context_headroom_after_full_output_reservation": 86833,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-07",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 11027,
+      "input_headroom_tokens": 87277,
+      "shared_context_headroom_after_full_output_reservation": 87277,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-07",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 11473,
+      "input_headroom_tokens": 86831,
+      "shared_context_headroom_after_full_output_reservation": 86831,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-08",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 11025,
+      "input_headroom_tokens": 87279,
+      "shared_context_headroom_after_full_output_reservation": 87279,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-08",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 11371,
+      "input_headroom_tokens": 86933,
+      "shared_context_headroom_after_full_output_reservation": 86933,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-09",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 11005,
+      "input_headroom_tokens": 87299,
+      "shared_context_headroom_after_full_output_reservation": 87299,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-09",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 11349,
+      "input_headroom_tokens": 86955,
+      "shared_context_headroom_after_full_output_reservation": 86955,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-10",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 11002,
+      "input_headroom_tokens": 87302,
+      "shared_context_headroom_after_full_output_reservation": 87302,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-10",
+      "source_ids": [
+        "cdc-us-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 11240,
+      "input_headroom_tokens": 87064,
+      "shared_context_headroom_after_full_output_reservation": 87064,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-11",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "A",
+      "input_tokens": 16637,
+      "input_headroom_tokens": 81667,
+      "shared_context_headroom_after_full_output_reservation": 81667,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-11",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 17098,
+      "input_headroom_tokens": 81206,
+      "shared_context_headroom_after_full_output_reservation": 81206,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-12",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "A",
+      "input_tokens": 16630,
+      "input_headroom_tokens": 81674,
+      "shared_context_headroom_after_full_output_reservation": 81674,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-12",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 16877,
+      "input_headroom_tokens": 81427,
+      "shared_context_headroom_after_full_output_reservation": 81427,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-13",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "A",
+      "input_tokens": 16624,
+      "input_headroom_tokens": 81680,
+      "shared_context_headroom_after_full_output_reservation": 81680,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-13",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 17079,
+      "input_headroom_tokens": 81225,
+      "shared_context_headroom_after_full_output_reservation": 81225,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-14",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "A",
+      "input_tokens": 16618,
+      "input_headroom_tokens": 81686,
+      "shared_context_headroom_after_full_output_reservation": 81686,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-14",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 16865,
+      "input_headroom_tokens": 81439,
+      "shared_context_headroom_after_full_output_reservation": 81439,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-15",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "A",
+      "input_tokens": 16618,
+      "input_headroom_tokens": 81686,
+      "shared_context_headroom_after_full_output_reservation": 81686,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-15",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 16968,
+      "input_headroom_tokens": 81336,
+      "shared_context_headroom_after_full_output_reservation": 81336,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-16",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "A",
+      "input_tokens": 16640,
+      "input_headroom_tokens": 81664,
+      "shared_context_headroom_after_full_output_reservation": 81664,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-16",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 16994,
+      "input_headroom_tokens": 81310,
+      "shared_context_headroom_after_full_output_reservation": 81310,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-17",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "A",
+      "input_tokens": 16638,
+      "input_headroom_tokens": 81666,
+      "shared_context_headroom_after_full_output_reservation": 81666,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-17",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 17104,
+      "input_headroom_tokens": 81200,
+      "shared_context_headroom_after_full_output_reservation": 81200,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-18",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "A",
+      "input_tokens": 16607,
+      "input_headroom_tokens": 81697,
+      "shared_context_headroom_after_full_output_reservation": 81697,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-18",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 16855,
+      "input_headroom_tokens": 81449,
+      "shared_context_headroom_after_full_output_reservation": 81449,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-19",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "A",
+      "input_tokens": 16639,
+      "input_headroom_tokens": 81665,
+      "shared_context_headroom_after_full_output_reservation": 81665,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-19",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 17302,
+      "input_headroom_tokens": 81002,
+      "shared_context_headroom_after_full_output_reservation": 81002,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-20",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "A",
+      "input_tokens": 16656,
+      "input_headroom_tokens": 81648,
+      "shared_context_headroom_after_full_output_reservation": 81648,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-20",
+      "source_ids": [
+        "ecdc-eueea-2024"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 17118,
+      "input_headroom_tokens": 81186,
+      "shared_context_headroom_after_full_output_reservation": 81186,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-21",
+      "source_ids": [
+        "ukhsa-england-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 3616,
+      "input_headroom_tokens": 94688,
+      "shared_context_headroom_after_full_output_reservation": 94688,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-21",
+      "source_ids": [
+        "ukhsa-england-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 3967,
+      "input_headroom_tokens": 94337,
+      "shared_context_headroom_after_full_output_reservation": 94337,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-22",
+      "source_ids": [
+        "ukhsa-england-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 3604,
+      "input_headroom_tokens": 94700,
+      "shared_context_headroom_after_full_output_reservation": 94700,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-22",
+      "source_ids": [
+        "ukhsa-england-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 3849,
+      "input_headroom_tokens": 94455,
+      "shared_context_headroom_after_full_output_reservation": 94455,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-23",
+      "source_ids": [
+        "ukhsa-england-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 3610,
+      "input_headroom_tokens": 94694,
+      "shared_context_headroom_after_full_output_reservation": 94694,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-23",
+      "source_ids": [
+        "ukhsa-england-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 3855,
+      "input_headroom_tokens": 94449,
+      "shared_context_headroom_after_full_output_reservation": 94449,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-24",
+      "source_ids": [
+        "ukhsa-england-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 3633,
+      "input_headroom_tokens": 94671,
+      "shared_context_headroom_after_full_output_reservation": 94671,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-24",
+      "source_ids": [
+        "ukhsa-england-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 3986,
+      "input_headroom_tokens": 94318,
+      "shared_context_headroom_after_full_output_reservation": 94318,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-25",
+      "source_ids": [
+        "ukhsa-england-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 3624,
+      "input_headroom_tokens": 94680,
+      "shared_context_headroom_after_full_output_reservation": 94680,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-25",
+      "source_ids": [
+        "ukhsa-england-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 3974,
+      "input_headroom_tokens": 94330,
+      "shared_context_headroom_after_full_output_reservation": 94330,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-26",
+      "source_ids": [
+        "ukhsa-england-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 3623,
+      "input_headroom_tokens": 94681,
+      "shared_context_headroom_after_full_output_reservation": 94681,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-26",
+      "source_ids": [
+        "ukhsa-england-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 3974,
+      "input_headroom_tokens": 94330,
+      "shared_context_headroom_after_full_output_reservation": 94330,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-27",
+      "source_ids": [
+        "ukhsa-england-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 3629,
+      "input_headroom_tokens": 94675,
+      "shared_context_headroom_after_full_output_reservation": 94675,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-27",
+      "source_ids": [
+        "ukhsa-england-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 3982,
+      "input_headroom_tokens": 94322,
+      "shared_context_headroom_after_full_output_reservation": 94322,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-28",
+      "source_ids": [
+        "ukhsa-england-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 3643,
+      "input_headroom_tokens": 94661,
+      "shared_context_headroom_after_full_output_reservation": 94661,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-28",
+      "source_ids": [
+        "ukhsa-england-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 4099,
+      "input_headroom_tokens": 94205,
+      "shared_context_headroom_after_full_output_reservation": 94205,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-29",
+      "source_ids": [
+        "ukhsa-england-2025"
+      ],
+      "condition": "A",
+      "input_tokens": 3629,
+      "input_headroom_tokens": 94675,
+      "shared_context_headroom_after_full_output_reservation": 94675,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-29",
+      "source_ids": [
+        "ukhsa-england-2025"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 3984,
+      "input_headroom_tokens": 94320,
+      "shared_context_headroom_after_full_output_reservation": 94320,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-30",
+      "source_ids": [
+        "ukhsa-england-2026"
+      ],
+      "condition": "A",
+      "input_tokens": 4408,
+      "input_headroom_tokens": 93896,
+      "shared_context_headroom_after_full_output_reservation": 93896,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "test",
+      "item_id": "EXT-30",
+      "source_ids": [
+        "ukhsa-england-2026"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 4970,
+      "input_headroom_tokens": 93334,
+      "shared_context_headroom_after_full_output_reservation": 93334,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "development",
+      "item_id": "DEV-01",
+      "source_ids": [
+        "cdc-westtexas-2026"
+      ],
+      "condition": "A",
+      "input_tokens": 10254,
+      "input_headroom_tokens": 88050,
+      "shared_context_headroom_after_full_output_reservation": 88050,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "development",
+      "item_id": "DEV-01",
+      "source_ids": [
+        "cdc-westtexas-2026"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 10498,
+      "input_headroom_tokens": 87806,
+      "shared_context_headroom_after_full_output_reservation": 87806,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "development",
+      "item_id": "DEV-02",
+      "source_ids": [
+        "cdc-westtexas-2026"
+      ],
+      "condition": "A",
+      "input_tokens": 10251,
+      "input_headroom_tokens": 88053,
+      "shared_context_headroom_after_full_output_reservation": 88053,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "development",
+      "item_id": "DEV-02",
+      "source_ids": [
+        "cdc-westtexas-2026"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 10602,
+      "input_headroom_tokens": 87702,
+      "shared_context_headroom_after_full_output_reservation": 87702,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "development",
+      "item_id": "DEV-03",
+      "source_ids": [
+        "cdc-westtexas-2026"
+      ],
+      "condition": "A",
+      "input_tokens": 10256,
+      "input_headroom_tokens": 88048,
+      "shared_context_headroom_after_full_output_reservation": 88048,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "development",
+      "item_id": "DEV-03",
+      "source_ids": [
+        "cdc-westtexas-2026"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 10609,
+      "input_headroom_tokens": 87695,
+      "shared_context_headroom_after_full_output_reservation": 87695,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "development",
+      "item_id": "DEV-04",
+      "source_ids": [
+        "cdc-westtexas-2026"
+      ],
+      "condition": "A",
+      "input_tokens": 10256,
+      "input_headroom_tokens": 88048,
+      "shared_context_headroom_after_full_output_reservation": 88048,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "development",
+      "item_id": "DEV-04",
+      "source_ids": [
+        "cdc-westtexas-2026"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 10710,
+      "input_headroom_tokens": 87594,
+      "shared_context_headroom_after_full_output_reservation": 87594,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "development",
+      "item_id": "DEV-05",
+      "source_ids": [
+        "cdc-westtexas-2026"
+      ],
+      "condition": "A",
+      "input_tokens": 10260,
+      "input_headroom_tokens": 88044,
+      "shared_context_headroom_after_full_output_reservation": 88044,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "development",
+      "item_id": "DEV-05",
+      "source_ids": [
+        "cdc-westtexas-2026"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 10612,
+      "input_headroom_tokens": 87692,
+      "shared_context_headroom_after_full_output_reservation": 87692,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "development",
+      "item_id": "DEV-06",
+      "source_ids": [
+        "cdc-westtexas-2026"
+      ],
+      "condition": "A",
+      "input_tokens": 10257,
+      "input_headroom_tokens": 88047,
+      "shared_context_headroom_after_full_output_reservation": 88047,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "frozen_item",
+      "split": "development",
+      "item_id": "DEV-06",
+      "source_ids": [
+        "cdc-westtexas-2026"
+      ],
+      "condition": "B_placeholder",
+      "input_tokens": 10609,
+      "input_headroom_tokens": 87695,
+      "shared_context_headroom_after_full_output_reservation": 87695,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": true,
+      "kind": "frozen_question_exact_source_fixture_not_final_benchmark_prompt"
+    },
+    {
+      "scenario": "all_test_sources",
+      "split": "test",
+      "item_id": "STRESS",
+      "source_ids": [
+        "cdc-us-2025",
+        "ecdc-eueea-2024",
+        "ukhsa-england-2025",
+        "ukhsa-england-2026"
+      ],
+      "condition": "stress",
+      "input_tokens": 33211,
+      "input_headroom_tokens": 65093,
+      "shared_context_headroom_after_full_output_reservation": 65093,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": false,
+      "kind": "deliberate_broad_evidence_stress_fixture_not_a_required_item"
+    },
+    {
+      "scenario": "all_frozen_sources",
+      "split": "test",
+      "item_id": "STRESS",
+      "source_ids": [
+        "cdc-us-2025",
+        "ecdc-eueea-2024",
+        "ukhsa-england-2025",
+        "ukhsa-england-2026",
+        "cdc-westtexas-2026"
+      ],
+      "condition": "stress",
+      "input_tokens": 42722,
+      "input_headroom_tokens": 55582,
+      "shared_context_headroom_after_full_output_reservation": 55582,
+      "fits_approved_input_budget": true,
+      "fits_shared_context_with_full_output_reservation": true,
+      "fits_prior_32768_window": false,
+      "kind": "deliberate_registry_breadth_fixture_not_a_required_item"
+    },
+    {
+      "scenario": "quadrupled_test_sources_reject",
+      "split": "test",
+      "item_id": "STRESS",
+      "source_ids": [
+        "cdc-us-2025__copy_1",
+        "ecdc-eueea-2024__copy_1",
+        "ukhsa-england-2025__copy_1",
+        "ukhsa-england-2026__copy_1",
+        "cdc-us-2025__copy_2",
+        "ecdc-eueea-2024__copy_2",
+        "ukhsa-england-2025__copy_2",
+        "ukhsa-england-2026__copy_2",
+        "cdc-us-2025__copy_3",
+        "ecdc-eueea-2024__copy_3",
+        "ukhsa-england-2025__copy_3",
+        "ukhsa-england-2026__copy_3",
+        "cdc-us-2025__copy_4",
+        "ecdc-eueea-2024__copy_4",
+        "ukhsa-england-2025__copy_4",
+        "ukhsa-england-2026__copy_4"
+      ],
+      "condition": "stress",
+      "input_tokens": 130883,
+      "input_headroom_tokens": -32579,
+      "shared_context_headroom_after_full_output_reservation": -32579,
+      "fits_approved_input_budget": false,
+      "fits_shared_context_with_full_output_reservation": false,
+      "fits_prior_32768_window": false,
+      "kind": "negative_control_must_exceed_approved_input_budget_and_be_rejected"
+    }
+  ],
+  "output_examples": [
+    {
+      "claims": 1,
+      "final_answer_tokens": 157,
+      "kind": "authored_JSON_size_example_not_measured_model_output"
+    },
+    {
+      "claims": 10,
+      "final_answer_tokens": 949,
+      "kind": "authored_JSON_size_example_not_measured_model_output"
+    },
+    {
+      "claims": 50,
+      "final_answer_tokens": 4509,
+      "kind": "authored_JSON_size_example_not_measured_model_output"
+    }
+  ],
+  "primary_generations": 180,
+  "development_generations": 12,
+  "scored_test_outputs": 270,
+  "primary_output_token_ceiling": 5898240,
+  "primary_input_token_ceiling": 17694720,
+  "hard_generation_limit": 400,
+  "hard_output_token_ceiling": 13107200,
+  "kv_cache_estimate": {
+    "dtype": "bfloat16",
+    "bytes_per_cached_token": 147456,
+    "batch_size": 1,
+    "full_context_gib": 18.0,
+    "scope": "KV cache only, excludes weights, activations, attention/logit workspaces and allocator overhead; not a GPU capacity test"
+  },
+  "billing": "Modal is GPU-time billed, not per-token billed. The 150-token thinking connectivity pilot is too short for a reliable long-output throughput or benchmark cost projection.",
+  "source_artifact_hashes": {
+    "frozen_source_manifest": "7a1422f060f2916a0cc28712f47a715e1f1198079f0fa7d0415cdb36f536240d",
+    "frozen_test_items": "1f8908491d1a01e70c5a3e3944ce2ed55d4a0f3968a636d38bfed65349fac90f",
+    "frozen_development_items": "e1fedbbcffe576c4c4d2caddf7e557e9ac07b6a50bfc97c453a9e35697ebdf89",
+    "answer_contract": "dbd69c2f7e87fea8d06b1693ae7dc12ccb2b4335a6c3d4f3463d069c29727004",
+    "estimator_source": "b3a9221e152b83a4bc5763a9d7269cfb59ac31fb7795ea9b032a09b4db93ec40"
+  },
+  "private_gold": {
+    "path": "benchmark/private/external-v1/gold.json",
+    "contents_not_read_or_serialized_into_prompts": true,
+    "freeze_items_sha256_verified": true
+  },
+  "limitations": [
+    "B-condition calculated-evidence bundles are placeholders for size only; the actual runtime fact bundle is unimplemented.",
+    "Long-input GPU peak memory and sustained thinking-mode throughput have not been measured.",
+    "The quadrupled-source scenario is an intentional negative control and must be rejected, never silently truncated.",
+    "These are token counts for frozen public material, not benchmark prompts, model outputs, or results."
+  ]
+}

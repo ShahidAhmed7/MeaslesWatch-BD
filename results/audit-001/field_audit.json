@@ -1,0 +1,433 @@
+[
+  {
+    "field": "Region",
+    "file": "monthly_measles_bgd_neighbours.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 1146
+    },
+    "observed_type": "text_or_date",
+    "recorded_zero": 0,
+    "rows": 1146
+  },
+  {
+    "field": "Country",
+    "file": "monthly_measles_bgd_neighbours.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 1146
+    },
+    "observed_type": "text_or_date",
+    "recorded_zero": 0,
+    "rows": 1146
+  },
+  {
+    "field": "ISO3",
+    "file": "monthly_measles_bgd_neighbours.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 1146
+    },
+    "observed_type": "text_or_date",
+    "recorded_zero": 0,
+    "rows": 1146
+  },
+  {
+    "field": "Year",
+    "file": "monthly_measles_bgd_neighbours.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 1146
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 0,
+    "rows": 1146
+  },
+  {
+    "field": "Month",
+    "file": "monthly_measles_bgd_neighbours.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 1146
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 0,
+    "rows": 1146
+  },
+  {
+    "field": "Measles suspect",
+    "file": "monthly_measles_bgd_neighbours.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 1146
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 0,
+    "rows": 1146
+  },
+  {
+    "field": "Measles clinical",
+    "file": "monthly_measles_bgd_neighbours.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 1146
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 505,
+    "rows": 1146
+  },
+  {
+    "field": "Measles epi-linked",
+    "file": "monthly_measles_bgd_neighbours.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 1146
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 682,
+    "rows": 1146
+  },
+  {
+    "field": "Measles lab-confirmed",
+    "file": "monthly_measles_bgd_neighbours.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 1146
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 337,
+    "rows": 1146
+  },
+  {
+    "field": "Measles total",
+    "file": "monthly_measles_bgd_neighbours.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 1146
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 216,
+    "rows": 1146
+  },
+  {
+    "field": "Rubella clinical",
+    "file": "monthly_measles_bgd_neighbours.csv",
+    "missing": 361,
+    "missing_reasons": {
+      "not_supplied": 361,
+      "observed": 785
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 784,
+    "rows": 1146
+  },
+  {
+    "field": "Rubella epi-linked",
+    "file": "monthly_measles_bgd_neighbours.csv",
+    "missing": 361,
+    "missing_reasons": {
+      "not_supplied": 361,
+      "observed": 785
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 601,
+    "rows": 1146
+  },
+  {
+    "field": "Rubella lab-confirmed",
+    "file": "monthly_measles_bgd_neighbours.csv",
+    "missing": 361,
+    "missing_reasons": {
+      "not_supplied": 361,
+      "observed": 785
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 118,
+    "rows": 1146
+  },
+  {
+    "field": "Rubella Total",
+    "file": "monthly_measles_bgd_neighbours.csv",
+    "missing": 361,
+    "missing_reasons": {
+      "not_supplied": 361,
+      "observed": 785
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 82,
+    "rows": 1146
+  },
+  {
+    "field": "Discarded",
+    "file": "monthly_measles_bgd_neighbours.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 1146
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 8,
+    "rows": 1146
+  },
+  {
+    "field": "date",
+    "file": "monthly_measles_bgd_neighbours.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 1146
+    },
+    "observed_type": "text_or_date",
+    "recorded_zero": 0,
+    "rows": 1146
+  },
+  {
+    "field": "year",
+    "file": "bgd_mcv_coverage_series.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 27
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 0,
+    "rows": 27
+  },
+  {
+    "field": "antigen",
+    "file": "bgd_mcv_coverage_series.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 27
+    },
+    "observed_type": "text_or_date",
+    "recorded_zero": 0,
+    "rows": 27
+  },
+  {
+    "field": "admin_target",
+    "file": "bgd_mcv_coverage_series.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 27
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 0,
+    "rows": 27
+  },
+  {
+    "field": "admin_doses",
+    "file": "bgd_mcv_coverage_series.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 27
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 0,
+    "rows": 27
+  },
+  {
+    "field": "admin_pct",
+    "file": "bgd_mcv_coverage_series.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 27
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 0,
+    "rows": 27
+  },
+  {
+    "field": "wuenic_pct",
+    "file": "bgd_mcv_coverage_series.csv",
+    "missing": 3,
+    "missing_reasons": {
+      "not_supplied": 3,
+      "observed": 24
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 0,
+    "rows": 27
+  },
+  {
+    "field": "official_pct",
+    "file": "bgd_mcv_coverage_series.csv",
+    "missing": 5,
+    "missing_reasons": {
+      "not_supplied": 5,
+      "observed": 22
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 0,
+    "rows": 27
+  },
+  {
+    "field": "denom_lt1yr",
+    "file": "bgd_mcv_coverage_series.csv",
+    "missing": 15,
+    "missing_reasons": {
+      "not_supplied": 15,
+      "observed": 12
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 0,
+    "rows": 27
+  },
+  {
+    "field": "denom_births",
+    "file": "bgd_mcv_coverage_series.csv",
+    "missing": 15,
+    "missing_reasons": {
+      "not_supplied": 15,
+      "observed": 12
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 0,
+    "rows": 27
+  },
+  {
+    "field": "admin_pct_on_lt1yr",
+    "file": "bgd_mcv_coverage_series.csv",
+    "missing": 15,
+    "missing_reasons": {
+      "not_supplied": 15,
+      "observed": 12
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 0,
+    "rows": 27
+  },
+  {
+    "field": "status",
+    "file": "bgd_sia_history.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 14
+    },
+    "observed_type": "text_or_date",
+    "recorded_zero": 0,
+    "rows": 14
+  },
+  {
+    "field": "year_or_jrf",
+    "file": "bgd_sia_history.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 14
+    },
+    "observed_type": "text_or_date",
+    "recorded_zero": 0,
+    "rows": 14
+  },
+  {
+    "field": "activity_type",
+    "file": "bgd_sia_history.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 14
+    },
+    "observed_type": "text_or_date",
+    "recorded_zero": 0,
+    "rows": 14
+  },
+  {
+    "field": "intervention",
+    "file": "bgd_sia_history.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 14
+    },
+    "observed_type": "text_or_date",
+    "recorded_zero": 0,
+    "rows": 14
+  },
+  {
+    "field": "start",
+    "file": "bgd_sia_history.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 14
+    },
+    "observed_type": "text_or_date",
+    "recorded_zero": 0,
+    "rows": 14
+  },
+  {
+    "field": "end",
+    "file": "bgd_sia_history.csv",
+    "missing": 5,
+    "missing_reasons": {
+      "not_supplied": 5,
+      "observed": 9
+    },
+    "observed_type": "text_or_date",
+    "recorded_zero": 0,
+    "rows": 14
+  },
+  {
+    "field": "agegroup",
+    "file": "bgd_sia_history.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 14
+    },
+    "observed_type": "text_or_date",
+    "recorded_zero": 0,
+    "rows": 14
+  },
+  {
+    "field": "extent",
+    "file": "bgd_sia_history.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 14
+    },
+    "observed_type": "text_or_date",
+    "recorded_zero": 0,
+    "rows": 14
+  },
+  {
+    "field": "target",
+    "file": "bgd_sia_history.csv",
+    "missing": 0,
+    "missing_reasons": {
+      "observed": 14
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 0,
+    "rows": 14
+  },
+  {
+    "field": "doses",
+    "file": "bgd_sia_history.csv",
+    "missing": 5,
+    "missing_reasons": {
+      "not_supplied": 5,
+      "observed": 9
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 0,
+    "rows": 14
+  },
+  {
+    "field": "admin_coverage_pct",
+    "file": "bgd_sia_history.csv",
+    "missing": 5,
+    "missing_reasons": {
+      "not_supplied": 5,
+      "observed": 9
+    },
+    "observed_type": "numeric",
+    "recorded_zero": 0,
+    "rows": 14
+  },
+  {
+    "field": "note",
+    "file": "bgd_sia_history.csv",
+    "missing": 11,
+    "missing_reasons": {
+      "not_supplied": 11,
+      "observed": 3
+    },
+    "observed_type": "text_or_date",
+    "recorded_zero": 0,
+    "rows": 14
+  }
+]

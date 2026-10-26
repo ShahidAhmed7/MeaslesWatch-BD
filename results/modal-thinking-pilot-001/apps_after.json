@@ -1,0 +1,18 @@
+[
+  {
+    "app_id": "ap-MRgkfCy1F0eJWNPL7GioAX",
+    "created_at": "2026-10-26 16:08:21+06:00",
+    "description": "modal-thinking-pilot-001",
+    "state": "stopped",
+    "stopped_at": "2026-10-26 16:09:45+06:00",
+    "tasks": "1"
+  },
+  {
+    "app_id": "ap-pBtwav3dpVjH0TUNF4K7Eh",
+    "created_at": "2026-10-26 15:23:13+06:00",
+    "description": "modal-pilot-001",
+    "state": "stopped",
+    "stopped_at": "2026-10-26 15:26:56+06:00",
+    "tasks": "0"
+  }
+]

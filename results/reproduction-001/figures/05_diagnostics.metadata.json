@@ -1,0 +1,9 @@
+{
+  "plotted_csv_sha256": "51cfd4f892ccd42f9378ab8754e972c17d1feeec4424675901a8e7024fc08c4f",
+  "population": "all_ages_unless_coverage_target",
+  "scope": "Laboratory-confirmed target; fit ends Dec 2021; no selection using test results",
+  "snapshot": "2026-08",
+  "source_doi": "10.5281/zenodo.22167512",
+  "statistics_run": "/Users/shahidahmed/Documents/MeaslesWatch/results/reproduction-001/statistics",
+  "title": "Development-only NB2 residual diagnostic"
+}

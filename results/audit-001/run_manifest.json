@@ -1,0 +1,15 @@
+{
+  "artifact_sha256": {
+    "calendar_completeness": "66d322bc5c38f0194aeae77b963f4e05990bc2eda763707b0ceef58d056543fc",
+    "exploration": "3a8572976f9bd2d3335a71895a580bfe1473e0cf2087f20474b972344d1c2bf8",
+    "field_audit": "618bffc35cb7733d9c9aabc805acc3657562088414cdb2314886deea63a8ee6d",
+    "issues": "8a0b9480c587faabe3c720c0214709996ab930808cc5171581b6e210ad351be0",
+    "quarantined_measures": "cd8a1630f5f7e908758f8793256a081dcf01ed0f7aa3e41a7737bb31ce8873f0",
+    "transformation_log": "10dbdd5599336a1fd6e5e6eb32d9db1acfecde7297aeae2c6792ef1eece4702f"
+  },
+  "created_at_utc": "2026-10-26T15:23:13.644114+00:00",
+  "implementation_sha256": "f7657b9ceab535d71091b78896595d7e70a0b457370869a7c2353ca1f99c6b9f",
+  "raw_monthly_sha256": "5158f387016038264e502a301221c8410b7ed35c3073e330b7f3e3bdf248fb5f",
+  "scope": "Seven-country exploration, not harmonized regional predictive evaluation",
+  "status": "completed_supplementary_audit"
+}

@@ -1,0 +1,138 @@
+{
+  "created_at_utc": "2026-10-26T09:47:23.294258+00:00",
+  "method": "Exact pinned Qwen tokenizer counts, including chat template and non-thinking assistant prefix, for authored planning fixtures. No LLM inference, no benchmark score, no GPU usage.",
+  "model_id": "Qwen/Qwen3-4B",
+  "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "tokenizer_class": "Qwen2TokenizerFast",
+  "model_config_sha256": "8ba006f74fecfaaeb392872a60f4a480e7ec9860153d2e1b769ec81f9a147f8a",
+  "model_config_max_position_embeddings": 40960,
+  "model_card_native_context": 32768,
+  "rope_scaling": null,
+  "proposed_limits": {
+    "context_window_tokens": 32768,
+    "max_input_tokens": 28672,
+    "max_new_tokens": 4096
+  },
+  "input_scenarios": [
+    {
+      "scenario": "annual_2024_lab",
+      "condition": "A",
+      "input_tokens": 533,
+      "kind": "representative_sizing_fixture_not_final_benchmark_prompt",
+      "fits_proposed_input_budget": true,
+      "fits_old_input_budget": true
+    },
+    {
+      "scenario": "annual_2024_lab",
+      "condition": "B",
+      "input_tokens": 874,
+      "kind": "representative_sizing_fixture_not_final_benchmark_prompt",
+      "fits_proposed_input_budget": true,
+      "fits_old_input_budget": true
+    },
+    {
+      "scenario": "highest_complete_year",
+      "condition": "A",
+      "input_tokens": 3857,
+      "kind": "representative_sizing_fixture_not_final_benchmark_prompt",
+      "fits_proposed_input_budget": true,
+      "fits_old_input_budget": false
+    },
+    {
+      "scenario": "highest_complete_year",
+      "condition": "B",
+      "input_tokens": 6408,
+      "kind": "representative_sizing_fixture_not_final_benchmark_prompt",
+      "fits_proposed_input_budget": true,
+      "fits_old_input_budget": false
+    },
+    {
+      "scenario": "who_conflicts",
+      "condition": "A",
+      "input_tokens": 3799,
+      "kind": "representative_sizing_fixture_not_final_benchmark_prompt",
+      "fits_proposed_input_budget": true,
+      "fits_old_input_budget": false
+    },
+    {
+      "scenario": "who_conflicts",
+      "condition": "B",
+      "input_tokens": 5528,
+      "kind": "representative_sizing_fixture_not_final_benchmark_prompt",
+      "fits_proposed_input_budget": true,
+      "fits_old_input_budget": false
+    },
+    {
+      "scenario": "coverage_changes",
+      "condition": "A",
+      "input_tokens": 1607,
+      "kind": "representative_sizing_fixture_not_final_benchmark_prompt",
+      "fits_proposed_input_budget": true,
+      "fits_old_input_budget": true
+    },
+    {
+      "scenario": "coverage_changes",
+      "condition": "B",
+      "input_tokens": 15145,
+      "kind": "representative_sizing_fixture_not_final_benchmark_prompt",
+      "fits_proposed_input_budget": true,
+      "fits_old_input_budget": false
+    },
+    {
+      "scenario": "combined_sources_stress",
+      "condition": "stress",
+      "input_tokens": 30486,
+      "kind": "deliberate_broad_evidence_stress_fixture_not_a_required_item",
+      "fits_proposed_input_budget": false,
+      "fits_old_input_budget": false
+    },
+    {
+      "scenario": "unfiltered_canonical_dump",
+      "condition": "stress",
+      "input_tokens": 181013,
+      "kind": "negative_control_full_registry_must_not_be_sent_as_one_prompt",
+      "fits_proposed_input_budget": false,
+      "fits_old_input_budget": false
+    }
+  ],
+  "output_examples": [
+    {
+      "claims": 1,
+      "output_tokens": 239,
+      "kind": "authored_JSON_size_example_not_measured_model_output"
+    },
+    {
+      "claims": 6,
+      "output_tokens": 1079,
+      "kind": "authored_JSON_size_example_not_measured_model_output"
+    },
+    {
+      "claims": 12,
+      "output_tokens": 2089,
+      "kind": "authored_JSON_size_example_not_measured_model_output"
+    }
+  ],
+  "primary_generations": 180,
+  "primary_output_token_ceiling": 737280,
+  "primary_input_token_ceiling": 5160960,
+  "hard_generation_limit": 400,
+  "hard_output_token_ceiling": 1638400,
+  "kv_cache_estimate": {
+    "dtype": "bfloat16",
+    "bytes_per_cached_token": 147456,
+    "batch_size": 1,
+    "full_context_gib": 4.5,
+    "scope": "KV cache only, excludes weights, activations, attention/logit workspaces and allocator overhead; not a GPU capacity test"
+  },
+  "billing": "Modal is GPU-time billed, not per-token billed. The six-token pilot is too short for a reliable long-output throughput or full-benchmark cost projection.",
+  "source_artifact_hashes": {
+    "canonical_manifest": "efa0e34c66960ed264b12b516ee287267035dbf3fd871e54d978c46b1bb2b9e8",
+    "description_manifest": "4967ae3dc177e8d9cefdf4655aea8f166b4ea9e5049cc770ab26e291fdb6647e",
+    "estimator_source": "a669c6520b4866272cb6b26f74889af4a78cd76fddbf9d3bc376b60901a96e31"
+  },
+  "limitations": [
+    "Final benchmark prompts and answer schema are not frozen; these are representative fixtures.",
+    "Long-input GPU peak memory and sustained output throughput have not been measured.",
+    "Oversized evidence must be deterministically selected or split without dropping essential source coverage, never silently truncated."
+  ]
+}

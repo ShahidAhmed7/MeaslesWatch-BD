@@ -1,0 +1,93 @@
+[
+  {
+    "country": "Bhutan",
+    "field": "Measles clinical",
+    "original_value": "-14.0",
+    "source_row": "monthly_measles_bgd_neighbours.csv:207",
+    "type": "invalid_count_quarantined"
+  },
+  {
+    "country": "Bhutan",
+    "field": "Measles total",
+    "original_value": "-14.0",
+    "source_row": "monthly_measles_bgd_neighbours.csv:207",
+    "type": "invalid_count_quarantined"
+  },
+  {
+    "country": "Sri Lanka",
+    "field": "Measles clinical",
+    "original_value": "-2.0",
+    "source_row": "monthly_measles_bgd_neighbours.csv:481",
+    "type": "invalid_count_quarantined"
+  },
+  {
+    "country": "Sri Lanka",
+    "field": "Measles total",
+    "original_value": "-2.0",
+    "source_row": "monthly_measles_bgd_neighbours.csv:481",
+    "type": "invalid_count_quarantined"
+  },
+  {
+    "country": "Sri Lanka",
+    "field": "Measles clinical",
+    "original_value": "-2.0",
+    "source_row": "monthly_measles_bgd_neighbours.csv:485",
+    "type": "invalid_count_quarantined"
+  },
+  {
+    "country": "Sri Lanka",
+    "field": "Measles total",
+    "original_value": "-2.0",
+    "source_row": "monthly_measles_bgd_neighbours.csv:485",
+    "type": "invalid_count_quarantined"
+  },
+  {
+    "country": "Sri Lanka",
+    "field": "Measles clinical",
+    "original_value": "-13.0",
+    "source_row": "monthly_measles_bgd_neighbours.csv:490",
+    "type": "invalid_count_quarantined"
+  },
+  {
+    "country": "Sri Lanka",
+    "field": "Measles clinical",
+    "original_value": "-14.0",
+    "source_row": "monthly_measles_bgd_neighbours.csv:491",
+    "type": "invalid_count_quarantined"
+  },
+  {
+    "country": "Sri Lanka",
+    "field": "Measles clinical",
+    "original_value": "-64.0",
+    "source_row": "monthly_measles_bgd_neighbours.csv:492",
+    "type": "invalid_count_quarantined"
+  },
+  {
+    "country": "Sri Lanka",
+    "field": "Measles clinical",
+    "original_value": "-95.0",
+    "source_row": "monthly_measles_bgd_neighbours.csv:493",
+    "type": "invalid_count_quarantined"
+  },
+  {
+    "country": "Sri Lanka",
+    "field": "Measles clinical",
+    "original_value": "-72.0",
+    "source_row": "monthly_measles_bgd_neighbours.csv:494",
+    "type": "invalid_count_quarantined"
+  },
+  {
+    "country": "Sri Lanka",
+    "field": "Measles clinical",
+    "original_value": "-22.0",
+    "source_row": "monthly_measles_bgd_neighbours.csv:513",
+    "type": "invalid_count_quarantined"
+  },
+  {
+    "country": "Sri Lanka",
+    "field": "Measles clinical",
+    "original_value": "-61.0",
+    "source_row": "monthly_measles_bgd_neighbours.csv:521",
+    "type": "invalid_count_quarantined"
+  }
+]

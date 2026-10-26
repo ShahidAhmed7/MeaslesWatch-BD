@@ -1,0 +1,161 @@
+{
+  "artifacts": [
+    {
+      "artifact": "results/description-001/summary.json",
+      "role": "source_linked_descriptive_calculations",
+      "sha256": "3163e7e5f6d80a1c27eee2b4e59dcc9276fca25c88b8be26bf2db0155521fcf0"
+    },
+    {
+      "artifact": "results/description-001/coverage_changes.json",
+      "role": "source_linked_descriptive_calculations",
+      "sha256": "9e2cee43240e9dd20d60474acef7ab9f58534969eef18d97d9ff6aad0e64dac2"
+    },
+    {
+      "artifact": "results/description-001/classification_composition.json",
+      "role": "source_linked_descriptive_calculations",
+      "sha256": "fc749a94757f5ae8c80906f435aedb55064600d2251b2d4fbad6c1243107eaa9"
+    },
+    {
+      "artifact": "results/description-001/coverage_source_disagreement.json",
+      "role": "source_linked_descriptive_calculations",
+      "sha256": "0253c412e60d86c82f59c0fcc256d0c963d44db62271b5a7252f2fd4fbf70cc0"
+    },
+    {
+      "artifact": "results/description-001/admin_decomposition.json",
+      "role": "source_linked_descriptive_calculations",
+      "sha256": "53587cea2f48266c34c3b6a1d7a1df2ebb1a9c8d364b3c596ef6dcc80c9ee622"
+    },
+    {
+      "artifact": "results/description-001/seasonal_pattern.json",
+      "role": "source_linked_descriptive_calculations",
+      "sha256": "e181c312fd96500856a91a3c30332d342818591e730b42ef3d112cc8c4fa156d"
+    },
+    {
+      "artifact": "results/description-001/comparable_ytd.json",
+      "role": "source_linked_descriptive_calculations",
+      "sha256": "ca6eb6524264ab671f8f31e98d12cf3b7b416227d6585390c5b71f7c0177d75c"
+    },
+    {
+      "artifact": "results/description-001/annual_counts.json",
+      "role": "source_linked_descriptive_calculations",
+      "sha256": "0fa621e7b8bd439824ce17d5ddd25a0429075f545f541f81e95ac490e5d94d1e"
+    },
+    {
+      "artifact": "results/statistics-001/metrics.json",
+      "role": "retrospective_statistical_evaluation",
+      "sha256": "81604a24a01f2f45beadf40aff2a4c2d9d43ad39e50b3db9008cfc41e7f5854f"
+    },
+    {
+      "artifact": "results/statistics-001/predictions.json",
+      "role": "retrospective_statistical_evaluation",
+      "sha256": "0c1c4fc172c63e8182f70e521ec4cfa1f06a4078f8115f2d17dfd8328809ad7f"
+    },
+    {
+      "artifact": "results/statistics-001/diagnostics.json",
+      "role": "retrospective_statistical_evaluation",
+      "sha256": "9427dece4bc3e0ba21c321642d66491bd5a238d76c5a3e81c17ad04311c98f9a"
+    },
+    {
+      "artifact": "results/statistics-001/sensitivity.json",
+      "role": "retrospective_statistical_evaluation",
+      "sha256": "eef424d6e172c8e84e45114961fe71b7d16f37d0379bd616095e7ebde4339b28"
+    },
+    {
+      "artifact": "results/statistics-001/synthetic_metrics.json",
+      "role": "retrospective_statistical_evaluation",
+      "sha256": "bc02667ada3b094063975d7a219fb7c493b5ac1a5a7047230450dcb5d28a91cf"
+    }
+  ],
+  "case_unit": "reported_cases",
+  "coverage_change_unit": "percentage_points",
+  "coverage_unit": "percent",
+  "fixed_origin_case_study": [
+    "2026-01",
+    "2026-05"
+  ],
+  "geography": "Bangladesh",
+  "limitations": [
+    "No clinical, causal or prospective validation",
+    "Provisional surveillance and changing ascertainment/classification",
+    "No historical release-vintage archive",
+    "WHO age-specific document statements are separate from all-age time series"
+  ],
+  "population": "all_ages",
+  "primary_measure": "measles_lab_confirmed",
+  "primary_test_metrics": [
+    {
+      "MAE": 8.416666666666666,
+      "MASE": 0.2200294765215908,
+      "MASE_scored_months": 48,
+      "RMSE": 11.096170510586074,
+      "alert_months": 0,
+      "alert_proportion": null,
+      "eligible_months": 48,
+      "failed_months": 0,
+      "interval_coverage": null,
+      "interval_scored_months": 0,
+      "interval_width": null,
+      "log_score_status": "not_available",
+      "measure": "measles_lab_confirmed",
+      "model": "seasonal_naive",
+      "negative_log_predictive_probability": null,
+      "reference": "Statistical exceedance frequency; real outbreak labels unavailable",
+      "scored_months": 48,
+      "split": "test",
+      "training_window": 60,
+      "zero_predictive_probability_months": 0
+    },
+    {
+      "MAE": 94.21250000000002,
+      "MASE": 1.0381439787038744,
+      "MASE_scored_months": 48,
+      "RMSE": 111.27972636558736,
+      "alert_months": 0,
+      "alert_proportion": 0.0,
+      "eligible_months": 48,
+      "failed_months": 0,
+      "interval_coverage": 0.10416666666666667,
+      "interval_scored_months": 48,
+      "interval_width": 39.125,
+      "log_score_status": "defined",
+      "measure": "measles_lab_confirmed",
+      "model": "seasonal_reference",
+      "negative_log_predictive_probability": 68.77847043366081,
+      "reference": "Statistical exceedance frequency; real outbreak labels unavailable",
+      "scored_months": 48,
+      "split": "test",
+      "training_window": 60,
+      "zero_predictive_probability_months": 0
+    },
+    {
+      "MAE": 9.995572407418258,
+      "MASE": 0.2516912125017489,
+      "MASE_scored_months": 48,
+      "RMSE": 12.330797047290943,
+      "alert_months": 1,
+      "alert_proportion": 0.020833333333333332,
+      "eligible_months": 48,
+      "failed_months": 0,
+      "interval_coverage": 0.9583333333333334,
+      "interval_scored_months": 48,
+      "interval_width": 47.604166666666664,
+      "log_score_status": "defined",
+      "measure": "measles_lab_confirmed",
+      "model": "negative_binomial",
+      "negative_log_predictive_probability": 4.099479505899708,
+      "reference": "Statistical exceedance frequency; real outbreak labels unavailable",
+      "scored_months": 48,
+      "split": "test",
+      "training_window": 60,
+      "zero_predictive_probability_months": 0
+    }
+  ],
+  "schema_version": "1.0.0",
+  "sensitivity_measure": "measles_total_classified",
+  "snapshot": "2026-08",
+  "source_version": "1.1.0",
+  "test_window": [
+    "2022-01",
+    "2025-12"
+  ]
+}
