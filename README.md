@@ -1,5 +1,7 @@
 # MeaslesWatch BD
 
+**Sole project contributor:** [ahmedshahid2929@gmail.com](mailto:ahmedshahid2929@gmail.com)
+
 A reproducible retrospective measles surveillance study and evidence-grounded LLM
 evaluation, using public Bangladesh surveillance/coverage extracts. Six Streamlit
 pages connect audited data, historical statistical models, scientific briefs and
