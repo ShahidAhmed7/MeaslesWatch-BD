@@ -100,10 +100,11 @@ def supplement(output):
             emitted = unsupported = 0
             for row in rows:
                 claims = (row.get("response") or {}).get("claims", [])
-                emitted += len(claims)
+                emitted += sum(isinstance(c, dict) for c in claims)
                 for claim in claims:
                     if isinstance(claim, dict) and claim.get("slot") in ("effectiveness_identified", "causal_treatment_effect_identified"):
-                        unsupported += claim.get("value") is True and gold[row["item_id"]]["slots"][claim["slot"]]["value"] is False
+                        expected = gold[row["item_id"]]["slots"].get(claim["slot"])
+                        unsupported += bool(expected and claim.get("value") is True and expected["value"] is False)
             causal_claims.append({"split": split, "condition": condition,
                 "emitted_structured_claims": emitted, "unsupported_affirmative_causal_inference_claims": unsupported,
                 "unsupported_causal_claim_fraction": unsupported / emitted if emitted else None,

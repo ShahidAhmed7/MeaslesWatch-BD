@@ -163,6 +163,7 @@ def statistics(country):
     st.json(load("results/statistics-001/sensitivity.json"), expanded=False)
     st.json(load("results/statistics-001/paired_bootstrap.json"), expanded=False)
     st.caption("36/84-month sensitivities retain the same test period. Missingness/outlier stresses use isolated copies; primary observations are unchanged.")
+    st.caption("MASE scales differ between training windows. Compare window MAE/RMSE alongside eligible/scored/failed counts rather than ranking windows by MASE alone.")
     st.subheader("Downloadable research figures")
     manifest = load("results/figures-001/manifest.json", {"figures": []})
     for name in manifest["figures"]:
