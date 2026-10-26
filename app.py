@@ -46,7 +46,7 @@ def export_table(data, name, metadata=None):
     left, right = st.columns(2)
     left.download_button("Download CSV", csv.to_csv(index=False), f"{name}.csv", "text/csv", key="csv-" + name)
     right.download_button("Download research metadata", json.dumps({"snapshot": "2026-08", "version_doi": "10.5281/zenodo.22167512",
-        "unit": "reported_cases_unless_specified", "population": "all_ages_unless_specified", "limitations": DISCLAIMER,
+        "unit": "column_specific_see_source_dictionary_and_column_names", "population": "table_specific", "limitations": DISCLAIMER,
         **(metadata or {})}, indent=2), f"{name}.metadata.json", "application/json", key="metadata-" + name)
 
 
@@ -107,7 +107,7 @@ def overview(data, selection):
                       annotation_text="Provisional 2026", annotation_position="top left")
     chart(fig, "filtered-reporting")
     export_table(selected.drop(columns="date"), "filtered-surveillance", {"country": country, "start": start, "end": end, "measure": measure,
-        "missing_month_display": "Explicit calendar_gap rows with null counts; no imputation"})
+        "missing_month_display": "Explicit calendar_gap rows with null counts; no imputation", "unit": "reported_cases", "population": "all_ages"})
     st.subheader("Comparable reporting periods")
     comparisons = yoy(group, start, end)
     st.dataframe(comparisons, hide_index=True, width="stretch")
@@ -120,7 +120,8 @@ def overview(data, selection):
         chart(px.line(cov, x="year", y="reported_pct", color="coverage_source", markers=True,
                       labels={"reported_pct": "Reported/estimated coverage (%)", "year": "Year", "coverage_source": "Coverage source"}), "annual-coverage")
         st.caption("Annual coverage is separate from case counts. Administrative values above 100% are retained; source differences are not confidence intervals.")
-        export_table(cov, "annual-coverage", {"country": country, "antigen": antigen, "unit": "percent"})
+        export_table(cov, "annual-coverage", {"country": country, "antigen": antigen, "unit": "percent",
+            "population": "source_and_antigen_specific_vaccination_target; denominator_type_is_retained_per_row"})
     else:
         st.info("The frozen package supplies annual vaccination coverage for Bangladesh only. No neighbour's coverage is inferred.")
     with st.expander("Data limitations and provenance"):
