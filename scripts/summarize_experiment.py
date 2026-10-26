@@ -93,6 +93,21 @@ def supplement(output):
             "median_generation_seconds_per_call": float(np.median(times)) if times else None,
             "total_generation_seconds": sum(times),
             "limitation": "Returned-call compute timing excludes some cold starts/client/infrastructure time; C adds no model calls"})
+    causal_claims = []
+    for split in ("development", "test"):
+        for condition in ("A", "B", "C"):
+            rows = [r for r in records if r["stage"] == "post_schema_repair" and r["split"] == split and r["condition"] == condition]
+            emitted = unsupported = 0
+            for row in rows:
+                claims = (row.get("response") or {}).get("claims", [])
+                emitted += len(claims)
+                for claim in claims:
+                    if isinstance(claim, dict) and claim.get("slot") in ("effectiveness_identified", "causal_treatment_effect_identified"):
+                        unsupported += claim.get("value") is True and gold[row["item_id"]]["slots"][claim["slot"]]["value"] is False
+            causal_claims.append({"split": split, "condition": condition,
+                "emitted_structured_claims": emitted, "unsupported_affirmative_causal_inference_claims": unsupported,
+                "unsupported_causal_claim_fraction": unsupported / emitted if emitted else None,
+                "scope": "Registered causal-identification boolean slots only; subtle prose is not covered. Primary scorecard reports separate sentence-rule flagged items."})
     ledger = json.loads((ROOT / ".devin/modal_ledger.json").read_text()) if (ROOT / ".devin/modal_ledger.json").exists() else None
     budget = {"project_authorization_usd": 30, "working_reservation_limit_usd": 20,
         "retained_reservations_usd": sum(float(e["reserved_usd"]) for e in ledger["entries"]) if ledger else None,
@@ -103,7 +118,8 @@ def supplement(output):
         "limitation": "Workspace metering can lag/include unrelated usage; no exact app-attributed charge is asserted"}
     output.mkdir(parents=True)
     for name, value in (("retrieval_cases", retrieval), ("retrieval_summary", retrieval_summary),
-                        ("verification_by_split", verification), ("operational_metrics", operational), ("budget_observation", budget)):
+                        ("verification_by_split", verification), ("operational_metrics", operational),
+                        ("causal_claim_metrics", causal_claims), ("budget_observation", budget)):
         write_json(output / f"{name}.json", value)
     write_json(output / "manifest.json", {"status": "completed_diagnostic_supplement", "script_sha256": sha256(Path(__file__)),
         "run_manifest_sha256": sha256(run / "run_manifest.json"), "primary_scoring_changed": False,
