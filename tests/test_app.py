@@ -1,7 +1,9 @@
 from pathlib import Path
 from unittest.mock import patch
+import json
 
 from streamlit.testing.v1 import AppTest
+from app import brief_outcome
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = ["Surveillance Overview", "Data Quality Audit", "Statistical Analysis", "Anomaly Detection", "LLM Research Analyst", "LLM Evaluation"]
@@ -26,3 +28,15 @@ def test_temporal_filter_error_is_explicit():
     app.sidebar.selectbox[3].set_value("2012-01").run()
     assert not app.exception
     assert any("start month" in x.value for x in app.error)
+
+
+def test_saved_generation_failure_cannot_be_presented_as_a_successful_brief(tmp_path):
+    folder = tmp_path / "briefs"
+    folder.mkdir()
+    saved = folder / "case.json"
+    saved.write_text(json.dumps({"error": {"type": "RemoteError"}, "verified": {"claims": []}}))
+    assert brief_outcome(tmp_path) == "failed"
+    saved.write_text(json.dumps({"verified": {"claims": [{"slot": "reporting_months", "value": 1}], "missing_slots": ["reported_count"]}}))
+    assert brief_outcome(tmp_path) == "partial"
+    saved.write_text(json.dumps({"verified": {"claims": [{"slot": "reporting_months", "value": 1}], "missing_slots": []}}))
+    assert brief_outcome(tmp_path) == "complete"

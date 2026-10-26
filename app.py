@@ -30,6 +30,14 @@ def frame(relative):
     return pd.DataFrame(load(relative, []))
 
 
+def brief_outcome(output):
+    records = [json.loads(p.read_text()) for p in (Path(output) / "briefs").glob("*.json")]
+    checked = [r.get("verified", {}) for r in records if r.get("verified", {}).get("claims")]
+    if not checked:
+        return "failed"
+    return "partial" if any(r.get("missing_slots") for r in checked) else "complete"
+
+
 def export_table(data, name, metadata=None):
     csv = data.copy()
     for column in csv.columns:
@@ -234,9 +242,12 @@ def analyst(selection):
         with st.spinner("Retrieving evidence and generating a private Modal brief…"):
             run = subprocess.run([sys.executable, "-m", "measleswatch.inference_run", "--output", str(output), "--brief-selection", str(path)],
                                  cwd=ROOT, capture_output=True, text=True, timeout=1100)
-        if run.returncode:
+        outcome = brief_outcome(output)
+        if run.returncode or outcome == "failed":
             st.error("Generation did not complete. Existing budget/runtime guards remain in force; no result is invented.")
             st.code(run.stderr[-1500:])
+        elif outcome == "partial":
+            st.warning("A partial brief was saved. Inspect checked claims and missing slots below; omitted claims are not filled in.")
         else:
             st.success("Brief generated and checked. Select it below.")
     paths = sorted(ROOT.glob("results/*/briefs/*.json"), key=lambda p: p.stat().st_mtime, reverse=True)

@@ -118,7 +118,7 @@ test months, this interval does not establish a precise difference or prospectiv
 skill. NB2's interval coverage was {pct(nb['interval_coverage'])}, with mean width
 {nb['interval_width']:.2f} cases and {nb['alert_months']} upper-99th-percentile exceedance(s).
 The Poisson-reference seasonal detector substantially under-covered, exposing its
-equidispersion assumptions rather than validating its bands.
+stationary-reference/equidispersion assumptions rather than validating its bands.
 
 In the pre-test 2017–2021 training window, NB2 dispersion was
 {diagnostic['NB2']['alpha']:.2f}; Pearson dispersion was

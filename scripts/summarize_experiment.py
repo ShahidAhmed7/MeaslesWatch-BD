@@ -7,10 +7,11 @@ import argparse
 from collections import defaultdict
 import json
 from pathlib import Path
+import time
 
 import numpy as np
 
-from measleswatch.benchmark_runtime import load_public
+from measleswatch.benchmark_runtime import load_public, verify_external
 from measleswatch.ingest import sha256, write_json
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -109,6 +110,18 @@ def supplement(output):
                 "emitted_structured_claims": emitted, "unsupported_affirmative_causal_inference_claims": unsupported,
                 "unsupported_causal_claim_fraction": unsupported / emitted if emitted else None,
                 "scope": "Registered causal-identification boolean slots only; subtle prose is not covered. Primary scorecard reports separate sentence-rule flagged items."})
+    store, items = load_public(ROOT, "test")
+    cpu_times = []
+    for item in items:
+        b = json.loads((run / f"cases/{item['id']}_B_2026.json").read_text())
+        c = json.loads((run / f"cases/{item['id']}_C_2026.json").read_text())
+        started = time.perf_counter()
+        repeated = verify_external(store, item, b.get("parsed"))
+        elapsed = time.perf_counter() - started
+        if repeated != c["parsed"]:
+            raise ValueError(f"Reverification differs from frozen test C output: {item['id']}")
+        cpu_times.append({"item_id": item["id"], "warm_store_reverification_seconds": elapsed,
+                          "saved_C_reproduced": True})
     ledger = json.loads((ROOT / ".devin/modal_ledger.json").read_text()) if (ROOT / ".devin/modal_ledger.json").exists() else None
     budget = {"project_authorization_usd": 30, "working_reservation_limit_usd": 20,
         "retained_reservations_usd": sum(float(e["reserved_usd"]) for e in ledger["entries"]) if ledger else None,
@@ -120,7 +133,7 @@ def supplement(output):
     output.mkdir(parents=True)
     for name, value in (("retrieval_cases", retrieval), ("retrieval_summary", retrieval_summary),
                         ("verification_by_split", verification), ("operational_metrics", operational),
-                        ("causal_claim_metrics", causal_claims), ("budget_observation", budget)):
+                        ("causal_claim_metrics", causal_claims), ("verifier_cpu_timing", cpu_times), ("budget_observation", budget)):
         write_json(output / f"{name}.json", value)
     write_json(output / "manifest.json", {"status": "completed_diagnostic_supplement", "script_sha256": sha256(Path(__file__)),
         "run_manifest_sha256": sha256(run / "run_manifest.json"), "primary_scoring_changed": False,
