@@ -294,6 +294,11 @@ def llm_evaluation():
     st.subheader("Verification errors and paired comparisons")
     st.json(load("results/benchmark-score-001/verification_metrics.json"))
     st.json(load("results/benchmark-score-001/paired_comparisons.json"))
+    with st.expander("Retrieval, claim-level and runtime diagnostics"):
+        diagnostics = {name: load(f"results/benchmark-diagnostics-001/{name}.json") for name in
+            ("retrieval_summary", "verification_by_split", "causal_claim_metrics", "operational_metrics", "budget_observation", "verifier_cpu_timing")}
+        st.json(diagnostics, expanded=False)
+        st.caption("Retrieval passage overlap is measured separately; A/B received identical full sources. CPU reverification timings use a warm store and are distinct from Modal generation timing.")
     cases = load("results/benchmark-score-001/case_results.json", [])
     condition = st.selectbox("Condition", ["A", "B", "C"])
     identifiers = sorted({c["item_id"] for c in cases if c["split"] == "test"})

@@ -26,6 +26,7 @@ def build_report(root, output):
     boot = read("results/statistics-001/paired_bootstrap.json")["measles_lab_confirmed"]
     paired = read("results/benchmark-score-001/paired_comparisons.json")
     verifier = read("results/benchmark-score-001/verification_metrics.json")
+    retrieval = next(r for r in read("results/benchmark-diagnostics-001/retrieval_summary.json") if r["split"] == "test")
     failure_aware = read("results/synthetic-failure-audit-001/failure_aware_metrics.json")
     poisson_nb = next(r for r in failure_aware if r["process"] == "poisson" and r["model"] == "negative_binomial" and r["multiplier"] == 2)
     preds = read("results/statistics-001/predictions.json")
@@ -174,7 +175,12 @@ file access and exercise all public questions successfully.
 Condition A receives original source text; B receives identical source coverage plus
 calculated facts; C verifies the exact B draft without another model sample. This
 isolates computation/verification, not retrieval versus no evidence. Lexical retrieval
-quality is measured separately. One paired seed produces 60 test generations and 90
+quality is measured separately: top-four known-source passage retrieval covers
+{pct(retrieval['registered_slot_passage_recall_at_4'])} of registered slot evidence,
+with every registered operand passage retrieved for
+{pct(retrieval['all_required_passages_item_recall_at_4'])} of test questions. These are
+passage-overlap proxies, not semantic entailment or open-world retrieval guarantees.
+One paired seed produces 60 test generations and 90
 scored outputs; additional seeds were deferred by a recorded budget/completion amendment.
 Completed development prompts from before a prospective metadata correction remain
 archived and are mixed-version, so development scores are not final-system estimates.
