@@ -1,0 +1,22 @@
+[
+  {
+    "difference": "B_minus_A",
+    "estimate": 0.03333333333333333,
+    "item_bootstrap_95": [
+      0.0,
+      0.1
+    ],
+    "limitation": "Selected 30-item benchmark; descriptive stability, not a general population guarantee",
+    "paired_items": 30
+  },
+  {
+    "difference": "C_minus_B",
+    "estimate": 0.0,
+    "item_bootstrap_95": [
+      0.0,
+      0.0
+    ],
+    "limitation": "Selected 30-item benchmark; descriptive stability, not a general population guarantee",
+    "paired_items": 30
+  }
+]

@@ -83,6 +83,7 @@ intercept, time and one annual sine/cosine pair. NB2 dispersion is estimated onl
 training data. Convergence failures remain unavailable; no silent model substitution
 is used. Prediction intervals are plug-in conditional count intervals and omit some
 parameter, ascertainment and reporting uncertainty. MAE/RMSE use reported cases;
+extremely small conditional tail probabilities can numerically underflow to zero.
 MASE scales are training-only. Dispersion, Pearson residuals and residual autocorrelation
 are saved. Error uncertainty uses 1,000 paired circular block resamples of 12 months.
 

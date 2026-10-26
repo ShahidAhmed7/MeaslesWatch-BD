@@ -194,6 +194,7 @@ def anomalies(selection):
     fig.update_layout(yaxis_title="Reported cases", xaxis_title="Observation month")
     chart(fig, "anomaly-evidence")
     st.caption("2017–2021 development; 2022–2025 rolling test; Jan–May 2026 fixed-origin case study. Threshold exceedances do not independently establish outbreak status.")
+    st.caption("Tail probabilities are conditional on the fitted count model. Extremely small values can underflow to displayed zero in floating-point arithmetic.")
     flagged = selected[selected.anomaly == True]
     st.metric("Statistical exceedance months", len(flagged))
     st.dataframe(flagged[["month", "observed", "expected", "upper_99", "tail_probability", "training_end", "split", "status"]], hide_index=True, width="stretch")

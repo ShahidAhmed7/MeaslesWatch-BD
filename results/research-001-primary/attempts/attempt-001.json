@@ -1,0 +1,43 @@
+{
+  "app_id": "ap-V9VZzlkynIW9rLoWrwx8PE",
+  "budget_reservation": {
+    "actual_generations": 0,
+    "app_id": "ap-V9VZzlkynIW9rLoWrwx8PE",
+    "billing_control_evidence": "retained_existing_user_confirmation; fresh authenticated CLI preflight",
+    "client_wall_seconds": 91.58176191698294,
+    "ended_at_utc": "2026-10-26T15:42:48.884873+00:00",
+    "estimate_is_provider_billing_cap": false,
+    "measured_app_cost_usd": null,
+    "requested_generations": 149,
+    "requested_resource_rate_usd_per_hour": "2.172600",
+    "reserved_container_seconds": 10800,
+    "reserved_usd": "8",
+    "run_id": "research-001",
+    "started_at_utc": "2026-10-26T15:41:17.303319+00:00",
+    "status": "incomplete",
+    "workspace_delta_caveat": "May lag/include unrelated usage; not app-attributed charges",
+    "workspace_metered_delta_usd": "0E-8"
+  },
+  "completed_jobs": 0,
+  "completion_protocol_sha256": "efeeae57e87ffb7a1e1609478679890dd6311683ca011f95e9d533ec0caba744",
+  "failures": 0,
+  "finished_at_utc": "2026-10-26T15:42:54.063754+00:00",
+  "frozen_benchmark_sha256": "d7912ffb2062e3a278e2d5ddbb95a249ee8e20859fd9b5835a95ea5b6d8279db",
+  "multiplicity": "Approved completion protocol: one complete paired seed first",
+  "primary_condition_rule": "A and B identical raw source coverage; C verifies exact B without regeneration",
+  "private_gold_in_runtime": false,
+  "requests_sha256": "f9a8c489a73ebc6f469de5e03058eeae232131d9c1475f51c968eb019d490c27",
+  "run_id": "research-001",
+  "seed": 2026,
+  "source_sha256": {
+    "evidence": "410a413fa1997e304b14977861a802620a02f85dd9b5624b6ffb4fc99eb310e7",
+    "modal_service": "d7d17c211866b948db9438a21361aba87b8cc8ef0943d81f7d97c68e2fbc0a55",
+    "runner": "0ee13407d5ee7d5f0a4813b12f8d2407fe2b38d0a8513a0cd7c79063448a4e5b",
+    "runtime": "13eea285f6b30a9e53de2e1abae03493c3affde28301f92fc0d3daf00e57e38e",
+    "scorer_before_generation": "d4edfd11e840acdf92ec459822adea1dcb91f98024c6ee808166da2085be4456",
+    "verifier": "ecb58d6d506dd05e91d9752b5b75dcb9cc7f56e6338ca70ed22e2479d7c2decf"
+  },
+  "started_at_utc": "2026-10-26T15:41:17.307479+00:00",
+  "status": "incomplete",
+  "study_config_sha256": "a7dfcacdfc1fecca7a84296dfbe66907f90eb1a803e030a52905f2ca0c687cbf"
+}

@@ -1,0 +1,374 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 270,
+            "line_start": 270,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "hospitalized_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "hospitalized_cases",
+        "unit": "cases",
+        "value": 85
+      },
+      {
+        "citations": [
+          {
+            "line_end": 252,
+            "line_start": 252,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "reported_cases",
+        "unit": "cases",
+        "value": 800
+      },
+      {
+        "citations": [
+          {
+            "line_end": 270,
+            "line_start": 270,
+            "source_id": "cdc-us-2025"
+          },
+          {
+            "line_end": 252,
+            "line_start": 252,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "hospitalized_percent",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "hospitalized_percent",
+        "unit": "percent",
+        "value": 10.63
+      },
+      {
+        "citations": [
+          {
+            "line_end": 259,
+            "line_start": 259,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "source_interpretation",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "population_risk_identified",
+        "unit": "none",
+        "value": false
+      }
+    ],
+    "item_id": "EXT-03",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "hospitalized_cases: 85 cases; reported_cases: 800 cases; hospitalized_percent: 10.63 percent; population_risk_identified: False none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 270,
+              "line_start": 270,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "hospitalized_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "hospitalized_cases",
+          "unit": "cases",
+          "value": 85
+        },
+        "slot": "hospitalized_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 252,
+              "line_start": 252,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "reported_cases",
+          "unit": "cases",
+          "value": 800
+        },
+        "slot": "reported_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 270,
+              "line_start": 270,
+              "source_id": "cdc-us-2025"
+            },
+            {
+              "line_end": 252,
+              "line_start": 252,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "hospitalized_percent",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "hospitalized_percent",
+          "unit": "percent",
+          "value": 10.63
+        },
+        "slot": "hospitalized_percent"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 259,
+              "line_start": 259,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "source_interpretation",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "population_risk_identified",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "population_risk_identified"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-03_B_2026.json",
+  "item_id": "EXT-03",
+  "parsed": {
+    "claims": [
+      {
+        "citations": [
+          {
+            "line_end": 270,
+            "line_start": 270,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "hospitalized_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "hospitalized_cases",
+        "unit": "cases",
+        "value": 85
+      },
+      {
+        "citations": [
+          {
+            "line_end": 252,
+            "line_start": 252,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "reported_confirmed_measles_cases",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "reported_cases",
+        "unit": "cases",
+        "value": 800
+      },
+      {
+        "citations": [
+          {
+            "line_end": 270,
+            "line_start": 270,
+            "source_id": "cdc-us-2025"
+          },
+          {
+            "line_end": 252,
+            "line_start": 252,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "hospitalized_percent",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "hospitalized_percent",
+        "unit": "percent",
+        "value": 10.63
+      },
+      {
+        "citations": [
+          {
+            "line_end": 259,
+            "line_start": 259,
+            "source_id": "cdc-us-2025"
+          }
+        ],
+        "geography": "United States",
+        "measure": "source_interpretation",
+        "period_end": "2025-04-17",
+        "period_start": "2025-01-01",
+        "population": "all_ages",
+        "slot": "population_risk_identified",
+        "unit": "none",
+        "value": false
+      }
+    ],
+    "item_id": "EXT-03",
+    "limitations": [
+      "Source-reported observations, not clinical or causal validation",
+      "Keep observation windows, classifications and denominators separate"
+    ],
+    "missing_slots": [],
+    "original_status": "supported",
+    "original_summary_causal_assertions": [],
+    "status": "supported",
+    "summary": "hospitalized_cases: 85 cases; reported_cases: 800 cases; hospitalized_percent: 10.63 percent; population_risk_identified: False none",
+    "verification": [
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 270,
+              "line_start": 270,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "hospitalized_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "hospitalized_cases",
+          "unit": "cases",
+          "value": 85
+        },
+        "slot": "hospitalized_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 252,
+              "line_start": 252,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "reported_confirmed_measles_cases",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "reported_cases",
+          "unit": "cases",
+          "value": 800
+        },
+        "slot": "reported_cases"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 270,
+              "line_start": 270,
+              "source_id": "cdc-us-2025"
+            },
+            {
+              "line_end": 252,
+              "line_start": 252,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "hospitalized_percent",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "hospitalized_percent",
+          "unit": "percent",
+          "value": 10.63
+        },
+        "slot": "hospitalized_percent"
+      },
+      {
+        "decision": "accepted",
+        "errors": [],
+        "original": {
+          "citations": [
+            {
+              "line_end": 259,
+              "line_start": 259,
+              "source_id": "cdc-us-2025"
+            }
+          ],
+          "geography": "United States",
+          "measure": "source_interpretation",
+          "period_end": "2025-04-17",
+          "period_start": "2025-01-01",
+          "population": "all_ages",
+          "slot": "population_risk_identified",
+          "unit": "none",
+          "value": false
+        },
+        "slot": "population_risk_identified"
+      }
+    ],
+    "verification_scope": "Supported by frozen inputs and bounded calculations, not underlying clinical truth"
+  },
+  "response": {},
+  "seed": 2026
+}

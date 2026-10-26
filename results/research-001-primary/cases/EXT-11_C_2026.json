@@ -1,0 +1,28 @@
+{
+  "condition": "C",
+  "first_pass": {
+    "claims": [],
+    "item_id": "EXT-11",
+    "limitations": [
+      "No parseable factual draft available"
+    ],
+    "status": "insufficient_data",
+    "summary": "Generation failed; no verified answer.",
+    "verification": []
+  },
+  "generation_required": false,
+  "grounded_draft": "EXT-11_B_2026.json",
+  "item_id": "EXT-11",
+  "parsed": {
+    "claims": [],
+    "item_id": "EXT-11",
+    "limitations": [
+      "No parseable factual draft available"
+    ],
+    "status": "insufficient_data",
+    "summary": "Generation failed; no verified answer.",
+    "verification": []
+  },
+  "response": {},
+  "seed": 2026
+}
