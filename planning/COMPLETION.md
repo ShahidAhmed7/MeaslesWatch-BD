@@ -17,8 +17,8 @@ the supplied feature specification; recommendations were adapted to the two-day 
 | Independent 30-question A/B/C benchmark | Complete with disclosed infrastructure-recovery deviation | Frozen external-v1; original failure-inclusive attempt archived/scored; secondary no-response infrastructure recovery under original reservation |
 | Six-page Streamlit dashboard and exports | Complete; populated Analyst/Evaluation pages browser-reviewed | `app.py`; navigation and filter tests; live browser review of Overview/Anomalies |
 | Scientific report | Complete from measured artifacts | `report.py`, `scripts/build_report.py`; generator refuses an incomplete run |
-| Reproducible repository | Private remote created; final clean-checkout and push checks underway | Locked environment, README, source attribution, MIT code license |
-| Critical tests and clean setup | 91 current tests pass; final fresh remote checkout check underway | `planning/audits/2026-10-26/clean_checkout_final.txt`; final clean-checkout recheck pending |
+| Reproducible repository | Complete; measured release pushed to private GitHub | Locked environment, README, source attribution, MIT code license |
+| Critical tests and clean setup | 91 tests pass locally and in a fresh remote checkout | `planning/audits/2026-10-26/clean_checkout_final.txt`; final clean-checkout recheck pending |
 
 ## Verified statistical evidence
 
@@ -52,8 +52,12 @@ the supplied feature specification; recommendations were adapted to the two-day 
 - Offline re-scoring reproduces all four numerical score artifacts byte-for-byte.
 - The measured report is `reports/research_report.md`; six figures, provenance and
   both original/recovered scorecards are retained. Report dates use UTC explicitly.
-- Current local tests: 91 passed. Final fresh remote checkout/push is the remaining
-  repository delivery check; no model calls are needed.
+- Tests: 91 passed locally and in a fresh clone from private GitHub commit
+  `81a6dcc622f7a37b892121d2505c0e5dd9032db1`. Locked installation, source verification
+  and release integrity also passed there; see `audits/2026-10-27/clean_checkout.txt`.
+- The required research MVP is complete. Known verification defects and scientific
+  limitations remain material; future version work is listed in `FOLLOWUP.md`.
+  Additional user-requested dashboard generations are separate from the frozen study.
 
 ## Deliberate scope limits and deviations
 
