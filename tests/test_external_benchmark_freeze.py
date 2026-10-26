@@ -41,7 +41,7 @@ def test_public_runtime_allowlist_excludes_private_gold_and_forbidden_sources():
         path = ROOT / relative
         assert path.is_file()
         assert relative.startswith(f"benchmark/frozen/{VERSION}/public/")
-        assert "private" not in path.parts
+        assert "private" not in path.relative_to(ROOT).parts
         assert "gold" not in path.name.lower()
         if path.suffix == ".json":
             serialized = path.read_text()
