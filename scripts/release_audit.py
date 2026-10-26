@@ -36,7 +36,7 @@ def audit(root=ROOT):
     checks["frozen_benchmark_unchanged"] = True
     run = root / "results/research-001"
     manifest = json.loads((run / "run_manifest.json").read_text())
-    if manifest["status"] != "completed" or manifest["completed_jobs"] != 74:
+    if manifest["status"] not in ("completed", "completed_with_failures") or manifest["completed_jobs"] != 74:
         raise ValueError("Research run must complete all 74 reserved jobs")
     jobs = json.loads((run / "requests.json").read_text())
     if sha256(run / "requests.json") != manifest["requests_sha256"]:

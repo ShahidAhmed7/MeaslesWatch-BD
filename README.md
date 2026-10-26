@@ -35,6 +35,7 @@ Each output directory must be new. Existing scientific outputs are not overwritt
 ```sh
 uv run --locked measleswatch reproduce --output results/my-reproduction
 uv run --locked measleswatch score --run results/research-001 --output results/my-scores
+uv run --locked measleswatch score --run results/research-001-primary --output results/my-original-attempt-scores
 uv run --locked python scripts/build_report.py --output reports/my-report.md
 ```
 
@@ -135,6 +136,14 @@ Citation scoring checks registered passage overlap, not unlimited semantic truth
 See [development amendment](planning/DEVELOPMENT_AMENDMENT.md) for retained earlier
 development prompts and the prospective pre-test scope correction.
 
+The original attempt suffered a Modal client disconnection after five paired test
+questions. Its failure-inclusive 30-item scores remain in `benchmark-primary-score-001`.
+The secondary recovered-completion run continues only jobs with no returned response;
+every earlier draft, question, prompt and seed remains intact. This is an explicit
+deviation from the original infrastructure-failure rule, documented in
+[infrastructure recovery](planning/INFRASTRUCTURE_RECOVERY.md). Both analyses must be
+reported; the recovered result does not establish production reliability.
+
 ## Explicit Modal generation
 
 The existing study uses profile `kazigalib143`, one scale-to-zero L40S container,
@@ -177,6 +186,7 @@ app stops; its storage billing is separate from active GPU time.
 | `results/figures-001/` | Six PNG/SVG figures with plotted CSV and metadata |
 | `results/research-001/` | Exact requests, raw/final outputs, verified briefs and attempt history |
 | `results/benchmark-score-001/` | Recomputed scorecards, case verdicts and reviewed examples |
+| `results/research-001-primary/`, `benchmark-primary-score-001/` | Original disconnected attempt and failure-inclusive scores; recovered completion is a separately labeled secondary analysis |
 | `benchmark/frozen/external-v1/` | Frozen public questions/evidence/protocol |
 | `benchmark/private/external-v1/` | Scorer-only gold/oracle; never runtime model inputs |
 | `reports/research_report.md` | Scientific report generated from measured artifacts |

@@ -136,7 +136,7 @@ def summarize(records):
 
 
 def score_run(root, run, output):
-    root, run, output = Path(root), Path(run), Path(output)
+    root, run, output = Path(root).resolve(), Path(run).resolve(), Path(output).resolve()
     if output.exists():
         raise FileExistsError(output)
     gold_path = root / "benchmark/private/external-v1/gold.json"

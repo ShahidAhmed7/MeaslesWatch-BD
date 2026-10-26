@@ -52,10 +52,6 @@ def reserve_batch(ledger, settings, rates, run_id, generations, seconds):
 
 def reconcile_requests(output, old_jobs, new_jobs, amend_unstarted=False):
     """Preserve completed prompts; allow documented development fixes before test starts."""
-    if old_jobs == new_jobs:
-        return old_jobs, False
-    if not amend_unstarted or any((output / "cases").glob("EXT-*.json")):
-        raise ValueError("Changed prompts require an explicit pre-test amendment; final test must be unstarted")
     if len(old_jobs) != len(new_jobs):
         raise ValueError("Cannot change reserved jobs")
     merged = []
@@ -64,6 +60,10 @@ def reconcile_requests(output, old_jobs, new_jobs, amend_unstarted=False):
             raise ValueError("Cannot change question identities or conditions")
         target = output / ("briefs" if old["condition"] == "brief" else "cases") / f"{old['item_id']}_{old['condition']}_{old['seed']}.json"
         merged.append(old if target.exists() else new)
+    if old_jobs == merged:
+        return old_jobs, False
+    if not amend_unstarted or any((output / "cases").glob("EXT-*.json")):
+        raise ValueError("Changed prompts require an explicit pre-test amendment; final test must be unstarted")
     return merged, True
 
 
@@ -165,7 +165,7 @@ def run(root, output, brief_selection=None, resume=False, amend_unstarted=False)
         import modal
         import modal_service
         with modal.enable_output():
-            with modal_service.app.run(name=output.name, environment_name="main"):
+            with modal_service.app.run(name=output.name, environment_name="main", detach=True):
                 model = modal_service.AnalystModel()
                 entry["app_id"] = modal_service.app.app_id
                 manifest["app_id"] = entry["app_id"]
@@ -253,7 +253,10 @@ def run(root, output, brief_selection=None, resume=False, amend_unstarted=False)
                     print(json.dumps({"job": index + 1, "of": len(jobs), "item": job["item_id"], "condition": job["condition"],
                                       "seconds": round(time.monotonic() - t, 1), "parseable": record["parsed"] is not None,
                                       "output_tokens": record.get("response", {}).get("output_tokens")}), flush=True)
-        manifest["status"] = "completed" if manifest["completed_jobs"] == len(jobs) else "incomplete"
+                    if record.get("error") and not record.get("response"):
+                        raise RuntimeError("Infrastructure call returned no model response; stop batch rather than cascade failed requests")
+        manifest["status"] = ("completed" if manifest["completed_jobs"] == len(jobs) and not manifest["failures"]
+                              else "completed_with_failures" if manifest["completed_jobs"] == len(jobs) else "incomplete")
         entry["status"] = manifest["status"]
     except BaseException as error:
         if manifest is not None:

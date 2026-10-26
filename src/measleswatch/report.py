@@ -12,7 +12,7 @@ def build_report(root, output):
     def read(relative):
         return json.loads((root / relative).read_text())
     run = read("results/research-001/run_manifest.json")
-    if run["status"] != "completed" or run["completed_jobs"] != 74:
+    if run["status"] not in ("completed", "completed_with_failures") or run["completed_jobs"] != 74:
         raise ValueError("A complete measured experiment is required; no placeholder findings")
     score = read("results/benchmark-score-001/scorecard.json")
     llm = {r["condition"]: r for r in score if r["split"] == "test" and r["stage"] == "post_schema_repair"}
@@ -32,6 +32,8 @@ def build_report(root, output):
     pct = lambda n: "unavailable" if n is None else f"{100*n:.1f}%"
     stat_rows = "\n".join(f"| {name.replace('_', ' ')} | {r['scored_months']}/{r['eligible_months']} | {r['MAE']:.2f} | {r['RMSE']:.2f} | {pct(r['interval_coverage'])} |" for name, r in main.items())
     llm_rows = "\n".join(f"| {c} | {pct(r['macro_item_accuracy'])} | {pct(r['numeric_slot_accuracy'])} | {pct(r['fully_supported_slot_accuracy'])} | {pct(r['citation_precision'])} | {pct(r['answer_coverage'])} |" for c, r in sorted(llm.items()))
+    primary = read("results/benchmark-primary-score-001/scorecard.json")
+    primary_rows = "\n".join(f"| {r['condition']} | {pct(r['macro_item_accuracy'])} | {pct(r['numeric_slot_accuracy'])} | {pct(r['answer_coverage'])} |" for r in primary if r["split"] == "test" and r["stage"] == "post_schema_repair")
     comparisons = "; ".join(f"{r['difference']}: {r['estimate']*100:.1f} percentage points (item-bootstrap 95% interval {r['item_bootstrap_95'][0]*100:.1f}, {r['item_bootstrap_95'][1]*100:.1f})" for r in paired)
     text = f'''# MeaslesWatch BD: retrospective surveillance and verified scientific communication
 
@@ -154,7 +156,20 @@ scored outputs; additional seeds were deferred by a recorded budget/completion a
 Completed development prompts from before a prospective metadata correction remain
 archived and are mixed-version, so development scores are not final-system estimates.
 
-| Test condition | Strict item accuracy | Numeric slot accuracy | Fully supported slots | Citation precision | Answer coverage |
+The first test attempt stopped after a client disconnection, leaving only five paired
+questions answered. Its original failure-inclusive scores across all 30 questions are:
+
+| Original-attempt condition | Strict item accuracy | Numeric slot accuracy | Answer coverage |
+| --- | --- | --- | --- |
+{primary_rows}
+
+The completed experiment below is a **secondary infrastructure-recovered analysis**.
+Only jobs returning no model response were continued under the same reservation;
+all returned drafts, seeds and prompts were retained. This is a documented deviation
+from the frozen rule that infrastructure failures remain failures, not a claim that
+the original run completed successfully. Both datasets and scorecards are preserved.
+
+| Recovered test condition | Strict item accuracy | Numeric slot accuracy | Fully supported slots | Citation precision | Answer coverage |
 | --- | --- | --- | --- | --- | --- |
 {llm_rows}
 

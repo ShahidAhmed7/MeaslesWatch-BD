@@ -140,7 +140,7 @@ def quality(country):
     st.subheader("Transformation log")
     for transformation in load("results/audit-001/transformation_log.json", []):
         st.write("• " + transformation)
-    st.subheader("Age-specific WHO statements: separate contextual evidence")
+    st.subheader("Bangladesh WHO statements: separate contextual evidence")
     statements = frame("data/processed/phase1-r2/outbreak_evidence.json")
     st.dataframe(statements[["claim_id", "section", "source_reported_value", "age_group", "status", "conflict_group"]], hide_index=True, width="stretch")
     st.caption("These document statements are not an age-specific monthly series; conflicting values are retained.")
@@ -253,9 +253,17 @@ def llm_evaluation():
     manifest = load("results/research-001/run_manifest.json", {})
     st.write("The independent external benchmark uses 30 frozen test questions and six separate development questions from CDC, ECDC and UKHSA publications. A/B source coverage is identical; C verifies B's exact draft.")
     st.caption("This evaluates source-grounded scientific communication. It is separate from Bangladesh model performance; benchmark gold is scorer-only.")
+    primary = load("results/benchmark-primary-score-001/scorecard.json")
+    if primary:
+        st.subheader("Original attempt: infrastructure failures included")
+        original = pd.DataFrame(primary)
+        st.dataframe(original[(original.split == "test") & (original.stage == "post_schema_repair")], hide_index=True, width="stretch")
+        st.caption("Client disconnection left five of 30 paired test questions answered. Every unreturned answer counts as a failure in this original-attempt analysis.")
     if not score:
         st.info(f"No completed scorecard yet. Inference run status: {manifest.get('status', 'not started')}; completed generation jobs: {manifest.get('completed_jobs', 0)}.")
         return
+    st.subheader("Secondary recovered-completion analysis")
+    st.caption("Only jobs with no returned model response were recovered, preserving all earlier drafts, seeds and prompts. This is a documented deviation from the original infrastructure-failure rule.")
     scores = pd.DataFrame(score)
     st.dataframe(scores, hide_index=True, width="stretch")
     display = scores[(scores.split == "test") & (scores.stage == "post_schema_repair")]
@@ -301,7 +309,14 @@ def main():
         st.error("Choose a start month before the end month.")
         st.stop()
     st.title(page)
-    st.caption(f"{country} · {LABELS[category]} · {start} to {end}")
+    if page == PAGES[2]:
+        st.caption("Prespecified Bangladesh study · 2017–2021 development · 2022–2025 test · January–May 2026 fixed-origin case study")
+    elif page == PAGES[5]:
+        st.caption("External-v1 benchmark · frozen CDC, ECDC and UKHSA publications · paired seed 2026")
+    elif page == PAGES[1]:
+        st.caption(f"Whole-package quality audit · calendar coverage selected for {country}")
+    else:
+        st.caption(f"{country} · {LABELS[category]} · {start} to {end}")
     if page == "Surveillance Overview":
         st.write("Explore historical reported disease patterns, examine uncertainty and evaluate scientific claims against reproducible evidence.")
         st.caption(DISCLAIMER)
