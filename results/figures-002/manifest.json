@@ -1,0 +1,38 @@
+{
+  "artifact_sha256": {
+    "01_reporting.csv": "d03492608c862eac62431dac6c5d33d0ea8c26f3d6cebefd302799fe7e670751",
+    "01_reporting.metadata.json": "d5d92abf7777e7038236da15e7cf7cb123c48b2288f01ecd4abefc956656f2a9",
+    "01_reporting.png": "5458c63e056e0f610c2891322e5d11f529c113dc9e802bb9527b29f817825e59",
+    "01_reporting.svg": "4efc8d6651af81f71ea6cd064e0056ea70634df0139bd9fd9acea9ea17f5e80c",
+    "02_seasonality.csv": "3457ecf3df9844b393850021d00a1385208732b894b8c3733142d21a5cfc0a81",
+    "02_seasonality.metadata.json": "1bbb77a0360429029a0ec232a643f19ca1938e8aa09fa3c57960ceee302299f3",
+    "02_seasonality.png": "87530cc535e4ac97472096ca0423dea0a79a935243cc6ed7b1c30aae826b2376",
+    "02_seasonality.svg": "2f52b16eb2c35840226068227968432807f3784a61be742b37683c3e1b1d5dc2",
+    "03_coverage.csv": "277165a65b70e21e51d32efd19791b213fd049d23bf0a81556878fbdad30d83b",
+    "03_coverage.metadata.json": "5053944ae521a3e61f25d4fdfc1e716ae540115d33be948b9cc906685a578bd2",
+    "03_coverage.png": "de94a45c29ab1289c0dfc53b4a03c567f2f809f057b00c6dc6a9101a0457a3e9",
+    "03_coverage.svg": "27b5a5d46aff58c86fe5a3857be4f454b23376bb50ce9e5c0f3cf130e4ebaaac",
+    "04_anomalies.csv": "2f703a5af42261be3bdb020f997f32733899f449887af4d30c165d2085f43bce",
+    "04_anomalies.metadata.json": "ed3df5f999855c8e01bd9182060c1899f8cc3ef953f688fdd3cc86eb24a58c75",
+    "04_anomalies.png": "2d5ed53cb6016573c490c483d48349b73f3d19b3f398d1d7a4d896af9c30bf69",
+    "04_anomalies.svg": "169a7b3f5a34ec79870e3f2ed5bc904a57d0c7892728ba0f1ea2e3ff4cd32869",
+    "05_diagnostics.csv": "51cfd4f892ccd42f9378ab8754e972c17d1feeec4424675901a8e7024fc08c4f",
+    "05_diagnostics.metadata.json": "3cf78bcbc546268d8e4b198d5026cce214807d30b1cd418855816d92a63f285f",
+    "05_diagnostics.png": "da19992f7bd7fd7b6a881d4fd8db3264673437e9659cfcc4777d59dbcfbfeb6a",
+    "05_diagnostics.svg": "c94aa467b15802cb174bc0ea946bcadf287301b6ae299cd201a2ec8a3a3ffd9f",
+    "06_window_sensitivity.csv": "15809c095e0ec0785a483dfd77a0184b857f4a35e37eb9ed26c18fbe2306947c",
+    "06_window_sensitivity.metadata.json": "4fea3fbad16c59d4d422d242cd84cba9e803a594b6523ed45976b37d4928b8b7",
+    "06_window_sensitivity.png": "86edb46252663f01e5a7de741ae766d0783b471a893471aa76581ccad5a42927",
+    "06_window_sensitivity.svg": "bf2f97469b63d722f14ab386581158f003256c0053c67ed087b42f6c18a0d9ee"
+  },
+  "created_at_utc": "2026-10-26T17:46:11.179111+00:00",
+  "figures": [
+    "01_reporting",
+    "02_seasonality",
+    "03_coverage",
+    "04_anomalies",
+    "05_diagnostics",
+    "06_window_sensitivity"
+  ],
+  "implementation_sha256": "cfae6b592b6ed45920c02f6370ccd80ba20521d7d1c19fe4a484c00695121e20"
+}

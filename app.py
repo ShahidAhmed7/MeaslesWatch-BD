@@ -174,10 +174,10 @@ def statistics(country):
     st.caption("36/84-month sensitivities retain the same test period. Missingness/outlier stresses use isolated copies; primary observations are unchanged.")
     st.caption("MASE scales differ between training windows. Compare window MAE/RMSE alongside eligible/scored/failed counts rather than ranking windows by MASE alone.")
     st.subheader("Downloadable research figures")
-    manifest = load("results/figures-001/manifest.json", {"figures": []})
+    manifest = load("results/figures-002/manifest.json", {"figures": []})
     for name in manifest["figures"]:
         with st.expander(name.replace("_", " ")):
-            path = ROOT / f"results/figures-001/{name}.png"
+            path = ROOT / f"results/figures-002/{name}.png"
             st.image(str(path))
             st.download_button("Download PNG", path.read_bytes(), path.name, "image/png", key=name)
             st.download_button("Download plotted CSV", (path.with_suffix(".csv")).read_bytes(), name + ".csv", "text/csv", key=name + "-data")

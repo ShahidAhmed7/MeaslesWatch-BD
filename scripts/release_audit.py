@@ -16,6 +16,7 @@ def audit(root=ROOT):
         ("results/audit-001", "run_manifest.json", "artifact_sha256"),
         ("results/statistics-001", "run_manifest.json", "artifact_sha256"),
         ("results/figures-001", "manifest.json", "artifact_sha256"),
+        ("results/figures-002", "manifest.json", "artifact_sha256"),
     ):
         manifest = json.loads((root / directory / manifest_name).read_text())
         for name, expected in manifest[key].items():

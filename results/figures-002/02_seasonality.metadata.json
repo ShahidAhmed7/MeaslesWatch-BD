@@ -1,0 +1,9 @@
+{
+  "plotted_csv_sha256": "3457ecf3df9844b393850021d00a1385208732b894b8c3733142d21a5cfc0a81",
+  "population": "all_ages_unless_coverage_target",
+  "scope": "Descriptive mean/median across complete years; no causal interpretation",
+  "snapshot": "2026-08",
+  "source_doi": "10.5281/zenodo.22167512",
+  "statistics_run": "results/statistics-001",
+  "title": "Historical month-of-year reporting, 2012\u20132025"
+}

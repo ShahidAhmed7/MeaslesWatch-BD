@@ -1,0 +1,9 @@
+{
+  "plotted_csv_sha256": "2f703a5af42261be3bdb020f997f32733899f449887af4d30c165d2085f43bce",
+  "population": "all_ages_unless_coverage_target",
+  "scope": "2022\u20132025 rolling test; 2026 Jan\u2013May fixed fit through Dec 2025. Flags are not confirmed outbreaks",
+  "snapshot": "2026-08",
+  "source_doi": "10.5281/zenodo.22167512",
+  "statistics_run": "results/statistics-001",
+  "title": "Statistical exceedances and retrospective model expectations"
+}

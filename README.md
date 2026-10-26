@@ -202,7 +202,8 @@ app stops; its storage billing is separate from active GPU time.
 | `planning/source_snapshots/` | Immutable source extracts and download/hash manifests |
 | `data/processed/phase1-r2/` | Canonical Bangladesh tables, dictionary and validation |
 | `results/description-001/`, `audit-001/`, `statistics-001/` | Source-linked analytical results |
-| `results/figures-001/` | Six PNG/SVG figures with plotted CSV and metadata |
+| `results/figures-002/` | Six PNG/SVG figures with plotted CSV and metadata; window comparison labels scored/failed counts |
+| `results/figures-001/` | Original figure version retained; numerical plotted CSV values are unchanged in version 002 |
 | `results/research-001/` | Exact requests, raw/final outputs, verified briefs and attempt history |
 | `results/benchmark-score-001/` | Recomputed scorecards, case verdicts and reviewed examples |
 | `results/research-001-primary/`, `benchmark-primary-score-001/` | Original disconnected attempt and failure-inclusive scores; recovered completion is a separately labeled secondary analysis |

@@ -86,9 +86,12 @@ def generate(root, output, canonical="data/processed/phase1-r2", description="re
     metric = load(Path(statistics) / "metrics.json")
     sensitivity = metric[(metric.measure == "measles_lab_confirmed") & (metric.model == "negative_binomial") & metric.split.isin(["test", "test_window_sensitivity"])].sort_values("training_window")
     fig, ax = plt.subplots(figsize=(7, 3.4))
-    ax.bar(sensitivity.training_window.astype(str), sensitivity.MAE, color="#176B87")
+    bars = ax.bar(sensitivity.training_window.astype(str), sensitivity.MAE, color="#176B87")
+    ax.bar_label(bars, labels=[f"{int(r.scored_months)}/{int(r.eligible_months)} scored\n{int(r.failed_months)} failed"
+                              for r in sensitivity.itertuples()], padding=4, fontsize=10)
+    ax.set_ylim(0, float(sensitivity.MAE.max()) * 1.27)
     ax.set(xlabel="Historical training window (months)", ylabel="2022–2025 MAE (reported cases)")
-    save(fig, sensitivity, "06_window_sensitivity", "Training-window sensitivity, fixed test period", "60-month primary; 36/84-month sensitivity; not a test-set model selection exercise")
+    save(fig, sensitivity, "06_window_sensitivity", "Training-window sensitivity, fixed test period", "MAE on available fits; denominators labeled; 60-month primary, 36/84-month sensitivity, not test-set model selection")
     write_json(output / "manifest.json", {"created_at_utc": datetime.now(timezone.utc).isoformat(), "figures": files,
                 "implementation_sha256": sha256(Path(__file__)),
                 "artifact_sha256": {p.name: sha256(p) for p in sorted(output.iterdir()) if p.is_file()}})

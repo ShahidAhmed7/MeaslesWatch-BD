@@ -1,0 +1,9 @@
+{
+  "plotted_csv_sha256": "277165a65b70e21e51d32efd19791b213fd049d23bf0a81556878fbdad30d83b",
+  "population": "all_ages_unless_coverage_target",
+  "scope": "Administrative >100% retained; missing estimates not imputed; no sampling CI available",
+  "snapshot": "2026-08",
+  "source_doi": "10.5281/zenodo.22167512",
+  "statistics_run": "results/statistics-001",
+  "title": "Annual vaccination coverage: retain source differences"
+}

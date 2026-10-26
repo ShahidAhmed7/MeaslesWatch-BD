@@ -32,7 +32,7 @@ def build_report(root, output):
     case = [r for r in preds if r["measure"] == "measles_lab_confirmed" and r["split"] == "case_study" and r["model"] == "negative_binomial"]
     cov = read("data/processed/phase1-r2/coverage_annual.json")
     coverage = {(r["antigen"], r["year"]): r["reported_pct"] for r in cov if r["coverage_source"] == "wuenic"}
-    figures = "../results/figures-001"
+    figures = "../results/figures-002"
     pct = lambda n: "unavailable" if n is None else f"{100*n:.1f}%"
     stat_rows = "\n".join(f"| {name.replace('_', ' ')} | {r['scored_months']}/{r['eligible_months']} | {r['MAE']:.2f} | {r['RMSE']:.2f} | {pct(r['interval_coverage'])} |" for name, r in main.items())
     llm_rows = "\n".join(f"| {c} | {pct(r['macro_item_accuracy'])} | {pct(r['numeric_slot_accuracy'])} | {pct(r['fully_supported_slot_accuracy'])} | {pct(r['citation_precision'])} | {pct(r['answer_coverage'])} |" for c, r in sorted(llm.items()))
