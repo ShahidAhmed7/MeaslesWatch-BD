@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-27T15:55:36.694956+06:00",
+  "endpoint": "ws://127.0.0.1:8501/_stcore/stream",
+  "checks": {
+    "updated_title": true,
+    "opening_WHO_context": true,
+    "all_five_story_sections": true,
+    "reference_list": true,
+    "primary_paper_DOIs": true,
+    "automatic_reruns_in_repository_config": true
+  },
+  "text_blocks_received": 69,
+  "method": "Read actual live-server Streamlit messages through a new session, not AppTest or health endpoint alone.",
+  "scope": "Confirms rendered content from the restarted server; does not claim browser visual inspection.",
+  "inference_performed": false
+}
