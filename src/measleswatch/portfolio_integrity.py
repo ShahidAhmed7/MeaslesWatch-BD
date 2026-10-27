@@ -55,6 +55,15 @@ def verify_product(root):
         raise ValueError("Story and figures refer to different analytical runs")
     if rm["figure_manifest_sha256"] != sha256(figures / "manifest.json"):
         raise ValueError("Story figure version changed")
+    narrative = verify_files(root / "reports/case-study-001", "manifest.json")
+    if narrative["analysis_manifest_sha256"] != analysis_hash or narrative[
+        "figure_manifest_sha256"
+    ] != sha256(figures / "manifest.json"):
+        raise ValueError("Case study refers to different analytical evidence")
+    for name, expected in narrative["source_sha256"].items():
+        path = (root / name).resolve()
+        if not path.is_relative_to(root) or sha256(path) != expected:
+            raise ValueError("Case study context source changed")
     pdf = root / "output/pdf/MeaslesWatch_BD_research_brief.pdf"
     if pdf.exists() or pdf.with_suffix(".manifest.json").exists():
         pm = json.loads(pdf.with_suffix(".manifest.json").read_text())
@@ -69,5 +78,6 @@ def verify_product(root):
         "analysis": analysis_hash,
         "coverage_values_checked": source["comparisons"],
         "figures": len(fm["figures"]),
+        "case_study_context_sources": len(narrative["source_sha256"]),
         "source_updates_or_inference": False,
     }

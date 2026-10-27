@@ -90,6 +90,7 @@ def audit(output):
         ROOT / "README.md",
         ROOT / "reports/public_health_brief.md",
         ROOT / "reports/portfolio_methods.md",
+        ROOT / "reports/case-study-001/case_study.md",
     ]:
         for target in re.findall(r"\]\(([^)]+)\)", document.read_text()):
             if (
@@ -110,7 +111,7 @@ def audit(output):
         "status": "passed_offline_release_audit",
         "checks": checks,
         "inference_performed": False,
-        "browser_review_scope": "Desktop landing page visually inspected before browser-control interruption; all four pages, controls and technical appendix checked with Streamlit AppTest. Narrow-screen manual browser review not claimed.",
+        "browser_review_scope": "Earlier landing page visually inspected before browser-control interruption. Revised long-form narrative, all four pages, controls, references and technical appendix checked with Streamlit AppTest. Final narrative layout and narrow-screen manual browser review not claimed; browser provider unavailable.",
         "scope": "Scientific artifact integrity, reproducibility and delivery; not clinical validation or a guarantee against every possible bug",
         "artifact_sha256": {
             str(p.relative_to(ROOT)): sha256(p)
@@ -119,6 +120,8 @@ def audit(output):
                 ROOT / "README.md",
                 ROOT / "src/measleswatch/dashboard.py",
                 ROOT / "reports/public_health_brief.md",
+                ROOT / "reports/case-study-001/case_study.md",
+                ROOT / "reports/case-study-001/manifest.json",
                 ROOT / "output/pdf/MeaslesWatch_BD_research_brief.pdf",
             ]
         },

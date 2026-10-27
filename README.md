@@ -1,6 +1,6 @@
 # MeaslesWatch BD
 
-**Beyond the headline: interpreting Bangladesh's 2026 measles resurgence**
+**When high coverage meets a measles resurgence**
 
 A public health data case study asking: **How unusual was the reported increase, and
 how do case definitions and vaccination-coverage denominators affect interpretation?**
@@ -33,6 +33,7 @@ vaccination indicators have their own childhood target populations.
 
 ## Read the story
 
+- [Full illustrated case study with references](reports/case-study-001/case_study.md): follows the investigation from the WHO alert through historical comparisons, the coverage calculation and case definitions to the next research questions. The dashboard presents the same narrative.
 - [Two-page research brief (PDF)](output/pdf/MeaslesWatch_BD_research_brief.pdf): the findings, explanatory graphics and what to investigate next. [Markdown version](reports/public_health_brief.md).
 - [Readable analysis notebook](notebooks/Reading_measles_indicators.ipynb): seven executed cells, from the question to independent checks.
 - [Methods and sensitivity results](reports/portfolio_methods.md): comparison windows, definitions and assumptions.
@@ -70,7 +71,8 @@ uv run --locked streamlit run app.py
 ```
 
 The four pages are **Key findings**, **Measles reports**, **Vaccination coverage**, and
-**About the data**. The default page explains the findings immediately. Comparison
+**About the data**. The default page tells the case study in five connected sections,
+with four figures, numbered contextual citations and a full reference list. Comparison
 filters are local; the main research headline stays fixed. Navigation is offline and
 performs no model inference, source refresh or statistical fitting.
 
@@ -82,6 +84,7 @@ Use a new output directory; saved scientific runs are never overwritten.
 uv run --locked python -m measleswatch.portfolio --output results/my-portfolio
 uv run --locked python -m measleswatch.portfolio_figures --output results/my-figures
 uv run --locked python -m measleswatch.portfolio_story --output reports/my-report-copy
+uv run --locked python -m measleswatch.portfolio_narrative --output reports/my-case-study-copy
 ```
 
 The first command independently rebuilds the focused tables and claim ledger from
@@ -114,7 +117,7 @@ published brief automatically.
 | Statistical reasoning | Matched calendar periods, comparison with all historical years, endpoint and case-definition checks |
 | Interpretation of health indicators | Separate coverage sources, dose/target accounting, explicit population and denominator definitions |
 | Reproducible programming | Locked environment, tested Python functions, executed notebook, raw-source arithmetic and manifests |
-| Scientific communication | Four explanatory figures, a short research brief and a dashboard for nontechnical readers |
+| Scientific communication | Referenced case study, four explanatory figures, a short research brief and a dashboard for nontechnical readers |
 
 A five-minute walkthrough: read **Key findings**, change the period/case category on
 **Measles reports**, inspect the two inputs on **Vaccination coverage**, then open

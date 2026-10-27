@@ -11,7 +11,6 @@ import streamlit as st
 from measleswatch.portfolio import case_composition, magnitude, matched_periods
 from measleswatch.portfolio_figures import AMBER, TEAL, SLATE, SOURCE_LABELS, load_run
 from measleswatch.portfolio_integrity import verify_product
-from measleswatch.portfolio_story import findings
 
 ROOT = Path(__file__).resolve().parents[2]
 PAGES = ["Key findings", "Measles reports", "Vaccination coverage", "About the data"]
@@ -135,50 +134,79 @@ def cumulative_chart(data):
 
 
 def key_findings(data):
-    fs = findings(data)
+    folder = ROOT / "reports/case-study-001"
+    story = json.loads((folder / "story.json").read_text())
     st.caption("PUBLIC HEALTH DATA CASE STUDY · BANGLADESH")
-    st.title("Beyond the headline")
-    st.write(
-        "Understanding Bangladesh's 2026 measles resurgence through reported cases and vaccination indicators."
-    )
+    st.title(story["title"])
+    st.write("**" + story["subtitle"] + "**")
     st.caption(
-        "August 2026 data snapshot · Case reports cover all ages · Main comparison: January–May"
+        "A 10-minute read · August 2026 data snapshot · Monthly reports cover all ages · "
+        "Main comparison: January–May"
     )
-    st.divider()
-    st.subheader(fs[0]["headline"])
-    st.write(fs[0]["explanation"])
-    table = pd.DataFrame(
-        [
-            r
-            for r in data["matched_periods"]
-            if r["measure"] == "measles_lab_confirmed"
-            and r["period_end"].endswith("-05")
-        ]
+    for paragraph in story["intro"]:
+        st.markdown(paragraph)
+    st.caption(
+        "Follow the investigation: compare the rise → inspect the coverage measure → "
+        "open the calculation → check the case definition → decide what evidence is needed next."
     )
-    table = table[["year", "count"]].rename(
-        columns={"year": "Year", "count": "January–May laboratory-confirmed reports"}
-    )
-    display_chart(cumulative_chart(data), "main-finding", table, "01_resurgence")
-    st.write("**What this tells us.** " + fs[0]["meaning"])
-    st.caption("Gray lines show other historical years. " + fs[0]["boundary"])
-    st.subheader("Two details help explain what the numbers mean")
-    for item, page in zip(fs[1:], ["Vaccination coverage", "Measles reports"]):
-        with st.container(border=True):
-            st.markdown("### " + item["title"])
-            st.markdown("**" + item["headline"] + ".**")
-            st.write(item["meaning"])
-            st.button(
-                "Explore " + page.lower(),
-                on_click=jump,
-                args=(page,),
-                key="jump-" + item["number"],
+    for section in story["sections"]:
+        st.divider()
+        st.subheader(section["title"])
+        for paragraph in section["paragraphs"]:
+            st.markdown(paragraph)
+        if section.get("figure") == "01_resurgence":
+            table = pd.DataFrame(
+                [
+                    r
+                    for r in data["matched_periods"]
+                    if r["measure"] == "measles_lab_confirmed"
+                    and r["period_end"].endswith("-05")
+                ]
+            )[["year", "count"]].rename(
+                columns={
+                    "year": "Year",
+                    "count": "January–May laboratory-confirmed reports",
+                }
             )
-    st.subheader("The main message")
-    st.write(
-        "The reported rise remains large when the same months are compared. Understanding the vaccination context also requires looking at reported dose counts and target populations, while keeping different case categories separate."
-    )
-    st.caption(
-        "The coverage accounting reproduces the source author's analysis. Historical comparison and case-definition checks extend the portfolio's evidence synthesis."
+            display_chart(
+                cumulative_chart(data), "main-finding", table, "01_resurgence"
+            )
+        elif "figure" in section:
+            name = section["figure"]
+            figure = ROOT / "results/portfolio-figures-002" / (name + ".png")
+            st.image(str(figure), width="stretch")
+            with st.expander("View the chart data and download"):
+                csv = figure.with_suffix(".csv")
+                st.dataframe(pd.read_csv(csv), hide_index=True, width="stretch")
+                st.download_button(
+                    "Download these numbers",
+                    csv.read_bytes(),
+                    csv.name,
+                    "text/csv",
+                    key=name + "-story-csv",
+                )
+                st.download_button(
+                    "Download chart image",
+                    figure.read_bytes(),
+                    figure.name,
+                    "image/png",
+                    key=name + "-story-png",
+                )
+        if "caption" in section:
+            st.caption(section["caption"])
+        for paragraph in section.get("after", []):
+            st.markdown(paragraph)
+    st.divider()
+    st.subheader("Continue exploring the evidence")
+    for number, page in [("02", "Vaccination coverage"), ("03", "Measles reports")]:
+        st.button(
+            "Explore " + page.lower(), on_click=jump, args=(page,), key="jump-" + number
+        )
+    st.download_button(
+        "Download the full case study (text)",
+        (folder / "case_study.md").read_bytes(),
+        "MeaslesWatch_BD_case_study.md",
+        "text/markdown",
     )
     path = ROOT / "output/pdf/MeaslesWatch_BD_research_brief.pdf"
     is_pdf = path.is_file()
@@ -193,6 +221,33 @@ def key_findings(data):
         "application/pdf" if is_pdf else "text/markdown",
         type="primary",
     )
+    st.subheader("References")
+    sources = json.loads((folder / "sources.json").read_text())
+    st.markdown(
+        "\n".join(
+            f"{i}. [{source['reference']}]({source['url']})"
+            for i, source in enumerate(sources, 1)
+        )
+    )
+    st.markdown(
+        "**Analytical data:** [Sikder's WHO-derived data, v1.1.0]"
+        "(https://zenodo.org/records/22167512). "
+        "**Source check:** [WHO WIISE administrative records]"
+        "(https://xmart-api-public.who.int/WIISE/AD_COVERAGES), "
+        "with separate official and WHO/UNICEF estimate records. "
+        "All 20 saved coverage comparisons agree."
+    )
+    with st.expander("Sources, methods and contribution"):
+        st.write(story["contribution"])
+        sources = json.loads((folder / "sources.json").read_text())
+        for source in sources:
+            st.markdown("[" + source["title"] + "](" + source["url"] + ")")
+            st.caption(source["use"])
+        st.caption(
+            "Primary articles and WHO pages were read in full; reading notes and checksums are retained separately "
+            "from the frozen data. Context sources checked 27 October 2026. "
+            "Find the full methods, limitations and study downloads under About the data."
+        )
 
 
 def measles_reports(data):

@@ -1,0 +1,20 @@
+{
+  "analysis_manifest_sha256": "e3421b74f54c6628f85a40c5eff32d09505f8c4b64ce6430c01085195dd147d9",
+  "artifact_sha256": {
+    "case_study.md": "6161703414730c09ffdebd0e04c7a1d065334c0a43bcb009e856d7babe8485e5",
+    "derived_claims.json": "0d56b0721a89d1539313936557d3e92924a377981b0679df82b905e7a0e9127a",
+    "sources.json": "23e7f92b19aa5d4b03eccf6a99103d27ac52e5667a9ab95f8b26adfb727fc7a5",
+    "story.json": "f90ea0fbec137018c077c2ce493d1ac8428ca8a781a07a5b24347e340023879f"
+  },
+  "figure_manifest_sha256": "f6d88aa263fd396802f84dbd9e7dafe36a3d966563948a1d6c05c3cf1d17db68",
+  "implementation_sha256": "40ca555413d0618456cfa4f0ca34d4cded9409021ec92ba4fb1557e2b92a7c39",
+  "inference_performed": false,
+  "retrieved_date": "2026-10-27",
+  "source_sha256": {
+    "planning/portfolio_sources/narrative-2026-10-27/burton-2009.notes.md": "a4c283f7ccb97939fb9922ea0a12dda9fcac1cb39f59b479e47b7c41fa662b47",
+    "planning/portfolio_sources/narrative-2026-10-27/rabbi-2026.notes.md": "27d203dffb7e74e0f08465f44c690f27bb3f6be533d35401ab02393586bc5419",
+    "planning/portfolio_sources/narrative-2026-10-27/who-measles-2026.notes.md": "61c9573337886aed2b09fcc09baaad3412a6f0136968f7656ef6329fd1132b44",
+    "planning/portfolio_sources/who_measles_coverage_definitions_2026-10-27.md": "b31eb970279041e95157911dd8b2445d1cb778860e36f2b09bf1522498ba7806",
+    "planning/source_snapshots/who_DON598_2026-04-23.md": "652e18ed465af5f3463d9916eea4d465da5316abdb75d97395b09e837b52d0a9"
+  }
+}

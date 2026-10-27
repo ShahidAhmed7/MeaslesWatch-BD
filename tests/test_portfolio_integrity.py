@@ -20,6 +20,8 @@ def product_copy(tmp_path):
         "results/portfolio-001",
         "results/portfolio-figures-002",
         "planning/portfolio_sources/wiise-2026-10-27",
+        "planning/portfolio_sources/narrative-2026-10-27",
+        "reports/case-study-001",
     ):
         shutil.copytree(ROOT / relative, tmp_path / relative)
     for relative in (
@@ -28,6 +30,8 @@ def product_copy(tmp_path):
         "reports/portfolio_report_manifest.json",
         "reports/public_health_brief.md",
         "reports/portfolio_methods.md",
+        "planning/source_snapshots/who_DON598_2026-04-23.md",
+        "planning/portfolio_sources/who_measles_coverage_definitions_2026-10-27.md",
     ):
         p = tmp_path / relative
         p.parent.mkdir(parents=True, exist_ok=True)
@@ -43,6 +47,9 @@ def product_copy(tmp_path):
         "reports/public_health_brief.md",
         "planning/portfolio_sources/wiise-2026-10-27/response-1.json",
         ".devin/portfolio.toml",
+        "reports/case-study-001/story.json",
+        "reports/case-study-001/case_study.md",
+        "planning/portfolio_sources/narrative-2026-10-27/rabbi-2026.notes.md",
     ],
 )
 def test_modified_claim_figure_report_source_or_settings_cannot_pass(

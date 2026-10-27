@@ -1,0 +1,35 @@
+{
+  "artifact_sha256": {
+    "README.md": "19e5735a088d7654c7d2cf3bccfc32f0806a400bcc6bec744f7f29ca759d6c49",
+    "notebooks/Reading_measles_indicators.ipynb": "429a94081ea9860995c20e70ead025d08b7c02b3c25838828179ba9bcfa79e07",
+    "output/pdf/MeaslesWatch_BD_research_brief.pdf": "2589c4c3c82777c8ecb68f0b29b078abd8f8ee01c7602356ff76a2fb7ac91603",
+    "reports/case-study-001/case_study.md": "6161703414730c09ffdebd0e04c7a1d065334c0a43bcb009e856d7babe8485e5",
+    "reports/case-study-001/manifest.json": "40a1491b2604860b700bb6cee19d19506d1fd49d7f0fcd8f62f6fd8a937b3388",
+    "reports/public_health_brief.md": "83a88926a414006a3c45174d1cc1476d03d66dd995080df920d38e187b6b2761",
+    "src/measleswatch/dashboard.py": "67acae5bdc6d7c45945577aa24807d185a998d71f48bb55d77e7aa4ce7eb1e31"
+  },
+  "browser_review_scope": "Earlier landing page visually inspected before browser-control interruption. Revised long-form narrative, all four pages, controls, references and technical appendix checked with Streamlit AppTest. Final narrative layout and narrow-screen manual browser review not claimed; browser provider unavailable.",
+  "checks": {
+    "generation_source_snapshots": 3,
+    "headline_claim_lineage": true,
+    "notebook_cells_reexecuted_offline_with_matching_outputs": 7,
+    "original_study_integrity": {
+      "artifacts": 194,
+      "status": "passed"
+    },
+    "public_readme_and_report_local_links": "passed",
+    "published_product_integrity": {
+      "analysis": "e3421b74f54c6628f85a40c5eff32d09505f8c4b64ce6430c01085195dd147d9",
+      "case_study_context_sources": 5,
+      "coverage_values_checked": 20,
+      "figures": 4,
+      "source_updates_or_inference": false,
+      "status": "passed"
+    },
+    "reproduced_analysis_and_figure_artifacts": 25,
+    "two_page_PDF_visual_review": "passed"
+  },
+  "inference_performed": false,
+  "scope": "Scientific artifact integrity, reproducibility and delivery; not clinical validation or a guarantee against every possible bug",
+  "status": "passed_offline_release_audit"
+}

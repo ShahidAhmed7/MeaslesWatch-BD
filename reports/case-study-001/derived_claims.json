@@ -1,0 +1,18 @@
+[
+  {
+    "formula": "100 * 2025 reported MCV1 doses / 2024 reported target",
+    "id": "N01",
+    "inputs": {
+      "doses_2025": 3791393,
+      "target_2024": 3292000
+    },
+    "interpretation": "Holding the old target fixed illustrates denominator sensitivity. It is not an estimate of true or corrected 2025 coverage.",
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:25",
+      "bgd_mcv_coverage_series.csv:27"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "unit": "hypothetical_dose_to_target_percent",
+    "value": 115.16989671931957
+  }
+]
