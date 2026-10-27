@@ -1,0 +1,37 @@
+{
+  "checks": {
+    "report_content_and_local_links": "identical narrative with location-correct links",
+    "results/portfolio-001": {
+      "claims.json": true,
+      "classification.json": true,
+      "coverage.json": true,
+      "coverage_accounting.json": true,
+      "cumulative.json": true,
+      "independent_checks.json": true,
+      "magnitude_comparisons.json": true,
+      "matched_periods.json": true,
+      "monthly.json": true
+    },
+    "results/portfolio-figures-002": {
+      "01_resurgence.csv": true,
+      "01_resurgence.metadata.json": true,
+      "01_resurgence.png": true,
+      "01_resurgence.svg": true,
+      "02_coverage.csv": true,
+      "02_coverage.metadata.json": true,
+      "02_coverage.png": true,
+      "02_coverage.svg": true,
+      "03_denominator.csv": true,
+      "03_denominator.metadata.json": true,
+      "03_denominator.png": true,
+      "03_denominator.svg": true,
+      "04_classification.csv": true,
+      "04_classification.metadata.json": true,
+      "04_classification.png": true,
+      "04_classification.svg": true
+    }
+  },
+  "inference_performed": false,
+  "scope": "Numerical tables and figure files byte-identical; report content identical apart from location-correct links. Manifests retain generation-version hashes.",
+  "status": "passed"
+}

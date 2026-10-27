@@ -1,0 +1,38 @@
+{
+  "status": "passed_visual_and_content_review",
+  "pages": 2,
+  "pdf_sha256": "2589c4c3c82777c8ecb68f0b29b078abd8f8ee01c7602356ff76a2fb7ac91603",
+  "analysis_manifest_sha256": "e3421b74f54c6628f85a40c5eff32d09505f8c4b64ce6430c01085195dd147d9",
+  "implementation_sha256": "dc885fa7fbc5b95e50321a991dc6110b78d3b9832f7a361d18c80a4b9eb76916",
+  "claims": [
+    "P01",
+    "P02",
+    "P03",
+    "V11",
+    "V12",
+    "W1",
+    "W2",
+    "C2026"
+  ],
+  "source_artifact_sha256": {
+    "claims.json": "a85861f0b22a9628be175e17e3a54ecbff251aa289fefce92a7a4f4076344369",
+    "cumulative.json": "6744e5420ed8949e053a016510ad3aa324acec68e80f2ff25e99897108dcb2fb",
+    "coverage_accounting.json": "6ed2c02774d803cd8b72c770d5e0378b10cee10035566e0e3b0c5068ea906492",
+    "classification.json": "acde76cde7323edbae3bcc7ffb253abdc5ba583c0528a74a43db1e8c840f7570"
+  },
+  "inference_performed": false,
+  "source_attribution": "Sikder v1.1.0 / WHO; denominator accounting reproduced",
+  "visual_review": {
+    "pages_inspected": [
+      1,
+      2
+    ],
+    "observations": [
+      "Two A4 pages; readable labels and text",
+      "No clipped text, overlapping elements or missing glyphs",
+      "All-age surveillance and source-specific vaccination scope stated",
+      "Source-author reproduction attribution retained",
+      "Headers, footers, links and page numbering checked"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "antigen": "MCV1",
+    "doses_change_percent": -6.752201770171817,
+    "end_year": 2025,
+    "identity_residual": 0.0,
+    "interpretation": "Arithmetic accounting of log coverage change; reproduced from source-author analysis, not causal attribution",
+    "log_coverage_change": -0.2874026045248929,
+    "log_dose_change": -0.06990973921929512,
+    "negative_log_target_change": -0.2174928653055978,
+    "new_doses": 3791393,
+    "new_reported_pct": 92.658,
+    "new_target": 4091813,
+    "old_doses": 4065933,
+    "old_reported_pct": 123.51,
+    "old_target": 3292000,
+    "recomputed_new_pct": 92.65802225077246,
+    "recomputed_old_pct": 123.50950789793438,
+    "share_status": "defined_signed_accounting",
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:25",
+      "bgd_mcv_coverage_series.csv:27"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "start_year": 2024,
+    "status": "defined",
+    "target_change_percent": 24.295656136087484,
+    "target_share_of_log_change": 0.7567532857440059
+  },
+  {
+    "antigen": "MCV2",
+    "doses_change_percent": -7.12283910481365,
+    "end_year": 2025,
+    "identity_residual": 0.0,
+    "interpretation": "Arithmetic accounting of log coverage change; reproduced from source-author analysis, not causal attribution",
+    "log_coverage_change": -0.29138528182186785,
+    "log_dose_change": -0.07389241651627004,
+    "negative_log_target_change": -0.2174928653055978,
+    "new_doses": 3711076,
+    "new_reported_pct": 90.695,
+    "new_target": 4091813,
+    "old_doses": 3995682,
+    "old_reported_pct": 121.376,
+    "old_target": 3292000,
+    "recomputed_new_pct": 90.69515151352225,
+    "recomputed_old_pct": 121.37551640340219,
+    "share_status": "defined_signed_accounting",
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:26",
+      "bgd_mcv_coverage_series.csv:28"
+    ],
+    "source_sha256": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d",
+    "start_year": 2024,
+    "status": "defined",
+    "target_change_percent": 24.295656136087484,
+    "target_share_of_log_change": 0.7464099214131118
+  }
+]

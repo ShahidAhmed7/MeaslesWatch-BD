@@ -1,0 +1,32 @@
+{
+  "artifact_sha256": {
+    "README.md": "f89a385178a0b8528bf0d09e1125e2775100a8b36d9f2c80675cd65759701a81",
+    "notebooks/Reading_measles_indicators.ipynb": "429a94081ea9860995c20e70ead025d08b7c02b3c25838828179ba9bcfa79e07",
+    "output/pdf/MeaslesWatch_BD_research_brief.pdf": "2589c4c3c82777c8ecb68f0b29b078abd8f8ee01c7602356ff76a2fb7ac91603",
+    "reports/public_health_brief.md": "83a88926a414006a3c45174d1cc1476d03d66dd995080df920d38e187b6b2761",
+    "src/measleswatch/dashboard.py": "8c799127c2e51860100a0de50caed46a767c0a0bc67211717b45196b82e540a1"
+  },
+  "browser_review_scope": "Desktop landing page visually inspected before browser-control interruption; all four pages, controls and technical appendix checked with Streamlit AppTest. Narrow-screen manual browser review not claimed.",
+  "checks": {
+    "generation_source_snapshots": 3,
+    "headline_claim_lineage": true,
+    "notebook_cells_reexecuted_offline_with_matching_outputs": 7,
+    "original_study_integrity": {
+      "artifacts": 194,
+      "status": "passed"
+    },
+    "public_readme_and_report_local_links": "passed",
+    "published_product_integrity": {
+      "analysis": "e3421b74f54c6628f85a40c5eff32d09505f8c4b64ce6430c01085195dd147d9",
+      "coverage_values_checked": 20,
+      "figures": 4,
+      "source_updates_or_inference": false,
+      "status": "passed"
+    },
+    "reproduced_analysis_and_figure_artifacts": 25,
+    "two_page_PDF_visual_review": "passed"
+  },
+  "inference_performed": false,
+  "scope": "Scientific artifact integrity, reproducibility and delivery; not clinical validation or a guarantee against every possible bug",
+  "status": "passed_offline_release_audit"
+}

@@ -1,21 +1,65 @@
 # MeaslesWatch BD
 
-**Sole project contributor:** [ahmedshahid2929@gmail.com](mailto:ahmedshahid2929@gmail.com)
+**Beyond the headline: interpreting Bangladesh's 2026 measles resurgence**
 
-A reproducible retrospective measles surveillance study and evidence-grounded LLM
-evaluation, using public Bangladesh surveillance/coverage extracts. Six Streamlit
-pages connect audited data, historical statistical models, scientific briefs and
-an independent 30-question external benchmark.
+A public health data case study asking: **How unusual was the reported increase, and
+how do case definitions and vaccination-coverage denominators affect interpretation?**
 
-**Research prototype:** reported all-age counts are not infection incidence. Flags
-are statistical exceedances, not independently confirmed outbreaks. This system
-does not provide clinical decisions, causal vaccine-effect estimates, a live warning
-service or validated prospective outbreak prediction.
+Analysis contributor: [ahmedshahid2929@gmail.com](mailto:ahmedshahid2929@gmail.com).
+
+## What the analysis found
+
+**The rise remains large under a fair historical comparison.** January–May 2026 had
+**11,905 laboratory-confirmed reports**, compared with **1,817 in the largest previous
+January–May total**, in 2017. The 2026 count is **6.55 times** that previous high among
+all 14 complete years, 2012–2025. The comparison uses the same months throughout.
+
+![Calendar-aligned reported measles cases](results/portfolio-figures-002/01_resurgence.png)
+
+**A coverage percentage can fall for more than one reason.** First-dose administrative
+coverage changed from **123.51% to 92.66%** between 2024 and 2025. Reported routine doses
+fell **6.75%**, while the reported target population grew **24.30%**. Direct WHO records
+confirm these values and use different target descriptions in the two years. Reading
+both inputs explains the arithmetic more clearly than the percentage alone.
+
+**Case categories describe different totals.** January–May 2026 had **50,040 classified
+cases**, including **11,905 laboratory-confirmed reports (23.79%)**. Both series show
+an increase under the checked historical comparisons, but their magnitudes cannot be
+interchanged. The laboratory share is case composition, not test positivity.
+
+All 2026 counts are provisional, reported cases are not all infections, and this study
+does not identify what caused the resurgence. Monthly surveillance covers **all ages**;
+vaccination indicators have their own childhood target populations.
+
+## Read the story
+
+- [Two-page research brief (PDF)](output/pdf/MeaslesWatch_BD_research_brief.pdf): the findings, explanatory graphics and what to investigate next. [Markdown version](reports/public_health_brief.md).
+- [Readable analysis notebook](notebooks/Reading_measles_indicators.ipynb): seven executed cells, from the question to independent checks.
+- [Methods and sensitivity results](reports/portfolio_methods.md): comparison windows, definitions and assumptions.
+- Four original figures: [historical comparison](results/portfolio-figures-002/01_resurgence.png), [coverage sources](results/portfolio-figures-002/02_coverage.png), [doses and targets](results/portfolio-figures-002/03_denominator.png), [case composition](results/portfolio-figures-002/04_classification.png). Each has CSV, SVG and method/source metadata.
+
+## Analytical contribution and source attribution
+
+The starting data are [Pranta Sikder's version 1.1.0 WHO-derived extract](https://zenodo.org/records/22167512),
+retrieved by its author in August 2026. The denominator decomposition **reproduces work
+already documented by the source author**. This project adds a checked workflow,
+matched-period historical comparisons, endpoint and case-definition sensitivities,
+primary-source reconciliation, and plain-language public health communication.
+
+Twenty load-bearing coverage values reconcile against separately saved WHO API records
+checked on **27 October 2026, Asia/Dhaka**. Record counts, filters, revision selection,
+original response bytes and checksums are retained. The current check never silently
+replaces the frozen surveillance extract. Original CSV arithmetic is checked separately
+from the canonical aggregation path.
+
+This is an exploratory retrospective analysis after data inspection. Age/district data,
+testing volumes and historical release vintages would be needed to investigate mechanisms
+or real-time information availability. Author-generated susceptibility estimates are
+not treated as observed outcomes. See [data sources and terms](DATA_SOURCES.md).
 
 ## Run the dashboard
 
-Verified with Python 3.13. Install [uv](https://docs.astral.sh/uv/) and run from the
-repository root:
+Verified environment: Python 3.13 with the checked-in `uv.lock`.
 
 ```sh
 uv sync --locked --python 3.13
@@ -25,228 +69,72 @@ uv run --locked pytest -q
 uv run --locked streamlit run app.py
 ```
 
-Saved data, figures, case outputs and briefs work offline. Navigation and filters
-do not invoke an LLM or consume Modal credit. The installed Python dependencies
-and the initial model download require network access; the dashboard itself does
-not fetch new observations.
+The four pages are **Key findings**, **Measles reports**, **Vaccination coverage**, and
+**About the data**. The default page explains the findings immediately. Comparison
+filters are local; the main research headline stays fixed. Navigation is offline and
+performs no model inference, source refresh or statistical fitting.
 
-## Reproduce the science
+## Reproduce the analysis
 
-Each output directory must be new. Existing scientific outputs are not overwritten.
-
-```sh
-uv run --locked measleswatch reproduce --output results/my-reproduction
-uv run --locked measleswatch score --run results/research-001 --output results/my-scores
-uv run --locked measleswatch score --run results/research-001-primary --output results/my-original-attempt-scores
-uv run --locked python scripts/build_report.py --output reports/my-report.md
-```
-
-The first command rebuilds canonical tables, descriptions, models, diagnostics,
-sensitivities and six original figures from frozen inputs. It performs no inference.
-The next two commands re-score saved responses offline using the frozen private gold.
-The final command writes the scientific report from actual saved analysis and scored results.
-Scoring/report generation requires the completed saved experiment, not live API access.
-
-The reference reproduction is [reproduction-001](results/reproduction-001/reproduction_manifest.json).
-All four canonical tables, eight descriptions and eight statistical artifact hashes
-match their reference runs exactly in the verified environment. Timestamped run
-manifests and rendered-image metadata are not expected to have identical bytes.
-Other operating systems/BLAS libraries may introduce floating-point differences;
-the checked-in JSON artifacts remain the recorded results.
-
-Some initial run manifests retain earlier implementation hashes from before wrapper
-parameterization. The current locked code reproduces their numerical artifact hashes;
-new reproduction manifests record the current implementation. Historical provenance
-files are retained rather than rewritten to claim an identical original source version.
-
-## What the analyst does
-
-There is **no training or fine-tuning**. The analyst uses a pinned, pretrained
-Qwen3-4B on a private Modal L40S container. It combines real retrieval with bounded
-statistical computations:
-
-```mermaid
-flowchart LR
-  Q[Country, dates, category and question] --> S[Structured retrieval from checked artifacts]
-  Q --> R[TF-IDF retrieval from frozen source passages]
-  S --> L[Qwen on Modal]
-  R --> L
-  L --> D[Unverified structured draft]
-  D --> V[Deterministic re-query and claim verification]
-  S --> V
-  V --> B[Six-section brief from checked claims and limitation templates]
-```
-
-Structured retrieval supplies reporting totals, completeness, expected counts,
-thresholds and cutoffs. Lexical document retrieval supplies WHO context, with line
-locators and hashes. The model cannot execute code, browse or access gold answers.
-The checker independently retrieves calculated evidence and validates value, unit,
-case definition, geography, age scope, dates and locators. It can correct an emitted
-claim from source evidence, reject an unknown claim, or preserve ambiguity. It does
-not turn a failed/empty generation into a perfect answer. Unchecked narrative remains
-a draft; verified prose is rendered from checked claims and approved templates.
-
-Grounding and verification reuse the same public-source adapters. Re-querying avoids
-trusting the model's echoed values, but shared parsing/scope bugs can survive B and C.
-The separate frozen gold/oracle tests that boundary; it is not a runtime evidence source.
-
-This is a small **hybrid RAG system with deterministic verification**. No vector
-database, embedding service or paid per-token API is required. Verification is bounded
-to the registered source schemas; it is not a universal medical fact checker.
-
-## Statistical design
-
-- Frozen August 2026 data; January 2012–July 2026 observations. All 2026 counts are
-  provisional; June–July are descriptive, lag-sensitive extensions.
-- Primary outcome: all-age laboratory-confirmed measles. Total classified cases
-  form a separate sensitivity outcome; suspected cases are never added to that total.
-- Development: rolling 2017–2021. Test: rolling 2022–2025. Case study: January–May
-  2026, with one fixed fit through December 2025. Every training cutoff precedes
-  the scored month. Historical release vintages are unavailable, so this is
-  observation-time separation, not a reconstruction of information available live.
-- Seasonal-naive point comparator; month-specific historical seasonal reference;
-  NB2 count regression with time and annual sine/cosine over 60 months.
-- Predictive bounds, dispersion/convergence/residual diagnostics, paired block
-  bootstrap, 36/84-month windows, definition sensitivity, isolated missingness and
-  outlier stresses. Failed fits are retained. Plug-in bounds omit some uncertainty.
-- Forty synthetic paths provide known-label stress tests. Their alert metrics do
-  not validate Bangladesh public-health effectiveness.
-
-The original synthetic monthly summary conditions on available model fits. This
-differs from the all-eligible denominator in the protocol. The separate
-`results/synthetic-failure-audit-001` retains every eligible month and bounds rates
-when predictions are unavailable; event recall already counts failed fits as misses.
-Both summaries are retained and labeled, rather than silently deleting failures.
-
-Annual administrative, official and WUENIC coverage remain separate. Values above
-100% and source disagreement are retained. No sampling variances are available for
-coverage confidence intervals. Age-specific WHO document statements remain separate
-from all-age monthly tables, including the source's unresolved contradictions.
-
-## Independent LLM experiment
-
-`external-v1` contains 30 test questions and six development questions from frozen
-CDC, ECDC and UKHSA publications. It excludes the Bangladesh Zenodo package and WHO
-DON598. Questions/gold were frozen before model outputs; the private oracle and
-production evidence adapter are separate implementations. There is no claim of
-external blinded human adjudication or facts unknown to the pretrained model.
-
-| Condition | Inputs and processing |
-| --- | --- |
-| A: direct | Public question/schema and full registered original source text; no calculated fact bundle |
-| B: grounded | Exactly the same source coverage plus deterministic calculated facts and scope metadata |
-| C: verified | The exact B draft checked against independently re-queried public evidence; no new generation |
-
-The approved completion amendment runs one paired seed (2026), yielding 60 test
-generations and 90 A/B/C test outputs. Repeated-seed experiments are optional future
-work. This experiment isolates evidence computation and verification under equal
-source coverage; lexical passage retrieval is evaluated separately. A is not a
-no-evidence baseline, and this experiment does not establish the benefit of retrieval
-over a closed-book model.
-
-Strict item credit requires correct status, every slot, units, scope, citations and
-limitations. Numerical accuracy is reported separately. First-pass and post-schema
-repair scores retain all failures. One syntax-only repair is allowed; incomplete
-thinking/truncation does not receive a new factual answer. Paired uncertainty resamples
-whole questions; 30 selected questions do not support a general model ranking.
-Questions share four documents, so item-bootstrap intervals do not capture
-between-publication generalization uncertainty.
-Citation scoring checks registered passage overlap, not unlimited semantic truth.
-See [development amendment](planning/DEVELOPMENT_AMENDMENT.md) for retained earlier
-development prompts and the prospective pre-test scope correction.
-
-The original attempt suffered a Modal client disconnection after five paired test
-questions. Its failure-inclusive 30-item scores remain in `benchmark-primary-score-001`.
-The secondary recovered-completion run continues only jobs with no returned response;
-every earlier draft, question, prompt and seed remains intact. This is an explicit
-deviation from the original infrastructure-failure rule, documented in
-[infrastructure recovery](planning/INFRASTRUCTURE_RECOVERY.md). Both analyses must be
-reported; the recovered result does not establish production reliability.
-
-## Measured findings
-
-On the 48-month 2022–2025 laboratory-confirmed test, seasonal-naive MAE was **8.42**
-cases versus **10.00** for NB2. The paired difference was 1.58 cases, with a 12-month
-block-bootstrap 95% interval of −0.09 to 2.85. NB2 covered 46/48 observations with
-its 95% plug-in intervals, but substantial residual autocorrelation remained.
-All five January–May 2026 fixed-origin observations exceeded its upper threshold;
-real outbreak detection accuracy cannot be identified from those flags.
-
-The **secondary recovered-completion** benchmark gave the following post-schema-repair
-results. The original disconnected run and its failure-inclusive scores remain separate.
-
-| Condition | Correct numeric slots (of 62) | Fully supported required slots (of 101) | Completely correct questions (of 30) |
-| --- | --- | --- | --- |
-| A: direct source analysis | 55 (88.7%) | 7 (6.9%) | 0 (0.0%) |
-| B: grounded analysis | 61 (98.4%) | 34 (33.7%) | 2 (6.7%) |
-| C: checked B draft | 62 (100.0%) | 42 (41.6%) | 3 (10.0%) |
-
-**These limitations are material.** Correct arithmetic does not establish correct
-scope or sufficient evidence. On test B claims the checker detected 19/66 strict
-errors (28.8%) and modified 3/34 independently supported claims (8.8%). Shared
-adapter metadata mistakes can survive checking; some failures also reflect literal
-category strings or valid alternative citations outside the frozen locator set.
-The eight-case inspection records both kinds, plus errors in unchecked draft prose.
-No grading or evidence adapter was tuned after observing test answers. The C−B
-whole-item accuracy difference was 3.3 percentage points, with an item-bootstrap
-95% interval of −6.7 to 13.3; this does not establish a precise improvement.
-
-See the [scientific report](reports/research_report.md),
-[scorecard](results/benchmark-score-001/scorecard.json),
-[reviewed cases](results/benchmark-score-001/answer_review.json), and
-[test-specific diagnostics](results/benchmark-diagnostics-001/verification_by_split.json).
-Future verifier changes require a new version and fresh independent evaluation;
-the current prototype is an auditable experiment, not a reliable universal analyst.
-
-## Explicit Modal generation
-
-The existing study uses profile `kazigalib143`, one scale-to-zero L40S container,
-Qwen3-4B revision `1cfa9a7208912126459214e8b04321603b3df60c`, thinking enabled,
-131,072 configured context tokens and 32,768 maximum generated tokens. Capacity was
-separately tested on a representative 20,816-token input. The full configured maximum
-is a bound, not a measured capacity guarantee. Model settings and GPU package pins
-are in [.devin/study.toml](.devin/study.toml) and [modal_app.py](modal_app.py).
-
-Authenticate Modal privately using its CLI; never put credentials into Git or this
-README. Configure the intended workspace/profile in a **new recorded study version**
-before a new experiment. A fresh checkout needs a local ledger copied from
-`.devin/modal_ledger.example.json`; set its workspace to your intended profile and
-record confirmed workspace spending controls only after actually checking them.
-The recorded reference experiment retains its own local ledger and all earlier
-pilot reservations. Do not reset that ledger or reuse reference run IDs.
-
-Use **Generate Research Brief** for an explicit selected request, or:
+Use a new output directory; saved scientific runs are never overwritten.
 
 ```sh
-uv run --locked measleswatch infer --output results/my-new-modal-run
+uv run --locked python -m measleswatch.portfolio --output results/my-portfolio
+uv run --locked python -m measleswatch.portfolio_figures --output results/my-figures
+uv run --locked python -m measleswatch.portfolio_story --output reports/my-report-copy
 ```
 
-The batch runner checks active apps, reserves worst-case repairs, checkpoints every
-case, enforces cumulative time/generation/monetary estimates, and stops its private
-app. The $30 project authorization is a ceiling; the working reservation limit is
-$20. Estimates/reservations are not provider billing caps, and workspace metered
-deltas may lag or include unrelated activity. The model cache can remain after the
-app stops; its storage billing is separate from active GPU time.
+The first command independently rebuilds the focused tables and claim ledger from
+verified inputs. The figure and story commands render the recorded reference analysis;
+their manifests identify that input run. The notebook also recalculates the key tables.
+The current code reproduces all nine analytical JSON files and 16 figure/data sidecars
+byte-for-byte in the verified environment. Generation-time source snapshots are retained;
+manifest implementation hashes refer to those versions. Report content reproduces with
+links adjusted to its output location.
+No LLM is needed. Source acquisition is separate and explicit:
 
-## Repository map and deliverables
+```sh
+uv run --locked python scripts/check_portfolio_sources.py --output planning/portfolio_sources/my-new-check
+```
 
-| Location | Role |
+A new source check may reveal later revisions. It must not overwrite the saved check
+or be blended into the August analysis without a new documented study version.
+
+Optional PDF regeneration uses ReportLab 4.4.9 and pypdf 6.10.0, separate from the
+core dashboard dependencies. Run with `uv run --locked --with reportlab==4.4.9 --with
+pypdf==6.10.0 python scripts/build_portfolio_pdf.py --output output/pdf/my-brief-copy.pdf`.
+The generated copy requires visual review before publication; it never replaces the
+published brief automatically.
+
+## What this demonstrates
+
+| Research skill | Evidence in this project |
 | --- | --- |
-| `app.py` | Six artifact-driven Streamlit pages and exports |
-| `src/measleswatch/` | Ingestion, audit, modeling, retrieval, verification, inference and offline scoring |
-| `planning/source_snapshots/` | Immutable source extracts and download/hash manifests |
-| `data/processed/phase1-r2/` | Canonical Bangladesh tables, dictionary and validation |
-| `results/description-001/`, `audit-001/`, `statistics-001/` | Source-linked analytical results |
-| `results/figures-002/` | Six PNG/SVG figures with plotted CSV and metadata; window comparison labels scored/failed counts |
-| `results/figures-001/` | Original figure version retained; numerical plotted CSV values are unchanged in version 002 |
-| `results/research-001/` | Exact requests, raw/final outputs, verified briefs and attempt history |
-| `results/benchmark-score-001/` | Recomputed scorecards, case verdicts and reviewed examples |
-| `results/research-001-primary/`, `benchmark-primary-score-001/` | Original disconnected attempt and failure-inclusive scores; recovered completion is a separately labeled secondary analysis |
-| `benchmark/frozen/external-v1/` | Frozen public questions/evidence/protocol |
-| `benchmark/private/external-v1/` | Scorer-only gold/oracle; never runtime model inputs |
-| `reports/research_report.md` | Scientific report generated from measured artifacts |
-| `planning/COMPLETION.md` | Final specification checklist and verification evidence |
+| Data preparation and quality control | Immutable sources, canonical tables, duplicate/sentinel/missing-value rules and issue records |
+| Statistical reasoning | Matched calendar periods, comparison with all historical years, endpoint and case-definition checks |
+| Interpretation of health indicators | Separate coverage sources, dose/target accounting, explicit population and denominator definitions |
+| Reproducible programming | Locked environment, tested Python functions, executed notebook, raw-source arithmetic and manifests |
+| Scientific communication | Four explanatory figures, a short research brief and a dashboard for nontechnical readers |
 
-Original code: MIT. Dataset extracts and publisher text retain their own terms; see
-[source attribution](DATA_SOURCES.md). The initial GitHub repository is private;
-changing visibility needs a deliberate source-rights and benchmark-release decision.
+A five-minute walkthrough: read **Key findings**, change the period/case category on
+**Measles reports**, inspect the two inputs on **Vaccination coverage**, then open
+**About the data** for provenance and the notebook.
+
+## Preserved technical study
+
+The original modelling and AI experiments remain under optional technical details,
+[their original report](reports/research_report.md), and tag `research-v1-2026-10-27`.
+Their scores and failures were not changed to improve the portfolio narrative.
+The earlier verified LLM condition reached 100% numeric accuracy but only 41.6% fully
+supported slots and 3/30 completely correct items. Its shared adapter defects and
+infrastructure-recovery deviation remain material. It is not the basis of the main
+research story or a trusted medical analyst.
+
+[Original technical documentation](https://github.com/ShahidAhmed7/MeaslesWatch-BD/blob/research-v1-2026-10-27/README.md) retains
+Modal configuration, budget controls and the A/B/C experiment design. No additional
+Modal inference was used for this redesign. Hosting, clinical deployment and prospective
+outbreak prediction are outside the study.
+
+Original code: MIT. Source data/publisher text retain their own terms and attribution.
+The GitHub repository remains private; the interface is a research case study, not a
+live outbreak warning service.

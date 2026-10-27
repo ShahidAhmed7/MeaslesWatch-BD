@@ -1,0 +1,688 @@
+[
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2012-03",
+    "measure": "measles_lab_confirmed",
+    "year": 2012
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2013-03",
+    "measure": "measles_lab_confirmed",
+    "year": 2013
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2014-03",
+    "measure": "measles_lab_confirmed",
+    "year": 2014
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2015-03",
+    "measure": "measles_lab_confirmed",
+    "year": 2015
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2016-03",
+    "measure": "measles_lab_confirmed",
+    "year": 2016
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2017-03",
+    "measure": "measles_lab_confirmed",
+    "year": 2017
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2018-03",
+    "measure": "measles_lab_confirmed",
+    "year": 2018
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2019-03",
+    "measure": "measles_lab_confirmed",
+    "year": 2019
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2020-03",
+    "measure": "measles_lab_confirmed",
+    "year": 2020
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2021-03",
+    "measure": "measles_lab_confirmed",
+    "year": 2021
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2022-03",
+    "measure": "measles_lab_confirmed",
+    "year": 2022
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2023-03",
+    "measure": "measles_lab_confirmed",
+    "year": 2023
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2024-03",
+    "measure": "measles_lab_confirmed",
+    "year": 2024
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2025-03",
+    "measure": "measles_lab_confirmed",
+    "year": 2025
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2026-03",
+    "measure": "measles_lab_confirmed",
+    "year": 2026
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2012-04",
+    "measure": "measles_lab_confirmed",
+    "year": 2012
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2013-04",
+    "measure": "measles_lab_confirmed",
+    "year": 2013
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2014-04",
+    "measure": "measles_lab_confirmed",
+    "year": 2014
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2015-04",
+    "measure": "measles_lab_confirmed",
+    "year": 2015
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2016-04",
+    "measure": "measles_lab_confirmed",
+    "year": 2016
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2017-04",
+    "measure": "measles_lab_confirmed",
+    "year": 2017
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2018-04",
+    "measure": "measles_lab_confirmed",
+    "year": 2018
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2019-04",
+    "measure": "measles_lab_confirmed",
+    "year": 2019
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2020-04",
+    "measure": "measles_lab_confirmed",
+    "year": 2020
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2021-04",
+    "measure": "measles_lab_confirmed",
+    "year": 2021
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2022-04",
+    "measure": "measles_lab_confirmed",
+    "year": 2022
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2023-04",
+    "measure": "measles_lab_confirmed",
+    "year": 2023
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2024-04",
+    "measure": "measles_lab_confirmed",
+    "year": 2024
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2025-04",
+    "measure": "measles_lab_confirmed",
+    "year": 2025
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2026-04",
+    "measure": "measles_lab_confirmed",
+    "year": 2026
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2012-05",
+    "measure": "measles_lab_confirmed",
+    "year": 2012
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2013-05",
+    "measure": "measles_lab_confirmed",
+    "year": 2013
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2014-05",
+    "measure": "measles_lab_confirmed",
+    "year": 2014
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2015-05",
+    "measure": "measles_lab_confirmed",
+    "year": 2015
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2016-05",
+    "measure": "measles_lab_confirmed",
+    "year": 2016
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2017-05",
+    "measure": "measles_lab_confirmed",
+    "year": 2017
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2018-05",
+    "measure": "measles_lab_confirmed",
+    "year": 2018
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2019-05",
+    "measure": "measles_lab_confirmed",
+    "year": 2019
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2020-05",
+    "measure": "measles_lab_confirmed",
+    "year": 2020
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2021-05",
+    "measure": "measles_lab_confirmed",
+    "year": 2021
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2022-05",
+    "measure": "measles_lab_confirmed",
+    "year": 2022
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2023-05",
+    "measure": "measles_lab_confirmed",
+    "year": 2023
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2024-05",
+    "measure": "measles_lab_confirmed",
+    "year": 2024
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2025-05",
+    "measure": "measles_lab_confirmed",
+    "year": 2025
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2026-05",
+    "measure": "measles_lab_confirmed",
+    "year": 2026
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2012-03",
+    "measure": "measles_total_classified",
+    "year": 2012
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2013-03",
+    "measure": "measles_total_classified",
+    "year": 2013
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2014-03",
+    "measure": "measles_total_classified",
+    "year": 2014
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2015-03",
+    "measure": "measles_total_classified",
+    "year": 2015
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2016-03",
+    "measure": "measles_total_classified",
+    "year": 2016
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2017-03",
+    "measure": "measles_total_classified",
+    "year": 2017
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2018-03",
+    "measure": "measles_total_classified",
+    "year": 2018
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2019-03",
+    "measure": "measles_total_classified",
+    "year": 2019
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2020-03",
+    "measure": "measles_total_classified",
+    "year": 2020
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2021-03",
+    "measure": "measles_total_classified",
+    "year": 2021
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2022-03",
+    "measure": "measles_total_classified",
+    "year": 2022
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2023-03",
+    "measure": "measles_total_classified",
+    "year": 2023
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2024-03",
+    "measure": "measles_total_classified",
+    "year": 2024
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2025-03",
+    "measure": "measles_total_classified",
+    "year": 2025
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2026-03",
+    "measure": "measles_total_classified",
+    "year": 2026
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2012-04",
+    "measure": "measles_total_classified",
+    "year": 2012
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2013-04",
+    "measure": "measles_total_classified",
+    "year": 2013
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2014-04",
+    "measure": "measles_total_classified",
+    "year": 2014
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2015-04",
+    "measure": "measles_total_classified",
+    "year": 2015
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2016-04",
+    "measure": "measles_total_classified",
+    "year": 2016
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2017-04",
+    "measure": "measles_total_classified",
+    "year": 2017
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2018-04",
+    "measure": "measles_total_classified",
+    "year": 2018
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2019-04",
+    "measure": "measles_total_classified",
+    "year": 2019
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2020-04",
+    "measure": "measles_total_classified",
+    "year": 2020
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2021-04",
+    "measure": "measles_total_classified",
+    "year": 2021
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2022-04",
+    "measure": "measles_total_classified",
+    "year": 2022
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2023-04",
+    "measure": "measles_total_classified",
+    "year": 2023
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2024-04",
+    "measure": "measles_total_classified",
+    "year": 2024
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2025-04",
+    "measure": "measles_total_classified",
+    "year": 2025
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2026-04",
+    "measure": "measles_total_classified",
+    "year": 2026
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2012-05",
+    "measure": "measles_total_classified",
+    "year": 2012
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2013-05",
+    "measure": "measles_total_classified",
+    "year": 2013
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2014-05",
+    "measure": "measles_total_classified",
+    "year": 2014
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2015-05",
+    "measure": "measles_total_classified",
+    "year": 2015
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2016-05",
+    "measure": "measles_total_classified",
+    "year": 2016
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2017-05",
+    "measure": "measles_total_classified",
+    "year": 2017
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2018-05",
+    "measure": "measles_total_classified",
+    "year": 2018
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2019-05",
+    "measure": "measles_total_classified",
+    "year": 2019
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2020-05",
+    "measure": "measles_total_classified",
+    "year": 2020
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2021-05",
+    "measure": "measles_total_classified",
+    "year": 2021
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2022-05",
+    "measure": "measles_total_classified",
+    "year": 2022
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2023-05",
+    "measure": "measles_total_classified",
+    "year": 2023
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2024-05",
+    "measure": "measles_total_classified",
+    "year": 2024
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2025-05",
+    "measure": "measles_total_classified",
+    "year": 2025
+  },
+  {
+    "agrees": true,
+    "check": "raw_CSV_period_sum",
+    "end_month": "2026-05",
+    "measure": "measles_total_classified",
+    "year": 2026
+  },
+  {
+    "agrees": true,
+    "antigen": "MCV1",
+    "check": "raw_CSV_coverage_value",
+    "field": "admin_doses",
+    "year": 2024
+  },
+  {
+    "agrees": true,
+    "antigen": "MCV1",
+    "check": "raw_CSV_coverage_value",
+    "field": "admin_target",
+    "year": 2024
+  },
+  {
+    "agrees": true,
+    "antigen": "MCV1",
+    "check": "raw_CSV_coverage_value",
+    "field": "admin_doses",
+    "year": 2025
+  },
+  {
+    "agrees": true,
+    "antigen": "MCV1",
+    "check": "raw_CSV_coverage_value",
+    "field": "admin_target",
+    "year": 2025
+  },
+  {
+    "agrees": true,
+    "antigen": "MCV2",
+    "check": "raw_CSV_coverage_value",
+    "field": "admin_doses",
+    "year": 2024
+  },
+  {
+    "agrees": true,
+    "antigen": "MCV2",
+    "check": "raw_CSV_coverage_value",
+    "field": "admin_target",
+    "year": 2024
+  },
+  {
+    "agrees": true,
+    "antigen": "MCV2",
+    "check": "raw_CSV_coverage_value",
+    "field": "admin_doses",
+    "year": 2025
+  },
+  {
+    "agrees": true,
+    "antigen": "MCV2",
+    "check": "raw_CSV_coverage_value",
+    "field": "admin_target",
+    "year": 2025
+  }
+]

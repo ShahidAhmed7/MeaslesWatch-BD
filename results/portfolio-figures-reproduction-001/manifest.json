@@ -1,0 +1,29 @@
+{
+  "analysis_manifest_sha256": "e3421b74f54c6628f85a40c5eff32d09505f8c4b64ce6430c01085195dd147d9",
+  "artifact_sha256": {
+    "01_resurgence.csv": "98f5a3fa865da6ff7c44cb2a310da3381141cd4e2e9f344b754f27e01518dfae",
+    "01_resurgence.metadata.json": "58d99d9b0082b79504c40bad758d9b650c9cfff33a4c2a8c1c4a5cdc3818eb55",
+    "01_resurgence.png": "5c8e4ba0075b5d81c521e52b4bd53c337908c586351425a411742b1027bce58b",
+    "01_resurgence.svg": "023b43687df6588f5638c808f29aabcf691ba35e1a77711e2694a52ca03c7efd",
+    "02_coverage.csv": "38dfcd5c3e4af954f4407ce2ae72d7ae814bbe5f46d53bcbd385615eba53a683",
+    "02_coverage.metadata.json": "610a8a5896eb5cd6664e680008d4a63553f86e1d572f82568cf4edd3b1977628",
+    "02_coverage.png": "2ef5b2b982e8aa3028f56ab8b0a69c83676a37197a479bdb1267c0d5d75a50cb",
+    "02_coverage.svg": "4b03681caf49d13ca802c9d04040c8b6be2dd4ff83ed311cb38d7478cd761410",
+    "03_denominator.csv": "8399be1389453659f5edff78c7239f8e476a7320c037480f0e16c11d6efb2d4f",
+    "03_denominator.metadata.json": "d0d70ba5168292d13de1304131f3b20c86e420e21a9cd18626627a461f5c1744",
+    "03_denominator.png": "b755f6aafcab226378a2d2db3ccedd37b9552279954faa7da28c3561e579da98",
+    "03_denominator.svg": "4049ac88702f2c28f5b7b7844b107d49d66fd4046636c551569db0f67a23c461",
+    "04_classification.csv": "b386f85db3d94ba15172f51c51d00ac0958096b05f1c5c81de2088bbba22332c",
+    "04_classification.metadata.json": "119745965570c95fe8c2c684a851561b223b0972c069eb03783cbe3f9f04f28c",
+    "04_classification.png": "0b12733151a925f277b930df258b092c91dc15018eee026ad1ebc359f0111b51",
+    "04_classification.svg": "168ba14cc3e48d63810302849d5c4028bb231e95b95909d2d288094c03c3b9c3"
+  },
+  "figures": [
+    "01_resurgence",
+    "02_coverage",
+    "03_denominator",
+    "04_classification"
+  ],
+  "implementation_sha256": "abd5198ca4e30722f864026b57bcb935a6d64c2c38285a4535927b120d02ca83",
+  "status": "completed"
+}

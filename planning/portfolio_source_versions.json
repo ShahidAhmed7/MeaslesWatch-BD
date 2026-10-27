@@ -1,0 +1,21 @@
+{
+  "status": "generation_sources_preserved_before_formatting",
+  "sources": [
+    {
+      "manifest": "results/portfolio-001/manifest.json",
+      "generation_source_snapshot": "results/portfolio-001/implementation.py",
+      "sha256": "884202a5dd91ff63e757c6044dc98206748944da2a936cb1321c72ddaafbc7a6"
+    },
+    {
+      "manifest": "results/portfolio-figures-002/manifest.json",
+      "generation_source_snapshot": "results/portfolio-figures-002/implementation.py",
+      "sha256": "79f44356ef9f5270dc2ffffef3e06250dfadca996689970b2a1ed5daea3e4240"
+    },
+    {
+      "manifest": "reports/portfolio_report_manifest.json",
+      "generation_source_snapshot": "reports/portfolio_story_source.py",
+      "sha256": "2fab55b775bbd8b361515c665ecf88a5f32ca5d96b19f88205caf49cadbc3fea"
+    }
+  ],
+  "interpretation": "Current formatted code must reproduce numerical artifacts; generation hashes refer to these retained source snapshots."
+}

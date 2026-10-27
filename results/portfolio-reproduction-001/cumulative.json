@@ -1,0 +1,752 @@
+[
+  {
+    "calendar_month": 1,
+    "cumulative_count": 102,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:2"
+    ],
+    "year": 2012
+  },
+  {
+    "calendar_month": 2,
+    "cumulative_count": 213,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:2",
+      "monthly_measles_bgd_neighbours.csv:3"
+    ],
+    "year": 2012
+  },
+  {
+    "calendar_month": 3,
+    "cumulative_count": 341,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:2",
+      "monthly_measles_bgd_neighbours.csv:3",
+      "monthly_measles_bgd_neighbours.csv:4"
+    ],
+    "year": 2012
+  },
+  {
+    "calendar_month": 4,
+    "cumulative_count": 433,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:2",
+      "monthly_measles_bgd_neighbours.csv:3",
+      "monthly_measles_bgd_neighbours.csv:4",
+      "monthly_measles_bgd_neighbours.csv:5"
+    ],
+    "year": 2012
+  },
+  {
+    "calendar_month": 5,
+    "cumulative_count": 497,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:2",
+      "monthly_measles_bgd_neighbours.csv:3",
+      "monthly_measles_bgd_neighbours.csv:4",
+      "monthly_measles_bgd_neighbours.csv:5",
+      "monthly_measles_bgd_neighbours.csv:6"
+    ],
+    "year": 2012
+  },
+  {
+    "calendar_month": 1,
+    "cumulative_count": 2,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:14"
+    ],
+    "year": 2013
+  },
+  {
+    "calendar_month": 2,
+    "cumulative_count": 15,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:14",
+      "monthly_measles_bgd_neighbours.csv:15"
+    ],
+    "year": 2013
+  },
+  {
+    "calendar_month": 3,
+    "cumulative_count": 20,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:14",
+      "monthly_measles_bgd_neighbours.csv:15",
+      "monthly_measles_bgd_neighbours.csv:16"
+    ],
+    "year": 2013
+  },
+  {
+    "calendar_month": 4,
+    "cumulative_count": 27,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:14",
+      "monthly_measles_bgd_neighbours.csv:15",
+      "monthly_measles_bgd_neighbours.csv:16",
+      "monthly_measles_bgd_neighbours.csv:17"
+    ],
+    "year": 2013
+  },
+  {
+    "calendar_month": 5,
+    "cumulative_count": 33,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:14",
+      "monthly_measles_bgd_neighbours.csv:15",
+      "monthly_measles_bgd_neighbours.csv:16",
+      "monthly_measles_bgd_neighbours.csv:17",
+      "monthly_measles_bgd_neighbours.csv:18"
+    ],
+    "year": 2013
+  },
+  {
+    "calendar_month": 1,
+    "cumulative_count": 0,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:26"
+    ],
+    "year": 2014
+  },
+  {
+    "calendar_month": 2,
+    "cumulative_count": 3,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:26",
+      "monthly_measles_bgd_neighbours.csv:27"
+    ],
+    "year": 2014
+  },
+  {
+    "calendar_month": 3,
+    "cumulative_count": 5,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:26",
+      "monthly_measles_bgd_neighbours.csv:27",
+      "monthly_measles_bgd_neighbours.csv:28"
+    ],
+    "year": 2014
+  },
+  {
+    "calendar_month": 4,
+    "cumulative_count": 13,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:26",
+      "monthly_measles_bgd_neighbours.csv:27",
+      "monthly_measles_bgd_neighbours.csv:28",
+      "monthly_measles_bgd_neighbours.csv:29"
+    ],
+    "year": 2014
+  },
+  {
+    "calendar_month": 5,
+    "cumulative_count": 26,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:26",
+      "monthly_measles_bgd_neighbours.csv:27",
+      "monthly_measles_bgd_neighbours.csv:28",
+      "monthly_measles_bgd_neighbours.csv:29",
+      "monthly_measles_bgd_neighbours.csv:30"
+    ],
+    "year": 2014
+  },
+  {
+    "calendar_month": 1,
+    "cumulative_count": 7,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:38"
+    ],
+    "year": 2015
+  },
+  {
+    "calendar_month": 2,
+    "cumulative_count": 25,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:38",
+      "monthly_measles_bgd_neighbours.csv:39"
+    ],
+    "year": 2015
+  },
+  {
+    "calendar_month": 3,
+    "cumulative_count": 42,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:38",
+      "monthly_measles_bgd_neighbours.csv:39",
+      "monthly_measles_bgd_neighbours.csv:40"
+    ],
+    "year": 2015
+  },
+  {
+    "calendar_month": 4,
+    "cumulative_count": 58,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:38",
+      "monthly_measles_bgd_neighbours.csv:39",
+      "monthly_measles_bgd_neighbours.csv:40",
+      "monthly_measles_bgd_neighbours.csv:41"
+    ],
+    "year": 2015
+  },
+  {
+    "calendar_month": 5,
+    "cumulative_count": 77,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:38",
+      "monthly_measles_bgd_neighbours.csv:39",
+      "monthly_measles_bgd_neighbours.csv:40",
+      "monthly_measles_bgd_neighbours.csv:41",
+      "monthly_measles_bgd_neighbours.csv:42"
+    ],
+    "year": 2015
+  },
+  {
+    "calendar_month": 1,
+    "cumulative_count": 33,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:50"
+    ],
+    "year": 2016
+  },
+  {
+    "calendar_month": 2,
+    "cumulative_count": 76,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:50",
+      "monthly_measles_bgd_neighbours.csv:51"
+    ],
+    "year": 2016
+  },
+  {
+    "calendar_month": 3,
+    "cumulative_count": 113,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:50",
+      "monthly_measles_bgd_neighbours.csv:51",
+      "monthly_measles_bgd_neighbours.csv:52"
+    ],
+    "year": 2016
+  },
+  {
+    "calendar_month": 4,
+    "cumulative_count": 177,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:50",
+      "monthly_measles_bgd_neighbours.csv:51",
+      "monthly_measles_bgd_neighbours.csv:52",
+      "monthly_measles_bgd_neighbours.csv:53"
+    ],
+    "year": 2016
+  },
+  {
+    "calendar_month": 5,
+    "cumulative_count": 226,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:50",
+      "monthly_measles_bgd_neighbours.csv:51",
+      "monthly_measles_bgd_neighbours.csv:52",
+      "monthly_measles_bgd_neighbours.csv:53",
+      "monthly_measles_bgd_neighbours.csv:54"
+    ],
+    "year": 2016
+  },
+  {
+    "calendar_month": 1,
+    "cumulative_count": 309,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:62"
+    ],
+    "year": 2017
+  },
+  {
+    "calendar_month": 2,
+    "cumulative_count": 577,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:62",
+      "monthly_measles_bgd_neighbours.csv:63"
+    ],
+    "year": 2017
+  },
+  {
+    "calendar_month": 3,
+    "cumulative_count": 1012,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:62",
+      "monthly_measles_bgd_neighbours.csv:63",
+      "monthly_measles_bgd_neighbours.csv:64"
+    ],
+    "year": 2017
+  },
+  {
+    "calendar_month": 4,
+    "cumulative_count": 1482,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:62",
+      "monthly_measles_bgd_neighbours.csv:63",
+      "monthly_measles_bgd_neighbours.csv:64",
+      "monthly_measles_bgd_neighbours.csv:65"
+    ],
+    "year": 2017
+  },
+  {
+    "calendar_month": 5,
+    "cumulative_count": 1817,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:62",
+      "monthly_measles_bgd_neighbours.csv:63",
+      "monthly_measles_bgd_neighbours.csv:64",
+      "monthly_measles_bgd_neighbours.csv:65",
+      "monthly_measles_bgd_neighbours.csv:66"
+    ],
+    "year": 2017
+  },
+  {
+    "calendar_month": 1,
+    "cumulative_count": 106,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:74"
+    ],
+    "year": 2018
+  },
+  {
+    "calendar_month": 2,
+    "cumulative_count": 241,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:74",
+      "monthly_measles_bgd_neighbours.csv:75"
+    ],
+    "year": 2018
+  },
+  {
+    "calendar_month": 3,
+    "cumulative_count": 503,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:74",
+      "monthly_measles_bgd_neighbours.csv:75",
+      "monthly_measles_bgd_neighbours.csv:76"
+    ],
+    "year": 2018
+  },
+  {
+    "calendar_month": 4,
+    "cumulative_count": 749,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:74",
+      "monthly_measles_bgd_neighbours.csv:75",
+      "monthly_measles_bgd_neighbours.csv:76",
+      "monthly_measles_bgd_neighbours.csv:77"
+    ],
+    "year": 2018
+  },
+  {
+    "calendar_month": 5,
+    "cumulative_count": 958,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:74",
+      "monthly_measles_bgd_neighbours.csv:75",
+      "monthly_measles_bgd_neighbours.csv:76",
+      "monthly_measles_bgd_neighbours.csv:77",
+      "monthly_measles_bgd_neighbours.csv:78"
+    ],
+    "year": 2018
+  },
+  {
+    "calendar_month": 1,
+    "cumulative_count": 208,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:86"
+    ],
+    "year": 2019
+  },
+  {
+    "calendar_month": 2,
+    "cumulative_count": 409,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:86",
+      "monthly_measles_bgd_neighbours.csv:87"
+    ],
+    "year": 2019
+  },
+  {
+    "calendar_month": 3,
+    "cumulative_count": 662,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:86",
+      "monthly_measles_bgd_neighbours.csv:87",
+      "monthly_measles_bgd_neighbours.csv:88"
+    ],
+    "year": 2019
+  },
+  {
+    "calendar_month": 4,
+    "cumulative_count": 1018,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:86",
+      "monthly_measles_bgd_neighbours.csv:87",
+      "monthly_measles_bgd_neighbours.csv:88",
+      "monthly_measles_bgd_neighbours.csv:89"
+    ],
+    "year": 2019
+  },
+  {
+    "calendar_month": 5,
+    "cumulative_count": 1345,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:86",
+      "monthly_measles_bgd_neighbours.csv:87",
+      "monthly_measles_bgd_neighbours.csv:88",
+      "monthly_measles_bgd_neighbours.csv:89",
+      "monthly_measles_bgd_neighbours.csv:90"
+    ],
+    "year": 2019
+  },
+  {
+    "calendar_month": 1,
+    "cumulative_count": 450,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:98"
+    ],
+    "year": 2020
+  },
+  {
+    "calendar_month": 2,
+    "cumulative_count": 937,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:98",
+      "monthly_measles_bgd_neighbours.csv:99"
+    ],
+    "year": 2020
+  },
+  {
+    "calendar_month": 3,
+    "cumulative_count": 1219,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:100",
+      "monthly_measles_bgd_neighbours.csv:98",
+      "monthly_measles_bgd_neighbours.csv:99"
+    ],
+    "year": 2020
+  },
+  {
+    "calendar_month": 4,
+    "cumulative_count": 1242,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:100",
+      "monthly_measles_bgd_neighbours.csv:101",
+      "monthly_measles_bgd_neighbours.csv:98",
+      "monthly_measles_bgd_neighbours.csv:99"
+    ],
+    "year": 2020
+  },
+  {
+    "calendar_month": 5,
+    "cumulative_count": 1245,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:100",
+      "monthly_measles_bgd_neighbours.csv:101",
+      "monthly_measles_bgd_neighbours.csv:102",
+      "monthly_measles_bgd_neighbours.csv:98",
+      "monthly_measles_bgd_neighbours.csv:99"
+    ],
+    "year": 2020
+  },
+  {
+    "calendar_month": 1,
+    "cumulative_count": 7,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:110"
+    ],
+    "year": 2021
+  },
+  {
+    "calendar_month": 2,
+    "cumulative_count": 13,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:110",
+      "monthly_measles_bgd_neighbours.csv:111"
+    ],
+    "year": 2021
+  },
+  {
+    "calendar_month": 3,
+    "cumulative_count": 22,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:110",
+      "monthly_measles_bgd_neighbours.csv:111",
+      "monthly_measles_bgd_neighbours.csv:112"
+    ],
+    "year": 2021
+  },
+  {
+    "calendar_month": 4,
+    "cumulative_count": 24,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:110",
+      "monthly_measles_bgd_neighbours.csv:111",
+      "monthly_measles_bgd_neighbours.csv:112",
+      "monthly_measles_bgd_neighbours.csv:113"
+    ],
+    "year": 2021
+  },
+  {
+    "calendar_month": 5,
+    "cumulative_count": 29,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:110",
+      "monthly_measles_bgd_neighbours.csv:111",
+      "monthly_measles_bgd_neighbours.csv:112",
+      "monthly_measles_bgd_neighbours.csv:113",
+      "monthly_measles_bgd_neighbours.csv:114"
+    ],
+    "year": 2021
+  },
+  {
+    "calendar_month": 1,
+    "cumulative_count": 15,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:122"
+    ],
+    "year": 2022
+  },
+  {
+    "calendar_month": 2,
+    "cumulative_count": 19,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:122",
+      "monthly_measles_bgd_neighbours.csv:123"
+    ],
+    "year": 2022
+  },
+  {
+    "calendar_month": 3,
+    "cumulative_count": 33,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:122",
+      "monthly_measles_bgd_neighbours.csv:123",
+      "monthly_measles_bgd_neighbours.csv:124"
+    ],
+    "year": 2022
+  },
+  {
+    "calendar_month": 4,
+    "cumulative_count": 51,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:122",
+      "monthly_measles_bgd_neighbours.csv:123",
+      "monthly_measles_bgd_neighbours.csv:124",
+      "monthly_measles_bgd_neighbours.csv:125"
+    ],
+    "year": 2022
+  },
+  {
+    "calendar_month": 5,
+    "cumulative_count": 60,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:122",
+      "monthly_measles_bgd_neighbours.csv:123",
+      "monthly_measles_bgd_neighbours.csv:124",
+      "monthly_measles_bgd_neighbours.csv:125",
+      "monthly_measles_bgd_neighbours.csv:126"
+    ],
+    "year": 2022
+  },
+  {
+    "calendar_month": 1,
+    "cumulative_count": 14,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:134"
+    ],
+    "year": 2023
+  },
+  {
+    "calendar_month": 2,
+    "cumulative_count": 31,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:134",
+      "monthly_measles_bgd_neighbours.csv:135"
+    ],
+    "year": 2023
+  },
+  {
+    "calendar_month": 3,
+    "cumulative_count": 47,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:134",
+      "monthly_measles_bgd_neighbours.csv:135",
+      "monthly_measles_bgd_neighbours.csv:136"
+    ],
+    "year": 2023
+  },
+  {
+    "calendar_month": 4,
+    "cumulative_count": 72,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:134",
+      "monthly_measles_bgd_neighbours.csv:135",
+      "monthly_measles_bgd_neighbours.csv:136",
+      "monthly_measles_bgd_neighbours.csv:137"
+    ],
+    "year": 2023
+  },
+  {
+    "calendar_month": 5,
+    "cumulative_count": 110,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:134",
+      "monthly_measles_bgd_neighbours.csv:135",
+      "monthly_measles_bgd_neighbours.csv:136",
+      "monthly_measles_bgd_neighbours.csv:137",
+      "monthly_measles_bgd_neighbours.csv:138"
+    ],
+    "year": 2023
+  },
+  {
+    "calendar_month": 1,
+    "cumulative_count": 16,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:146"
+    ],
+    "year": 2024
+  },
+  {
+    "calendar_month": 2,
+    "cumulative_count": 36,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:146",
+      "monthly_measles_bgd_neighbours.csv:147"
+    ],
+    "year": 2024
+  },
+  {
+    "calendar_month": 3,
+    "cumulative_count": 63,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:146",
+      "monthly_measles_bgd_neighbours.csv:147",
+      "monthly_measles_bgd_neighbours.csv:148"
+    ],
+    "year": 2024
+  },
+  {
+    "calendar_month": 4,
+    "cumulative_count": 81,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:146",
+      "monthly_measles_bgd_neighbours.csv:147",
+      "monthly_measles_bgd_neighbours.csv:148",
+      "monthly_measles_bgd_neighbours.csv:149"
+    ],
+    "year": 2024
+  },
+  {
+    "calendar_month": 5,
+    "cumulative_count": 94,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:146",
+      "monthly_measles_bgd_neighbours.csv:147",
+      "monthly_measles_bgd_neighbours.csv:148",
+      "monthly_measles_bgd_neighbours.csv:149",
+      "monthly_measles_bgd_neighbours.csv:150"
+    ],
+    "year": 2024
+  },
+  {
+    "calendar_month": 1,
+    "cumulative_count": 3,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:158"
+    ],
+    "year": 2025
+  },
+  {
+    "calendar_month": 2,
+    "cumulative_count": 7,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:158",
+      "monthly_measles_bgd_neighbours.csv:159"
+    ],
+    "year": 2025
+  },
+  {
+    "calendar_month": 3,
+    "cumulative_count": 10,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:158",
+      "monthly_measles_bgd_neighbours.csv:159",
+      "monthly_measles_bgd_neighbours.csv:160"
+    ],
+    "year": 2025
+  },
+  {
+    "calendar_month": 4,
+    "cumulative_count": 26,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:158",
+      "monthly_measles_bgd_neighbours.csv:159",
+      "monthly_measles_bgd_neighbours.csv:160",
+      "monthly_measles_bgd_neighbours.csv:161"
+    ],
+    "year": 2025
+  },
+  {
+    "calendar_month": 5,
+    "cumulative_count": 39,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:158",
+      "monthly_measles_bgd_neighbours.csv:159",
+      "monthly_measles_bgd_neighbours.csv:160",
+      "monthly_measles_bgd_neighbours.csv:161",
+      "monthly_measles_bgd_neighbours.csv:162"
+    ],
+    "year": 2025
+  },
+  {
+    "calendar_month": 1,
+    "cumulative_count": 79,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:170"
+    ],
+    "year": 2026
+  },
+  {
+    "calendar_month": 2,
+    "cumulative_count": 318,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:170",
+      "monthly_measles_bgd_neighbours.csv:171"
+    ],
+    "year": 2026
+  },
+  {
+    "calendar_month": 3,
+    "cumulative_count": 1947,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:170",
+      "monthly_measles_bgd_neighbours.csv:171",
+      "monthly_measles_bgd_neighbours.csv:172"
+    ],
+    "year": 2026
+  },
+  {
+    "calendar_month": 4,
+    "cumulative_count": 7056,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:170",
+      "monthly_measles_bgd_neighbours.csv:171",
+      "monthly_measles_bgd_neighbours.csv:172",
+      "monthly_measles_bgd_neighbours.csv:173"
+    ],
+    "year": 2026
+  },
+  {
+    "calendar_month": 5,
+    "cumulative_count": 11905,
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:170",
+      "monthly_measles_bgd_neighbours.csv:171",
+      "monthly_measles_bgd_neighbours.csv:172",
+      "monthly_measles_bgd_neighbours.csv:173",
+      "monthly_measles_bgd_neighbours.csv:174"
+    ],
+    "year": 2026
+  }
+]

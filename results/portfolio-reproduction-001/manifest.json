@@ -1,0 +1,23 @@
+{
+  "artifact_sha256": {
+    "claims.json": "a85861f0b22a9628be175e17e3a54ecbff251aa289fefce92a7a4f4076344369",
+    "classification.json": "acde76cde7323edbae3bcc7ffb253abdc5ba583c0528a74a43db1e8c840f7570",
+    "coverage.json": "edb9ee4cad51b5c617d258bfdac98103fe2c48c2c4e67b3e38d9f31d4b61707c",
+    "coverage_accounting.json": "6ed2c02774d803cd8b72c770d5e0378b10cee10035566e0e3b0c5068ea906492",
+    "cumulative.json": "6744e5420ed8949e053a016510ad3aa324acec68e80f2ff25e99897108dcb2fb",
+    "independent_checks.json": "f9fd6b07fe5078e39c7f8bb9f71aa250f51133909c8ad7f4cf56f1400df4f8ee",
+    "magnitude_comparisons.json": "a8c2ba0ea50b089f11d5d50df5d0d1ae3101fd4ff40d58ccb9effc89a221727b",
+    "matched_periods.json": "d6d9705f26a4459079e01a06ba72cad21696d6a8d66b7dd0332861d5ecf2b809",
+    "monthly.json": "c5865489a38ca0b4e960b75bfe56c1a0a6953b56c42f5326a6af0f6ba49d2fd3"
+  },
+  "canonical_manifest_sha256": "efa0e34c66960ed264b12b516ee287267035dbf3fd871e54d978c46b1bb2b9e8",
+  "config_sha256": "f42bae91c300f1b65663cf1fc7575319e643d2479e2c46f0cc118c2d2554b8e6",
+  "implementation_sha256": "0597424e1753b64e363508b8943e96df30b6d470fdd3ca5918b638c5a81ddd33",
+  "inference_performed": false,
+  "novelty": "Coverage accounting reproduces source-author work; matched-window and definition-sensitivity synthesis are project extensions",
+  "population": "all_ages_for_surveillance; source_specific_child_targets_for_coverage",
+  "primary_source_check_manifest_sha256": "1ce25fb3f2c67da5bdc0d0b00598b5a53e1e7027cb3277590edf1d835a27811a",
+  "snapshot_month": "2026-08",
+  "source_attribution": "Sikder, Pranta (2026), Zenodo 22167512 v1.1.0; WHO original sources",
+  "status": "completed_exploratory_public_health_reanalysis"
+}
