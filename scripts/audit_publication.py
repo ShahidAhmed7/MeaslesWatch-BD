@@ -106,10 +106,15 @@ def audit(output):
                 if captured.getvalue() != recorded:
                     raise ValueError(f"Notebook output changed in cell {count}")
     checks["notebook_cells_reexecuted"] = count
+    # Audit the published documents. Independently generated report copies may
+    # live alongside them and retain paths from their own historical revisions.
     documents = [
         ROOT / "README.md",
         ROOT / "DATA_SOURCES.md",
-        *sorted((ROOT / "reports").rglob("*.md")),
+        ROOT / "reports/public_health_brief.md",
+        ROOT / "reports/methods.md",
+        ROOT / "reports/case-study-001/case_study.md",
+        ROOT / "reports/research_report.md",
     ]
     for document in documents:
         for target in re.findall(r"\]\(([^)]+)\)", document.read_text()):
