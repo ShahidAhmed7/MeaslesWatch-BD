@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "remote_commit_checked": "c384f2fa4cf0ab60979822a293f183de45c6e9e0",
+  "base_locked_install_evidence": "clean_checkout.json",
+  "elapsed_seconds": 7.4,
+  "steps": [
+    {
+      "command": [
+        "git",
+        "pull",
+        "--ff-only",
+        "origin",
+        "portfolio-redesign"
+      ],
+      "returncode": 0,
+      "stdout": "Updating ba5a248..c384f2f\nFast-forward\n README.md                                          |   9 +-\n planning/PORTFOLIO_COMPLETION.md                   |  37 ++-\n .../2026-10-27/portfolio/clean_checkout.json       |  96 ++++++++\n .../narrative-2026-10-27/burton-2009.notes.md      |  16 ++\n .../narrative-2026-10-27/rabbi-2026.notes.md       |  16 ++\n .../narrative-2026-10-27/who-measles-2026.notes.md |  16 ++\n reports/case-study-001/case_study.md               | 102 +++++++++\n reports/case-study-001/derived_claims.json         |  18 ++\n reports/case-study-001/manifest.json               |  20 ++\n reports/case-study-001/sources.json                |  50 ++++\n reports/case-study-001/story.json                  | 113 +++++++++\n results/portfolio-release-audit-002.json           |  35 +++\n scripts/audit_portfolio_release.py                 |   5 +-\n src/measleswatch/dashboard.py                      | 135 +++++++----\n src/measleswatch/portfolio_integrity.py            |  10 +\n src/measleswatch/portfolio_narrative.py            | 255 +++++++++++++++++++++\n tests/test_portfolio_integrity.py                  |   7 +\n tests/test_portfolio_narrative.py                  |  65 ++++++\n 18 files changed, 954 insertions(+), 51 deletions(-)\n create mode 100644 planning/audits/2026-10-27/portfolio/clean_checkout.json\n create mode 100644 planning/portfolio_sources/narrative-2026-10-27/burton-2009.notes.md\n create mode 100644 planning/portfolio_sources/narrative-2026-10-27/rabbi-2026.notes.md\n create mode 100644 planning/portfolio_sources/narrative-2026-10-27/who-measles-2026.notes.md\n create mode 100644 reports/case-study-001/case_study.md\n create mode 100644 reports/case-study-001/derived_claims.json\n create mode 100644 reports/case-study-001/manifest.json\n create mode 100644 reports/case-study-001/sources.json\n create mode 100644 reports/case-study-001/story.json\n create mode 100644 results/portfolio-release-audit-002.json\n create mode 100644 src/measleswatch/portfolio_narrative.py\n create mode 100644 tests/test_portfolio_narrative.py\n",
+      "stderr": "From https://github.com/ShahidAhmed7/MeaslesWatch-BD\n * branch            portfolio-redesign -> FETCH_HEAD\n   ba5a248..c384f2f  portfolio-redesign -> origin/portfolio-redesign\n"
+    },
+    {
+      "command": [
+        ".venv/bin/pytest",
+        "-q"
+      ],
+      "returncode": 0,
+      "stdout": "........................................................................ [ 62%]\n...........................................                              [100%]\n115 passed in 4.23s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "scripts/audit_portfolio_release.py",
+        "--output",
+        ".devin/logs/narrative_release_check.json"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"passed_offline_release_audit\",\n  \"checks\": {\n    \"published_product_integrity\": {\n      \"status\": \"passed\",\n      \"analysis\": \"e3421b74f54c6628f85a40c5eff32d09505f8c4b64ce6430c01085195dd147d9\",\n      \"coverage_values_checked\": 20,\n      \"figures\": 4,\n      \"case_study_context_sources\": 5,\n      \"source_updates_or_inference\": false\n    },\n    \"original_study_integrity\": {\n      \"status\": \"passed\",\n      \"artifacts\": 194\n    },\n    \"generation_source_snapshots\": 3,\n    \"reproduced_analysis_and_figure_artifacts\": 25,\n    \"headline_claim_lineage\": true,\n    \"notebook_cells_reexecuted_offline_with_matching_outputs\": 7,\n    \"public_readme_and_report_local_links\": \"passed\",\n    \"two_page_PDF_visual_review\": \"passed\"\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "measleswatch.portfolio_narrative",
+        "--output",
+        "reports/fresh-narrative-check"
+      ],
+      "returncode": 0,
+      "stdout": "/private/var/folders/79/wlf14g351sndj3d95pryc2380000gn/T/measleswatch-portfolio-ibudj8ao/repo/reports/fresh-narrative-check\n",
+      "stderr": ""
+    }
+  ],
+  "narrative_json_reproduction": {
+    "story.json": true,
+    "sources.json": true,
+    "derived_claims.json": true
+  },
+  "inference_performed": false
+}

@@ -12,7 +12,7 @@ User-approved redesign, 27 October 2026 (Asia/Dhaka). The public-facing story is
 | Research story | Connected, illustrated case study with numbered citations and full references; short brief, methods note, seven executed notebook cells, and a two-page PDF inspected after rendering both final pages |
 | Nontechnical interface | Four plain-language pages, useful defaults, local comparisons, explicit units and optional technical appendix; default entry point has no inference |
 | Offline verification | 115 tests pass; all 25 analytical/figure artifacts reproduce byte-for-byte; report content reproduces with location-correct links; original 194-artifact integrity audit passes |
-| Repository delivery | Redesign commits pushed to the private repository; final remote revision checks recorded below after completion |
+| Repository delivery | Remote redesign revision checked in an independently installed checkout: 115 tests, release audit and narrative reproduction pass; fast-forward delivery to main |
 
 ## Main narrative
 
@@ -76,3 +76,17 @@ The sole project contributor email remains ahmedshahid2929@gmail.com. Source cre
 and publisher citations are preserved separately. Scientific uncertainties and the
 limitations of the earlier AI experiment remain documented; no bug-free or clinical
 validation guarantee is made.
+
+## Repository verification
+
+The initial redesign was installed and run from private GitHub commit
+`ba5a24814b427cc89ad94a1ce763cf0cf7f0f28e`: locked environment installation,
+explicit source acquisition, 108 tests, nine fresh analytical JSON outputs and
+release audit all passed. After the narrative revision, that independent checkout
+was updated from remote to `c384f2fa4cf0ab60979822a293f183de45c6e9e0`.
+All 115 tests and the updated release audit passed; regenerated story, source and
+arithmetic-illustration JSON files match the published versions byte-for-byte.
+Evidence: `planning/audits/2026-10-27/portfolio/clean_checkout.json` and
+`planning/audits/2026-10-27/portfolio/narrative_remote_checkout.json`.
+The final documentation commit records these checks; no runtime changes follow them.
+Git author and committer identities retain the sole requested contributor email.
