@@ -208,6 +208,10 @@ def load_config(path):
 
 def data_contract_sha256(config):
     contract = {key: value for key, value in config.items() if key not in ("modal", "pilot")}
+    # Preserve the recorded scientific contract across a storage-only relocation.
+    # All raw source bytes still undergo their existing independent hash checks.
+    if contract.get("source_root") == "sources/snapshots":
+        contract["source_root"] = "planning/source_snapshots"
     serialized = json.dumps(contract, sort_keys=True, separators=(",", ":"), allow_nan=False)
     return hashlib.sha256(serialized.encode()).hexdigest()
 

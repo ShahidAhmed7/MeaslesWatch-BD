@@ -17,7 +17,7 @@ def build_who_index(root):
     root = Path(root)
     out = root / "results/retrieval-index-001"
     config = load_config(root / ".devin/study.toml")["document"]
-    source = root / "planning/source_snapshots" / config["filename"]
+    source = root / "sources/snapshots" / config["filename"]
     if sha256(source) != config["sha256"]:
         raise ValueError("WHO source hash changed")
     if not out.exists():

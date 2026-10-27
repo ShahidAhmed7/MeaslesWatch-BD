@@ -1,7 +1,6 @@
 # Beyond the headline: Bangladesh's 2026 measles resurgence
 
 **Public health research brief · 27 October 2026**  
-**Project contributor:** ahmedshahid2929@gmail.com
 
 Bangladesh's reported measles increase raises a practical research question: how
 large is the rise under comparable periods, and what do vaccination indicators
@@ -71,5 +70,5 @@ attributed August snapshot, independently reaggregated from the original CSV.
 explain the source-specific indicators. WHO outbreak-report age statements are separate
 context and are not used to construct a pediatric monthly series.
 
-Evidence and methods: [claim ledger](../results/portfolio-001/claims.json),
-[methods note](portfolio_methods.md), [analysis notebook](../notebooks/Reading_measles_indicators.ipynb).
+Evidence and methods: [claim ledger](../results/descriptive-analysis/claims.json),
+[methods note](methods.md), [analysis notebook](../notebooks/Reading_measles_indicators.ipynb).

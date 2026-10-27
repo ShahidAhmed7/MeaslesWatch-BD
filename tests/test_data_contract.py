@@ -50,3 +50,19 @@ def test_new_manifest_uses_data_contract_digest(tmp_path):
     settings.write_bytes(NEW.replace(b"Bangladesh", b"Bhutan"))
     with pytest.raises(ValueError, match="data contract differs"):
         verify_study_contract(settings, manifest)
+
+
+def test_relocated_sources_preserve_contract_but_changed_inputs_do_not():
+    from pathlib import Path
+
+    root = Path(__file__).resolve().parents[1]
+    manifest = __import__("json").loads(
+        (root / "data/processed/phase1-r2/source_manifest.json").read_text()
+    )
+    settings = root / ".devin/study.toml"
+    assert verify_study_contract(settings, manifest)
+    config = load_config(settings)
+    legacy = {**config, "source_root": "planning/source_snapshots"}
+    assert data_contract_sha256(config) == data_contract_sha256(legacy)
+    altered = {**config, "country": "Bhutan"}
+    assert data_contract_sha256(altered) != data_contract_sha256(config)

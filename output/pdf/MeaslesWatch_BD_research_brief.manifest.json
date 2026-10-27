@@ -1,9 +1,9 @@
 {
   "status": "passed_visual_and_content_review",
   "pages": 2,
-  "pdf_sha256": "2589c4c3c82777c8ecb68f0b29b078abd8f8ee01c7602356ff76a2fb7ac91603",
-  "analysis_manifest_sha256": "e3421b74f54c6628f85a40c5eff32d09505f8c4b64ce6430c01085195dd147d9",
-  "implementation_sha256": "dc885fa7fbc5b95e50321a991dc6110b78d3b9832f7a361d18c80a4b9eb76916",
+  "pdf_sha256": "2c962b290c3b1d47637901480e348b24ad9720743c70aac5b0cf867fdefdac78",
+  "analysis_manifest_sha256": "06bfda6e07b7cde44e5a2866e0f08cb43d6f700bb31fe1e4d60273d4016eb2c5",
+  "implementation_sha256": "78a4ab866585d7e7ccffb88945d889a821f6f3506582ab895618be95e8197247",
   "claims": [
     "P01",
     "P02",
@@ -15,7 +15,7 @@
     "C2026"
   ],
   "source_artifact_sha256": {
-    "claims.json": "a85861f0b22a9628be175e17e3a54ecbff251aa289fefce92a7a4f4076344369",
+    "claims.json": "30658c4813e48daf3c630966c59b71a1c8cbe1afa62d3212fe5afa88d28a9554",
     "cumulative.json": "6744e5420ed8949e053a016510ad3aa324acec68e80f2ff25e99897108dcb2fb",
     "coverage_accounting.json": "6ed2c02774d803cd8b72c770d5e0378b10cee10035566e0e3b0c5068ea906492",
     "classification.json": "acde76cde7323edbae3bcc7ffb253abdc5ba583c0528a74a43db1e8c840f7570"
@@ -28,11 +28,9 @@
       2
     ],
     "observations": [
-      "Two A4 pages; readable labels and text",
-      "No clipped text, overlapping elements or missing glyphs",
-      "All-age surveillance and source-specific vaccination scope stated",
-      "Source-author reproduction attribution retained",
-      "Headers, footers, links and page numbering checked"
+      "Personal email removed from text, footer and author metadata",
+      "Both rendered pages inspected; no clipping or overlap",
+      "Source attribution, numerical findings and page numbering retained"
     ]
   }
 }

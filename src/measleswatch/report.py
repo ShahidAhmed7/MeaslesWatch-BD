@@ -47,7 +47,6 @@ def build_report(root, output):
     comparisons = "; ".join(f"{r['difference']}: {r['estimate']*100:.1f} percentage points (item-bootstrap 95% interval {r['item_bootstrap_95'][0]*100:.1f}, {r['item_bootstrap_95'][1]*100:.1f})" for r in paired)
     text = f'''# MeaslesWatch BD: retrospective surveillance and verified scientific communication
 
-**Sole project contributor:** ahmedshahid2929@gmail.com
 
 **Study snapshot:** August 2026; analysis completed 26 October 2026 (UTC). Research prototype,
 not a clinical or operational warning system. This report describes measured results

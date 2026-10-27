@@ -1,6 +1,5 @@
 # MeaslesWatch BD: retrospective surveillance and verified scientific communication
 
-**Sole project contributor:** ahmedshahid2929@gmail.com
 
 **Study snapshot:** August 2026; analysis completed 26 October 2026 (UTC). Research prototype,
 not a clinical or operational warning system. This report describes measured results

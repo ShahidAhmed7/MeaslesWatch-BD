@@ -2,8 +2,7 @@
 
 **Reading Bangladesh's reported cases, vaccination percentages and the numbers behind them.**
 
-Public health data case study · 27 October 2026  
-Project contributor: ahmedshahid2929@gmail.com
+Public health data case study · 27 October 2026
 
 On 4 April 2026, Bangladesh notified WHO of a nationwide increase in measles. WHO's subsequent alert described reports across 58 of the country's 64 districts. The geographic reach made this a national public health concern. Yet the vaccination data also contained a striking number: first-dose administrative coverage of 123.51% for 2024. How should a reader make sense of a major resurgence alongside a coverage figure above 100%? WHO outbreak alert [1](https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON598)
 
@@ -17,7 +16,7 @@ The first task was to choose a comparison that would survive scrutiny. Comparing
 
 The result was clear: **11,905 laboratory-confirmed reports in January–May 2026**, against a previous matched-period maximum of **1,817 in 2017**. Even against that historical high, the 2026 total was **6.55 times as large**. The unusually low 2025 total is therefore unnecessary to make the central finding.
 
-![Read each line as a running total from January. The gray lines retain the other historical years; the highlighted 2017 line is the previous January–May maximum. All 2026 observations are provisional.](../../results/portfolio-figures-002/01_resurgence.png)
+![Read each line as a running total from January. The gray lines retain the other historical years; the highlighted 2017 line is the previous January–May maximum. All 2026 observations are provisional.](../../results/study-figures/01_resurgence.png)
 
 *Read each line as a running total from January. The gray lines retain the other historical years; the highlighted 2017 line is the previous January–May maximum. All 2026 observations are provisional.*
 
@@ -33,7 +32,7 @@ The coverage file contains three different measures. **Administrative coverage**
 
 That distinction changes the apparent paradox. The **123.51%** first-dose figure is an administrative ratio, not a finding that more than every child was protected. The WHO/UNICEF first-dose estimate for the same year was **96%**. Values above 100% were retained in this analysis because they are clues about how the reported doses and target fit together, rather than errors to silently cap.
 
-![Follow each source separately. The two panels show first and second doses; administrative ratios above 100% are retained. Disagreement between sources is not a confidence interval.](../../results/portfolio-figures-002/02_coverage.png)
+![Follow each source separately. The two panels show first and second doses; administrative ratios above 100% are retained. Disagreement between sources is not a confidence interval.](../../results/study-figures/02_coverage.png)
 
 *Follow each source separately. The two panels show first and second doses; administrative ratios above 100% are retained. Disagreement between sources is not a confidence interval.*
 
@@ -45,9 +44,9 @@ Between 2024 and 2025, first-dose administrative coverage fell from **123.51% to
 
 A smaller numerator lowers the percentage. A larger denominator lowers it too. The source author's decomposition, reproduced here with attribution, shows that both inputs contribute to the change in the ratio. This is an explanation of the calculation; the target increase is not evidence that births or the number of children actually grew by the same amount.
 
-![Both inputs start at 100 in 2024 so their relative changes can be compared. The lines represent reported doses and reported targets, not two estimates of vaccine effectiveness.](../../results/portfolio-figures-002/03_denominator.png)
+![Both inputs start at 100 in 2024 so their relative changes can be compared. The bars represent reported doses and reported targets, not two estimates of vaccine effectiveness.](../../results/study-figures/03_denominator.png)
 
-*Both inputs start at 100 in 2024 so their relative changes can be compared. The lines represent reported doses and reported targets, not two estimates of vaccine effectiveness.*
+*Both inputs start at 100 in 2024 so their relative changes can be compared. The bars represent reported doses and reported targets, not two estimates of vaccine effectiveness.*
 
 A simple arithmetic illustration makes the denominator's role visible. Divide the 2025 first-dose count by the **old 2024 target**, and the ratio would be **115.17%**. Divide the same doses by the **reported 2025 target**, and it is **92.66%**. The first calculation deliberately holds one input fixed. **It is not corrected coverage or an estimate of how many children were protected.**
 
@@ -63,7 +62,7 @@ The same discipline applies to measles surveillance. In January–May 2026, the 
 
 Both the laboratory series and the broader classified series show a substantial rise in the checked comparisons. They describe different sets of reports, however, so their totals and growth ratios cannot be swapped. In particular, the laboratory share is not test positivity: that calculation would need the number of people or specimens tested, which this monthly extract does not supply.
 
-![The bars compare the composition of classified reports in the same months. The 2025 total is only 39, so a 100% laboratory share has a very small denominator. Bar length shows shares; the labels show totals.](../../results/portfolio-figures-002/04_classification.png)
+![The bars compare the composition of classified reports in the same months. The 2025 total is only 39, so a 100% laboratory share has a very small denominator. Bar length shows shares; the labels show totals.](../../results/study-figures/04_classification.png)
 
 *The bars compare the composition of classified reports in the same months. The 2025 total is only 39, so a 100% laboratory share has a very small denominator. Bar length shows shares; the labels show totals.*
 
@@ -85,7 +84,7 @@ The central finding is a substantial reported resurgence that remains visible un
 
 The coverage accounting reproduces analysis already documented by data author Pranta Sikder. This project's contribution is the checked matched-period comparison, endpoint and case-definition checks, direct source reconciliation, reproducible workflow and explanatory synthesis. The analysis is exploratory and retrospective; it does not identify a cause of the outbreak, measure every infection or support clinical decisions.
 
-[Methods and sensitivity table](../portfolio_methods.md) · [Original claim ledger](../../results/portfolio-001/claims.json) · [Additional arithmetic illustration](derived_claims.json) · [Source reading and scope notes](sources.json)
+[Methods and sensitivity table](../methods.md) · [Original claim ledger](../../results/descriptive-analysis/claims.json) · [Additional arithmetic illustration](derived_claims.json) · [Source reading and scope notes](sources.json)
 
 The full primary pages/articles were read. Attributed reading notes and retrieved-text checksums are retained for the new contextual reading; full articles are not redistributed. Context sources were checked on 27 October 2026 and do not update the frozen August observations. The study provides no sampling confidence intervals for administrative aggregates. Reporting completeness and definition changes remain material uncertainties.
 
@@ -99,4 +98,4 @@ The full primary pages/articles were read. Attributed reading notes and retrieve
 
 **Analytical data:** [Sikder P. WHO-derived Bangladesh measles surveillance and vaccination data. Version 1.1.0. Zenodo.](https://zenodo.org/records/22167512) Frozen August 2026 extract; original coverage decomposition credited to the data author.
 
-**Source reconciliation:** [WHO WIISE administrative coverage records](https://xmart-api-public.who.int/WIISE/AD_COVERAGES), official estimates and WUENIC records; checked 27 October 2026. [Saved queries, responses and 20 comparisons](../../planning/portfolio_sources/wiise-2026-10-27/manifest.json). These checks corroborate the selected coverage inputs, not the monthly surveillance series or a causal interpretation.
+**Source reconciliation:** [WHO WIISE administrative coverage records](https://xmart-api-public.who.int/WIISE/AD_COVERAGES), official estimates and WUENIC records; checked 27 October 2026. [Saved queries, responses and 20 comparisons](../../sources/context/wiise-2026-10-27/manifest.json). These checks corroborate the selected coverage inputs, not the monthly surveillance series or a causal interpretation.

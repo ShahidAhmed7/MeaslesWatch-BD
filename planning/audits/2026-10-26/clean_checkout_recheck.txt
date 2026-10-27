@@ -1,6 +1,0 @@
-COMMAND: .venv/bin/python scripts/prepare_checkout.py
-Private scorer-only answer files set to owner read/write. No model run started.
-COMMAND: .venv/bin/pytest -q
-........................................................................ [ 82%]
-...............                                                          [100%]
-87 passed in 2.74s

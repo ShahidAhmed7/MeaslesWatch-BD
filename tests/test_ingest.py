@@ -25,7 +25,7 @@ from measleswatch.ingest import (
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = PROJECT_ROOT / ".devin" / "study.toml"
-SOURCE_ROOT = PROJECT_ROOT / "planning" / "source_snapshots"
+SOURCE_ROOT = PROJECT_ROOT / "sources" / "snapshots"
 RAW_DIR = SOURCE_ROOT / "zenodo_22167512"
 MONTHLY_CSV = RAW_DIR / "monthly_measles_bgd_neighbours.csv"
 COVERAGE_CSV = RAW_DIR / "bgd_mcv_coverage_series.csv"
@@ -118,10 +118,10 @@ def test_run_ingestion_produces_canonical_tables(tmp_path):
 
 def test_corrupted_input_rejected_with_file_integrity(tmp_path):
     project = tmp_path / "project"
-    shutil.copytree(SOURCE_ROOT, project / "planning" / "source_snapshots")
+    shutil.copytree(SOURCE_ROOT, project / "sources" / "snapshots")
     (project / ".devin").mkdir(parents=True)
     shutil.copy2(CONFIG_PATH, project / ".devin" / "study.toml")
-    monthly = project / "planning" / "source_snapshots" / "zenodo_22167512" / MONTHLY_CSV.name
+    monthly = project / "sources" / "snapshots" / "zenodo_22167512" / MONTHLY_CSV.name
     payload = bytearray(monthly.read_bytes())
     payload[100] ^= 0xFF
     monthly.write_bytes(bytes(payload))

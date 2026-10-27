@@ -1,0 +1,11 @@
+{
+  "LLM_inference_performed": false,
+  "analysis_manifest_sha256": "06bfda6e07b7cde44e5a2866e0f08cb43d6f700bb31fe1e4d60273d4016eb2c5",
+  "artifact_sha256": {
+    "methods.md": "e84e8a175a0511e5d52d433ed21a32c01578fb819a59cd176c96dbb7609f7273",
+    "public_health_brief.md": "699405f8afb81bd6695cd2a2c80712415455d97015b2ae3acf0996036582e7a5"
+  },
+  "figure_manifest_sha256": "7c06cd126d1189cddb0fed8e5078171f2550feb3c737a633bc514a2dabf7fa85",
+  "implementation_sha256": "32688d5ece83da0b13d213f351897862109f8eb1d67292fe59495abf4e965467",
+  "status": "completed_measured_public_health_story"
+}

@@ -8,7 +8,7 @@
   ],
   "sections": [
     {
-      "additional_evidence": "results/portfolio-001/magnitude_comparisons.json",
+      "additional_evidence": "results/descriptive-analysis/magnitude_comparisons.json",
       "after": [
         "Would the conclusion disappear if the analysis stopped earlier? The January\u2013March laboratory total was 1.60 times its previous matched-period maximum; by January\u2013April, the ratio was 4.76. The broader classified-case series also exceeded its historical maximum at all three endpoints. The size of the increase changes with the window and category, but its direction survives these six checks.",
         "These are comparisons of reported counts, not population infection risks. Testing, reporting and later revisions can affect them. Choosing May limits reliance on the latest, less mature months in the extract; it does not remove reporting bias. The finding is nevertheless useful: within this snapshot, the resurgence remains substantial without a selectively quiet baseline. The next question is what the vaccination indicators can tell us about its context."
@@ -46,14 +46,14 @@
       "title": "2. The apparent coverage paradox starts with the measure"
     },
     {
-      "additional_evidence": "planning/portfolio_sources/wiise-2026-10-27/manifest.json",
+      "additional_evidence": "sources/context/wiise-2026-10-27/manifest.json",
       "after": [
         "A simple arithmetic illustration makes the denominator's role visible. Divide the 2025 first-dose count by the **old 2024 target**, and the ratio would be **115.17%**. Divide the same doses by the **reported 2025 target**, and it is **92.66%**. The first calculation deliberately holds one input fixed. **It is not corrected coverage or an estimate of how many children were protected.**",
         "The source records give a concrete reason to check comparability: the 2024 target is described as a surviving-infant estimate derived from Bangladesh Bureau of Statistics inputs, while the 2025 target is described as the routine EPI microplan under-one target. The separate WHO API check confirms the recorded inputs and those descriptions. It does not establish that either target is wrong or fully explain why the method changed.",
         "Crucially, the denominator finding does not make the other declines disappear. First-dose delivery reports were lower; second-dose reports were **7.12% lower**. The WHO/UNICEF estimates also moved down, from **96% to 90%** for the first dose and **93% to 86%** for the second. These related indicators deserve attention. Their agreement is not an independent causal test.",
         "The useful interpretation is therefore more precise than 'coverage collapsed' or 'the decline was only a data artifact'. The administrative percentage combines a reduction in reported doses with a change in the reported population base. A programme review needs to examine both, then ask where and among whom vaccination was missed. National annual totals cannot answer that final question."
       ],
-      "caption": "Both inputs start at 100 in 2024 so their relative changes can be compared. The lines represent reported doses and reported targets, not two estimates of vaccine effectiveness.",
+      "caption": "Both inputs start at 100 in 2024 so their relative changes can be compared. The bars represent reported doses and reported targets, not two estimates of vaccine effectiveness.",
       "claims": [
         "V11",
         "V12",

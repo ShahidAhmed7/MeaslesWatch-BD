@@ -1,5 +1,5 @@
 schema_version = "1.0.0"
-source_root = "planning/source_snapshots"
+source_root = "sources/snapshots"
 snapshot_month = "2026-08"
 country = "Bangladesh"
 iso3 = "BGD"

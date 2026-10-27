@@ -1,0 +1,309 @@
+[
+  {
+    "formula": "sum of five monthly laboratory-confirmed reports",
+    "id": "P01",
+    "period": "2026-01/2026-05",
+    "permitted_interpretation": "Provisional reported cases, not all infections",
+    "population": "all_ages",
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:170",
+      "monthly_measles_bgd_neighbours.csv:171",
+      "monthly_measles_bgd_neighbours.csv:172",
+      "monthly_measles_bgd_neighbours.csv:173",
+      "monthly_measles_bgd_neighbours.csv:174"
+    ],
+    "source_sha256": {
+      "monthly_measles_bgd_neighbours.csv": "5158f387016038264e502a301221c8410b7ed35c3073e330b7f3e3bdf248fb5f"
+    },
+    "unit": "reported_laboratory_confirmed_cases",
+    "value": 11905,
+    "verification": "frozen_extract_independently_reaggregated",
+    "verification_evidence": [
+      "independent_checks.json",
+      "sources/context/wiise-2026-10-27/manifest.json"
+    ]
+  },
+  {
+    "formula": "maximum of all 14 complete matched-period sums",
+    "id": "P02",
+    "period": "Jan-May in 2012-2025",
+    "permitted_interpretation": "Prior maximum in [2017]; not a full-year total",
+    "population": "all_ages",
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:62",
+      "monthly_measles_bgd_neighbours.csv:63",
+      "monthly_measles_bgd_neighbours.csv:64",
+      "monthly_measles_bgd_neighbours.csv:65",
+      "monthly_measles_bgd_neighbours.csv:66"
+    ],
+    "source_sha256": {
+      "monthly_measles_bgd_neighbours.csv": "5158f387016038264e502a301221c8410b7ed35c3073e330b7f3e3bdf248fb5f"
+    },
+    "unit": "reported_laboratory_confirmed_cases",
+    "value": 1817,
+    "verification": "frozen_extract_independently_reaggregated",
+    "verification_evidence": [
+      "independent_checks.json",
+      "sources/context/wiise-2026-10-27/manifest.json"
+    ]
+  },
+  {
+    "formula": "P01 / P02",
+    "id": "P03",
+    "period": "2026 Jan-May vs previous 2012-2025 Jan-May maximum",
+    "permitted_interpretation": "Descriptive magnitude ratio, not incidence risk or prospective performance",
+    "population": "all_ages",
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:170",
+      "monthly_measles_bgd_neighbours.csv:171",
+      "monthly_measles_bgd_neighbours.csv:172",
+      "monthly_measles_bgd_neighbours.csv:173",
+      "monthly_measles_bgd_neighbours.csv:174",
+      "monthly_measles_bgd_neighbours.csv:62",
+      "monthly_measles_bgd_neighbours.csv:63",
+      "monthly_measles_bgd_neighbours.csv:64",
+      "monthly_measles_bgd_neighbours.csv:65",
+      "monthly_measles_bgd_neighbours.csv:66"
+    ],
+    "source_sha256": {
+      "monthly_measles_bgd_neighbours.csv": "5158f387016038264e502a301221c8410b7ed35c3073e330b7f3e3bdf248fb5f"
+    },
+    "unit": "ratio",
+    "value": 6.5520088057237205,
+    "verification": "frozen_extract_independently_reaggregated",
+    "verification_evidence": [
+      "independent_checks.json",
+      "sources/context/wiise-2026-10-27/manifest.json"
+    ]
+  },
+  {
+    "formula": "doses_change_percent",
+    "id": "V11",
+    "period": "2024/2025",
+    "permitted_interpretation": "Arithmetic accounting of log coverage change; reproduced from source-author analysis, not causal attribution",
+    "population": "source_specific_vaccination_target",
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:25",
+      "bgd_mcv_coverage_series.csv:27"
+    ],
+    "source_sha256": {
+      "bgd_mcv_coverage_series.csv": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d"
+    },
+    "unit": "percent_change_in_reported_doses",
+    "value": -6.752201770171817,
+    "verification": "raw_CSV_and_current_WHO_API_reconciled",
+    "verification_evidence": [
+      "independent_checks.json",
+      "sources/context/wiise-2026-10-27/manifest.json"
+    ]
+  },
+  {
+    "formula": "target_change_percent",
+    "id": "V12",
+    "period": "2024/2025",
+    "permitted_interpretation": "Arithmetic accounting of log coverage change; reproduced from source-author analysis, not causal attribution",
+    "population": "source_specific_vaccination_target",
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:25",
+      "bgd_mcv_coverage_series.csv:27"
+    ],
+    "source_sha256": {
+      "bgd_mcv_coverage_series.csv": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d"
+    },
+    "unit": "percent_change_in_reported_target",
+    "value": 24.295656136087484,
+    "verification": "raw_CSV_and_current_WHO_API_reconciled",
+    "verification_evidence": [
+      "independent_checks.json",
+      "sources/context/wiise-2026-10-27/manifest.json"
+    ]
+  },
+  {
+    "formula": "target_share_of_log_change",
+    "id": "V13",
+    "period": "2024/2025",
+    "permitted_interpretation": "Arithmetic accounting of log coverage change; reproduced from source-author analysis, not causal attribution",
+    "population": "source_specific_vaccination_target",
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:25",
+      "bgd_mcv_coverage_series.csv:27"
+    ],
+    "source_sha256": {
+      "bgd_mcv_coverage_series.csv": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d"
+    },
+    "unit": "share_of_log_coverage_change",
+    "value": 0.7567532857440059,
+    "verification": "raw_CSV_and_current_WHO_API_reconciled",
+    "verification_evidence": [
+      "independent_checks.json",
+      "sources/context/wiise-2026-10-27/manifest.json"
+    ]
+  },
+  {
+    "formula": "doses_change_percent",
+    "id": "V21",
+    "period": "2024/2025",
+    "permitted_interpretation": "Arithmetic accounting of log coverage change; reproduced from source-author analysis, not causal attribution",
+    "population": "source_specific_vaccination_target",
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:26",
+      "bgd_mcv_coverage_series.csv:28"
+    ],
+    "source_sha256": {
+      "bgd_mcv_coverage_series.csv": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d"
+    },
+    "unit": "percent_change_in_reported_doses",
+    "value": -7.12283910481365,
+    "verification": "raw_CSV_and_current_WHO_API_reconciled",
+    "verification_evidence": [
+      "independent_checks.json",
+      "sources/context/wiise-2026-10-27/manifest.json"
+    ]
+  },
+  {
+    "formula": "target_change_percent",
+    "id": "V22",
+    "period": "2024/2025",
+    "permitted_interpretation": "Arithmetic accounting of log coverage change; reproduced from source-author analysis, not causal attribution",
+    "population": "source_specific_vaccination_target",
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:26",
+      "bgd_mcv_coverage_series.csv:28"
+    ],
+    "source_sha256": {
+      "bgd_mcv_coverage_series.csv": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d"
+    },
+    "unit": "percent_change_in_reported_target",
+    "value": 24.295656136087484,
+    "verification": "raw_CSV_and_current_WHO_API_reconciled",
+    "verification_evidence": [
+      "independent_checks.json",
+      "sources/context/wiise-2026-10-27/manifest.json"
+    ]
+  },
+  {
+    "formula": "target_share_of_log_change",
+    "id": "V23",
+    "period": "2024/2025",
+    "permitted_interpretation": "Arithmetic accounting of log coverage change; reproduced from source-author analysis, not causal attribution",
+    "population": "source_specific_vaccination_target",
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:26",
+      "bgd_mcv_coverage_series.csv:28"
+    ],
+    "source_sha256": {
+      "bgd_mcv_coverage_series.csv": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d"
+    },
+    "unit": "share_of_log_coverage_change",
+    "value": 0.7464099214131118,
+    "verification": "raw_CSV_and_current_WHO_API_reconciled",
+    "verification_evidence": [
+      "independent_checks.json",
+      "sources/context/wiise-2026-10-27/manifest.json"
+    ]
+  },
+  {
+    "formula": "separate annual WHO/UNICEF coverage estimates",
+    "id": "W1",
+    "period": "2024/2025",
+    "permitted_interpretation": "Coverage estimates; no inference about individual immunity or causation",
+    "population": "WUENIC_schedule_specific_target",
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:25",
+      "bgd_mcv_coverage_series.csv:27"
+    ],
+    "source_sha256": {
+      "bgd_mcv_coverage_series.csv": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d"
+    },
+    "unit": "percent",
+    "value": [
+      96,
+      90
+    ],
+    "verification": "frozen_extract_and_current_WHO_API_reconciled",
+    "verification_evidence": [
+      "independent_checks.json",
+      "sources/context/wiise-2026-10-27/manifest.json"
+    ]
+  },
+  {
+    "formula": "separate annual WHO/UNICEF coverage estimates",
+    "id": "W2",
+    "period": "2024/2025",
+    "permitted_interpretation": "Coverage estimates; no inference about individual immunity or causation",
+    "population": "WUENIC_schedule_specific_target",
+    "source_rows": [
+      "bgd_mcv_coverage_series.csv:26",
+      "bgd_mcv_coverage_series.csv:28"
+    ],
+    "source_sha256": {
+      "bgd_mcv_coverage_series.csv": "298e444e289515f99983e27c800ff6333b0fb05cafa516f75cb3a8720aca598d"
+    },
+    "unit": "percent",
+    "value": [
+      93,
+      86
+    ],
+    "verification": "frozen_extract_and_current_WHO_API_reconciled",
+    "verification_evidence": [
+      "independent_checks.json",
+      "sources/context/wiise-2026-10-27/manifest.json"
+    ]
+  },
+  {
+    "formula": "lab / (clinical + epidemiologically linked + lab)",
+    "id": "C2025",
+    "period": "2025-01/2025-05",
+    "permitted_interpretation": "Classification composition, not test positivity; suspected excluded",
+    "population": "all_ages",
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:158",
+      "monthly_measles_bgd_neighbours.csv:159",
+      "monthly_measles_bgd_neighbours.csv:160",
+      "monthly_measles_bgd_neighbours.csv:161",
+      "monthly_measles_bgd_neighbours.csv:162"
+    ],
+    "source_sha256": {
+      "monthly_measles_bgd_neighbours.csv": "5158f387016038264e502a301221c8410b7ed35c3073e330b7f3e3bdf248fb5f"
+    },
+    "unit": "cases_and_percent_of_classified_cases",
+    "value": {
+      "classified": 39,
+      "lab": 39,
+      "lab_share_percent": 100.0
+    },
+    "verification": "frozen_extract_independently_reaggregated",
+    "verification_evidence": [
+      "independent_checks.json",
+      "sources/context/wiise-2026-10-27/manifest.json"
+    ]
+  },
+  {
+    "formula": "lab / (clinical + epidemiologically linked + lab)",
+    "id": "C2026",
+    "period": "2026-01/2026-05",
+    "permitted_interpretation": "Classification composition, not test positivity; suspected excluded",
+    "population": "all_ages",
+    "source_rows": [
+      "monthly_measles_bgd_neighbours.csv:170",
+      "monthly_measles_bgd_neighbours.csv:171",
+      "monthly_measles_bgd_neighbours.csv:172",
+      "monthly_measles_bgd_neighbours.csv:173",
+      "monthly_measles_bgd_neighbours.csv:174"
+    ],
+    "source_sha256": {
+      "monthly_measles_bgd_neighbours.csv": "5158f387016038264e502a301221c8410b7ed35c3073e330b7f3e3bdf248fb5f"
+    },
+    "unit": "cases_and_percent_of_classified_cases",
+    "value": {
+      "classified": 50040,
+      "lab": 11905,
+      "lab_share_percent": 23.790967226219024
+    },
+    "verification": "frozen_extract_independently_reaggregated",
+    "verification_evidence": [
+      "independent_checks.json",
+      "sources/context/wiise-2026-10-27/manifest.json"
+    ]
+  }
+]

@@ -30,7 +30,6 @@ dev = [
 [tool.hatch.build.targets.wheel]
 packages = ["src/measleswatch"]
 
-# Exclude releases published after 2026-10-19 (per handoff: 7 days before
-# system date). The timestamp boundary includes all of that date.
+# Keep dependency releases within the study's locked date boundary.
 [tool.uv]
 exclude-newer = "2026-10-20T00:00:00Z"

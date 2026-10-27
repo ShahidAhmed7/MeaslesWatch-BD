@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "pages_inspected": [
+    1,
+    2
+  ],
+  "pdf_sha256": "2c962b290c3b1d47637901480e348b24ad9720743c70aac5b0cf867fdefdac78",
+  "rendered_page_sha256": {
+    "page-1.png": "77da019e423dd6cd5abd7f76321e4df863715f0d21f7e094ad882733ab3fb805",
+    "page-2.png": "50e20f625d261459edc4cbfe1cb32ba5418473e2ccdf0b3f774bd9ba7b551f5a"
+  },
+  "personal_credit_removed": true
+}

@@ -1,66 +1,28 @@
 # MeaslesWatch BD
 
-**When high coverage meets a measles resurgence**
+A retrospective study of Bangladesh's reported measles resurgence and the interpretation
+of vaccination indicators, using public WHO-derived data.
 
-A public health data case study asking: **How unusual was the reported increase, and
-how do case definitions and vaccination-coverage denominators affect interpretation?**
+## Findings
 
-Analysis contributor: [ahmedshahid2929@gmail.com](mailto:ahmedshahid2929@gmail.com).
+- January–May 2026 had **11,905 laboratory-confirmed reports**, **6.55 times** the highest previous January–May total in 2012–2025 (**1,817 in 2017**).
+- Between 2024 and 2025, reported first doses fell **6.75%** while the reported vaccination target grew **24.30%**. Both changes affected administrative coverage.
+- Laboratory-confirmed reports accounted for **23.79% of 50,040 classified reports** in January–May 2026. This is case composition, not test positivity.
 
-## What the analysis found
+All 2026 reports are provisional. Monthly surveillance covers all ages; vaccination
+indicators have their own child target populations. These data do not establish what
+caused the resurgence or support prospective outbreak prediction.
 
-**The rise remains large under a fair historical comparison.** January–May 2026 had
-**11,905 laboratory-confirmed reports**, compared with **1,817 in the largest previous
-January–May total**, in 2017. The 2026 count is **6.55 times** that previous high among
-all 14 complete years, 2012–2025. The comparison uses the same months throughout.
+## Read the study
 
-![Calendar-aligned reported measles cases](results/portfolio-figures-002/01_resurgence.png)
+- [Full illustrated case study and references](reports/case-study-001/case_study.md)
+- [Two-page research brief](output/pdf/MeaslesWatch_BD_research_brief.pdf)
+- [Methods and sensitivity checks](reports/methods.md)
+- [Executed analysis notebook](notebooks/Reading_measles_indicators.ipynb)
+- [Source data and attribution](DATA_SOURCES.md)
+- [Earlier statistical and AI evaluation report](reports/research_report.md)
 
-**A coverage percentage can fall for more than one reason.** First-dose administrative
-coverage changed from **123.51% to 92.66%** between 2024 and 2025. Reported routine doses
-fell **6.75%**, while the reported target population grew **24.30%**. Direct WHO records
-confirm these values and use different target descriptions in the two years. Reading
-both inputs explains the arithmetic more clearly than the percentage alone.
-
-**Case categories describe different totals.** January–May 2026 had **50,040 classified
-cases**, including **11,905 laboratory-confirmed reports (23.79%)**. Both series show
-an increase under the checked historical comparisons, but their magnitudes cannot be
-interchanged. The laboratory share is case composition, not test positivity.
-
-All 2026 counts are provisional, reported cases are not all infections, and this study
-does not identify what caused the resurgence. Monthly surveillance covers **all ages**;
-vaccination indicators have their own childhood target populations.
-
-## Read the story
-
-- [Full illustrated case study with references](reports/case-study-001/case_study.md): follows the investigation from the WHO alert through historical comparisons, the coverage calculation and case definitions to the next research questions. The dashboard presents the same narrative.
-- [Two-page research brief (PDF)](output/pdf/MeaslesWatch_BD_research_brief.pdf): the findings, explanatory graphics and what to investigate next. [Markdown version](reports/public_health_brief.md).
-- [Readable analysis notebook](notebooks/Reading_measles_indicators.ipynb): seven executed cells, from the question to independent checks.
-- [Methods and sensitivity results](reports/portfolio_methods.md): comparison windows, definitions and assumptions.
-- Four original figures: [historical comparison](results/portfolio-figures-002/01_resurgence.png), [coverage sources](results/portfolio-figures-002/02_coverage.png), [doses and targets](results/portfolio-figures-002/03_denominator.png), [case composition](results/portfolio-figures-002/04_classification.png). Each has CSV, SVG and method/source metadata.
-
-## Analytical contribution and source attribution
-
-The starting data are [Pranta Sikder's version 1.1.0 WHO-derived extract](https://zenodo.org/records/22167512),
-retrieved by its author in August 2026. The denominator decomposition **reproduces work
-already documented by the source author**. This project adds a checked workflow,
-matched-period historical comparisons, endpoint and case-definition sensitivities,
-primary-source reconciliation, and plain-language public health communication.
-
-Twenty load-bearing coverage values reconcile against separately saved WHO API records
-checked on **27 October 2026, Asia/Dhaka**. Record counts, filters, revision selection,
-original response bytes and checksums are retained. The current check never silently
-replaces the frozen surveillance extract. Original CSV arithmetic is checked separately
-from the canonical aggregation path.
-
-This is an exploratory retrospective analysis after data inspection. Age/district data,
-testing volumes and historical release vintages would be needed to investigate mechanisms
-or real-time information availability. Author-generated susceptibility estimates are
-not treated as observed outcomes. See [data sources and terms](DATA_SOURCES.md).
-
-## Run the dashboard
-
-Verified environment: Python 3.13 with the checked-in `uv.lock`.
+## Run
 
 ```sh
 uv sync --locked --python 3.13
@@ -70,74 +32,24 @@ uv run --locked pytest -q
 uv run --locked streamlit run app.py
 ```
 
-The four pages are **Key findings**, **Measles reports**, **Vaccination coverage**, and
-**About the data**. The default page tells the case study in five connected sections,
-with four figures, numbered contextual citations and a full reference list. Comparison
-filters are local; the main research headline stays fixed. Navigation is offline and
-performs no model inference, source refresh or statistical fitting.
+The dashboard has four pages: Key findings, Measles reports, Vaccination coverage,
+and About the data. It reads saved evidence and does not trigger inference.
 
-## Reproduce the analysis
+## Reproduce
 
-Use a new output directory; saved scientific runs are never overwritten.
+Use new output directories; recorded scientific runs are not overwritten.
 
 ```sh
-uv run --locked python -m measleswatch.portfolio --output results/my-portfolio
-uv run --locked python -m measleswatch.portfolio_figures --output results/my-figures
-uv run --locked python -m measleswatch.portfolio_story --output reports/my-report-copy
-uv run --locked python -m measleswatch.portfolio_narrative --output reports/my-case-study-copy
+uv run --locked python -m measleswatch.analysis --output results/new-analysis
+uv run --locked python -m measleswatch.study_figures --output results/new-figures
+uv run --locked python -m measleswatch.research_brief --output reports/new-brief
+uv run --locked python -m measleswatch.case_study --output reports/new-case-study
+uv run --locked python scripts/audit_publication.py --output results/new-publication-audit.json
 ```
 
-The first command independently rebuilds the focused tables and claim ledger from
-verified inputs. The figure and story commands render the recorded reference analysis;
-their manifests identify that input run. The notebook also recalculates the key tables.
-The current code reproduces all nine analytical JSON files and 16 figure/data sidecars
-byte-for-byte in the verified environment. Generation-time source snapshots are retained;
-manifest implementation hashes refer to those versions. Report content reproduces with
-links adjusted to its output location.
-No LLM is needed. Source acquisition is separate and explicit:
+The data are [Pranta Sikder's WHO-derived extract, version 1.1.0](https://zenodo.org/records/22167512),
+frozen in August 2026. The coverage decomposition reproduces the source author's
+analysis. Matched-period comparisons, source reconciliation and explanatory synthesis
+extend the study. Twenty coverage inputs were separately checked against WHO records.
 
-```sh
-uv run --locked python scripts/check_portfolio_sources.py --output planning/portfolio_sources/my-new-check
-```
-
-A new source check may reveal later revisions. It must not overwrite the saved check
-or be blended into the August analysis without a new documented study version.
-
-Optional PDF regeneration uses ReportLab 4.4.9 and pypdf 6.10.0, separate from the
-core dashboard dependencies. Run with `uv run --locked --with reportlab==4.4.9 --with
-pypdf==6.10.0 python scripts/build_portfolio_pdf.py --output output/pdf/my-brief-copy.pdf`.
-The generated copy requires visual review before publication; it never replaces the
-published brief automatically.
-
-## What this demonstrates
-
-| Research skill | Evidence in this project |
-| --- | --- |
-| Data preparation and quality control | Immutable sources, canonical tables, duplicate/sentinel/missing-value rules and issue records |
-| Statistical reasoning | Matched calendar periods, comparison with all historical years, endpoint and case-definition checks |
-| Interpretation of health indicators | Separate coverage sources, dose/target accounting, explicit population and denominator definitions |
-| Reproducible programming | Locked environment, tested Python functions, executed notebook, raw-source arithmetic and manifests |
-| Scientific communication | Referenced case study, four explanatory figures, a short research brief and a dashboard for nontechnical readers |
-
-A five-minute walkthrough: read **Key findings**, change the period/case category on
-**Measles reports**, inspect the two inputs on **Vaccination coverage**, then open
-**About the data** for provenance and the notebook.
-
-## Preserved technical study
-
-The original modelling and AI experiments remain under optional technical details,
-[their original report](reports/research_report.md), and tag `research-v1-2026-10-27`.
-Their scores and failures were not changed to improve the portfolio narrative.
-The earlier verified LLM condition reached 100% numeric accuracy but only 41.6% fully
-supported slots and 3/30 completely correct items. Its shared adapter defects and
-infrastructure-recovery deviation remain material. It is not the basis of the main
-research story or a trusted medical analyst.
-
-[Original technical documentation](https://github.com/ShahidAhmed7/MeaslesWatch-BD/blob/research-v1-2026-10-27/README.md) retains
-Modal configuration, budget controls and the A/B/C experiment design. No additional
-Modal inference was used for this redesign. Hosting, clinical deployment and prospective
-outbreak prediction are outside the study.
-
-Original code: MIT. Source data/publisher text retain their own terms and attribution.
-The GitHub repository remains private; the interface is a research case study, not a
-live outbreak warning service.
+Original code: MIT. Third-party data and publisher text retain their own terms.

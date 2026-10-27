@@ -1,4 +1,0 @@
-Private scorer-only answer files set to owner read/write. No model run started.
-........................................................................ [ 80%]
-.................                                                        [100%]
-89 passed in 2.72s

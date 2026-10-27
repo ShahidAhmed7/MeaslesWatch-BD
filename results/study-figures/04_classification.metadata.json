@@ -1,0 +1,11 @@
+{
+  "analysis_manifest_sha256": "06bfda6e07b7cde44e5a2866e0f08cb43d6f700bb31fe1e4d60273d4016eb2c5",
+  "claim_ids": [
+    "C2025",
+    "C2026"
+  ],
+  "interpretation": "Bars show composition, not outbreak size. The laboratory share is not test positivity; testing volumes are unavailable.",
+  "plotted_csv_sha256": "b386f85db3d94ba15172f51c51d00ac0958096b05f1c5c81de2088bbba22332c",
+  "scope": "Bangladesh \u00b7 all ages \u00b7 January\u2013May of each year \u00b7 suspected cases excluded",
+  "title": "Case classifications describe different parts of the reported total"
+}

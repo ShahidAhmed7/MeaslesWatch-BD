@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def fetch(root=ROOT):
-    source = root / "planning/source_snapshots/zenodo_22167512"
+    source = root / "sources/snapshots/zenodo_22167512"
     manifest = json.loads((source / "inspection_download_manifest.json").read_text())
     verified = []
     for entry in manifest["files"]:

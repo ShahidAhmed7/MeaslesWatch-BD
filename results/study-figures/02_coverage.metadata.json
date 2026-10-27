@@ -1,0 +1,11 @@
+{
+  "analysis_manifest_sha256": "06bfda6e07b7cde44e5a2866e0f08cb43d6f700bb31fe1e4d60273d4016eb2c5",
+  "claim_ids": [
+    "W1",
+    "W2"
+  ],
+  "interpretation": "Sources are separate measures; values above 100% are retained. Missing values are gaps, not zero coverage.",
+  "plotted_csv_sha256": "38dfcd5c3e4af954f4407ce2ae72d7ae814bbe5f46d53bcbd385615eba53a683",
+  "scope": "Bangladesh \u00b7 annual first/second-dose coverage \u00b7 2012\u20132025",
+  "title": "Vaccination coverage depends on which measure is used"
+}

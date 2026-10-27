@@ -17,7 +17,7 @@ def build_audit(root, output):
     root, output = Path(root), Path(output)
     if output.exists():
         raise FileExistsError(output)
-    raw = root / "planning/source_snapshots/zenodo_22167512"
+    raw = root / "sources/snapshots/zenodo_22167512"
     validation = json.loads((root / "data/processed/phase1-r2/validation.json").read_text())
     exploration, issues, fields, completeness = [], [], [], []
     for filename in ("monthly_measles_bgd_neighbours.csv", "bgd_mcv_coverage_series.csv", "bgd_sia_history.csv"):

@@ -1,4 +1,0 @@
-Command: .venv/bin/pytest -q
-Observed during this repository audit:
-..............................................................           [100%]
-62 passed in 0.34s

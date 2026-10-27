@@ -8,9 +8,9 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
-from measleswatch.portfolio import case_composition, magnitude, matched_periods
-from measleswatch.portfolio_figures import AMBER, TEAL, SLATE, SOURCE_LABELS, load_run
-from measleswatch.portfolio_integrity import verify_product
+from measleswatch.analysis import case_composition, magnitude, matched_periods
+from measleswatch.study_figures import AMBER, TEAL, SLATE, SOURCE_LABELS, load_run
+from measleswatch.publication_integrity import verify_product
 
 ROOT = Path(__file__).resolve().parents[2]
 PAGES = ["Key findings", "Measles reports", "Vaccination coverage", "About the data"]
@@ -57,7 +57,7 @@ def display_chart(fig, key, table, image=None):
             key=key + "-csv",
         )
         if image:
-            path = ROOT / "results/portfolio-figures-002" / (image + ".png")
+            path = ROOT / "results/study-figures" / (image + ".png")
             st.download_button(
                 "Download chart image",
                 path.read_bytes(),
@@ -173,7 +173,7 @@ def key_findings(data):
             )
         elif "figure" in section:
             name = section["figure"]
-            figure = ROOT / "results/portfolio-figures-002" / (name + ".png")
+            figure = ROOT / "results/study-figures" / (name + ".png")
             st.image(str(figure), width="stretch")
             with st.expander("View the chart data and download"):
                 csv = figure.with_suffix(".csv")
@@ -503,7 +503,7 @@ def about(data):
     )
     st.subheader("Where the evidence comes from")
     st.markdown(
-        "The analysis uses [Pranta Sikder's version 1.1.0 data deposit](https://zenodo.org/records/22167512), derived from public WHO surveillance and immunization records. The deposit is attributed under its CC BY 4.0 terms. Its coverage decomposition is reproduced and credited; the matched-period and case-definition synthesis extends this portfolio's analysis."
+        "The analysis uses [Pranta Sikder's version 1.1.0 data deposit](https://zenodo.org/records/22167512), derived from public WHO surveillance and immunization records. The deposit is attributed under its CC BY 4.0 terms. Its coverage decomposition is reproduced and credited; the matched-period and case-definition synthesis extends this study's analysis."
     )
     st.markdown(
         "- **Measles reports:** 175 months, January 2012–July 2026; all ages.\n- **Vaccination coverage:** annual first/second-dose indicators through 2025; source-specific child target groups.\n- **Data version:** August 2026 snapshot. This dashboard does not fetch new observations.\n- **Direct source check:** 20 coverage values agree with saved WHO API records, checked 27 October 2026."
@@ -523,7 +523,7 @@ def about(data):
         )
     for name, label in [
         ("public_health_brief.md", "Download research brief"),
-        ("portfolio_methods.md", "Download methods note"),
+        ("methods.md", "Download methods note"),
     ]:
         p = ROOT / "reports" / name
         st.download_button(label, p.read_bytes(), p.name, "text/markdown", key=name)
@@ -542,7 +542,7 @@ def about(data):
         st.write(
             f"All {len(data['independent_checks'])} raw-CSV arithmetic checks agree with the analytical tables. Each saved figure has plotted data and a source/method sidecar. Source hashes prevent altered evidence from being shown silently."
         )
-        p = ROOT / "planning/portfolio_sources/wiise-2026-10-27/reconciliation.json"
+        p = ROOT / "sources/context/wiise-2026-10-27/reconciliation.json"
         records = json.loads(p.read_text())
         table = pd.DataFrame(records)[
             [
@@ -570,7 +570,7 @@ def about(data):
             "The coverage accounting separates dose and target changes using a mathematical identity. It does not estimate a causal vaccine effect or individual immunity."
         )
         st.code(
-            "uv sync --locked --python 3.13\nuv run --locked python scripts/prepare_checkout.py\nuv run --locked python scripts/fetch_sources.py\nuv run --locked python -m measleswatch.portfolio --output results/my-portfolio\nuv run --locked pytest -q",
+            "uv sync --locked --python 3.13\nuv run --locked python scripts/prepare_checkout.py\nuv run --locked python scripts/fetch_sources.py\nuv run --locked python -m measleswatch.analysis --output results/my-study\nuv run --locked pytest -q",
             language="bash",
         )
     if st.checkbox("Show earlier modelling and experimental AI work"):
@@ -656,6 +656,4 @@ def main():
         "About the data": about,
     }[page](data)
     st.divider()
-    st.caption(
-        "Research and explanation of reported data. Analysis: ahmedshahid2929@gmail.com · Data: Sikder (2026), derived from WHO records."
-    )
+    st.caption("Data: Sikder (2026), derived from WHO records.")

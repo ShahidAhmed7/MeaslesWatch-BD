@@ -1,0 +1,35 @@
+{
+  "artifact_sha256": {
+    "README.md": "7d47f6e8ea1616bc990c8413d8b970afa7f725e2070a56713a6b8b7cbf14bad7",
+    "notebooks/Reading_measles_indicators.ipynb": "58671a6c6188d7c9c34cfd5dbe11c27987008aea8508e21fe3ce8c480004d7ca",
+    "output/pdf/MeaslesWatch_BD_research_brief.pdf": "2c962b290c3b1d47637901480e348b24ad9720743c70aac5b0cf867fdefdac78",
+    "reports/case-study-001/case_study.md": "63f1bbf7a3dc1786390026108cacac12ffc3b5c1e8c69c35addb36a9ba403e1a",
+    "src/measleswatch/dashboard.py": "198ad5486dc37d93e7f66c859a785b4552b6695a0f6957beaeba35b076fd35b5"
+  },
+  "checks": {
+    "analytical_and_figure_artifacts_reproduced": 25,
+    "case_study_and_reports_reproduced": true,
+    "notebook_cells_reexecuted": 7,
+    "public_document_links": "passed",
+    "publication_integrity": {
+      "analysis": "06bfda6e07b7cde44e5a2866e0f08cb43d6f700bb31fe1e4d60273d4016eb2c5",
+      "case_study_context_sources": 5,
+      "coverage_values_checked": 20,
+      "figures": 4,
+      "source_updates_or_inference": false,
+      "status": "passed"
+    },
+    "saved_experiment_artifacts": 194,
+    "two_page_PDF_review": "passed"
+  },
+  "inference_performed": false,
+  "presentation_cleanup_checks": {
+    "analysis_tables_equivalent": 9,
+    "only_claim_metadata_change": "Relocated source-reference paths; claim values and formulas unchanged.",
+    "personal_credit_removed": true,
+    "raw_inputs_and_measured_files_unchanged": 454,
+    "source_bytes_preserved_during_relocation": true
+  },
+  "scope": "Saved evidence, reproducibility and document integrity; no clinical or prospective validation.",
+  "status": "passed_offline_publication_audit"
+}
